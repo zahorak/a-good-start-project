@@ -1,8 +1,10 @@
 / encoding: utf-8
 <script>
-  $(document).ready(function(){
-    $("#edit_survey_1").validate();
-  });
+$(document).ready(function(){
+$("#edit_survey_1").validate();
+onfocusout: true
+onkeyup: true
+});
 </script>
 
 #navigation{ :style => "display:none;"}
@@ -39,20 +41,20 @@
     - f.inputs t('1 Interview details'), :id => "interview_details", :class => 'step' do
       = f.input :date_of_the_interview, :start_year => 2010, :end_year => 2012
       = f.input :duration_of_interview, :as => :select, :collection => 10..240
-      = f.input :locality, :input_html => { :class => "validate[required]" }
-      = f.input :mediator, :input_html => { :class => "validate[required]" }
-      = f.input :mediator_survey_counter, :input_html => { :class => "validate[required,custom[onlyNumber]]" }
+      = f.input :locality, :input_html => { :class => "required" }
+      = f.input :mediator, :input_html => { :class => "required" }
+      = f.input :mediator_survey_counter, :input_html => { :class => "required number" }
 
       /  :number_of_children_below_seven, :class => 'step', :name => "Family Profile"
     - f.inputs t("2 Family details"), :id => "family_details", :class => 'step' do
       / = f.input :number_of_all_children, :input_html => { :size => 2 }
       / = f.input :number_of_children_below_seven, :input_html => { :size => 2 }
       = f.fields_for :family do |builder|
-        = builder.input :family_name, :input_html => { :class => "validate[required]" }
+        = builder.input :family_name, :input_html => { :class => "required" }
       = f.input :fathers_age, :input_html => { :size => 2 }
       = f.input :mothers_age, :input_html => { :size => 2 }
-      = f.input :number_of_all_children, :input_html => { :size => 2, :class => "validate[required,custom[onlyNumber]]" }
-      = f.input :number_of_children_below_seven, :input_html => { :size => 2, :class => "validate[required,custom[onlyNumber]]" }
+      = f.input :number_of_all_children, :input_html => { :size => 2, :class => "required number" }
+      = f.input :number_of_children_below_seven, :input_html => { :size => 2, :class => "required number" }
       = f.input :comment, :input_html => { :cols => 50, :rows => 5 }
 
     - f.inputs t("3 Children details"), :id => "children_details", :class => 'step' do
