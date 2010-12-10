@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :set_locale
   before_filter :authenticate_user!
+  before_filter :set_locale
   def set_locale
     #@current_user=User.find(1)
     # if params[:locale] is nil then I18n.default_locale will be used
