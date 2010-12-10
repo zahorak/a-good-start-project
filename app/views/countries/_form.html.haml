@@ -1,0 +1,15 @@
+#steps
+  = semantic_form_for @country do |f|
+    - f.inputs 'Country', :id => 'country', :class => 'step' do
+      = f.input :title
+      = f.buttons
+
+  %form#form2{ :action=>"#", :class=>"formtastic locality", :method=>"post"}
+    %fieldset.step_no_js#localities 
+      %legend 
+        %span Localities
+      %ol
+        - @country.localities.each do |l|
+          %li
+            %label= l.full_name
+            = link_to 'Remove locality', l, :confirm => 'Are you sure?', :method => :delete

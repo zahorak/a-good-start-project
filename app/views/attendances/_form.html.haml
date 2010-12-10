@@ -1,0 +1,6 @@
+#steps
+  = semantic_form_for @attendance do |f|
+    - f.inputs "Attendance", :id => "attendance", :class => 'step'  do
+      = f.input :child
+      = f.input :after_school_instruction
+      = f.input :extracurricular_activities

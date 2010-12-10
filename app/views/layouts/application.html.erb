@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head xmlns="http://www.w3.org/1999/xhtml/" xml:lang="en" lang="en">
+    <title><%= content_for?(:title) ? yield(:title) : t("A Good Start") %></title>
+    <!-- "application", 'formtastic', 'formtastic_changes', "my",  -->
+    <%= stylesheet_link_tag "style", 'my' %>
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/validationEngine.jquery.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/jquery.fancybox-1.3.4.css" />
+    <!-- <script type="text/javascript" src="/javascripts/jquery.min.js"></script> -->
+    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag 'sliding.form' if params[:action] == 'edit' %>
+    <script type="text/javascript" src="/javascripts/jquery.validationEngine-<%= I18n.locale %>.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.validationEngine.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.fancybox-1.3.4.pack.js"></script>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="content">
+      <% if current_user %>
+        <%= render '/layouts/menu' %>
+        <form method='post' action='/'>
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+          <%= select_tag 'locale', options_for_select(%w{en sk hu ro mk},I18n.locale) %>
+          <input type="submit" value="<%= t('Set language')%>">
+        </form>
+      <% end %>
+      <div id="wrapper">
+          <!-- <div id="container"> -->
+          <% unless flash.blank? %>
+            <div  class="commit">
+                <% flash.each do |name, msg| %>
+                  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+                <% end %>
+            </div>
+          <% end %>
+          <%= content_tag :h1, yield(:title) if show_title? %>
+          <%= yield %>
+          <!-- </div> -->
+      </div>
+      <div class="footer">
+        <p>With the support from the European Union</p>
+        <img src="/images/roma_education_fund.jpg" height="70" alt="Roma Education Fund">
+        <img src="/images/eu.jpg" height="70" alt="Eu">
+        <img src="/images/sgi.gif" height="70" alt="Sgi">
+      </div>
+    </div>
+  </body>
+</html>

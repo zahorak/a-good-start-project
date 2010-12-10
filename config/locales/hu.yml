@@ -1,0 +1,381 @@
+--- 
+hu: 
+  ? "1 Interview details"
+  : "1. Az interjú részletei "
+  ? "10 Children younger than 3 years"
+  : "10.	0 és 3 év közötti gyermekek szüleinek szánt kérdések "
+  ? "11 Children 3 to 7 years"
+  : "11.	3-7 év közötti gyermekeket nevelő szülőknek szánt kérdések"
+  ? "12 Other socio-economic data"
+  : "12.	Egyéb társadalmi-gazdasági adat"
+  ? "2 Family details"
+  : "2.	A családra vonatkozó részletek:"
+  ? "4 Child assessment for children aged 3-7 years"
+  : "4.	3-7 év közötti gyermekekre vonatkozó felmérés"
+  ? "5 Household details"
+  : "5.	Háztartással kapcsolatos adatok "
+  ? "55 What language is spoken in your household?"
+  : "5.5 Milyen nyelvet beszélnek a háztartásban?"
+  ? "56 What is the mother tongue of your children?"
+  : "5.6 Mi a gyermekei anyanyelve?"
+  ? "6 Parent's attitude"
+  : "6.	Szülők hozzáállása a kora gyermekkori neveléshez és gondozáshoz"
+  ? "7 Parent's expectations"
+  : "7.	Szülői elvárások gyermekeik jövőbeni iskolai végzettségével kapcsolatban"
+  ? "8 Immunization and health care"
+  : "8.	Védőoltás és egészséggondozás "
+  ? "9 Parent's attitude towards learning at home"
+  : "9.	Szülői hozzáállás a gyermekek otthon tanulásával, és fejlődésével kapcsolatban"
+  ? "A Good Start"
+  : "EGY JÓ KEZDET PROJEKT"
+  ? "Family name"
+  : Vezetéknév
+  ? "Fathers age"
+  : "Édesapa kora"
+  Gender: Neme
+  ? "Mothers age"
+  : "Édesanya kora"
+  ? "Number of children"
+  : "Gyermekek száma"
+  ? "Number of children below seven"
+  : "0-7 év közötti gyermekek száma"
+  activerecord: 
+    attributes: 
+      child_profile: 
+        alphabet: "4.1 Ismeri-e/meg tudja-e nevezni az ABC legalább 10 betűjét?"
+        buttons: "4.6 Be tud gombolni egy inget vagy kardigánt?"
+        childs_first_name: "Gyermek keresztneve"
+        childs_last_name: "Gyermek vezetékneve"
+        childs_surname: "Gyermek vezetékneve"
+        enrolled_to: "Milyen intézménybe jár a gyermek? Nevezze meg az iskolát/intézményt. "
+        numbers: "4.5 Felismeri-e  1-10-ig a számjegyeket?"
+        other_children: "4.9 Jól kijön más gyermekekkel? "
+        reading_words: "4.2 Le tud-e írni legalább négy egyszerű közismert szót?"
+        routine_activities: "4.7 A mindennapi rutin tevékenységeket különösebb figyelmeztetés nélkül hajtja végre?"
+        selfconfidence: "4.8 Van önbizalma?"
+        sentences: "4.4 Meg tud érteni egyszerű mondatokat a hivatalos, állami nyelven?"
+        writing: "4.3 Le tudja írni a saját nevét?"
+      family_profile: 
+        family_name: "2.1 Vezetéknév"
+        fathers_age: "2.2 Édesapa kora"
+        mothers_age: "2.3 Édesanya kora"
+        number_of_children: "2.4 Gyermekek száma"
+        number_of_children_below_seven: "2.5 0-7 év közötti gyermekek száma"
+      survey: 
+        are_teachers_helpfull: "11.13 Amennyiben gyermekének vannak nehézségei, segítenek-e neki a nevelők a nyelvi nehézségek leküzdésében?"
+        better_in_school: "6.1 Mi a véleménye, az iskolában jobban boldogulnak a gyermekek"
+        birth_certificate: "12.3 Minden gyermeknek van-e születési anyakönyvi kivonata?"
+        book_count: "9.8 Hány gyermekkönyv vagy képeskönyv áll rendelkezésre a háztartásban, amit a kisebb gyerekeinek oda tud adni?"
+        book_reading_father: Édesapa
+        book_reading_mother: Édesanya
+        book_reading_noone: Senki
+        book_reading_other: Más
+        boys_girls_success_importance: "7.3 Mennyire fontos a fiúk és a lányok számára, hogy sikeresek legyenek az iskolában?"
+        breastfeeding_importance: "8.7 Mi a véleménye, mennyire fontos szoptatni a gyermekeket?"
+        caregiver_activity: "Fő gondozó"
+        caregiver_activity_other: Más
+        children_language_hungarian: Magyar
+        children_language_macedonian: Macedón
+        children_language_other: "Egyéb nyelv: (kérjük jelölje meg):"
+        children_language_romani: Cigány
+        children_language_romanian: Román
+        children_language_slovak: Szlovák
+        childs_development_information_source_books: "Könyveket olvasok"
+        childs_development_information_source_newspapers: "Elolvasom az erre vonatkozó újságcikkeket"
+        childs_development_information_source_no_idea: "Nem tudom hol kaphatok ilyen információt"
+        childs_development_information_source_no_need: "Nincs szükségem kiegészítő információra "
+        childs_development_information_source_other_persons: "Megkérdezem másoktól"
+        childs_development_information_source_others: "Egyéb:"
+        childs_development_information_source_tv: "Megnézem az erre vonatkozó TV műsorokat "
+        class_roma: "11.4 Az óvodai csoportban, ahova a gyermeke jár, a többi gyerek:"
+        comment: Észrevételek
+        date_of_the_interview: "1.1 Interjú készítésének dátuma"
+        doctor_visit_after_birth: "8.6 Miután megszületett a legkisebbik gyermeke, meglátogatta-e Önt az első hónapokban egy nővér vagy egy orvos, vagy elment-e Ön kórházba?"
+        draw_father: Édesapa
+        draw_mother: Édesanya
+        draw_noone: Senki
+        draw_other: Más
+        duration_of_interview: "1.2 Interjú időtartama"
+        father_activity: Édesapa
+        father_activity_other: Más
+        home_computer: Számítógép?
+        home_electricity: "Elektromos áram?"
+        home_internet: Internethozzáférés?
+        home_kitchen: "Konyhaa házon belül?"
+        home_latrine: Latrina?
+        home_phone: "Mobiltelefon/vezetékes telefon? "
+        home_radio: Rádió?
+        home_sewerage: "Csatorna a szennyvíz elvezetéséhez?"
+        home_shower: "Benti zuhanyzó/fürdőszoba?"
+        home_toilet: "Benti WC?"
+        home_tv: TV?
+        home_water: "Folyó víz a lakásban?"
+        homework_father: Édesapa
+        homework_mother: Édesanya
+        homework_no_child_in_school_yet: "Nincs még iskolába járó gyermek"
+        homework_noone: Senki
+        homework_other: Más
+        immunization_importance: "Mi a véleménye, általában mennyire fontos a gyermekek számára a védőoltás?"
+        immunization_in_household: "8.2 Ön szerint minden, a háztartásban élő gyermeknek megvan az összes védőoltása?"
+        immunization_information_source_do_not_know: "Nem tudom/Nincs válasz"
+        immunization_information_source_doctor: Orvos
+        immunization_information_source_mediator: "Közösségi mediátor"
+        immunization_information_source_no_info: "Nem kaptam ilyen információt/tájékoztatást"
+        immunization_information_source_nurse: "Nővér vagy más egészségügyi dolgozó"
+        immunization_information_source_nurse_other: "Más személy (kérem jelölje meg):"
+        kindergarten_days: "11.2 Az elmúlt héten (az elmúlt 5 munkanapon) körülbelül hány napon volt a gyermeke óvodában?"
+        kindergarten_importance: "6.2 Mennyire fontos a 0-6 éves gyermekek számára, hogy bölcsődébe, óvodába járjanak, vagy részt vegyenek más nevelési programban?"
+        kindergarten_roma: "11.3 Abban az óvodában, ahova a gyermeke jár, a többi gyerek:"
+        language_hungarian: Magyar
+        language_macedonian: Macedón
+        language_other: "Egyéb nyelv: (kérjük jelölje meg)"
+        language_romani: Cigány
+        language_romanian: Román
+        language_slovak: Szlovák
+        lesson_difficulty: "11.12 Vannak-e a gyermekének nehézségei a foglalkozásokon használt nyelv megértésével?"
+        lesson_language_understanding: "11.6 Amennyiben az oktatás nyelve más, mint a gyermek anyanyelve, tegye fel az interjúalanynak a következő kérdést: mennyire komoly megértési nehézségekkel küzd a gyermeke az órákon?"
+        mediator_id: Mediátor
+        mother_activity: Édesanya
+        mother_activity_other: egyéb
+        mother_has_id: "12.2 Van-e a gyermekek édesanyjának személyi igazolványa?"
+        number_of_all_children: "2.4 Gyermekek száma"
+        number_of_children_below_seven: "2.5 0-7 év közötti gyermekek száma"
+        number_of_people_over_18: "A háztartásban élő 18 év felettiek száma"
+        number_of_people_under_18: "A háztartásban élő 18 év alattiak száma"
+        play_father: Édesapa
+        play_mother: Édesanya
+        play_noone: "Senki "
+        play_other: Más
+        primary_caregiver: "5.2 Ön a gyermekek fő gondozója?"
+        primary_caregiver_age: "5.4 Hány éves a fő gondozó?"
+        reason_for_creche_free_meal: "A program ingyen ételt biztosít, vagy más anyagi támogatást."
+        reason_for_creche_friendships: "Az óvodában a gyermekem új barátokra tud szert tenni."
+        reason_for_creche_language: "A gyermekem ott megtanulhatja a hivatalos állami nyelvet."
+        reason_for_creche_learning: "ott tanulhat a gyermekem."
+        reason_for_creche_likes: "A gyermekem szeret bölcsődébe járni/részt venni a közösségi programban."
+        reason_for_creche_no_answer: "Nem tudom/ Nincs válasz"
+        reason_for_creche_other: "Egyéb okok:"
+        reason_for_creche_playing: "ott játszani tud a gyermekem."
+        reason_for_creche_time: "Időt biztosít számomra, hogy dolgozzak/elintézzem az egyéb ügyeimet."
+        reason_for_creche_trust: "Kedvelem a nevelőket/megbízom bennük."
+        reason_for_kindergarten_better_chance: "A gyermekemnek jobb esélyei lesznek arra, hogy jól tanuljon az iskolában és a továbbiakban is."
+        reason_for_kindergarten_compulsory: "Az óvoda kötelező a gyermekem számára "
+        reason_for_kindergarten_free_meal: "Ingyen ételt biztosítanak vagy más anyagi támogatást."
+        reason_for_kindergarten_friendships: "Az óvodában a gyermekem új barátokra tud szert tenni."
+        reason_for_kindergarten_language: "A gyermekem ott megtanulhatja a hivatalos állami nyelvet."
+        reason_for_kindergarten_learning: "Ott tanulni tud a gyermekem."
+        reason_for_kindergarten_likes: "A gyermekem szeret óvodába járni."
+        reason_for_kindergarten_no_answer: "Nem tudom/Nincs válasz"
+        reason_for_kindergarten_other: "Egyéb okok"
+        reason_for_kindergarten_playing: "Ott játszani tud a gyermekem."
+        reason_for_kindergarten_time: "Időt biztosít számomra, hogy dolgozzak/elintézzem az egyéb ügyeimet."
+        reason_for_kindergarten_trust: "Kedvelem a nevelőket/megbízom bennük."
+        reason_not_attend_bad_treating: "Nem bánnak jól a gyermekemmel."
+        reason_not_attend_expensive: "Túl sokba kerül."
+        reason_not_attend_family: "A gyermekemnek a családjában a helye."
+        reason_not_attend_language: "A gyermekem nem beszéli a nyelvet."
+        reason_not_attend_no_answer: "Nem tudom/Nincs válasz"
+        reason_not_attend_no_creche: "Nincs a közelben bölcsőde/óvoda/közösségi központ (3 év alatti gyermekek számára)."
+        reason_not_attend_no_place: "Nincs hely."
+        reason_not_attend_no_trust: "Nem szeretem a tanárokat/nem bízom bennük."
+        reason_not_attend_no_work: "Nem dolgozom, ezért otthon tudok lenni a gyermekemmel."
+        reason_not_attend_other: "Más okok"
+        reason_not_enrolled_children_treating: "A többi gyermek nem bánik jól a gyermekemmel."
+        reason_not_enrolled_expensive: "Túl költséges."
+        reason_not_enrolled_family: "A gyermekemnek a családjában a helye."
+        reason_not_enrolled_language: "A gyermekem nem érti a foglalkozások nyelvét."
+        reason_not_enrolled_no_answer: "Nem tudom/Nincs válasz"
+        reason_not_enrolled_no_clothes: "Nincs pénzem, hogy a gyermekemnek ruhát/cipőt vegyek az óvodába járáshoz."
+        reason_not_enrolled_no_like: "Gyermekem nem szeret óvodába járni."
+        reason_not_enrolled_no_place: "Nincs elég hely az óvodában."
+        reason_not_enrolled_no_work: "Én nem dolgozom, ezért otthon tudok lenni a gyermekemmel."
+        reason_not_enrolled_not_nearby: "Nincs a közelben óvoda."
+        reason_not_enrolled_other: "Egyéb okok"
+        reason_not_enrolled_trust: "Nem kedvelem a tanárokat/nem bízom meg bennük."
+        relation_to_children: "5.1 Milyen rokoni kapcsolatban áll a háztartásban élő gyermekekkel (a 0-7 év közötti kedvezményezett gyermekekre fektesse a hangsúlyt)"
+        relation_to_children_other: "Más: (nevezze meg) "
+        roma_village: "13.2 A háztartás a város/falu olyan részén található, ahol csak/főleg romák élnek?"
+        school_caregiver: "Fő gondozó"
+        school_caregiver_other: egyéb
+        school_class_roma: "11.10 Abban az osztályban, ahova a gyermeke jár, a többi gyerek"
+        school_father: Édesapa
+        school_father_other: Egyéb
+        school_good_bad: "11.14 Ön szerint mennyire jó vagy nem jó az általános iskola?"
+        school_mother: Édesanya
+        school_mother_other: Egyéb
+        school_roma: "11.9 Abban az iskolában, ahova a gyermeke jár, a többi gyerek:"
+        school_teacher_information: "11.11 Beszélnek-e Önnel a nevelők, és adnak-e hasznos tájékoztatást a gyermekével, valamint azzal kapcsolatban, hogyan boldogul gyermeke az iskolában?"
+        separate_place: "9.9 Van-e a háztartásukban külön helyiség/asztal/sarok, ahol a gyermekek játszani vagy tanulni tudnak?"
+        separated_settlement: "13.1 A háztartás a városon/falun kívül, elkülönített telepen található?"
+        talk_with_teacher: "10.2 Beszélnek-e Önnel a nevelők, és adnak-e Önnek hasznos információt gyermekével kapcsolatban, valamint arról, hogy a gyermeke hogy érzi magát ott?"
+        talked_about_pregnancy: "8.5 Amennyiben a 8.4-as kérdésre adott válasz nemleges, tegye fel a következő kérdést: Beszélt-e Önnel valaki a terhességről, amikor a legkisebbik gyermekével volt várandós?"
+        talked_about_pregnancy_other: "Más személy (kérem jelölje meg):"
+        teach_letters_father: Édesapa
+        teach_letters_mother: "Édesanya "
+        teach_letters_noone: Senki
+        teach_letters_other: Más
+        teacher_help: "11.7 Amennyiben a gyermeke nehézségekkel küzd, segítenek a nevelők az oktatási nyelv elsajátításában?"
+        teacher_informs: "11.5 Beszélnek-e Önnel a nevelők, és adnak-e hasznos tájékoztatást a gyermekével, valamint azzal kapcsolatban, hogyan boldogul gyermeke az óvodában?"
+        tell_stories_father: Édesapa
+        tell_stories_mother: "Édesanya "
+        tell_stories_noone: Senki
+        tell_stories_other: Más
+        test_before_school: "11.15 A beiratkozás előtt el kellett végeznie gyermekének egy tesztet?"
+        test_before_school_other: Egyéb
+        test_before_school_result: "11.16 Amennyiben KELLETT, mi volt annak eredménye?"
+        visited_hospital_during_pregnancy: "8.4 Amikor terhes volt a legkisebb gyermekével, volt-e kórházban, vagy elment-e orvoshoz?"
+        who_is_primary_caregiver: "5.3 Amennyiben NEM, ki a fő gondozó?"
+        who_is_primary_caregiver_other: "Más: (nevezze meg)"
+        wished_daugters_education: "7.1 Ha lánya jövőjére gondol, Ön szerint milyen iskolát kellene elvégeznie?"
+        wished_daugters_education_other: "Egyéb: (kérem jelölje meg)"
+        wished_sons_education: "7.2 Ha fia jövőjére gondol, Ön szerint, milyen iskolát kellene  elvégeznie?"
+        wished_sons_education_other: "Egyéb: (kérem jelölje meg)"
+    errors: 
+      messages: 
+        record_invalid: "Sikertelen validálás %{errors}"
+        taken: "már foglalt"
+  activities: "12.7 Kérem mondja el, hogy mivel foglalkoznak a háztartás tagjai?"
+  book_reading: "9.2 Az elmúlt 3 napban, olvasott-e könyvet valamelyik 15 évesnél idősebb háztartásbeli a gyermeknek, vagy nézegetett-e képes könyvet a gyermek(ek)kel?"
+  children_below_seven: "11.	3-7 év közötti gyermekeket nevelő szülőknek szánt kérdések"
+  children_below_three: "10.	0 és 3 év közötti gyermekek szüleinek szánt kérdések "
+  childs_development_information_source: "9.1 Amikor kérdések merülnek fel Önben gyermeke fejlődésével kapcsolatban, hol kaphat tájékoztatást ezzel kapcsolatban?"
+  date: 
+    abbr_day_names: 
+      - v.
+      - h.
+      - k.
+      - sze.
+      - cs.
+      - p.
+      - szo.
+    abbr_month_names: 
+      - ~
+      - jan.
+      - febr.
+      - márc.
+      - ápr.
+      - máj.
+      - jún.
+      - júl.
+      - aug.
+      - szept.
+      - okt.
+      - nov.
+      - dec.
+    day_names: 
+      - vasárnap
+      - hétfő
+      - kedd
+      - szerda
+      - csütörtök
+      - péntek
+      - szombat
+    formats: 
+      default: "%Y.%m.%d."
+      long: "%Y. %B %e."
+      short: "%b %e."
+    month_names: 
+      - ~
+      - január
+      - február
+      - március
+      - április
+      - május
+      - június
+      - július
+      - augusztus
+      - szeptember
+      - október
+      - november
+      - december
+    order: 
+      - !ruby/symbol year
+      - !ruby/symbol month
+      - !ruby/symbol day
+  datetime: 
+    distance_in_words: 
+      about_x_hours: 
+        one: "kb 1 óra"
+        other: "kb %{count} óra"
+      about_x_months: 
+        one: "kb 1 hónap"
+        other: "kb %{count} hónap"
+      about_x_years: 
+        one: "kb 1 év"
+        other: "kb %{count} év"
+      almost_x_years: 
+        one: "majdnem 1 év"
+        other: "majdnem %{count} év"
+      half_a_minute: "fél perc"
+      less_than_x_minutes: 
+        one: "kevesebb, mint 1 perc"
+        other: "kevesebb, mint %{count} perc"
+      less_than_x_seconds: 
+        one: "kevesebb, mint 1 másodperc"
+        other: "kevesebb, mint %{count} másodperc"
+      over_x_years: 
+        one: "több, mint 1 év"
+        other: "több, mint %{count} év"
+      x_days: 
+        one: "1 nap"
+        other: "%{count} nap"
+      x_minutes: 
+        one: "1 perc"
+        other: "%{count} perc"
+      x_months: 
+        one: "1 hónap"
+        other: "%{count} hónap"
+      x_seconds: 
+        one: "1 másodperc"
+        other: "%{count} másodperc"
+    prompts: 
+      day: Nap
+      hour: Óra
+      minute: Perc
+      month: Hónap
+      second: Másodperc
+      year: Év
+  draw: "9.5 Az elmúlt 3 napban, rajzolt-e valamelyik 15 évesnél idősebb háztartásbeli a gyermekkel?"
+  home_equipment: "12.4 Az alábbi tárgyak közül mi az, ami megtalálható az otthonukban?"
+  homework: "9.7 Az elmúlt 3 napban, segített-e valamelyik 15 évesnél idősebb háztartásbeli megcsinálni a házi feladatot azoknak a gyermekeknek, akik iskolába járnak?"
+  immunization_information_source: |-
+      8.3 Kapott valaha információt/tájékoztatást a védőoltás fontosságáról?
+      Amennyiben KAPOTT, kérem jelölje meg kitől kapta az információt
+  number: 
+    currency: 
+      format: 
+        format: "%n %u"
+        unit: Ft
+    format: 
+      separator: ","
+    human: 
+      storage_units: 
+        format: "%n %u"
+        units: 
+          byte: 
+            one: bájt
+            other: bájt
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+  play: "9.4 Az elmúlt 3 napban, játszott-e valamelyik 15 évesnél idősebb háztartásbeli a gyermekekkel? "
+  reason_for_creche: "10.1 Kérem mondja meg , mi a 3 legfőbb érv arra, amiért gyermeke bölcsődébe/óvodába jár, vagy részt vesz egyéb közösségi program/okban."
+  reason_for_kindergarten: "11.1 Miért jár a gyermeke óvodába? Ossza meg velünk kérem a 3 legfontosabb okot."
+  reason_not_attend: "10.3 Mik a fő okai annak, hogy a gyermeke nem jár bölcsődébe/óvodába/közösségi központba?"
+  reason_not_enrolled: "11.8 Kérem nevezze meg azt a 3 legfontosabb okot, amiért gyermekét még nem iratta be általános iskolába és amiért óviodába SEM JÁR."
+  schools: "12.1 Milyen iskolai végzettsége van a szülőknek/fő gondozónak?"
+  support: 
+    array: 
+      last_word_connector: " és "
+      two_words_connector: " és "
+      words_connector: ", "
+  teach_letters: "9.6 Az elmúlt 3 napban, tanított-e a gyermekeknek betűket vagy tanította-e számolni, valamelyik 15 évesnél idősebb háztartásbeli?"
+  tell_stories: "9.3 Az elmúlt 3 napban, mesélt-e valamelyik 15 évesnél idősebb háztartásbeli történeteket a gyermekeknek?"
+  time: 
+    am: de.
+    formats: 
+      default: "%Y. %b %e., %H:%M"
+      long: "%Y. %B %e., %A, %H:%M"
+      short: "%b %e., %H:%M"
+    pm: du.

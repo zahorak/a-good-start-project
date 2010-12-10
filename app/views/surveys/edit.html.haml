@@ -1,0 +1,13 @@
+%h1= t('You are editing survey no: ') + @survey.number
+
+- if @survey.current_step==2
+  = render 'form_2'
+- elsif @survey.current_step==3
+  = render 'form_3'
+- elsif @survey.current_step==4
+  = render 'form'
+- else
+  = render 'form'
+
+.commit
+  = link_to t('Back'), surveys_path

@@ -1,0 +1,19 @@
+#steps
+
+  - title "Users"
+
+  %table
+    %tr
+      %th Name
+      %th Category
+      %th Code
+    - for user in @users
+      %tr
+        %td= user.full_name
+        %td= user.category
+        %td= user.code
+        %td= link_to t('Edit'), edit_user_path(user)
+        %td= link_to t('Delete'), user, :confirm => t('Are you sure?'), :method => :delete
+
+.commit
+  %p= link_to t("Add User"), new_user_path

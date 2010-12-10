@@ -1,0 +1,32 @@
+%h1= t('Household Surveys')
+
+%table
+  %tr
+    %th= t('Survey No')
+    %th= t('Family')
+    %th= t('Children below seven')
+    %th= t('Date')
+    %th 
+    %th 
+    / %th 
+
+  - @surveys.each do |survey|
+    %tr
+      %td= survey.number
+      %td
+        = link_to survey.family.family_name, survey.family unless survey.family.blank?
+      %td
+        - unless survey.children.blank?
+          %ul
+            - survey.children_below_seven.each do |ch|
+              %li= link_to ch.full_name, ch
+          / %br= link_to t('Change children list'), edit_survey_path(survey)
+      %td= survey.date_of_the_interview
+      / %td= link_to 'Show', survey
+      %td= link_to t('Edit'), edit_survey_path(survey)
+      / %td link_to t('Delete'), survey, :confirm => t('Are you sure?'), :method => :delete
+
+%br
+
+.commit
+  = link_to t('Add New Household Survey'), new_survey_path

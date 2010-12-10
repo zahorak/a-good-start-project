@@ -1,0 +1,17 @@
+%h1 Listing school_results
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @school_results.each do |school_result|
+    %tr
+      %td= link_to 'Show', school_result
+      %td= link_to 'Edit', edit_school_result_path(school_result)
+      %td= link_to 'Destroy', school_result, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New School result', new_school_result_path

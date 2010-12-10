@@ -1,0 +1,21 @@
+/ encoding: utf-8
+#steps
+  = semantic_form_for @child_profile do |f|
+    - f.inputs "Child Profile", :id => "child_profile", :class => 'step'  do
+      = f.input :childs_first_name
+      = f.input :childs_last_name
+      = f.input :family, :as => :select, :collection => FamilyProfile.all, :label_method => 'family_name'
+      = f.input :date_of_birth, :start_year => 2002, :end_year => 2012
+      = f.input :gender, :as => :radio, :collection => MenuItem.genders
+      / = f.input :alphabet, :as => :radio
+      / = f.input :reading_words, :as => :radio
+      / = f.input :writing, :as => :radio
+      / = f.input :sentences, :as => :radio
+      / = f.input :numbers, :as => :radio
+      / = f.input :buttons, :as => :radio
+      / = f.input :routine_activities, :as => :radio
+      / = f.input :selfconfidence, :as => :radio
+      / = f.input :other_children, :as => :radio, :collection => MenuItem.frequency
+      = f.input :enrolled_to
+      = f.buttons
+      

@@ -1,0 +1,18 @@
+%h1 Countries
+
+%table
+  %tr
+    %th Name
+    %th Localities
+    %th
+
+  - @countries.each do |country|
+    %tr
+      %td= link_to country.title, edit_country_path(country)
+      %td
+        %ul
+          - country.localities.each do |l|
+            %li= l.full_name
+      %td= link_to 'Delete Country', country, :confirm => 'Are you sure?', :method => :delete
+
+%br

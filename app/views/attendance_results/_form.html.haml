@@ -1,0 +1,10 @@
+= form_for @attendance_result do |f|
+  -if @attendance_result.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@attendance_result.errors.count, "error")} prohibited this attendance_result from being saved:"
+      %ul
+        - @attendance_result.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

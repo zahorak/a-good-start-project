@@ -1,0 +1,408 @@
+--- 
+mk: 
+  ? "1 Interview details"
+  : "1. Податоци за интервјуто"
+  ? "10 Children younger than 3 years"
+  : "10.	Прашања за родителите на деца на возраст до 3 години "
+  ? "11 Children 3 to 7 years"
+  : "11.	Прашања за родителите на деца на возраст од 3 до 7 години "
+  ? "12 Other socio-economic data"
+  : "12.	Други социоекономски податоци "
+  ? "2 Family details"
+  : "2.	Податоци за семејството"
+  ? "4 Child assessment for children aged 3-7 years"
+  : "4.	Проценка на деца на возраст од 3 до 7 години "
+  ? "4 Children assesment"
+  : "4.	Проценка на деца на возраст "
+  ? "5 Household details"
+  : "5.	Податоци за домаќинството"
+  ? "55 What language is spoken in your household?"
+  : "5.5 Кој јазик се зборува во вашето домаќинство? "
+  ? "56 What is the mother tongue of your children?"
+  : "5.6 Кој е мајчиниот јазик на вашите деца?"
+  ? "6 Parent's attitude"
+  : "6.	Ставови на родителите кон раното воспитување и образование на деца "
+  ? "7 Parent's expectations"
+  : "7.	Очекувања на родителите за идните образовни успеси (резултати) на нивното дете/деца? "
+  ? "8 Immunization and health care"
+  : "8.	Вакцинирање и здравствена грижа "
+  ? "9 Parent's attitude towards learning at home"
+  : "9.	Ставот на родителите кон учењето и развојот во домашни услови "
+  ? "A Good Start"
+  : "ПРОЕКТОТ ДОБАР ПОЧЕТОК"
+  Birthdate: "Датум на раѓање"
+  Child: Дете
+  Family: Cемејство
+  ? "Family name"
+  : Презиме
+  ? "Fathers age"
+  : "Старост на таткото"
+  Gender: Пол
+  Locality: Место
+  ? "Mothers age"
+  : "Старост на мајката"
+  ? "Number of children"
+  : "Бројка на деца"
+  ? "Number of children below seven"
+  : "Бројка на деца на возраст од 0 до 7 години"
+  ? "Survey No"
+  : "Број на прашалник"
+  activerecord: 
+    attributes: 
+      child_profile: 
+        alphabet: "4.1 Дали може да препознае/ именува најмалку четири букви од азбуката?"
+        buttons: "4.6 Дали може да си ја закопча кошулата или џемперот? "
+        childs_first_name: "Име на детето"
+        childs_last_name: "Презиме на детето"
+        childs_surname: "Презиме на детето"
+        enrolled_to: "Каде е запишано детето? Ве молиме кажете ни го името на училиштето/ установата."
+        numbers: "4.5 Дали ги препознава симболите за броевите од 1 до 10?"
+        other_children: "4.9 Дали се согласува со другите деца?"
+        reading_words: "4.2 Дали може да прочита најмалку четири едноставни, секојдневни зборови?"
+        routine_activities: "4.7 Дали ги извршува секојдневните вообичаени активности без да треба да се потсети?"
+        selfconfidence: "4.8 Дали покажува самодоверба? "
+        sentences: "4.4 Дали разбира прости реченици на државниот/ регионалниот јазик?"
+        writing: "4.3 Дали може да си го напише своето име? "
+      family_profile: 
+        family_name: "2.1 Презиме"
+        fathers_age: "2.2 Старост на таткото"
+        mothers_age: "2.3 Старост на мајката"
+        number_of_children: "2.4 Бројка на деца"
+        number_of_children_below_seven: "2.5 Бројка на деца на возраст од 0 до 7 години"
+      survey: 
+        are_teachers_helpfull: "11.13 Доколку вашето дете има проблеми, дали наставниците му помагаат на детето да го научи наставниот јазик?"
+        better_in_school: "6.1 Дали сметате дека децата постигнуваат подобри резултати на училиште? "
+        birth_certificate: "12.3 Дали сите деца имаат извод на родени?"
+        book_count: "9.8 Колку книги за деца или сликовници имате за мали деца?"
+        book_reading_father: Таткото
+        book_reading_mother: Мајката
+        book_reading_noone: Никој
+        book_reading_other: Друг
+        boys_girls_success_importance: "7.3 Колку е важно за момчињата и девојчињата да постигнат добри резултати на училиште?"
+        breastfeeding_importance: "8.7 Колку месеци сметате дека е важно да се дојат децата?"
+        caregiver_activity: "Лицето кое се грижи за децата"
+        caregiver_activity_other: Друго
+        children_language_hungarian: Унгарски
+        children_language_macedonian: Македонски
+        children_language_other: "Друг јазик:  (Ве молиме пополнете):"
+        children_language_romani: Ромски
+        children_language_romanian: Романски
+        children_language_slovak: Словачки
+        childs_development_information_source_books: "Читам книги"
+        childs_development_information_source_newspapers: "Читам написи во весник во врска со овие прашања "
+        childs_development_information_source_no_idea: "Не знам каде да добијам информации "
+        childs_development_information_source_no_need: "Не ми се потребни дополнителни информации "
+        childs_development_information_source_other_persons: "Прашувам други луѓе"
+        childs_development_information_source_others: Друго
+        childs_development_information_source_tv: "Гледам телевизиски програми во врска со овие прашања "
+        class_roma: "11.4 Во групата на вашето дете во градинка, останатите деца се ….?"
+        comment: Коментари
+        date_of_the_interview: "1.1 Датум на интервјуто"
+        doctor_visit_after_birth: "8.6 Дали во првите месеци по раѓањето на вашето најмало дете, медицинска сестра или доктор (педијатар или друг доктор) извршија преглед на детето?"
+        draw_father: Таткото
+        draw_mother: Мајката
+        draw_noone: Никој
+        draw_other: Друг
+        duration_of_interview: "1.2 Времетраење на интервјуто"
+        father_activity: Таткото
+        father_activity_other: Друг
+        home_computer: Компјутер?
+        home_electricity: "Електрична енергија? "
+        home_internet: "Пристап до интернет? "
+        home_kitchen: "Кујна внатре?  "
+        home_latrine: "Полски клозет? "
+        home_phone: "Мобилен/ фиксен телефон? "
+        home_radio: Радио?
+        home_sewerage: "Канализација внатре за исфрлање на отпадната (користена) вода? "
+        home_shower: "Туш/ бања внатре? "
+        home_toilet: "Тоалет внатре? "
+        home_tv: Телевизор?
+        home_water: "Проточна вода внатре? "
+        homework_father: Таткото
+        homework_mother: Мајката
+        homework_no_child_in_school_yet: "Ниедно дете сè уште не е запишано на училиште "
+        homework_noone: Никој
+        homework_other: Друг
+        immunization_importance: "8.1 Според вас колку вакцинирањето е важно за децата?"
+        immunization_in_household: "8.2 Според ваше сознание, дали сите деца во вашето домаќинство/дом се вакцинирани?"
+        immunization_information_source_do_not_know: "Не знам/ Немам одговор"
+        immunization_information_source_doctor: Лекар
+        immunization_information_source_mediator: "Посредник во заедницата"
+        immunization_information_source_no_info: "Не сум добил/а вакви информации/ појаснување"
+        immunization_information_source_nurse: "Медицинска сестра или друг здравствен работник"
+        immunization_information_source_nurse_other: "Друго лице (ве молиме пополнете)"
+        kindergarten_days: "11.2 Во текот на последнава недела (последните 5 работни дена) колку дена вашето дете беше во градинка?"
+        kindergarten_importance: "6.2 Колку е важно малите деца на возраст од 0 до 6 години да одат во јасли, градинка или други предучилишни програми за учење за да имаат добра иднина?"
+        kindergarten_roma: "11.3 Во градинката на вашето дете, останатите деца се ….?"
+        language_hungarian: Унгарски
+        language_macedonian: Македонски
+        language_other: "Друг јазик: (Ве молиме пополнете):"
+        language_romani: Ромски
+        language_romanian: Романски
+        language_slovak: Словачки
+        lesson_difficulty: "11.12 Дали на вашето дете му е тешко да го разбере наставниот јазик?"
+        lesson_language_understanding: "11.6 Доколку наставниот јазик е е различен од мајчиниот јазик на детето прашајте го лицето што го анкетирате: Дали на вашето дете му е тешко да ја следи наставата? (доколку јазикот не се разликува, продолжете со прашањето 11.8)."
+        mediator_id: Медијатор
+        mother_activity: Мајката
+        mother_activity_other: друго
+        mother_has_id: "12.2 Дали мајката на децата има документ за идентификација?"
+        number_of_all_children: "2.4 Бројка на деца"
+        number_of_children_below_seven: "2.5 Бројка на деца на возраст од 0 до 7 години"
+        number_of_people_over_18: "Бројка на луѓе во домаќинството над 18 години"
+        number_of_people_under_18: "Бројка на луѓе во домаќинството под 18 години"
+        play_father: Таткото
+        play_mother: Мајката
+        play_noone: Никој
+        play_other: Друг
+        primary_caregiver: "5.2 Дали вие сте лицето што се грижи за децата?"
+        primary_caregiver_age: "5.4 Колку години има лицето што се грижи за децата?"
+        reason_for_creche_free_meal: "Со програмата се обезбедува бесплатен оброк или друга материјална помош."
+        reason_for_creche_friendships: "Во градинката моето дете може да запознае нови другарчиња."
+        reason_for_creche_language: "Моето дете може да го научи службениот државен/ регионално доминантниот јазик таму."
+        reason_for_creche_learning: "Моето дете може да учи таму."
+        reason_for_creche_likes: "Моето дете сака да ја посетува програмата/ да оди во градинката."
+        reason_for_creche_no_answer: "Не знам/ Немам одговор"
+        reason_for_creche_other: "Други причини:"
+        reason_for_creche_playing: "Моето дете може да си игра таму."
+        reason_for_creche_time: "Ми остава време да работам/ да се грижам за други работи."
+        reason_for_creche_trust: "Ми се допаѓаат/ им верувам на воспитувачите."
+        reason_for_kindergarten_better_chance: "Моето дете ќе има поголеми можности да успее во основно училиште и подоцна."
+        reason_for_kindergarten_compulsory: "Градинката е задолжителна за моето дете. "
+        reason_for_kindergarten_free_meal: "Градинката обезбедува бесплатен оброк или друга материјална помош."
+        reason_for_kindergarten_friendships: "Во градинката моето дете може да запознае нови другарчиња."
+        reason_for_kindergarten_language: "Моето дете може да го научи службениот државен/ регионално доминантниот јазик  таму."
+        reason_for_kindergarten_learning: "Моето дете може да учи таму."
+        reason_for_kindergarten_likes: "Моето дете сака да оди во градинка."
+        reason_for_kindergarten_no_answer: "Не знам/ Немам одговор"
+        reason_for_kindergarten_other: "Други причини"
+        reason_for_kindergarten_playing: "Моето дете може да си игра таму."
+        reason_for_kindergarten_time: "Ми остава време да работам/ да се грижам за други работи."
+        reason_for_kindergarten_trust: "Ми се допаѓаат/ им верувам на воспитувачите."
+        reason_not_attend_bad_treating: "Не се однесуваат добро со моето дете."
+        reason_not_attend_expensive: "Премногу е скапо."
+        reason_not_attend_family: "Моето дете треба да остане заедно со семејството."
+        reason_not_attend_language: "Моето дете не го зборува јазикот."
+        reason_not_attend_no_answer: "Не знам/ Немам одговор"
+        reason_not_attend_no_creche: "Во близина нема јасли/ градинка/ општински центар (за деца помали од 3 години)."
+        reason_not_attend_no_place: "Нема слободни места."
+        reason_not_attend_no_trust: "Не ми се допаѓаат/ не им верувам на воспитувачите."
+        reason_not_attend_no_work: "Не работам и можам да се грижам за моето дете дома."
+        reason_not_attend_other: "Други причини"
+        reason_not_enrolled_children_treating: "Другите деца не се однесуваат добро со моето дете."
+        reason_not_enrolled_expensive: "Премногу е скапо."
+        reason_not_enrolled_family: "Моето дете треба да остане заедно со семејството."
+        reason_not_enrolled_language: "Моето дете не го разбира наставниот јазик. "
+        reason_not_enrolled_no_answer: "Не знам/ Немам одговор"
+        reason_not_enrolled_no_clothes: "Немам пари на моето дете да му купам облека/ обувки за градинка."
+        reason_not_enrolled_no_like: "Моето дете не сака да оди во градинка."
+        reason_not_enrolled_no_place: "Нема доволно места во градинката."
+        reason_not_enrolled_no_work: "Не работам и можам да се грижам за моето дете дома."
+        reason_not_enrolled_not_nearby: "Нема градинка во близина."
+        reason_not_enrolled_other: "Други причини"
+        reason_not_enrolled_trust: "Не ми се допаѓаат/ не им верувам на наставниците."
+        relation_to_children: "5.1 Какво е вашето сродство со децата во ова домаќинство?(фокусирајте се на децата корисници на возраст од 0 до 7 години)"
+        relation_to_children_other: "Друг: (ве молиме наведете) "
+        roma_village: "13.2 Дали домот се наоѓа во дел од градот/ селото каде сите/ речиси сите соседи ви се Роми?"
+        school_caregiver: "Лицето кое се грижи за децата"
+        school_caregiver_other: друго
+        school_class_roma: "11.10 Во одделението на вашето дете останатите деца се …?"
+        school_father: Таткото
+        school_father_other: друго
+        school_good_bad: "11.14 Според вас колку основното училиште е добро или лошо?"
+        school_mother: Мајката
+        school_mother_other: друго
+        school_roma: "11.9 Во училиштето на вашето дете останатите деца се …?"
+        school_teacher_information: "11.11 Дали наставниците зборуваат со вас и ви даваат корисни информации за вашето дете и како се снаоѓа на училиште?"
+        separate_place: "9.9 Дали во вашиот дом имате посебно место/ маса/ катче каде детето може да учи или да си игра?"
+        separated_settlement: "13.1 Дали домот ви се наоѓа во посебна населба надвор од градот/ селото?"
+        talk_with_teacher: "10.2 Дали воспитувачите зборуваат со вас и ви даваат корисни информации за вашето дете и како се снаоѓа таму?"
+        talked_about_pregnancy: "8.5 Доколку одговорот на прашањето 8.4 е НЕ, прашајте: Дали  зборувавте со некого за бременоста додека бевте бремена пред да ви се роди најмалото дете?"
+        talked_about_pregnancy_other: "Друго лице (ве молиме пополнете):"
+        teach_letters_father: Таткото
+        teach_letters_mother: Мајката
+        teach_letters_noone: Никој
+        teach_letters_other: Друг
+        teacher_help: "11.7 Доколку вашето дете има проблеми, дали воспитувачите му помагаат на детето да го научи наставниот јазик?"
+        teacher_informs: "11.5 Дали воспитувачите зборуваат со вас и ви даваат корисни информации за вашето дете и како се снаоѓа во градинката?"
+        tell_stories_father: Таткото
+        tell_stories_mother: Мајката
+        tell_stories_noone: Никој
+        tell_stories_other: Друг
+        test_before_school: "11.15 Дали вашето дете направи тест пред да се запише во основно училиште?"
+        test_before_school_other: "Друго:"
+        test_before_school_result: "11.16 Доколку одговорот е ДА, каков беше резултатот?"
+        visited_hospital_during_pregnancy: "8.4 Кога вие бевте бремена пред да ви се роди најмалото дете дали бевте во болница или на лекар за преглед или контрола?"
+        who_is_primary_caregiver: "5.3 Ако тоа НЕ сте вие, кој се грижи за децата?"
+        who_is_primary_caregiver_other: "Друг: (ве молиме наведете)"
+        wished_daugters_education: "7.1 Кога размислувате за иднината на вашата ќерка, каков вид на училиште треба да заврши вашата ќерка?"
+        wished_daugters_education_other: "Друго: (Ве молиме пополнете) "
+        wished_sons_education: "7.2 Кога размислувате за иднината на вашиот син, каков вид на училиште треба да заврши вашиот син?"
+        wished_sons_education_other: "Друго: (Ве молиме пополнете) "
+    errors: 
+      messages: 
+        taken: "е зафатено"
+    models: 
+      ? "Child Profile"
+      : Дете
+      ? "Family Profile"
+      : Cемејство
+  activities: "12.7 Ве молам кажете ми со каква дејност се занимаваат членовите од домаќинството?"
+  book_reading: "9.2 Во последните 3 дена, дали некој член од семејството постар од 15 години читаше или разлистуваше сликовница со детето/децата?"
+  children_below_seven: "11.	Прашања за родителите на деца на возраст од 3 до 7 години "
+  children_below_three: "10.	Прашања за родителите на деца на возраст до 3 години "
+  childs_development_information_source: "9.1 Кога имате одредени прашања за развојот на вашето дете, од каде можете да добиете информации?"
+  date: 
+    abbr_day_names: 
+      - Нед
+      - Пон
+      - Вто
+      - Сре
+      - Чет
+      - Пет
+      - Саб
+    abbr_month_names: 
+      - ~
+      - Јан
+      - Фев
+      - Мар
+      - Апр
+      - Мај
+      - Јун
+      - Јул
+      - Авг
+      - Сеп
+      - Окт
+      - Ное
+      - Дек
+    day_names: 
+      - Недела
+      - Понеделник
+      - Вторник
+      - Среда
+      - Четврток
+      - Петок
+      - Сабота
+    formats: 
+      default: "%d/%m/%Y"
+      long: "%B %e, %Y"
+      short: "%e %b"
+    month_names: 
+      - ~
+      - Јануари
+      - Февруари
+      - Март
+      - Април
+      - Мај
+      - Јуни
+      - Јули
+      - Август
+      - Септември
+      - Октомври
+      - Ноември
+      - Декември
+    order: 
+      - !ruby/symbol day
+      - !ruby/symbol month
+      - !ruby/symbol year
+  datetime: 
+    distance_in_words: 
+      about_x_hours: 
+        few: "околу %{count} часа"
+        one: "околу 1 час"
+        other: "околу %{count} часа"
+      about_x_months: 
+        few: "околу %{count} месеци"
+        one: "околу 1 месец"
+        other: "околу %{count} месеци"
+      about_x_years: 
+        one: "околу 1 година"
+        other: "околу %{count} години"
+      half_a_minute: "пола минута"
+      less_than_x_minutes: 
+        one: "помалку од 1 минута"
+        other: "помалку од %{count} минути"
+        zero: "помалку од минута"
+      less_than_x_seconds: 
+        few: "помалку од %{count} секунди"
+        one: "помалку од 1 секунда"
+        other: "помалку од %{count} секунди"
+        zero: "помалку од секунда"
+      over_x_years: 
+        one: "над 1 година"
+        other: "над %{count} години"
+      x_days: 
+        one: "1 ден"
+        other: "%{count} денови"
+      x_minutes: 
+        one: "1 минута"
+        other: "%{count} минути"
+      x_months: 
+        few: "%{count} месеци"
+        one: "1 месец"
+        other: "%{count} месеци"
+      x_seconds: 
+        few: "%{count} секунди"
+        one: "1 секунда"
+        other: "%{count} секунди"
+    prompts: 
+      day: ден
+      month: месец
+      year: год
+  draw: "9.5 Во последните 3 дена, дали некој член од семејството постар од 15 години црташе со децата?"
+  home_equipment: "12.4 Што од подолу наведеното имате во вашиот дом?"
+  homework: "9.7 Во последните 3 дена, дали некој член од семејството постар од 15 години им помогна со домашната на децата кои одат на училиште?"
+  immunization_information_source: "8.3 Дали некогаш сте добиле информации/ појаснувања за важноста на вакцинирањето? Доколку одговорот е ДА, ве молиме наведете кој ве информирал"
+  number: 
+    currency: 
+      format: 
+        delimiter: ","
+        format: "%n %u"
+        precision: 2
+        separator: "."
+        significant: 0
+        strip_insignificant_zeros: 0
+        unit: MKD
+    format: 
+      delimiter: "."
+      precision: 3
+      separator: ","
+      significant: 0
+      strip_insignificant_zeros: 0
+    human: 
+      decimal_units: 
+        units: 
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+      format: 
+        precision: 3
+        significant: 1
+        strip_insignificant_zeros: 1
+      storage_units: 
+        units: 
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+  play: "9.4 Во последните 3 дена, дали некој член од семејството постар од 15 години играше со децата?"
+  reason_for_creche: "10.1 Ве молиме наведете ги трите најважни причини зошто вашето дете/деца одат во јасли/ градинка или друга програма во заедницата."
+  reason_for_kindergarten: "11.1 Зошто вашето дете оди во градинка? Ве молиме наведете ги трите најважни причини за тоа."
+  reason_not_attend: "10.3 Кои се главните причини зошто вашето дете НЕ оди во јасли/ градинка/ општинскиот центар?"
+  reason_not_enrolled: "11.8 Ве молиме да ни ги кажете главните 3 причини зошто вашето дете сè уште не е запишано во основно училиште и НЕ оди во градинка."
+  schools: "12.1 Каков вид на училиште завршиле родителите/ примарниот негувател на децата?"
+  support: 
+    array: 
+      last_word_connector: ", and"
+      two_words_connector: and
+      words_connector: ","
+  teach_letters: "9.6 Во последните 3 дена, дали некој член од семејството постар од 15 години ги учеше децата буквите или да бројат?"
+  tell_stories: "9.3 Во последните 3 дена, дали некој член од семејството постар од 15 години им раскажуваше приказни на децата?"
+  time: 
+    am: АМ
+    formats: 
+      default: "%a %b %d %H:%M:%S %Z %Y"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: ПМ

@@ -1,0 +1,17 @@
+%h1 Listing attendance_results
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @attendance_results.each do |attendance_result|
+    %tr
+      %td= link_to 'Show', attendance_result
+      %td= link_to 'Edit', edit_attendance_result_path(attendance_result)
+      %td= link_to 'Destroy', attendance_result, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Attendance result', new_attendance_result_path

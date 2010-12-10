@@ -1,0 +1,11 @@
+#steps
+  - semantic_form_for @family_profile do |f|
+    = f.error_messages
+    - f.inputs t("Family Profile"), :id => "family_profile", :class => 'step' do
+      = f.input :family_name
+      = f.input :fathers_age, :input_html => { :size => 2 }
+      = f.input :mothers_age, :input_html => { :size => 2 }
+      = f.input :number_of_children, :input_html => { :size => 2 }
+      = f.input :number_of_children_below_seven, :input_html => { :size => 2 }
+      = f.input :household_in_settlement, :as => :radio
+      = f.buttons

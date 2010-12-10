@@ -1,0 +1,12 @@
+%h1= t("New Survey")
+
+- if params[:step]=='1'
+  = render 'form_1'
+- elsif !@survey.errors.blank?
+  = render 'form_1'
+- else
+  = render 'form'
+  
+
+.commit
+  = link_to t('Back'), surveys_path

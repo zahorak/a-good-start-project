@@ -1,0 +1,647 @@
+/* Welcome to Susy. Use this file to define screen styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" /> */
+/* Reset --------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+
+q, blockquote {
+  quotes: "" "";
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+
+a img {
+  border: none;
+}
+
+/* HTML5 Reset --------------------------------------------------------------*/
+
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block;
+}
+
+/* Body --------------------------------------------------------------*/
+
+body {
+  font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
+  color: #4c4c4c;
+}
+
+/* Links --------------------------------------------------------------*/
+
+a:link, a:visited {
+  color: #005498;
+}
+
+a:focus, a:hover, a:active {
+  color: #00467f;
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+/* Headings --------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+
+h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  margin-bottom: 1.333em;
+}
+
+
+h5, h6 {
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+/* Text --------------------------------------------------------------*/
+
+cite, em, dfn {
+  font-style: italic;
+}
+
+
+strong, dfn {
+  font-weight: bold;
+}
+
+
+sup, sub {
+  line-height: 0;
+}
+
+
+abbr, acronym {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+
+address {
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+
+
+ins {
+  text-decoration: underline;
+}
+
+
+del {
+  text-decoration: line-through;
+}
+
+
+pre, code, tt {
+  margin: 1.5em;
+  margin-left: -1.5em;
+  padding-left: 1.5em;
+  border-left: 1px dotted;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+
+pre {
+  white-space: pre;
+}
+
+
+code {
+  display: block;
+}
+
+
+q {
+  font-style: italic;
+}
+
+q em {
+  font-style: normal;
+}
+
+
+p {
+  margin-bottom: 1.5em;
+}
+
+
+blockquote, q {
+  quotes: "" "";
+}
+
+
+blockquote {
+  margin: 1.5em;
+  margin-left: -1.5em;
+  padding-left: 1.5em;
+  border-left: 1px solid;
+  font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
+  font-style: italic;
+}
+
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* Replaced --------------------------------------------------------------*/
+
+img {
+  vertical-align: bottom;
+}
+
+/* Lists --------------------------------------------------------------*/
+
+ol {
+  margin: 0 1.5em 1.5em 0;
+  list-style: decimal;
+}
+
+
+ul {
+  margin: 0 1.5em 1.5em 0;
+  list-style: disc;
+}
+
+
+li ul, li ol {
+  list-style-type: circle;
+  margin: 0 1.5em 0.75em;
+}
+
+
+dl {
+  margin-bottom: 1.5em;
+  border-top-style: solid;
+  border-top-width: 0.063em;
+  padding-top: 1.438em;
+}
+
+dl dt {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  margin-bottom: 0.667em;
+}
+
+
+dd {
+  margin-bottom: 1.5em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.063em;
+  padding-bottom: 1.438em;
+}
+
+/* Tables --------------------------------------------------------------*/
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+  margin-bottom: 1.5em;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+table, td, th {
+  vertical-align: top;
+}
+
+
+th, thead th {
+  font-weight: bold;
+}
+
+
+th, td, caption {
+  padding: 0.75em;
+  text-align: left;
+  font-weight: normal;
+}
+
+
+th, td {
+  border-bottom-style: solid;
+  border-bottom-width: 0.063em;
+  padding-bottom: 0.688em;
+}
+
+
+tfoot {
+  font-size: 0.875em;
+  line-height: 1.714em;
+}
+
+
+caption {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+/* Forms --------------------------------------------------------------*/
+
+fieldset {
+  margin-bottom: 1.5em;
+  border-style: solid;
+  border-width: 0.063em;
+  padding: 1.438em;
+}
+
+
+legend {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  font-weight: bold;
+}
+
+
+label {
+  font-weight: bold;
+}
+
+
+textarea, input:not([type="radio"]) {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Layout --------------------------------------------------------------*/
+
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+
+html > body {
+  font-size: 16px;
+}
+
+
+body {
+  text-align: center;
+}
+
+
+#page {
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 61em;
+  max-width: 100%;
+}
+
+#page {
+  display: block;
+}
+
+/* Styles --------------------------------------------------------------*/
+
+form.formtastic {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+  /* SEMANTIC ERRORS
+  --------------------------------------------------------------------------------------------------*/
+  /* FIELDSETS & LISTS
+  --------------------------------------------------------------------------------------------------*/
+}
+
+form.formtastic html, form.formtastic body, form.formtastic div, form.formtastic span, form.formtastic applet, form.formtastic object, form.formtastic iframe,
+form.formtastic h1, form.formtastic h2, form.formtastic h3, form.formtastic h4, form.formtastic h5, form.formtastic h6, form.formtastic p, form.formtastic blockquote, form.formtastic pre,
+form.formtastic a, form.formtastic abbr, form.formtastic acronym, form.formtastic address, form.formtastic big, form.formtastic cite, form.formtastic code,
+form.formtastic del, form.formtastic dfn, form.formtastic em, form.formtastic font, form.formtastic img, form.formtastic ins, form.formtastic kbd, form.formtastic q, form.formtastic s, form.formtastic samp,
+form.formtastic small, form.formtastic strike, form.formtastic strong, form.formtastic sub, form.formtastic sup, form.formtastic tt, form.formtastic var,
+form.formtastic dl, form.formtastic dt, form.formtastic dd, form.formtastic ol, form.formtastic ul, form.formtastic li,
+form.formtastic fieldset, form.formtastic form, form.formtastic label, form.formtastic legend,
+form.formtastic table, form.formtastic caption, form.formtastic tbody, form.formtastic tfoot, form.formtastic thead, form.formtastic tr, form.formtastic th, form.formtastic td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+form.formtastic body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+form.formtastic ol, form.formtastic ul {
+  list-style: none;
+}
+
+form.formtastic table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+form.formtastic caption, form.formtastic th, form.formtastic td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+form.formtastic q, form.formtastic blockquote {
+  quotes: "" "";
+}
+
+form.formtastic q:before, form.formtastic q:after, form.formtastic blockquote:before, form.formtastic blockquote:after {
+  content: "";
+}
+
+form.formtastic a img {
+  border: none;
+}
+
+form.formtastic input {
+  width: auto;
+}
+
+form.formtastic ul.errors {
+  color: #cc0000;
+  margin: 0.5em 0 1.5em 25.424%;
+  list-style: square;
+}
+
+form.formtastic ul.errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+}
+
+form.formtastic fieldset {
+  overflow: hidden;
+  display: inline-block;
+  /* INPUT LIs
+  --------------------------------------------------------------------------------------------------*/
+}
+
+form.formtastic fieldset.buttons {
+  padding-left: 25.424%;
+}
+
+form.formtastic fieldset.buttons li {
+  float: left;
+  padding-right: 0.5em;
+}
+
+form.formtastic fieldset {
+  display: block;
+}
+
+form.formtastic fieldset > ol > li {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  /* LABELS
+  --------------------------------------------------------------------------------------------------*/
+  /* NESTED FIELDSETS AND LEGENDS (radio, check boxes and date/time inputs use nested fieldsets)
+  --------------------------------------------------------------------------------------------------*/
+  /* INLINE HINTS
+  --------------------------------------------------------------------------------------------------*/
+  /* INLINE ERRORS
+  --------------------------------------------------------------------------------------------------*/
+  /* STRING, PASSWORD & NUMERIC OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* TEXTAREA OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* HIDDEN OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* BOOLEAN OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* RADIO AND CHECKBOX OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* DATE & TIME OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+}
+
+form.formtastic fieldset > ol > li {
+  display: block;
+}
+
+form.formtastic fieldset > ol > li label {
+  display: block;
+  width: 23.729%;
+  margin-right: 1.639%;
+  float: left;
+}
+
+form.formtastic fieldset > ol > li > li label {
+  line-height: 100%;
+  padding-top: 0;
+}
+
+form.formtastic fieldset > ol > li > li label input {
+  line-height: 100%;
+  vertical-align: middle;
+  margin-top: -0.1em;
+}
+
+form.formtastic fieldset > ol > li fieldset {
+  position: relative;
+}
+
+form.formtastic fieldset > ol > li fieldset legend {
+  position: absolute;
+  width: 95%;
+  padding-top: 0.1em;
+  left: 0px;
+}
+
+form.formtastic fieldset > ol > li fieldset legend span {
+  position: absolute;
+}
+
+form.formtastic fieldset > ol > li fieldset legend.label label {
+  position: absolute;
+}
+
+form.formtastic fieldset > ol > li fieldset ol {
+  float: left;
+  width: 74.576%;
+  margin: 0;
+  padding: 0 0 0 25.424%;
+}
+
+form.formtastic fieldset > ol > li fieldset ol li {
+  padding: 0;
+  border: 0;
+}
+
+form.formtastic fieldset > ol > li p.inline-hints {
+  color: #666666;
+  margin-left: 25.424%;
+}
+
+form.formtastic fieldset > ol > li p.inline-errors {
+  color: #cc0000;
+  margin-left: 25.424%;
+}
+
+form.formtastic fieldset > ol > li ul.errors {
+  color: #cc0000;
+  margin: 0.5em 0 0 25.424%;
+  list-style: square;
+}
+
+form.formtastic fieldset > ol > li ul.errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+}
+
+form.formtastic fieldset > ol > li.string input, form.formtastic fieldset > ol > li.password input, form.formtastic fieldset > ol > li.numeric input {
+  max-width: 74.576%;
+}
+
+form.formtastic fieldset > ol > li.text textarea {
+  width: 74.576%;
+  line-height: 24px;
+  height: 477px;
+  padding: 2px;
+}
+
+form.formtastic fieldset > ol > li.hidden {
+  display: none;
+}
+
+form.formtastic fieldset > ol > li.boolean label {
+  padding-left: 25.424%;
+  width: auto;
+}
+
+form.formtastic fieldset > ol > li.boolean label input {
+  margin: 0 0.5em 0 0.2em;
+}
+
+form.formtastic fieldset > ol > li.radio fieldset ol li, form.formtastic fieldset > ol > li.check_boxes fieldset ol li {
+  margin-bottom: 0;
+}
+
+form.formtastic fieldset > ol > li.radio fieldset ol li label, form.formtastic fieldset > ol > li.check_boxes fieldset ol li label {
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+
+form.formtastic fieldset > ol > li.radio fieldset ol li label input, form.formtastic fieldset > ol > li.check_boxes fieldset ol li label input {
+  margin-right: 0.2em;
+}
+
+form.formtastic fieldset > ol > li.date fieldset ol li, form.formtastic fieldset > ol > li.time fieldset ol li, form.formtastic fieldset > ol > li.datetime fieldset ol li {
+  float: left;
+  width: auto;
+  margin: 0 .3em 0 0;
+}
+
+form.formtastic fieldset > ol > li.date fieldset ol li label, form.formtastic fieldset > ol > li.time fieldset ol li label, form.formtastic fieldset > ol > li.datetime fieldset ol li label {
+  display: none;
+}
+
+form.formtastic fieldset > ol > li.date fieldset ol li label input, form.formtastic fieldset > ol > li.time fieldset ol li label input, form.formtastic fieldset > ol > li.datetime fieldset ol li label input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}

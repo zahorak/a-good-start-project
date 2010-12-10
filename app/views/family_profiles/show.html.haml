@@ -1,0 +1,38 @@
+.show
+  - title t("Family")
+
+  %p
+    %strong t('Survey:')
+    = @family_profile.survey_id
+  %p
+    %strong t('Created By:')
+    = @family_profile.created_by
+  %p
+    %strong t('Family Name:')
+    = @family_profile.family_name
+  %p
+    %strong t('Fathers Age:')
+    = @family_profile.fathers_age
+  %p
+    %strong t('Mothers Age:')
+    = @family_profile.mothers_age
+  %p
+    %strong t('Number Of Children:')
+    = @family_profile.number_of_children
+  %p
+    %strong t('Number Of Children Below Seven:')
+    = @family_profile.number_of_children_below_seven
+  %p
+    %strong t('Household In Settlement:')
+    = @family_profile.household_in_settlement
+  %p
+    %strong t('Comment:')
+    = @family_profile.comment
+
+  .commit
+    %p
+      = link_to t("Edit"), edit_family_profile_path(@family_profile)
+      |
+      = link_to t("Delete"), @family_profile, :confirm => t('Are you sure?'), :method => :delete
+      |
+      = link_to t("View All"), family_profiles_path

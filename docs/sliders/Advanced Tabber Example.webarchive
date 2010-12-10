@@ -1,0 +1,801 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+_WebResourceData_WebResourceMIMEType^WebResourceURL_WebResourceFrameName_WebResourceTextEncodingNameO"<!-- $Id: example2.html,v 1.8 2006/04/10 05:05:28 pat Exp $ --><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Advanced Tabber Example</title>
+
+<link rel="stylesheet" href="example.css" type="text/css" media="screen">
+<link rel="stylesheet" href="example-print.css" type="text/css" media="print">
+
+<script type="text/javascript">
+
+/* Optional: Temporarily hide the "tabber" class so it does not "flash"
+   on the page as plain HTML. After tabber runs, the class is changed
+   to "tabberlive" and it will appear.
+*/
+document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+
+var tabberOptions = {
+
+  /* Optional: instead of letting tabber run during the onload event,
+     we'll start it up manually. This can be useful because the onload
+     even runs after all the images have finished loading, and we can
+     run tabber at the bottom of our page to start it up faster. See the
+     bottom of this page for more info. Note: this variable must be set
+     BEFORE you include tabber.js.
+  */
+  'manualStartup':true,
+
+  /* Optional: code to run after each tabber object has initialized */
+
+  'onLoad': function(argsObj) {
+    /* Display an alert only after tab2 */
+    if (argsObj.tabber.id == 'tab2') {
+      alert('Finished loading tab2!');
+    }
+  },
+
+  /* Optional: code to run when the user clicks a tab. If this
+     function returns boolean false then the tab will not be changed
+     (the click is canceled). If you do not return a value or return
+     something that is not boolean false, */
+
+  'onClick': function(argsObj) {
+
+    var t = argsObj.tabber; /* Tabber object */
+    var id = t.id; /* ID of the main tabber DIV */
+    var i = argsObj.index; /* Which tab was clicked (0 is the first tab) */
+    var e = argsObj.event; /* Event object */
+
+    if (id == 'tab2') {
+      return confirm('Swtich to '+t.tabs[i].headingText+'?\nEvent type: '+e.type);
+    }
+  },
+
+  /* Optional: set an ID for each tab navigation link */
+  'addLinkId': true
+
+};
+
+</script><style type="text/css">.tabber{display:none;}</style>
+
+<!-- Load the tabber code -->
+<script type="text/javascript" src="tabber.js"></script>
+
+</head><body>
+
+<h1>Advanced Tabber Example</h1>
+
+<p>â† <a href="http://www.barelyfitz.com/projects/tabber/">Tabber Home</a></p>
+
+<p>In the following example, the height is not constrained, so the page jumps around when a new tab is selected. "Tab 2" contains a nested tabber.</p>
+
+<div class="tabberlive" id="tab1"><ul class="tabbernav"><li class=""><a href="javascript:void(null);" title="Tab 1" id="tab1nav1">Tab 1</a></li><li class="tabberactive"><a href="javascript:void(null);" title="Tab 2" id="tab1nav2">Tab 2</a></li><li class=""><a href="javascript:void(null);" title="Tab 3" id="tab1nav3">Tab 3</a></li></ul>
+
+  <div class="tabbertab  tabbertabhide" title="">
+    <h2><a name="tab1">Tab <em>1</em></a></h2>
+    <p>Tab 1 content.</p>
+  </div>
+
+  <div class="tabbertab " title="">
+    <h2>Tab 2</h2>
+    <p>Tab 2 content. A nested tabber:</p>
+
+    <div class="tabberlive" id="tab1-1"><ul class="tabbernav"><li class=""><a href="javascript:void(null);" title="Tab 2-1" id="tab1-1nav1">Tab 2-1</a></li><li class=""><a href="javascript:void(null);" title="Tab 2-2" id="tab1-1nav2">Tab 2-2</a></li><li class="tabberactive"><a href="javascript:void(null);" title="Tab 2-3" id="tab1-1nav3">Tab 2-3</a></li></ul>
+
+      <div class="tabbertab  tabbertabhide" title="">
+        <h3>Tab 2-1</h3>
+        <p>Tab 2-1 content.</p>
+      </div>
+
+      <div class="tabbertab  tabbertabhide" title="">
+        <h3>Tab 2-2</h3>
+        <p>Tab 2-2 content.</p>
+      </div>
+
+      <div class="tabbertab " title="">
+        <h3>Tab 2-3</h3>
+        <p>Tab 2-3 content.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabbertab tabbertabhide" title="">
+    <h2>Tab 3</h2>
+    <p>Tab 3 content.</p>
+  </div>
+</div>
+
+<p>In the following example, "Tab 2" should be selected automatically. In addition, there is an onclick function attached to the tabs so you can confirm each click.</p>
+
+
+<div class="tabberlive" id="tab2"><ul class="tabbernav"><li class=""><a href="javascript:void(null);" title="Tab 1" id="tab2nav1">Tab 1</a></li><li class=""><a href="javascript:void(null);" title="Tab 2" id="tab2nav2">Tab 2</a></li><li class="tabberactive"><a href="javascript:void(null);" title="Tab 3 Title Override" id="tab2nav3">Tab 3 Title Override</a></li></ul>
+
+  <div class="tabbertab tabbertabhide" title="">
+    <h2>Tab 1</h2>
+    <p>Tab 1 content.</p>
+  </div>
+
+  <div class="tabbertab tabbertabdefault  tabbertabhide" title="">
+    <h2>Tab 2</h2>
+    <p>Long content to show the scrollbar to the right.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras nonummy lorem quis neque. Etiam molestie auctor ante. Fusce in enim. Suspendisse at ipsum. Praesent eget odio vitae lorem consectetuer euismod. Mauris vel risus eget arcu congue sodales. Mauris adipiscing viverra ante. Cras pharetra augue sit amet enim. Pellentesque ac sem. Nullam pulvinar convallis orci. In tristique accumsan enim. Nam venenatis suscipit lorem. Nam ut dui sit amet libero egestas facilisis. Aliquam elementum lectus sed ipsum tincidunt aliquet. Pellentesque nec nunc at metus malesuada hendrerit. Suspendisse magna. Aliquam odio augue, eleifend non, euismod nec, molestie quis, pede. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+    <p>In hac habitasse platea dictumst. Aenean suscipit nisl. In mollis consequat purus. Integer scelerisque. Nullam imperdiet sapien nec lectus. Praesent in orci. Donec magna magna, posuere at, auctor in, sagittis nec, mi. Morbi volutpat, magna pharetra scelerisque lacinia, est erat ultricies neque, nec convallis lorem lorem ut dolor. Proin ac nunc eget nibh pulvinar gravida. Sed pretium, sem ac suscipit imperdiet, mauris ligula dictum nulla, pulvinar interdum pede urna vel magna. In lectus. In sed odio. Quisque eros ligula, placerat nec, tincidunt in, ullamcorper sed, lectus. Nam aliquet orci eget ante. Aliquam aliquet mattis pede. Mauris eleifend nibh vel nunc.</p>
+
+    <p>Sed mi lacus, sodales ac, lacinia nec, rutrum sodales, dolor. Morbi convallis molestie enim. Aenean tristique justo. Nullam erat ante, tempor a, suscipit ut, luctus vitae, erat. Proin fermentum. Etiam id erat ut est scelerisque volutpat. Praesent gravida libero vitae sapien. Donec vel elit. In non enim nec quam rutrum sollicitudin. Suspendisse tincidunt adipiscing ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam vel nulla non augue varius pretium. Integer vestibulum enim vel tortor.</p>
+
+    <p>Nulla at massa. Vivamus turpis urna, ultrices eget, auctor ullamcorper, ultricies quis, urna. Proin lobortis tincidunt orci. Duis quam neque, mattis vel, rutrum vitae, porttitor id, libero. Vestibulum sagittis lorem eget pede. Curabitur dignissim, nisi sit amet porttitor dignissim, quam felis condimentum arcu, eget facilisis metus lacus in quam. Nulla semper. In hac habitasse platea dictumst. Aenean luctus diam. Aenean consequat massa quis nisi.</p>
+
+    <p>Curabitur quam odio, ornare vel, hendrerit ac, sagittis mattis, ipsum. Fusce accumsan, dolor ac suscipit gravida, tortor nibh cursus ligula, at posuere orci arcu euismod ipsum. Nunc iaculis, turpis quis mattis imperdiet, nibh sapien venenatis nulla, id ornare tortor nunc in risus. Morbi lacinia mollis nulla. Donec tempus vestibulum diam. Praesent aliquet metus non orci. Nulla dictum pulvinar sem. Proin mi. Maecenas pharetra enim eget elit. Ut interdum libero ac est. Phasellus accumsan. Praesent vulputate vehicula elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla pretium diam non felis. Aenean at nisl. Proin rutrum tempus mauris. In metus ante, congue eu, vestibulum in, tincidunt sit amet, tortor. Suspendisse non enim eget elit imperdiet fringilla. Pellentesque odio erat, consequat vitae, euismod nec, congue sed, lectus. Praesent tempor urna.</p>
+    </div>
+
+    <div class="tabbertab " title="">
+      <h2>Tab 3</h2>
+      <p>The name of this tab is taken from the TITLE attribute instead of from the H2 element, then the TITLE attribute is erased so it does not cause a mouseover tooltip over the content area.</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+/* Since we specified manualStartup=true, tabber will not run after
+   the onload event. Instead let's run it now, to prevent any delay
+   while images load.
+*/
+
+tabberAutomatic(tabberOptions);
+
+</script>
+
+
+
+</body></html>Ytext/html_7http://www.barelyfitz.com/projects/tabber/example2.htmlPUUTF-8¤Ô_WebResourceResponseO	—/* $Id: example.css,v 1.5 2006/03/27 02:44:36 pat Exp $ */
+
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+}
+.tabberlive {
+ margin-top:1em;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav
+{
+ margin:0;
+ padding: 3px 0;
+ border-bottom: 1px solid #778;
+ font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernav li
+{
+ list-style: none;
+ margin: 0;
+ display: inline;
+}
+
+ul.tabbernav li a
+{
+ padding: 3px 0.5em;
+ margin-left: 3px;
+ border: 1px solid #778;
+ border-bottom: none;
+ background: #DDE;
+ text-decoration: none;
+}
+
+ul.tabbernav li a:link { color: #448; }
+ul.tabbernav li a:visited { color: #667; }
+
+ul.tabbernav li a:hover
+{
+ color: #000;
+ background: #AAE;
+ border-color: #227;
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background-color: #fff;
+ border-bottom: 1px solid #fff;
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+ color: #000;
+ background: white;
+ border-bottom: 1px solid white;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+ padding:5px;
+ border:1px solid #aaa;
+ border-top:0;
+
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+ display:none;
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tab1 {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+ height:200px;
+ overflow:auto;
+}
+Xtext/cssO)bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\`aU$nullÝ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _5http://www.barelyfitz.com/projects/tabber/example.cssÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A²‘Ðè…ÈÓ3456@WNS.keysZNS.objects€©789:;<=>?€	€
+€€€€€€€©ABCDEFGHI€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-LengthTEtagZKeep-AliveVApacheUbytesZKeep-AliveXtext/css_Mon, 15 Nov 2010 20:30:57 GMT_Thu, 27 Apr 2006 21:08:08 GMTT2455_"120c41e-997-445132b8"_timeout=3, max=100Ò*+]^_NSMutableDictionary£]_/\NSDictionary	—Ò*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 X ^ y | € ƒ † ‰   — š    £ ¦ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ Å Ñ Ù Û Ý ß'069?HQSZbmoy{}ƒ…‡‰‹•—™›Ÿ¡£¥§®¼ÇÔÙçöû'Ggl…šŸµ¹ÆÉÎâæú3             j              5_5http://www.barelyfitz.com/projects/tabber/example.cssÔO¼/* $Id: example-print.css,v 1.2 2006/03/06 04:11:55 pat Exp $ */
+/* When printing, hide the tab navigation list
+   and don't use any other styles
+*/
+
+.tabbernav {
+ display:none;
+}
+Xtext/cssO,bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\`aU$nullÝ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _;http://www.barelyfitz.com/projects/tabber/example-print.cssÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A²‘ÐïÎ…ÈÓ3456@WNS.keysZNS.objects€©789:;<=>?€	€
+€€€€€€€©ABCDEFGHI€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-LengthTEtagZKeep-AliveVApacheUbytesZKeep-AliveXtext/css_Mon, 15 Nov 2010 20:30:57 GMT_Mon, 06 Mar 2006 06:51:44 GMTS188_"120c33d-bc-440bdc00"_timeout=3, max=100Ò*+]^_NSMutableDictionary£]_/\NSDictionary¼Ò*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 X ^ y | € ƒ † ‰   — š    £ ¦ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ Å Ñ Ù Û Ý ß"-6<?ENWY`hsuƒ…‡‰‹‘›Ÿ¡£¥§©«­´ÂÍÚßíü$-Mmq‰ž£¹½ÊÌÑåéý 6             j              8_;http://www.barelyfitz.com/projects/tabber/example-print.cssÔO>§/*==================================================
+  $Id: tabber.js,v 1.9 2006/04/27 20:51:51 pat Exp $
+  tabber.js by Patrick Fitzgerald pat@barelyfitz.com
+
+  Documentation can be found at the following URL:
+  http://www.barelyfitz.com/projects/tabber/
+
+  License (http://www.opensource.org/licenses/mit-license.php)
+
+  Copyright (c) 2006 Patrick Fitzgerald
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+  ==================================================*/
+
+function tabberObj(argsObj)
+{
+  var arg; /* name of an argument to override */
+
+  /* Element for the main tabber div. If you supply this in argsObj,
+     then the init() method will be called.
+  */
+  this.div = null;
+
+  /* Class of the main tabber div */
+  this.classMain = "tabber";
+
+  /* Rename classMain to classMainLive after tabifying
+     (so a different style can be applied)
+  */
+  this.classMainLive = "tabberlive";
+
+  /* Class of each DIV that contains a tab */
+  this.classTab = "tabbertab";
+
+  /* Class to indicate which tab should be active on startup */
+  this.classTabDefault = "tabbertabdefault";
+
+  /* Class for the navigation UL */
+  this.classNav = "tabbernav";
+
+  /* When a tab is to be hidden, instead of setting display='none', we
+     set the class of the div to classTabHide. In your screen
+     stylesheet you should set classTabHide to display:none.  In your
+     print stylesheet you should set display:block to ensure that all
+     the information is printed.
+  */
+  this.classTabHide = "tabbertabhide";
+
+  /* Class to set the navigation LI when the tab is active, so you can
+     use a different style on the active tab.
+  */
+  this.classNavActive = "tabberactive";
+
+  /* Elements that might contain the title for the tab, only used if a
+     title is not specified in the TITLE attribute of DIV classTab.
+  */
+  this.titleElements = ['h2','h3','h4','h5','h6'];
+
+  /* Should we strip out the HTML from the innerHTML of the title elements?
+     This should usually be true.
+  */
+  this.titleElementsStripHTML = true;
+
+  /* If the user specified the tab names using a TITLE attribute on
+     the DIV, then the browser will display a tooltip whenever the
+     mouse is over the DIV. To prevent this tooltip, we can remove the
+     TITLE attribute after getting the tab name.
+  */
+  this.removeTitle = true;
+
+  /* If you want to add an id to each link set this to true */
+  this.addLinkId = false;
+
+  /* If addIds==true, then you can set a format for the ids.
+     <tabberid> will be replaced with the id of the main tabber div.
+     <tabnumberzero> will be replaced with the tab number
+       (tab numbers starting at zero)
+     <tabnumberone> will be replaced with the tab number
+       (tab numbers starting at one)
+     <tabtitle> will be replaced by the tab title
+       (with all non-alphanumeric characters removed)
+   */
+  this.linkIdFormat = '<tabberid>nav<tabnumberone>';
+
+  /* You can override the defaults listed above by passing in an object:
+     var mytab = new tabber({property:value,property:value});
+  */
+  for (arg in argsObj) { this[arg] = argsObj[arg]; }
+
+  /* Create regular expressions for the class names; Note: if you
+     change the class names after a new object is created you must
+     also change these regular expressions.
+  */
+  this.REclassMain = new RegExp('\\b' + this.classMain + '\\b', 'gi');
+  this.REclassMainLive = new RegExp('\\b' + this.classMainLive + '\\b', 'gi');
+  this.REclassTab = new RegExp('\\b' + this.classTab + '\\b', 'gi');
+  this.REclassTabDefault = new RegExp('\\b' + this.classTabDefault + '\\b', 'gi');
+  this.REclassTabHide = new RegExp('\\b' + this.classTabHide + '\\b', 'gi');
+
+  /* Array of objects holding info about each tab */
+  this.tabs = new Array();
+
+  /* If the main tabber div was specified, call init() now */
+  if (this.div) {
+
+    this.init(this.div);
+
+    /* We don't need the main div anymore, and to prevent a memory leak
+       in IE, we must remove the circular reference between the div
+       and the tabber object. */
+    this.div = null;
+  }
+}
+
+
+/*--------------------------------------------------
+  Methods for tabberObj
+  --------------------------------------------------*/
+
+
+tabberObj.prototype.init = function(e)
+{
+  /* Set up the tabber interface.
+
+     e = element (the main containing div)
+
+     Example:
+     init(document.getElementById('mytabberdiv'))
+   */
+
+  var
+  childNodes, /* child nodes of the tabber div */
+  i, i2, /* loop indices */
+  t, /* object to store info about a single tab */
+  defaultTab=0, /* which tab to select by default */
+  DOM_ul, /* tabbernav list */
+  DOM_li, /* tabbernav list item */
+  DOM_a, /* tabbernav link */
+  aId, /* A unique id for DOM_a */
+  headingElement; /* searching for text to use in the tab */
+
+  /* Verify that the browser supports DOM scripting */
+  if (!document.getElementsByTagName) { return false; }
+
+  /* If the main DIV has an ID then save it. */
+  if (e.id) {
+    this.id = e.id;
+  }
+
+  /* Clear the tabs array (but it should normally be empty) */
+  this.tabs.length = 0;
+
+  /* Loop through an array of all the child nodes within our tabber element. */
+  childNodes = e.childNodes;
+  for(i=0; i < childNodes.length; i++) {
+
+    /* Find the nodes where class="tabbertab" */
+    if(childNodes[i].className &&
+       childNodes[i].className.match(this.REclassTab)) {
+      
+      /* Create a new object to save info about this tab */
+      t = new Object();
+      
+      /* Save a pointer to the div for this tab */
+      t.div = childNodes[i];
+      
+      /* Add the new object to the array of tabs */
+      this.tabs[this.tabs.length] = t;
+
+      /* If the class name contains classTabDefault,
+	 then select this tab by default.
+      */
+      if (childNodes[i].className.match(this.REclassTabDefault)) {
+	defaultTab = this.tabs.length-1;
+      }
+    }
+  }
+
+  /* Create a new UL list to hold the tab headings */
+  DOM_ul = document.createElement("ul");
+  DOM_ul.className = this.classNav;
+  
+  /* Loop through each tab we found */
+  for (i=0; i < this.tabs.length; i++) {
+
+    t = this.tabs[i];
+
+    /* Get the label to use for this tab:
+       From the title attribute on the DIV,
+       Or from one of the this.titleElements[] elements,
+       Or use an automatically generated number.
+     */
+    t.headingText = t.div.title;
+
+    /* Remove the title attribute to prevent a tooltip from appearing */
+    if (this.removeTitle) { t.div.title = ''; }
+
+    if (!t.headingText) {
+
+      /* Title was not defined in the title of the DIV,
+	 So try to get the title from an element within the DIV.
+	 Go through the list of elements in this.titleElements
+	 (typically heading elements ['h2','h3','h4'])
+      */
+      for (i2=0; i2<this.titleElements.length; i2++) {
+	headingElement = t.div.getElementsByTagName(this.titleElements[i2])[0];
+	if (headingElement) {
+	  t.headingText = headingElement.innerHTML;
+	  if (this.titleElementsStripHTML) {
+	    t.headingText.replace(/<br>/gi," ");
+	    t.headingText = t.headingText.replace(/<[^>]+>/g,"");
+	  }
+	  break;
+	}
+      }
+    }
+
+    if (!t.headingText) {
+      /* Title was not found (or is blank) so automatically generate a
+         number for the tab.
+      */
+      t.headingText = i + 1;
+    }
+
+    /* Create a list element for the tab */
+    DOM_li = document.createElement("li");
+
+    /* Save a reference to this list item so we can later change it to
+       the "active" class */
+    t.li = DOM_li;
+
+    /* Create a link to activate the tab */
+    DOM_a = document.createElement("a");
+    DOM_a.appendChild(document.createTextNode(t.headingText));
+    DOM_a.href = "javascript:void(null);";
+    DOM_a.title = t.headingText;
+    DOM_a.onclick = this.navClick;
+
+    /* Add some properties to the link so we can identify which tab
+       was clicked. Later the navClick method will need this.
+    */
+    DOM_a.tabber = this;
+    DOM_a.tabberIndex = i;
+
+    /* Do we need to add an id to DOM_a? */
+    if (this.addLinkId && this.linkIdFormat) {
+
+      /* Determine the id name */
+      aId = this.linkIdFormat;
+      aId = aId.replace(/<tabberid>/gi, this.id);
+      aId = aId.replace(/<tabnumberzero>/gi, i);
+      aId = aId.replace(/<tabnumberone>/gi, i+1);
+      aId = aId.replace(/<tabtitle>/gi, t.headingText.replace(/[^a-zA-Z0-9\-]/gi, ''));
+
+      DOM_a.id = aId;
+    }
+
+    /* Add the link to the list element */
+    DOM_li.appendChild(DOM_a);
+
+    /* Add the list element to the list */
+    DOM_ul.appendChild(DOM_li);
+  }
+
+  /* Add the UL list to the beginning of the tabber div */
+  e.insertBefore(DOM_ul, e.firstChild);
+
+  /* Make the tabber div "live" so different CSS can be applied */
+  e.className = e.className.replace(this.REclassMain, this.classMainLive);
+
+  /* Activate the default tab, and do not call the onclick handler */
+  this.tabShow(defaultTab);
+
+  /* If the user specified an onLoad function, call it now. */
+  if (typeof this.onLoad == 'function') {
+    this.onLoad({tabber:this});
+  }
+
+  return this;
+};
+
+
+tabberObj.prototype.navClick = function(event)
+{
+  /* This method should only be called by the onClick event of an <A>
+     element, in which case we will determine which tab was clicked by
+     examining a property that we previously attached to the <A>
+     element.
+
+     Since this was triggered from an onClick event, the variable
+     "this" refers to the <A> element that triggered the onClick
+     event (and not to the tabberObj).
+
+     When tabberObj was initialized, we added some extra properties
+     to the <A> element, for the purpose of retrieving them now. Get
+     the tabberObj object, plus the tab number that was clicked.
+  */
+
+  var
+  rVal, /* Return value from the user onclick function */
+  a, /* element that triggered the onclick event */
+  self, /* the tabber object */
+  tabberIndex, /* index of the tab that triggered the event */
+  onClickArgs; /* args to send the onclick function */
+
+  a = this;
+  if (!a.tabber) { return false; }
+
+  self = a.tabber;
+  tabberIndex = a.tabberIndex;
+
+  /* Remove focus from the link because it looks ugly.
+     I don't know if this is a good idea...
+  */
+  a.blur();
+
+  /* If the user specified an onClick function, call it now.
+     If the function returns false then do not continue.
+  */
+  if (typeof self.onClick == 'function') {
+
+    onClickArgs = {'tabber':self, 'index':tabberIndex, 'event':event};
+
+    /* IE uses a different way to access the event object */
+    if (!event) { onClickArgs.event = window.event; }
+
+    rVal = self.onClick(onClickArgs);
+    if (rVal === false) { return false; }
+  }
+
+  self.tabShow(tabberIndex);
+
+  return false;
+};
+
+
+tabberObj.prototype.tabHideAll = function()
+{
+  var i; /* counter */
+
+  /* Hide all tabs and make all navigation links inactive */
+  for (i = 0; i < this.tabs.length; i++) {
+    this.tabHide(i);
+  }
+};
+
+
+tabberObj.prototype.tabHide = function(tabberIndex)
+{
+  var div;
+
+  if (!this.tabs[tabberIndex]) { return false; }
+
+  /* Hide a single tab and make its navigation link inactive */
+  div = this.tabs[tabberIndex].div;
+
+  /* Hide the tab contents by adding classTabHide to the div */
+  if (!div.className.match(this.REclassTabHide)) {
+    div.className += ' ' + this.classTabHide;
+  }
+  this.navClearActive(tabberIndex);
+
+  return this;
+};
+
+
+tabberObj.prototype.tabShow = function(tabberIndex)
+{
+  /* Show the tabberIndex tab and hide all the other tabs */
+
+  var div;
+
+  if (!this.tabs[tabberIndex]) { return false; }
+
+  /* Hide all the tabs first */
+  this.tabHideAll();
+
+  /* Get the div that holds this tab */
+  div = this.tabs[tabberIndex].div;
+
+  /* Remove classTabHide from the div */
+  div.className = div.className.replace(this.REclassTabHide, '');
+
+  /* Mark this tab navigation link as "active" */
+  this.navSetActive(tabberIndex);
+
+  /* If the user specified an onTabDisplay function, call it now. */
+  if (typeof this.onTabDisplay == 'function') {
+    this.onTabDisplay({'tabber':this, 'index':tabberIndex});
+  }
+
+  return this;
+};
+
+tabberObj.prototype.navSetActive = function(tabberIndex)
+{
+  /* Note: this method does *not* enforce the rule
+     that only one nav item can be active at a time.
+  */
+
+  /* Set classNavActive for the navigation list item */
+  this.tabs[tabberIndex].li.className = this.classNavActive;
+
+  return this;
+};
+
+
+tabberObj.prototype.navClearActive = function(tabberIndex)
+{
+  /* Note: this method does *not* enforce the rule
+     that one nav should always be active.
+  */
+
+  /* Remove classNavActive from the navigation list item */
+  this.tabs[tabberIndex].li.className = '';
+
+  return this;
+};
+
+
+/*==================================================*/
+
+
+function tabberAutomatic(tabberArgs)
+{
+  /* This function finds all DIV elements in the document where
+     class=tabber.classMain, then converts them to use the tabber
+     interface.
+
+     tabberArgs = an object to send to "new tabber()"
+  */
+  var
+    tempObj, /* Temporary tabber object */
+    divs, /* Array of all divs on the page */
+    i; /* Loop index */
+
+  if (!tabberArgs) { tabberArgs = {}; }
+
+  /* Create a tabber object so we can get the value of classMain */
+  tempObj = new tabberObj(tabberArgs);
+
+  /* Find all DIV elements in the document that have class=tabber */
+
+  /* First get an array of all DIV elements and loop through them */
+  divs = document.getElementsByTagName("div");
+  for (i=0; i < divs.length; i++) {
+    
+    /* Is this DIV the correct class? */
+    if (divs[i].className &&
+	divs[i].className.match(tempObj.REclassMain)) {
+      
+      /* Now tabify the DIV */
+      tabberArgs.div = divs[i];
+      divs[i].tabber = new tabberObj(tabberArgs);
+    }
+  }
+  
+  return this;
+}
+
+
+/*==================================================*/
+
+
+function tabberAutomaticOnLoad(tabberArgs)
+{
+  /* This function adds tabberAutomatic to the window.onload event,
+     so it will run after the document has finished loading.
+  */
+  var oldOnLoad;
+
+  if (!tabberArgs) { tabberArgs = {}; }
+
+  /* Taken from: http://simon.incutio.com/archive/2004/05/26/addLoadEvent */
+
+  oldOnLoad = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = function() {
+      tabberAutomatic(tabberArgs);
+    };
+  } else {
+    window.onload = function() {
+      oldOnLoad();
+      tabberAutomatic(tabberArgs);
+    };
+  }
+}
+
+
+/*==================================================*/
+
+
+/* Run tabberAutomaticOnload() unless the "manualStartup" option was specified */
+
+if (typeof tabberOptions == 'undefined') {
+
+    tabberAutomaticOnLoad();
+
+} else {
+
+  if (!tabberOptions['manualStartup']) {
+    tabberAutomaticOnLoad(tabberOptions);
+  }
+
+}
+_application/x-javascriptO;bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\`aU$nullÝ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€ €Ó#$%&[NS.relativeWNS.base€€€ _3http://www.barelyfitz.com/projects/tabber/tabber.jsÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A²‘Ðéç¸ÈÓ3456@WNS.keysZNS.objects€©789:;<=>?€	€
+€€€€€€€©ABCDEFGHI€€€€€€€€€VServer]Accept-RangesZConnection\Content-TypeTDate]Last-Modified^Content-LengthTEtagZKeep-AliveVApacheUbytesZKeep-Alive_application/x-javascript_Mon, 15 Nov 2010 20:30:57 GMT_Thu, 27 Apr 2006 21:08:08 GMTU16039_"120c420-3ea7-445132b8"_timeout=3, max=100Ò*+]^_NSMutableDictionary£]_/\NSDictionary>§Ò*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 X ^ y | € ƒ † ‰   — š    £ ¦ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ ¾ Å Ñ Ù Û Ý ß%.47=FOQX`kmwy{}ƒ…‡‰“•—™›Ÿ¡£¥¬ºÅÒ×åôù7Ww}—¬±ÇËØÛàôø,/E             j              G_3http://www.barelyfitz.com/projects/tabber/tabber.jsÔ !"#O~         h     (                 @                  ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ Q¦  Q¦  Q¦  Q¦  Q¦ >Q¦ ‘Q¦ wQ¦ aQ¦ bQ¦ \Q¦ VQ¦ $Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦ EQ¦ çQ¦ MQ¦ !Q¦ PQ¦ FQ¦ OQ¦ `Q¦ ]Q¦ EQ¦ Q¦  Q¦  Q¦  Q¦  Q¦  Q¦ žQ¦ ÐQ¦  Q¦ MQ¦ QQ¦ Q¦ Q¦ AQ¦ XQ¦ .Q¦ LQ¦ 
+Q¦  Q¦  Q¦  Q¦  Q¦ bQ¦ ýQ¦ 3Q¦ Q¦ =Q¦  Q¦  Q¦  Q¦ rQ¦ VQ¦  Q¦ ZQ¦ Q¦  Q¦  Q¦  Q¦ Q¦ ¥Q¦ êQ¦ XQ¦ 
+Q¦  Q¦  Q¦  Q¦ —Q¦ œQ¦  Q¦ OQ¦ CQ¦  Q¦  Q¦  Q¦  Q¦ Q¦ wQ¦ ÜQ¦ ÐQ¦ ¤Q¦ šQ¦ ¾Q¦ ãQ¦ =Q¦  Q¦ Q¦ Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦ Q¦ OQ¦ yQ¦ ˆQ¦ iQ¦ Q¦  Q¦  Q¦ Q¦ ˜Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦ Q¦ ·Q¦ (Q¦ $Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦ •Q¦ ”Q¦ Q¦ rQ¦ {Q¦ -Q¦ Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦  Q¦ Q¦ –Q¦ ÒQ¦ Q¦  Q¦ Q¦ MQ¦ šQ¦ ªQ¦ „Q¦ \Q¦ >Q¦ 1Q¦ <Q¦ _Q¦ ™Q¦ ÒQ¦ ­Q¦ Q¦  Q¦  Q¦  Q¦  Q¦  Q¦ 2Q¦ qQ¦ ’Q¦ ¯Q¦ ÃQ¦ ÁQ¦ ®Q¦ †Q¦ ;Q¦  Q¦  Q¦  ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿÿ ÿÿ  ÿÿ  ð  à  ä  à`  àä  ð  ü  ÿü  ?ü  ð  €  ð  ÿÿ  ÿÿ  \image/x-iconObplist00Ô56X$versionX$objectsY$archiverT$top † «%&-./01U$nullÛ	
+R$6R$2R$7R$3R$8V$classR$4R$9R$0R$5R$1€€€€€
+€€	€ Ó !"#$[NS.relativeWNS.base€€€ _%http://www.barelyfitz.com/favicon.icoÒ'()*Z$classnameX$classesUNSURL¢+,UNSURLXNSObject#A²“éh×ß	\image/x-iconP#ïÿÿÿÿÿÿÒ'(23]NSURLResponse¢4,]NSURLResponse_NSKeyedArchiverÑ78_WebResourceResponse€    # - 2 7 C I ` c f i l o v y |  ‚ … ‡ ‰ ‹   ‘ “ • — ™ › ¢ ® ¶ ¸ º ¼ ä é ô ý+,5:HKYkn„             9              †_%http://www.barelyfitz.com/favicon.ico    1 < N d s Š ¨"°"º"ô"õ"û# #	#,º,Ã0ð1(111ð1ù6)6g6puu6yuy«y´~6~C€_             $              €‡

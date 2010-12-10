@@ -1,0 +1,8 @@
+%h1= 'Editing country: ' + @country.title
+
+= render 'form'
+
+.step
+  = link_to 'Show', @country
+  \|
+  = link_to 'Back', countries_path

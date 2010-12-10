@@ -1,0 +1,10 @@
+= form_for @enrollment_over_time do |f|
+  -if @enrollment_over_time.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@enrollment_over_time.errors.count, "error")} prohibited this enrollment_over_time from being saved:"
+      %ul
+        - @enrollment_over_time.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

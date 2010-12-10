@@ -1,0 +1,17 @@
+#steps
+  %h1= t('Sign up')
+  = semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name) do |f|
+    = devise_error_messages!
+    - f.inputs t('Sign up'), :id => "sign_up", :class => 'step' do
+      = f.input :first_name
+      = f.input :last_name
+      = f.input :email
+      = f.input :password
+      = f.input :password_confirmation
+      %fieldset.buttons
+        %ol
+          %li.commit
+            = f.submit "Sign up"
+          / input class="update" id="child_profile_submit" name="commit" type="submit" value="Update Child profile
+.commit
+  = render :partial => "devise/shared/links"

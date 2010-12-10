@@ -1,0 +1,23 @@
+#steps
+  %h1= t('Sign in')
+  = semantic_form_for resource, :as => resource_name, :url => session_path(resource_name) do |f|
+    = devise_error_messages!
+    - f.inputs t('Sign in'), :id => "sign_in", :class => 'step' do
+      = f.input :email
+      = f.input :password
+      - if devise_mapping.rememberable?
+        = f.input :remember_me, :as => 'boolean'
+      %li
+        = f.submit t("Sign in")
+  %form{ :method=>'post', :action=>'/'}
+    %input{ :name=>"authenticity_token", :type=>"hidden", :value=> "#{form_authenticity_token}" }
+    %fieldset.step
+      %ol
+        %li
+          %label{ :for=>"user_email"}= t('Set language')
+          = select_tag 'locale', options_for_select(%w{en sk hu ro mk},I18n.locale)
+          %input{ :type => "submit", :value => "#{t('Set language')}" }
+  </form>
+
+.commit
+  = render :partial => "devise/shared/links"

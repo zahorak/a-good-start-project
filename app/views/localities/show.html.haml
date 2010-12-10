@@ -1,0 +1,19 @@
+.show
+  - title "Locality"
+
+  %p
+    %strong Country:
+    = @locality.country_id
+  %p
+    %strong Code:
+    = @locality.code
+  %p
+    %strong City:
+    = @locality.city
+
+  %p
+    = link_to "Edit", edit_locality_path(@locality)
+    |
+    = link_to "Destroy", @locality, :confirm => 'Are you sure?', :method => :delete
+    |
+    = link_to "View All", localities_path

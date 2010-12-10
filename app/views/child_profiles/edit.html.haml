@@ -1,0 +1,6 @@
+%h1= 'You are editing child: ' + @child_profile.full_name
+
+= render 'form'
+
+.commit
+  = link_to t('Back to List'), child_profiles_path

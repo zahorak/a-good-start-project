@@ -1,0 +1,7 @@
+%h1= t('You are editing family.: ') + @family_profile.family_name
+
+= render 'form'
+
+
+.commit
+  = link_to t("View All"), family_profiles_path

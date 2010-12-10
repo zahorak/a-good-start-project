@@ -1,0 +1,31 @@
+- title t("Families")
+
+%table
+  %tr
+    %th= t('Survey No')
+    %th= t('Family name')
+    %th= t('Fathers age')
+    %th= t('Mothers age')
+    %th= t('Number of children')
+    %th= t('Number of children below seven')
+    %th= t('Household in settlement')
+    %th
+    %th
+
+  - for family_profile in @family_profiles
+    %tr
+      %td= family_profile.survey_id
+      / %td= family_profile.created_by
+      %td= family_profile.family_name
+      %td= family_profile.fathers_age
+      %td= family_profile.mothers_age
+      %td= family_profile.number_of_children
+      %td= family_profile.number_of_children_below_seven
+      %td= family_profile.full_household_in_settlement
+      / %td= family_profile.comment
+      / %td= link_to 'Show', family_profile
+      %td= link_to t('Edit'), edit_family_profile_path(family_profile)
+      %td= link_to t('Destroy'), family_profile, :confirm => t('Are you sure?'), :method => :delete
+
+.commit
+  %p= link_to t("Add Family"), new_family_profile_path

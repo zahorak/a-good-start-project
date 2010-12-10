@@ -1,0 +1,26 @@
+%h1 Translations of form field values
+#steps
+  
+  %form
+    %fieldset{:class => 'step'}
+      %ol
+        - @menu_items.each do |menu_item| 
+          %li{:class => 'string optional'}
+            %label{:style=>'line-height:18px;font-weight:normal'}
+              = menu_item.name_en
+              %br= menu_item.name_sk
+              %br= menu_item.name_hu
+              %br= menu_item.name_ro
+              %br= menu_item.name_mk
+              
+            
+            %span{:style=>'text-align:right; float:right;padding:5px'}
+              = menu_item.category
+              = link_to 'Show', menu_item
+              = link_to 'Edit', edit_menu_item_path(menu_item)
+              = link_to 'Destroy', menu_item, :confirm => 'Are you sure?', :method => :delete
+
+  %br
+
+.commit
+  = link_to 'New Menu item', new_menu_item_path

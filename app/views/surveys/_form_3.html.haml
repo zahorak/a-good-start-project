@@ -1,0 +1,19 @@
+#steps
+  - semantic_form_for @survey do |f|
+    - f.inputs t("4 Child assessment for children aged 3-7 years"), :id => "children_assesment", :class => 'step' do
+      - if @survey.children_above_three_and_bellow_seven.blank?
+        %p= t('There is no child aged 3-7 years.')
+      - else
+        = f.fields_for :children_above_three_and_bellow_seven do |builder|
+          = builder.input :childs_first_name, :as => :string, :wrapper_html => {:class => 'spacer'}
+          = builder.input :alphabet, :as => :radio, :collection => MenuItem.classic, :wrapper_html => { :class => 'together' }
+          = builder.input :reading_words, :as => :radio, :collection => MenuItem.classic
+          = builder.input :writing, :as => :radio, :collection => MenuItem.classic
+          = builder.input :sentences, :as => :radio, :collection => MenuItem.classic
+          = builder.input :numbers, :as => :radio, :collection => MenuItem.classic
+          = builder.input :buttons, :as => :radio, :collection => MenuItem.classic
+          = builder.input :routine_activities, :as => :radio, :collection => MenuItem.classic
+          = builder.input :selfconfidence, :as => :radio, :collection => MenuItem.classic
+          = builder.input :other_children, :as => :radio, :collection => MenuItem.frequency
+          = hidden_field_tag "step", "4"
+      = f.buttons

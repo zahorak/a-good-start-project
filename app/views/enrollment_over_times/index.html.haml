@@ -1,0 +1,17 @@
+%h1 Listing enrollment_over_times
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @enrollment_over_times.each do |enrollment_over_time|
+    %tr
+      %td= link_to 'Show', enrollment_over_time
+      %td= link_to 'Edit', edit_enrollment_over_time_path(enrollment_over_time)
+      %td= link_to 'Destroy', enrollment_over_time, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Enrollment over time', new_enrollment_over_time_path

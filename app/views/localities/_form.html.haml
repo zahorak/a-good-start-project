@@ -1,0 +1,7 @@
+#steps
+  - semantic_form_for @locality do |f|
+    - f.inputs 'Locality', :id => "locality", :class => 'step' do
+      = f.input :code
+      = f.input :city
+      = f.input :country
+      = f.buttons

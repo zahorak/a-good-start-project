@@ -1,0 +1,23 @@
+%h1= t("Children")
+
+%table
+  %tr
+    %th= t('Name')
+    %th= t('Family')
+    %th= t('Birthdate')
+    %th= t('Gender')
+    %th
+    %th
+
+  - @child_profiles.each do |child_profile|
+    %tr
+      %td= link_to child_profile.full_name, edit_child_profile_path(child_profile)
+      %td= link_to child_profile.family.family_name, child_profile.family unless child_profile.family.blank?
+      %td= child_profile.date_of_birth
+      %td= child_profile.full_gender
+      %td= link_to t('Edit'), edit_child_profile_path(child_profile)
+      %td= link_to t('Delete'), child_profile, :confirm => t('Are you sure?'), :method => :delete
+
+%br
+.commit
+  = link_to t('Add Child'), new_child_profile_path

@@ -1,0 +1,36 @@
+<script>  
+$(document).ready(function() {
+$("#new_survey").validationEngine()
+});
+</script>
+#navigation{ :style => "display:none;"}
+  %ul
+    %li.selected 
+      %a{ :href => "#"} 1
+    %li 
+      %a{ :href => "#"} 2
+    %li 
+      %a{ :href => "#"} 3
+      
+#steps
+  - semantic_form_for @survey do |f|
+
+    - f.inputs t("1 Interview details"), :id => "interview_details", :class => 'step' do
+      = f.input :date_of_the_interview, :start_year => 2010, :end_year => 2012
+      = f.input :duration_of_interview, :as => :select, :collection => 10..240
+      = f.input :locality, :input_html => { :class => "validate[required]" }
+      = f.input :mediator, :input_html => { :class => "validate[required]" }
+      = f.input :mediator_survey_counter, :input_html => { :class => "validate[required,custom[onlyNumber]]" }
+
+    - f.inputs t("2 Family details"), :id => "family_details", :class => 'step' do
+      = f.fields_for :family do |builder|
+        = builder.input :family_name, :input_html => { :class => "validate[required]" }
+      = f.input :fathers_age, :input_html => { :size => 2 }
+      = f.input :mothers_age, :input_html => { :size => 2 }
+      = f.input :number_of_all_children, :input_html => { :class => "validate[required,custom[onlyNumber]]" }
+      = f.input :number_of_children_below_seven, :input_html => { :class => "validate[required,custom[onlyNumber]]" }
+      = f.input :comment, :input_html => { :cols => 50, :rows => 5 }
+      = hidden_field_tag "step", "2"
+    = f.buttons
+    
+    

@@ -1,0 +1,431 @@
+# encoding: utf-8
+--- 
+en:
+  "A - at home and not enrolled": "A - at home and not enrolled"
+  formtastic: 
+    :yes: 'Yes'
+    :no: 'No'
+    create: 'Create'
+    save: 'Save'
+    submit: 'Submit'
+    required: 'Required'
+    update: 'Update'
+  
+  devise:
+    sessions:
+      email: Email
+      password: Password
+      signed_in: 'Signed in successfully.'
+      signed_out: 'Signed out successfully.'
+      user:
+        signed_in: 'Welcome user, you are signed in.'
+      admin:
+        signed_in: 'Hello admin!'
+        errors:
+          messages:
+            not_found: "not found"
+            already_confirmed: "was already confirmed, please try signing in"
+            not_locked: "was not locked"
+            not_saved:
+              one: "1 error prohibited this %{resource} from being saved:"
+              other: "%{count} errors prohibited this %{resource} from being saved:"
+    failure:
+      unauthenticated: 'You need to sign in or sign up before continuing.'
+      unconfirmed: 'You have to confirm your account before continuing.'
+      locked: 'Your account is locked.'
+      invalid: 'Invalid email or password.'
+      invalid_token: 'Invalid authentication token.'
+      timeout: 'Your session expired, please sign in again to continue.'
+      inactive: 'Your account was not activated yet.'
+    passwords:
+      send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
+      updated: 'Your password was changed successfully. You are now signed in.'
+    confirmations:
+      send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
+      confirmed: 'Your account was successfully confirmed. You are now signed in.'
+    registrations:
+      signed_up: 'Welcome! You have signed up successfully.'
+      inactive_signed_up: 'You have signed up successfully. However, we could not sign you in because your account is %{reason}.'
+      updated: 'You updated your account successfully.'
+      destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
+    unlocks:
+      send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
+      unlocked: 'Your account was successfully unlocked. You are now signed in.'
+    omniauth_callbacks:
+      success: 'Successfully authorized from %{kind} account.'
+      failure: 'Could not authorize you from %{kind} because "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Confirmation instructions'
+      reset_password_instructions:
+        subject: 'Reset password instructions'
+      unlock_instructions:
+        subject: 'Unlock Instructions'
+  
+  male: male
+  female: female
+  "Set language": "Set language"
+  Date: Date
+  'There is no child aged below 7 years': 'There is no child aged below 7 years'
+  "There is no child aged 3-7 years": "There is no child aged 3-7 years"
+  'Children below seven': 'Children below seven'
+  'A Good Start': 'A Good Start'
+  All: All
+  List: List
+  "Back to List":  "Back to List"
+  "Back":  "Back to List"
+  Edit: Edit
+  Delete: Delete
+  Destroy: Delete
+  "Are you sure?": "Are you sure?"
+  
+  Home: Home
+
+  Family: Family
+  Families: Families
+  "Add Family":  "Add Family"
+  "Add New Family":  "Add New Family"
+  "Adding Family":  "Adding Family"
+  "Family Profile": "Family profile"
+  
+  Child: Child
+  Children: Children
+  "Add New Child": "Add New Child"
+  "Add Child": "Add New Child"
+  "Monthly Attendance in Kindergarten":  "Monthly Attendance in Kindergardten"
+  "Attendance in after School Activities": "Attendance in after School Activities"
+  "4 Child assessment for children aged 3-7 years": "4. Child assessment for children aged 3-7 years"
+  "School Results - Children Tutored at School": "School Results - Children Tutored at School"
+  "School Results - Children from Preschool Programs": "School Results - Children from Preschool Programs"
+  "Change Enrollment of Child": "Change Enrollment of Child"
+  "Immunization Data": "Immunization Data"
+  "immunization_information_source": "8.3 Did you ever receive information/explanation about the importance of immunization? If YES, please indicate who informed you"
+  talked_about_pregnancy: "8.5 Did anyone talk to you about pregnancy when you were pregnant  before your youngest child was born?"
+  "9 Parent's attitude towards learning at home": "9. Parents’ attitudes towards children’s  learning and development at home"
+  childs_development_information_source: "9.1 When you have a question about your child's development, where can you get information?"
+  book_reading: "9.2 In the past 3 days, did any household member over age 15 read books or look at picture books with the child/ children? "
+  tell_stories: "9.3 In the past 3 days, did any household member over age 15 tell stories to the children?"
+  play: "9.4 In the past 3 days, did any household member over age 15 play with the children?"
+  draw: "9.5 In the past 3 days, did any household member over age 15 draw things with the children?"
+  teach_letters: "9.6 In the past 3 days, did any household member over age 15 teach the letters or to count to the children?"
+  homework: "9.7 In the past 3 days, did any household member over age 15 help to make the homework with the children who are in the school?"
+  children_below_three: "10. Questions for parents of children younger than 3 years"
+  reason_for_creche: "10.1 Please tell me the 3 most important reasons  why your child/children attends crèche/kindergarten or other community programme."
+  reason_not_attend: "10.3 What are the main reasons your child does not attend a crèche/kindergarten/community centre?"
+  children_below_seven: "11. Questions for parents of children aged 3-7 years "
+  reason_for_kindergarten: "11.1 Why does your child attend kindergarten? Please tell me the 3 most important reasons."
+  reason_not_enrolled: "11.8 Please tell me the 3 most important reasons why your child is not yet enrolled in primary school and DOES NOT attend kindergarten. "
+  schools: "12.1 What type of school did the parents/person who takes care of the children finish?"
+  home_equipment: "12.4 Does the home or dwelling in which you live have?"
+  activities: "12.7 Please tell me, what activities are the household members engaged in?"
+  
+  "New Survey": "New Survey"
+  "Household Survey": "Household Survey"
+  "Household Surveys": "Household Surveys"
+  "Add New Household Survey": "Add New Household Survey"
+  'You are editing survey no: ': 'You are editing survey no.: '
+
+  Institution: Institution
+  Institutions: Institutions
+  "Add New Institution": "Add New Institution"
+  "New Institution": "New Institution"
+  "Editing institution": "Editing Institution"
+  Kindergarten: Kindergarten
+  Kindergartens: Kindergartens
+  Kindergardens: Kindergartens
+  School: School
+  Schools: Schools
+
+  Locality: Locality
+  Localities: Localities
+  "Add New Locality": "Add New Locality"
+  Country: Country
+  Countries: Countries
+  "Add New Country": "Add New Country"
+  
+  Statistics: Statistics
+  "My profile": "My profile"
+  Login: Login
+  "Sign in": "Sign in"
+  "Sign out": "Sign out"
+  "Sign up": "Sign up"
+  "Forgot your password?": "Forgot your password?"
+  "Didn't receive confirmation instructions?": "Didn't receive confirmation instructions?"
+  "Didn't receive unlock instructions?": "Didn't receive unlock instructions?"
+  
+  "Menu Items": "Translations"
+  "Translations of form fields": "Translations of form fields"
+  "Other Translations": "Other Translations"
+  Logout: Logout
+  
+  Name: Name
+  Birthdate: Birthdate
+  Gender: Gender
+  
+  "Survey No": "Survey No."
+  "Family name": "Family Name"
+  "Fathers age": "Father's Age"
+  "Mothers age": "Mother's Age"
+  "Number of children": "Number of children"
+  "Number of children below seven": "Number of children below seven"
+  "Household in settlement": "Household in settlement"
+    
+  "1 Interview details": "1. Interview details"
+  '2 Family details': '2. Family details'
+  '3 Children details': '3. Children details'
+  '4 Children assesment': '4. Children assesment'
+  '5 Household details': '5. Household details'
+  '55 What language is spoken in your household?': '5.5 What language is spoken in your household?'
+  '56 What is the mother tongue of your children?': '5.6 What is the mother tongue of your children?'
+  "6 Parent's attitude": "6. Parent's attitude towards early childhood care and education"
+  "7 Parent's expectations": "7. Parent's expectations towards their child´s future educational attainment"
+  "8 Immunization and health care": "8. Immunization and health care"
+  "Immunization Information Source": "Immunization Information Source"
+  "9 Parent's attitude towards learning at home": "9. Parent's attitude towards learning at home"
+  "10 Children younger than 3 years": "10. Children younger than 3 years"
+  "11 Children 3 to 7 years": "11. Children 3 to 7 years"
+  "12 Other socio-economic data": "12. Other socio-economic data"
+  
+  activerecord:
+      models:
+        Survey: Survey
+        "Family Profile": Family
+        "Child Profile": Child
+      attributes:
+        survey:
+          created_by: "Entered by"
+          date_of_the_interview: "1.1 Date of the interview"
+          duration_of_interview: "1.2 Duration of the interview"
+          interviewer_id: "Interviewer"
+
+          fathers_age: "2.2 Father's age"
+          mothers_age: "2.3 Mother's age"
+          number_of_all_children: "2.4 Number of children"
+          number_of_children_below_seven: "2.5 No. of children aged 0-7"
+          comment: Comments
+
+          relation_to_children: "5.1 What is your relationship to the children in this household (focus on beneficiary children aged 0-7 years)"
+          relation_to_children_other: "Other: (please specify)"
+          primary_caregiver: '5.2 Are you the person who takes care of the children?'
+          who_is_primary_caregiver: '5.3 If NOT, who is the person who takes care of the children?'
+          who_is_primary_caregiver_other: 'Other: (please specify)'
+          primary_caregiver_age: '5.4 How old is the person who takes care of the children?'
+          language_hungarian: 'Hungarian'
+          language_macedonian: 'Macedonian'
+          language_romani: 'Romani language'
+          language_romanian: 'Romanian'
+          language_slovak: 'Slovak'
+          language_albanian: "Albanian"
+          language_other: 'Other: (please specify)' 
+          children_language_hungarian: 'Hungarian'
+          children_language_macedonian: 'Macedonian'
+          children_language_romani: 'Romani language'
+          children_language_romanian: 'Romanian'
+          children_language_slovak: 'Slovak'
+          children_language_albanian: "Albanian"
+          children_language_other: 'Other: (please specify)'
+
+          better_in_school: "6.1 Do you think children do better in school?"
+          kindergarten_importance: "6.2 How important is it for young children age 0-6  to attend kindergarten, crèche or other pre-school learning programmes for having a good future?"
+
+          wished_daugters_education: "7.1 If you think about your daughter´s future, what type of school should your daughter finish?"
+          wished_daugters_education_other: 'Other: (please specify)'
+          wished_sons_education: "7.2 If you think about your son´s future, what type of school should your son finish?"
+          wished_sons_education_other: 'Other: (please specify)'
+          boys_girls_success_importance: "7.3 How important is it for boys and girls to succeed in school?"
+
+          immunization_importance: "8.1 What do you think, how important is immunization for children in general?"
+          immunization_in_household: "8.2 As far as you know, are the children in the house/household vaccinated?"
+          immunization_information_source_doctor: Doctor
+          immunization_information_source_nurse: 'Nurse or other health worker'
+          immunization_information_source_mediator: 'Community Mediator'
+          immunization_information_source_no_info: 'I haven´t received such information/explanation'
+          immunization_information_source_do_not_know: 'I don´t know / No answer'
+          immunization_information_source_nurse_other: 'Other: (please specify)'
+          visited_hospital_during_pregnancy: "8.4 When you were pregnant before your youngest child was born, did you go to hospital or to see the doctor for a check-up or examination?"
+          talked_about_pregnancy: "8.5 If the answer to 8.4 is no, ask: Did anyone talk to you about pregnancy when you were pregnant  before your youngest child was born?"
+          talked_about_pregnancy_doctor: Doctor
+          talked_about_pregnancy_nurse: Nurse
+          talked_about_pregnancy_community_mediator: "Community Mediator"
+          talked_about_pregnancy_health_mediator: "Health Mediator"
+          talked_about_pregnancy_noone: "No one"
+          talked_about_pregnancy_other: 'Other: (please specify)'
+          talked_about_pregnancy_no_answer: "I dońt know/No answer"
+          doctor_visit_after_birth: "8.6 In the first few months after your youngest child was born, did a nurse or a doctor (paediatrician or other)  give your child a check-up?"
+          breastfeeding_importance: "8.7 What do you think, how important is it to breastfeed the children?"
+          childs_development_information_source_no_need: "I don´t need any additional information "
+          childs_development_information_source_books: "I read books"
+          childs_development_information_source_newspapers: "I read related newspaper articles"
+          childs_development_information_source_tv: "I watch related television programs"
+          childs_development_information_source_other_persons: "I ask other persons"
+          childs_development_information_source_others: Other
+          childs_development_information_source_no_idea: "I don't know where to get information"
+          book_reading_mother: Mother
+          book_reading_father: Father
+          book_reading_other: 'Other: (please specify)'
+          book_reading_noone: No one
+          book_reading_no_answer: "I Don´t know/No answer"
+          tell_stories_mother: Mother
+          tell_stories_father: Father
+          tell_stories_other: 'Other: (please specify)'
+          tell_stories_noone: No one
+          tell_stories_no_answer: "I Don´t know/No answer"
+          play_mother: Mother
+          play_father: Father
+          play_other: 'Other: (please specify)'
+          play_noone: No one
+          play_no_answer: "I Don´t know/No answer"
+          draw_mother: Mother
+          draw_father: Father
+          draw_other: 'Other: (please specify)'
+          draw_noone: No one
+          draw_no_answer: "I Don´t know/No answer"
+          teach_letters_mother: Mother
+          teach_letters_father: Father
+          teach_letters_other: 'Other: (please specify)'
+          teach_letters_noone: No one
+          teach_letters_no_answer: "I Don´t know/No answer"
+          homework_mother: Mother
+          homework_father: Father
+          homework_other: 'Other: (please specify)'
+          homework_noone: No one
+          homework_no_child_in_school_yet: "No child is enrolled in school yet"
+          homework_no_answer: "I Don´t know/No answer"
+          book_count: "9.8 How many children’s books or picture books do you have for young children?"
+          separate_place: "9.9 Does your child have a separate place/table/corner in your home, where he/she can learn or play?"
+          reason_for_creche_likes: "My child likes to go to the programme/ crèche."
+          reason_for_creche_free_meal: "The programme provides a free meal or other material support."
+          reason_for_creche_time: "It gives me time to work/take care of other matters."
+          reason_for_creche_trust: "I like/trust the teachers."
+          reason_for_creche_friendships: "In the kindergarten my child can establish new friendships."
+          reason_for_creche_playing: "My child can play there."
+          reason_for_creche_learning: "My child can learn there."
+          reason_for_creche_language: "My child can learn the official state language/regionally dominant language there."
+          reason_for_creche_no_answer: "I don´t know/ No answer"
+          reason_for_creche_other: 'Other reasons:'
+          talk_with_teacher: "10.2 Do the teachers talk to you and give you helpful information about your child and how he/she is doing there?"
+          reason_not_attend_expensive: "It is too expensive."
+          reason_not_attend_no_creche: "There is no crèche/kindergarten/community center (for children under age 3) nearby."
+          reason_not_attend_no_place: "There are no places."
+          reason_not_attend_no_work: "I don´t work so I can stay home and be with my child."
+          reason_not_attend_no_trust: "I don´t like/trust the teachers. "
+          reason_not_attend_bad_treating: "My child is not treated well."
+          reason_not_attend_language: "My child does not speak the language."
+          reason_not_attend_family: "My child should stay with the family."
+          reason_not_attend_no_answer: "I don´t know/No answer"
+          reason_not_attend_other: 'Other reasons'
+          reason_for_kindergarten_likes: "My child likes to go to kindergarten."
+          reason_for_kindergarten_free_meal: "The kindergarten provides a free meal or other material support."
+          reason_for_kindergarten_time: "It gives me time to work/take care of other matters."
+          reason_for_kindergarten_trust: "I like/trust the teachers. "
+          reason_for_kindergarten_friendships: "In the kindergarten my child can establish new friendships."
+          reason_for_kindergarten_better_chance: "My child will have a better chance to succeed in primary school and later."
+          reason_for_kindergarten_playing: "My child can play there."
+          reason_for_kindergarten_learning: "My child can learn there."
+          reason_for_kindergarten_language: "My child can learn the official state language/regionally dominant language there."
+          reason_for_kindergarten_compulsory: "Kindergarten is compulsory for my child "
+          reason_for_kindergarten_other: 'Other reasons'
+          reason_for_kindergarten_no_answer: "I don´t know/No answer"
+          kindergarten_days: "11.2 In the last week (the last 5 working days), about how many days did your child attend kindergarten?"
+          kindergarten_roma: "11.3 In your child’s kindergarten the other children are….?"
+          class_roma: "11.4 In your child’s class in the kindergarten the other children are ….? "
+          teacher_informs: "11.5 Do the teachers talk to you and give you helpful information about your child and how he/she is doing in kindergarten? "
+          lesson_language_understanding: "11.6 If the language of tuition is different to the child’s language ask the interviewee: is it difficult for your child to understand their lessons?"
+          teacher_help: "11.7 If your child has difficulties, do the teachers help your child to learn the language of the tuition?"
+          reason_not_enrolled_no_like: "My child doesn´t like to go to kindergarten."
+          reason_not_enrolled_expensive: "It is too expensive."
+          reason_not_enrolled_no_clothes: "I don't have money to buy my child clothing/shoes for kindergarten"
+          reason_not_enrolled_no_work: "I don´t work so I can stay home and be with my child."
+          reason_not_enrolled_trust: "I don´t like/trust the teachers."
+          reason_not_enrolled_children_treating: "Other children do not treat my child well."
+          reason_not_enrolled_not_nearby: "There is no kindergarten nearby. "
+          reason_not_enrolled_no_place: "There are not enough places in the kindergarten."
+          reason_not_enrolled_family: "My child should stay with the family."
+          reason_not_enrolled_language: "My child doesn´t understand the language of tuition."
+          reason_not_enrolled_other: 'Other reasons'
+          reason_not_enrolled_no_answer: "I don´t know/No answer"
+          school_roma: "11.9 In your child’s school the other children are…?"
+          school_class_roma: "11.10 In your child’s class in the school the other children are…?"
+          school_teacher_information: "11.11 Do the teachers talk to you and give you helpful information about your child and how he/she is doing in school?"
+          lesson_difficulty: "11.12 Is  it difficult for your child to understand the lessons? "
+          are_teachers_helpfull: "11.13 If your child has difficulties, do the teachers help  your child to learn the language of  tuition? "
+          school_good_bad: "11.14 How good or bad do you think the primary school is? "
+          test_before_school: "11.15 Did your child take a test before enrolling in primary school?"
+          test_before_school_result: "11.16 If YES, what was the result?"
+          test_before_school_other: 'Other: (please specify)'
+          
+          school_mother: "Mother"
+          school_mother_other: 'Other'
+          school_father: "Father"
+          school_father_other: 'Other'
+          school_caregiver: "Person who takes care of the children"
+          school_caregiver_other: 'Other'
+          mother_has_id: "12.2 Does the children’s mother have an identification document?"
+          birth_certificate: "12.3 Do all the children have a birth certificate? "
+          home_kitchen: "A kitchen inside?"
+          home_toilet: "A toilet inside?"
+          home_latrine: "A latrine"
+          home_sewerage: "Sewerage inside for the disposal of wasted (used) water?"
+          home_shower: "Shower/ bathroom inside? "
+          home_water: "Running water inside?"
+          home_electricity: "Electricity supply?"
+          home_tv: "Television?"
+          home_phone: "Mobile/ fixed landline?"
+          home_radio: "A radio?"
+          home_computer: "A computer?"
+          home_internet: "An internet connection?"
+          number_of_people_under_18: "Number of people in the household under age 18"
+          number_of_people_over_18: "Number of people in the household over age 18"
+          mother_activity: Mother
+          mother_activity_other: 'Other: (please specify)'
+          father_activity: Father
+          father_activity_other: 'Other: (please specify)'
+          caregiver_activity: "Person who takes care of the children"
+          caregiver_activity_other: 'Other: (please specify)'
+          separated_settlement: "13.1 Is the household located in a separated settlement outside the town/village? "
+          roma_village: "13.2 Is the household located in a part of a town/village, where all/almost all of the neighbours are Roma?"
+          locality: Locality
+          mediator_id: Mediator
+          mediator: Mediator
+          mediator_survey_counter: "Questionnaire number"
+
+        family_profile:
+          family_name: "2.1 Family Name"
+          fathers_age: "2.2 Father's age"
+          mothers_age: "2.3 Mother's age"
+          number_of_children: "2.4 Number of children"
+          number_of_children_below_seven: "2.5 No. of children aged 0-7"
+
+        child_profile:
+          family: "Family Name"
+          childs_first_name: "Child's first name"
+          childs_last_name: "Child's surname"
+          childs_surname: "Child's surname"
+          date_of_birth: "Date of birth"
+          gender: Gender
+          family_name: "Family name"
+          enrolled_to: "Where is the child enrolled? Please tell me the name of the school/institution."
+          alphabet: "4.1 Can he/she identify/name at least ten letters of the alphabet?"
+          reading_words: "4.2 Can he/she read at least four simple, popular words?"
+          writing: "4.3 Can he/she write his/her own name?"
+          sentences: "4.4 Can he/she understand simple sentences in the national/regional language? "
+          numbers: "4.5 Does he/she recognize the symbols for numbers 1 to 10?"
+          buttons: "4.6 Is he/she able to button a shirt or sweater?"
+          routine_activities: "4.7 Does he/she do everyday routine activities without being reminded?"
+          selfconfidence: "4.8 Does he/she show confidence in self?"
+          other_children: "4.9 Does he/she get along well with other children?"
+        
+        institution:
+          locality: Locality
+          category: Category
+          name: Name
+          code: Code
+          
+        user:
+          email: Email
+          password: Password
+          remember_me: "Remember me"
+        
+        menu_items:  
+          code: Code
+        

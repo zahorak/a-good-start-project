@@ -1,0 +1,20 @@
+- title "Localities"
+
+%table
+  %tr
+    %th Country
+    %th Code
+    %th City
+    %th 
+
+  - for locality in @localities
+    %tr
+      %td= locality.country_id
+      %td= locality.code
+      %td= locality.city
+      / %td= link_to 'Show', locality
+      %td= link_to 'Edit', edit_locality_path(locality)
+      / %td= link_to 'Destroy', locality, :confirm => 'Are you sure?', :method => :delete
+
+.commit
+  %p= link_to t("New Locality"), new_locality_path

@@ -1,0 +1,11 @@
+%label
+  %select name="artwork[acquisition_source_id]" id="artwork_acquisition_source_id"
+    %option value="0">Please select acquisition source
+    = options_from_collection_for_select Contact.find(:all, :conditions => "category='artwork_acquisition_source'", :order => "company"), "id", "full_name", @artwork.acquisition_source_id %>
+  %a href="/contacts/new_from_overlay/?origin_id=<%= @artwork.id -%>&category=artwork_acquisition_source&column=acquisition_source_id" onclick="showPopWin('/contacts/new_from_overlay/?origin_id=<%= @artwork.id -%>&category=artwork_acquisition_source&column=acquisition_source_id', 400, 290, null); return false;"> Add New Acquisition Source
+
+
+%li."select optional"#child_profile_enrolled_to_input
+  %label{ :for=>"child_profile_institution_id"} Where is the child enrolled? Please tell me the name of the school/institution.
+  %select#child_profile_institution_id{ :name=>"child_profile[institution_id]"
+    %option value=""></option>

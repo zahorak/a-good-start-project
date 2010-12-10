@@ -1,0 +1,115 @@
+table {margin: 5px;}
+th {text-align:left; padding:5px;}
+td {padding:5px;}
+.commit{ padding:10px;}
+.show{ padding:15px;line-height:30px;}
+
+form.formtastic fieldset > ol > li fieldset { position:relative; }
+form.formtastic fieldset > ol > li fieldset legend { position:absolute; width:95%; padding-top:0.1em; left: 0px; }
+form.formtastic fieldset > ol > li fieldset legend span { position:absolute; }
+form.formtastic fieldset > ol > li fieldset legend.label label { position:absolute; }
+form.formtastic fieldset > ol > li fieldset ol { float:left; width:74%; margin:10px 0 5px 0; padding:0 0 0 5%; list-style:none;}
+form.formtastic fieldset > ol > li.radio fieldset ol { float:left; width:900px !important; margin:10px 0 5px 0; padding:0; list-style:none;}
+form.formtastic fieldset > ol > li fieldset ol li { padding:0; border:0; list-style:none;}
+
+/* DATE & TIME OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li.date fieldset ol li,
+form.formtastic fieldset > ol > li.time fieldset ol li,
+form.formtastic fieldset > ol > li.datetime fieldset ol li { float:left; width:auto; margin:0 .3em 0 0; }
+
+form.formtastic fieldset > ol > li.date fieldset ol li label,
+form.formtastic fieldset > ol > li.time fieldset ol li label,
+form.formtastic fieldset > ol > li.datetime fieldset ol li label { display:none !important; }
+
+form.formtastic fieldset > ol > li.date fieldset ol li label input, 
+form.formtastic fieldset > ol > li.time fieldset ol li label input, 
+form.formtastic fieldset > ol > li.datetime fieldset ol li label input { display:inline; margin:0; padding:0;  }
+FORM.formtastic FIELDSET > OL > FIELDSET { position: relative; float: left; }
+
+li { list-style:none; }
+
+/*.other label { padding-left: 190px;} 
+*/
+.cmsMain { 
+  clear: both; 
+  padding: 0; 
+  margin: 0;
+}
+  .cmsMain ul { 
+    float:left; 
+    padding: 0 0 3px 4px; 
+    margin: 0; 
+    list-style: none; 
+  }
+  .cmsMain li { 
+    display:block;
+    color:#666;
+    font-weight:bold;
+    text-align: center;
+    float: left; 
+    font-size:13px; 
+    line-height:16px; 
+    padding: 0; 
+    margin: 0;  
+  }
+  .cmsMain a { 
+    text-decoration:none; 
+/*    font-weight: bold; */
+/*    border-left: #fff 1px solid; */
+    margin: 0; 
+    padding: 0px 8px 0px 10px; 
+    float: left; 
+  }
+  .cmsMain .selected a { 
+    color:#1D1D1D; 
+    text-decoration:none; 
+  }
+  .cmsMain a:hover { 
+    color:#000;
+  }
+.cmsMain li ul { /* second-level lists */
+  position: absolute;
+  left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+  margin-top: 15px;
+  margin-left: 0px;
+  padding: 0 8px 2px 1px;
+  z-index: 1;
+}
+.cmsMain li ul li {
+  display: block;
+  clear: both;
+  background-color: #ccc;
+  margin-bottom: 1px;
+  width: 100%;
+}
+.cmsMain li ul li a {
+  border: 0;
+  display: block;
+  text-align: left;
+  font-weight: normal;
+  padding: 2px 9px 2px 9px; 
+  width: 100%;
+  color: #fff;
+}
+.cmsMain li ul li a:hover {
+  color: #333;
+}
+.cmsMain li:hover ul, #menu li.sfhover ul { /* lists nested under hovered list items */
+  left: auto;
+}
+.cmsMain li.last ul {
+  margin-top: 15px;
+  margin-left: -45px;
+}
+.cmsMain li.last ul li a {
+  width: 100px;
+  text-align: right;
+}
+
+/*form.formtastic fieldset ol li.fl ol li{float: left; margin-right: 2em;}*/
+.footer { float:left; margin:10px; width: 100%; padding-bottom: 30px;}
+.footer img { float:left; margin-left:190px; }
+.footer p { text-align: center; line-height:50px; width: 100%;}
+
+.spacer { margin-top: 25px;}

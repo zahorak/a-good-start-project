@@ -1,0 +1,11 @@
+#steps
+  = semantic_form_for @menu_item do |f|
+    - f.inputs 'Menu Item', :id => 'menu_item', :class => 'step' do
+      = f.input :name_en
+      = f.input :name_sk
+      = f.input :name_hu
+      = f.input :name_ro
+      = f.input :name_mk
+      = f.input :category
+      = f.input :position, :as => :select, :collection => 1..15
+      = f.buttons
