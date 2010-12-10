@@ -273,13 +273,14 @@ onkeyup: true
       = f.buttons
 
     - f.inputs t("12 Other socio-economic data"), :id => "other_data", :class => 'step' do
-      - f.inputs t("schools"), :id => "schools" do
-        = f.input :school_mother, :as => :select, :collection => MenuItem.school_type.order(:position)
-        = f.input :school_mother_other, :input_html => { :rows => 2 }
-        = f.input :school_father, :as => :select, :collection => MenuItem.school_type.order(:position)
-        = f.input :school_father_other, :input_html => { :rows => 2 }
-        = f.input :school_caregiver, :as => :select, :collection => MenuItem.school_type.order(:position)
-        = f.input :school_caregiver_other, :input_html => { :rows => 2 }
+      - if (@survey.relation_to_children == 1 or @survey.relation_to_children == 2) and @survey.primary_caregiver == 1
+        - f.inputs t("schools"), :id => "schools" do
+          = f.input :school_mother, :as => :select, :collection => MenuItem.school_type.order(:position)
+          = f.input :school_mother_other, :input_html => { :rows => 2 }
+          = f.input :school_father, :as => :select, :collection => MenuItem.school_type.order(:position)
+          = f.input :school_father_other, :input_html => { :rows => 2 }
+          = f.input :school_caregiver, :as => :select, :collection => MenuItem.school_type.order(:position)
+          = f.input :school_caregiver_other, :input_html => { :rows => 2 }
       = f.input :mother_has_id, :as => :radio, :collection => MenuItem.classic
       = f.input :birth_certificate, :as => :radio, :collection => MenuItem.birth_certificate
       - f.inputs t("home_equipment"), :id => "home_equipment" do

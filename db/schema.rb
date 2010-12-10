@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101201224109) do
+ActiveRecord::Schema.define(:version => 20101210140312) do
 
   create_table "attendance_results", :force => true do |t|
     t.integer  "family_id"
@@ -186,7 +186,7 @@ ActiveRecord::Schema.define(:version => 20101201224109) do
     t.integer  "childs_development_information_source_newspapers"
     t.integer  "childs_development_information_source_tv"
     t.integer  "childs_development_information_source_other_persons"
-    t.integer  "childs_development_information_source_others"
+    t.string   "childs_development_information_source_others"
     t.integer  "childs_development_information_source_no_idea"
     t.integer  "book_reading_mother"
     t.integer  "book_reading_father"
@@ -380,7 +380,7 @@ ActiveRecord::Schema.define(:version => 20101201224109) do
     t.string   "authentication_token"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "language",             :limit => 1
+    t.string   "language",             :limit => 2
     t.integer  "locality_id",          :limit => 2
   end
 
