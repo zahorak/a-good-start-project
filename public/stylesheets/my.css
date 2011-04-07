@@ -44,7 +44,7 @@ li { list-style:none; }
   }
   .cmsMain li { 
     display:block;
-    color:#666;
+    color:#aaa;
     font-weight:bold;
     text-align: center;
     float: left; 
@@ -66,21 +66,21 @@ li { list-style:none; }
     text-decoration:none; 
   }
   .cmsMain a:hover { 
-    color:#000;
+    color:#888;
   }
 .cmsMain li ul { /* second-level lists */
   position: absolute;
   left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
   margin-top: 15px;
   margin-left: 0px;
-  padding: 0 8px 2px 1px;
+  padding: 0 8px 2px 0px;
   z-index: 1;
 }
 .cmsMain li ul li {
   display: block;
   clear: both;
   background-color: #ccc;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
   width: 100%;
 }
 .cmsMain li ul li a {
@@ -113,3 +113,12 @@ li { list-style:none; }
 .footer p { text-align: center; line-height:50px; width: 100%;}
 
 .spacer { margin-top: 25px;}
+
+.red {color:red;}
+
+.last_month { float:right; width:400px; }
+.cell { margin-left:40px; }
+
+.back { margin-right:20px;height:0px;float:right; position:relative;bottom:26px; }
+
+.row:hover{ background-color: #eee; } 

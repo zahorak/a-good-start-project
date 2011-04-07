@@ -1,7 +1,7 @@
 / encoding: utf-8
 #steps
-  = semantic_form_for @child_profile do |f|
-    - f.inputs "Child Profile", :id => "child_profile", :class => 'step'  do
+  = semantic_form_for @child_profile,:html => {:class => 'form'} do |f|
+    - f.inputs t("Child"), :id => "child_profile", :class => 'step'  do
       = f.input :childs_first_name
       = f.input :childs_last_name
       = f.input :family, :as => :select, :collection => FamilyProfile.all, :label_method => 'family_name'

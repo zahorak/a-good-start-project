@@ -1,5 +1,6 @@
 GoodStart::Application.routes.draw do
 
+  resources :immunizations
   devise_for :users
   resources :users
   resources :localities
@@ -13,18 +14,34 @@ GoodStart::Application.routes.draw do
   resources :institutions
   resources :child_profiles
   resources :family_profiles
-# ?code=105
-# ?code=107
+  resources :articles
 
   match '/kindergartens'  => 'institutions#index', :category => 105
   match '/schools'  => 'institutions#index', :category => 107
+  match '/hotline'  => 'articles#show', :id => 1
+
+  match '/check_survey_number'  => 'surveys#check_survey_number'
+  match '/save_mediator_to_session'  => 'surveys#save_mediator_to_session'
+  match '/save_locality_id_to_session'  => 'surveys#save_locality_id_to_session'
+  match 'surveys/:id/mark_for_delete', :to => 'surveys#mark_for_delete'
+  match 'surveys/:id/mark_as_verified', :to => 'surveys#mark_as_verified'
+  match 'surveys/mark_for_delete/:id', :to => 'surveys#mark_for_delete'
+  match '/institutions/:id/show/:enter_child', :to => 'institutions#show'
+  match '/institutions/:id/edit_children', :to => 'institutions#edit_children'
+  match "/institutions/set_date_to_session", :to => "institutions#set_date_to_session"
+  match "/institutions/show_children_form/:child_id", :to => "institutions#show_children_form"
+  match "/family_profiles/update_mini/:id", :to => "family_profiles#update_mini"
+  match "/stats_detail", :to => "users#detail"
+
+  # match ':controller(/:action(/:id(.:format)))'
+  # resource :survey, :collection => { :start => :get}
   
   # scope '/translate' do
   #   match '/translate_list', :to => 'translate#index'
   #   match '/translate', :to => 'translate#translate'
   #   match '/translate_reload', :to => 'translate#reload', :as => 'translate_reload'
   # end
-  root :to => "child_profiles#index"
+  root :to => "users#show"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

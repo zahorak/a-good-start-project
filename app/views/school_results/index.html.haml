@@ -1,17 +1,62 @@
-%h1 Listing school_results
+- title t("School results")
 
 %table
   %tr
+    / %th=# t('Child')
     %th
-    %th
-    %th
-
-  - @school_results.each do |school_result|
+      = t('Name')
+      \–
+      = t('Date')
+    %th= t('Test before school')
+    %th= t('Test result')
+    %th= t('Marks 10/11')
+    %th= t('Marks end 10/11')
+    %th= t('Marks 11/12')
+  
+  - current_user.localities.each do |l|
     %tr
-      %td= link_to 'Show', school_result
-      %td= link_to 'Edit', edit_school_result_path(school_result)
-      %td= link_to 'Destroy', school_result, :confirm => 'Are you sure?', :method => :delete
+      %td
+        %strong= l.full_name
+    - l.children.where("institution_id = 51 and date_of_birth < '2005-09-01'").each do |ch|
+      %tr
+        %td{:style=>'padding-left:30px;'}
+          = link_to ch.full_name, new_school_result_path(:child_id => ch.id)
+          / = ch.date_of_birth
+        - ch.school_results.each do |chi|
+          %tr
+            / %td= link_to chi.full_name, edit_immunization_path(chi)
+            %td{:style=>'padding-left:50px;'}= link_to chi.created_at.to_s(:db), edit_school_result_path(chi)
+            / %td= chi.created_at.to_s(:db)
+            %td= MenuItem.find(chi.test_before_school).name_en
+            %td= MenuItem.find(chi.test_before_school_result).name_en
+            %td= chi.average_school_marks_midterm_10_11
+            %td= chi.average_school_marks_yearend_10_11
+            %td= chi.average_school_marks_midterm_11_12
+      
+  - current_user.institutions.each do |i|
+    - if i.has_children?
+      %tr
+        %td
+          %strong= i.name
+          = '(' "#{i.children.size}" ')'
 
-%br
+      - i.children.where("date_of_birth < '2005-09-01'").each do |ch|
+        %tr
+          %td{:style=>'padding-left:30px;'}
+            = link_to ch.full_name, new_school_result_path(:child_id => ch.id)
+            / = ch.date_of_birth
+          - ch.school_results.each do |chi|
+            %tr
+              / %td= link_to chi.full_name, edit_immunization_path(chi)
+              %td{:style=>'padding-left:50px;'}= link_to chi.created_at.to_s(:db), edit_school_result_path(chi)
+              / %td= chi.created_at.to_s(:db)
+              %td= MenuItem.find(chi.test_before_school).name_en
+              %td= MenuItem.find(chi.test_before_school_result).name_en
+              %td= chi.average_school_marks_midterm_10_11
+              %td= chi.average_school_marks_yearend_10_11
+              %td= chi.average_school_marks_midterm_11_12
+            
+/ Month, Year (ako čas zberu údajov), Obligatory vaccinations(možnosti: all/some/none/unknown), BCG, DTP, Hib, VHB/HEP B, IPV/VPi, PCV, MMR/ROR (POZOR, toto je už upravený zoznam) - pri týchto yes/no/?
 
-= link_to 'New School result', new_school_result_path
+.commit
+  %p= link_to t('Add School result'), new_school_result_path

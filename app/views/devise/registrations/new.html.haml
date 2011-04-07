@@ -1,11 +1,14 @@
 #steps
   %h1= t('Sign up')
-  = semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name) do |f|
+  = semantic_form_for resource, :as => resource_name, :url => registration_path(resource_name),:html => {:class => 'form'} do |f|
     = devise_error_messages!
     - f.inputs t('Sign up'), :id => "sign_up", :class => 'step' do
       = f.input :first_name
       = f.input :last_name
       = f.input :email
+      = f.input :code
+      = f.input :locality, :as => :radio
+      = f.input :category, :as => :radio, :collection => User.categories
       = f.input :password
       = f.input :password_confirmation
       %fieldset.buttons

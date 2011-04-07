@@ -4,9 +4,13 @@ class UsersController < ApplicationController
   end
   
   def show
-    @user = User.find(params[:id])
+    @user = User.find(current_user.id)
   end
   
+  def detail
+    @locality = Locality.find(params[:locality_id])
+  end
+
   def new
     @user = User.new
   end
@@ -29,7 +33,11 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
       flash[:notice] = "Successfully updated user."
-      redirect_to users_url
+      if current_user.category == "A"
+        redirect_to users_url
+      else
+        redirect_to user_url
+      end
     else
       render :action => 'edit'
     end

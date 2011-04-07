@@ -1,0 +1,48 @@
+#steps
+  - semantic_form_for @survey, :html => {:name => 'survey',:class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("5 Household details"), :id => "household_details", :class => 'step' do
+
+      // 5.1
+      = f.input :relation_to_children, :as => :radio, :collection => MenuItem.relatives, 
+        :input_html => { :onclick => 'display_switch(this,"5","survey_relation_to_children_other_fieldset");'}
+      
+      %fieldset.inputs#survey_relation_to_children_other_fieldset{ :style => @survey.relation_to_children==5 ? "display:;" : "display:none;" }
+        %ol
+          = f.input :relation_to_children_other,
+            :input_html => { :optional => 'optional', :size => 30}, :wrapper_html => {:class => 'other' }
+
+      // 5.2
+      = f.input :primary_caregiver, :as  => :radio, :collection => MenuItem.classic_reduced,
+        :input_html => { :onclick => 'display_switch(this,"46","survey_who_is_primary_caregiver_input"); display_switch(this, "46", "survey_who_is_primary_caregiver_other_fieldset");'}
+
+      // 5.3
+      = f.input :who_is_primary_caregiver, :as => :radio, :collection => MenuItem.relatives, 
+        :input_html => { :onclick => 'display_switch(this,"5","survey_who_is_primary_caregiver_other_fieldset");'},
+        :wrapper_html => { :style => @survey.primary_caregiver=5 ? "display:;" : "display:none;" }
+
+      %fieldset.inputs#survey_who_is_primary_caregiver_other_fieldset{ :style => @survey.who_is_primary_caregiver==5 ? "display:;" : "display:none;" }
+        %ol
+          = f.input :who_is_primary_caregiver_other, :wrapper_html => {:class => 'other' },
+            :input_html => { :size => 30}
+            
+      // 5.4
+      = f.input :primary_caregiver_age, :input_html => { :size => 2 }
+      - f.inputs t("55 What language is spoken in your household?"), :id => "household_language" do
+        = f.input :language_hungarian, :as => :boolean
+        = f.input :language_macedonian, :as => :boolean
+        = f.input :language_romani, :as => :boolean
+        = f.input :language_romanian, :as => :boolean
+        = f.input :language_slovak, :as => :boolean
+        = f.input :language_albanian, :as => :boolean
+        = f.input :language_other, :input_html => {:size => 40}
+      - f.inputs t("56 What is the mother tongue of your children?"), :id => "children_language" do
+        = f.input :children_language_hungarian, :as => :boolean
+        = f.input :children_language_macedonian, :as => :boolean
+        = f.input :children_language_romani, :as => :boolean
+        = f.input :children_language_romanian, :as => :boolean
+        = f.input :children_language_slovak, :as => :boolean
+        = f.input :children_language_albanian, :as => :boolean
+        = f.input :children_language_other, :input_html => {:size => 40}
+      = hidden_field_tag "step", "5"
+
+      = render :partial => 'buttons'

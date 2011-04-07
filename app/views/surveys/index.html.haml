@@ -1,31 +1,118 @@
-%h1= t('Household Surveys')
+- unless @incomplete_surveys.blank?
+  - if ['L','LDB','A'].include? current_user.category
+    %h1= t('Household Surveys - Incomplete')
 
-%table
-  %tr
-    %th= t('Survey No')
-    %th= t('Family')
-    %th= t('Children below seven')
-    %th= t('Date')
-    %th 
-    %th 
-    / %th 
+    %table{:width => '980px'}
+      %tr
+        %th{:width => '200px'}= t('Survey No')
+        %th{:width => '290px'}= t('Family')
+        %th{:width => '260px'}= t('Children')
+        %th{:width => '230px'}= t('Date')
+      %tr
+        %td{:colspan => 4}
+          %hr
 
-  - @surveys.each do |survey|
+      - @incomplete_surveys.each do |survey|
+        %tr
+          %td
+            - if current_user.id == survey.created_by or current_user.category == 'A'
+              = link_to(survey.number, edit_survey_path(survey))
+            - else
+              = survey.number
+          %td
+            / - unless ['C','REF','ME'].include? current_user.category
+            / = link_to survey.family.family_name, survey.family unless survey.family.blank?
+            / - else
+            - if current_user.category == 'A'
+              = link_to survey.family.family_name, edit_family_profile_path(survey.family) unless survey.family.blank?
+            - else
+              = survey.family.family_name  unless survey.family.blank?
+          %td
+            - unless survey.children.blank?
+              %ul
+                - survey.children.each do |ch|
+                  %li
+                    - if current_user.category == 'A'
+                      = link_to ch.full_name, edit_child_profile_path(ch)
+                    - else
+                      = ch.full_name
+          %td
+            %small= "#{survey.date_of_the_interview}" ' - ' "#{survey.mediator.full_name}"
+            - if current_user.category == 'L' || current_user.category == 'LDB' 
+              %br
+              - if survey.marked_for_delete.blank?
+                - if survey.created_by == current_user.id
+                  = link_to t('Mark for Delete'), '/surveys/' + survey.id.to_s + '/mark_for_delete/', :disable_with => 'loading...'
+              - else
+                = t("Marked for delete")
+                - if survey.created_by == current_user.id || (['L','LDB'].include? current_user.category)
+                  %small= link_to t('(Unmark)'), '/surveys/' + survey.id.to_s + '/mark_for_delete/', :disable_with => 'loading...'
+                - if current_user.category == 'L'
+                  %br
+                  = link_to t("Delete"), survey_path(survey), :method => 'delete', :confirm => t('This will delete survey and all of its data')
+        %tr
+          %td{:colspan => 4}
+            %hr
+
+- unless @completed_surveys.blank?
+  %h1= t('Completed Household Surveys')
+
+  %table{:width => '980px'}
     %tr
-      %td= survey.number
-      %td
-        = link_to survey.family.family_name, survey.family unless survey.family.blank?
-      %td
-        - unless survey.children.blank?
-          %ul
-            - survey.children_below_seven.each do |ch|
-              %li= link_to ch.full_name, ch
-          / %br= link_to t('Change children list'), edit_survey_path(survey)
-      %td= survey.date_of_the_interview
-      / %td= link_to 'Show', survey
-      %td= link_to t('Edit'), edit_survey_path(survey)
-      / %td link_to t('Delete'), survey, :confirm => t('Are you sure?'), :method => :delete
+      %th{:width => '200px'}= t('Survey No')
+      %th{:width => '290px'}= t('Family')
+      %th{:width => '260px'}= t('Children')
+      %th{:width => '230px'}= t('Date')
+    %tr
+      %td{:colspan => 4}
+        %hr
 
+    - @completed_surveys.each do |survey|
+      %tr
+        %td= (['A','L','LDB'].include? current_user.category) ? link_to(survey.number, edit_survey_path(survey)) : survey.number
+        %td
+          / - unless ['C','REF','ME'].include? current_user.category
+          / = link_to survey.family.family_name, survey.family unless survey.family.blank?
+          / - else
+          - if current_user.category == 'A'
+            = link_to survey.family.family_name, edit_family_profile_path(survey.family) unless survey.family.blank?
+          - else
+            = survey.family.family_name  unless survey.family.blank?
+        %td
+          - unless survey.children.blank?
+            %ul
+              - survey.children.each do |ch|
+                %li
+                  - if current_user.category == 'A'
+                    = link_to ch.full_name, edit_child_profile_path(ch)
+                  - else
+                    = ch.full_name
+        %td
+          %small= "#{survey.date_of_the_interview}" ' - ' "#{survey.mediator.full_name}"
+          - if ['L','LDB'].include? current_user.category
+            - if survey.verified == 1
+            - else
+              - if survey.marked_for_delete.blank?
+                - if survey.created_by == current_user.id
+                  %br
+                  = link_to t('Mark for Delete'), '/surveys/' + survey.id.to_s + '/mark_for_delete/', :disable_with => 'loading...'
+              - else
+                %br
+                = t("Marked for delete")
+                - if survey.created_by == current_user.id || (['L','LDB'].include? current_user.category)
+                  %small= link_to t('(Unmark)'), '/surveys/' + survey.id.to_s + '/mark_for_delete/', :disable_with => 'loading...'
+                - if current_user.category == 'L'
+                  %br
+                  = link_to t("Delete"), survey_path(survey), :method => 'delete', :confirm => t('This will delete survey and all of its data')
+            - if current_user.category == 'L'
+              %br
+              - if survey.verified == 1
+                = t("Verified")
+              - else
+                = link_to t('Mark as verified'), '/surveys/' + survey.id.to_s + '/mark_as_verified/', :disable_with => 'loading...'
+      %tr
+        %td{:colspan => 4}
+          %hr
 %br
 
 .commit

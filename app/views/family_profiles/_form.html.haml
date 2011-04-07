@@ -1,11 +1,40 @@
 #steps
-  - semantic_form_for @family_profile do |f|
+  - semantic_form_for @family_profile,:html => {:class => 'form'} do |f|
     = f.error_messages
     - f.inputs t("Family Profile"), :id => "family_profile", :class => 'step' do
       = f.input :family_name
-      = f.input :fathers_age, :input_html => { :size => 2 }
-      = f.input :mothers_age, :input_html => { :size => 2 }
-      = f.input :number_of_children, :input_html => { :size => 2 }
-      = f.input :number_of_children_below_seven, :input_html => { :size => 2 }
-      = f.input :household_in_settlement, :as => :radio
+      %li{:class=>'numeric optional'}
+        %label
+          = t("22 Fathers age")
+          = @family_profile.surveys.first.fathers_age
+      / = f.input :fathers_age, :input_html => { :size => 2 }
+      %li{:class=>'numeric optional'}
+        %label
+          = t("23 Mothers age")
+          = @family_profile.surveys.first.mothers_age
+      / = f.input :mothers_age, :input_html => { :size => 2 }
+      %li{:class=>'numeric optional'}
+        %label
+          = t("24 Number of children")
+          = @family_profile.surveys.first.number_of_all_children
+      / = f.input :number_of_children, :input_html => { :size => 2 }
+      %li{:class=>'numeric optional'}
+        %label
+          = t("25 Number of children below seven")
+          = @family_profile.surveys.first.number_of_children_below_seven
+      / = f.input :number_of_children_below_seven, :input_html => { :size => 2 }
+      %li{:class=>'numeric optional'}
+        %label
+          = t("26 Household in settlement")
+          = @family_profile.surveys.first.separated_settlement == 45 ? t("Yes") : t("No")
+      / = f.input :household_in_settlement, :as => :radio
       = f.buttons
+      
+    %fieldset.step
+      %div
+        %span Deti
+      %ol
+        - @family_profile.children.each do |ch|
+
+          %li.string.optional
+            %label= link_to ch.full_name, edit_child_profile_path(ch)

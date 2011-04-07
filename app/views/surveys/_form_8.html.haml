@@ -1,0 +1,26 @@
+#steps
+  - semantic_form_for @survey, :html => {:name => 'survey',:class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("8 Immunization and health care"), :id => "health_care", :class => 'step' do
+      = f.input :immunization_importance, :as => :radio, :collection => MenuItem.importance
+      = f.input :immunization_in_household, :as => :radio, :collection => MenuItem.quantity
+      - f.inputs t("immunization_information_source"), :id => "immunization_information_source" do
+        = f.input :immunization_information_source_doctor, :as => :boolean
+        = f.input :immunization_information_source_nurse, :as => :boolean
+        = f.input :immunization_information_source_mediator, :as => :boolean
+        = f.input :immunization_information_source_nurse_other, :as => :string, :input_html => { :style => 'width:650px', :rows => 1 }
+        = f.input :immunization_information_source_no_info, :as => :boolean, :as => :boolean, :input_html => { :onclick => "disable_all_other('immunization_information_source',this);"}
+        = f.input :immunization_information_source_do_not_know, :as => :boolean, :input_html => { :onclick => "disable_all_other('immunization_information_source',this);"}
+      = f.input :visited_hospital_during_pregnancy, :as => :radio, :collection => MenuItem.classic
+      - f.inputs t("talked_about_pregnancy"), :id => "talked_about_pregnancy" do
+        = f.input :talked_about_pregnancy_doctor, :as => :boolean
+        = f.input :talked_about_pregnancy_nurse, :as => :boolean
+        = f.input :talked_about_pregnancy_community_mediator, :as => :boolean
+        = f.input :talked_about_pregnancy_health_mediator, :as => :boolean
+        = f.input :talked_about_pregnancy_noone, :as => :boolean, :input_html => { :onclick => "disable_all_other('talked_about_pregnancy',this);"}
+        = f.input :talked_about_pregnancy_other, :as => :string, :input_html => { :style => 'width:650px', :rows => 1 }
+        = f.input :talked_about_pregnancy_no_answer, :as => :boolean, :input_html => { :onclick => "disable_all_other('talked_about_pregnancy',this);"}
+      = f.input :doctor_visit_after_birth, :as => :radio, :collection => MenuItem.classic
+      = f.input :breastfeeding_importance, :as => :radio, :collection => MenuItem.importance
+    = hidden_field_tag "step", "8"
+
+    = render :partial => 'buttons'

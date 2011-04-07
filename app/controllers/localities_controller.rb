@@ -13,6 +13,7 @@ class LocalitiesController < ApplicationController
   
   def create
     @locality = Locality.new(params[:locality])
+
     if @locality.save
       flash[:notice] = "Successfully created locality."
       redirect_to localities_url

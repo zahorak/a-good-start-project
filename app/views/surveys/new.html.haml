@@ -1,12 +1,74 @@
 %h1= t("New Survey")
 
-- if params[:step]=='1'
-  = render 'form_1'
-- elsif !@survey.errors.blank?
+#navigation
+  %ul
+    %li{ :class => params[:step]=='1' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=1'} 1 & 2
+      %p 1 & 2
+
+    %li{ :class => params[:step]=='2' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=2'} 3
+      %p 3
+
+    %li{ :class => params[:step]=='3' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=3'} 4
+      / %li
+      /   %a{ :href => edit_survey_path(@survey) + '?step=4'} 4
+      %p 4
+
+    %li{ :class => params[:step]=='5' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=5'} 5
+      %p 5
+
+    %li{ :class => params[:step]=='6' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=6'} 6
+      %p 6
+
+    %li{ :class => params[:step]=='7' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=7'} 7
+      %p 7
+
+    %li{ :class => params[:step]=='8' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=8'} 8
+      %p 8
+
+    %li{ :class => params[:step]=='9' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=9'} 9
+      %p 9
+
+    %li{ :class => params[:step]=='10' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=10'} 10
+      %p 10
+
+    %li{ :class => params[:step]=='11' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=11'} 11
+      %p 11
+
+    %li{ :class => params[:step]=='12' ? 'selected' : ''}  
+      / %a{ :href => edit_survey_path(@survey) + '?step=12'} 12
+      %p 12
+
+- if params[:action] == 'new'
   = render 'form_1'
 - else
-  = render 'form'
-  
+  = render 'form_'+params[:step]
+
+/ = render 'form_' + @step.to_s
+/ - if @survey.current_step==2
+/   = render 'form_2'
+/ - elsif @survey.current_step==3
+/   = render 'form_3'
+/ - elsif @survey.current_step==4
+/   = render 'form'
+/ - else
+/   = render 'form'
 
 .commit
   = link_to t('Back'), surveys_path
+
+/ - if params[:step]=='1'
+/   = render 'form_1'
+/ - elsif !@survey.errors.blank?
+/   = render 'form_1'
+/ - else
+/   = render 'form'

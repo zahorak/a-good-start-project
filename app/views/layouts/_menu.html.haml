@@ -1,48 +1,57 @@
 .cmsMain
   %ul
-    / %li=  link_to t('Home'), '/'
-    %li
-      = link_to t('Families'), family_profiles_path 
-      %ul
-        %li= link_to t('List'), family_profiles_path 
-        %li= link_to t('Add New Family'), new_family_profile_path 
-    %li
-      = link_to t('Children'), child_profiles_path 
-      %ul
-        %li= link_to t('List'), child_profiles_path 
-        %li= link_to t('Add New Child'), new_child_profile_path
-        %li= link_to t('Monthly Attendance in Kindergarten'), attendances_path
-        %li= link_to t('Attendance in after School Activities'), attendance_results_path
-        %li= link_to t('School Results - Children Tutored at School'), school_results_path
-        %li= link_to t('School Results - Children from Preschool Programs'), school_results_path
-        %li= link_to t('Change Enrollment of Child'), school_results_path
-        %li= link_to t('Immunization Data'), school_results_path
-    %li
-      = link_to t('Household Surveys'), surveys_path
-      %ul
-        %li= link_to t('List'), surveys_path
-        %li= link_to t('Add New Household Survey'), new_survey_path(:step => 1)
+    - unless ['C','REF','ME'].include? current_user.category
+      %li
+        = link_to t('Families'), family_profiles_path 
+        / %ul
+        / %li= link_to t('List'), family_profiles_path 
+        / %li= link_to t('Add New Family'), new_family_profile_path 
+      %li
+        = link_to t('Children'), child_profiles_path 
+        %ul
+          %li= link_to t('List'), child_profiles_path 
+          / %li= link_to t('Add New Child'), new_child_profile_path
+          - if ("A").include? current_user.category or [4,3,2].include? current_user.id 
+            - #L,LDB,
+            / %li= link_to t('Attendance in after School Activities'), attendance_results_path
+            %li= link_to t('Monthly Attendance in Preschool Program'), attendances_path
+            %li= link_to t('School Results'), school_results_path
+            / %li= link_to t('School Results - Children from Preschool Programs'), school_results_path
+            %li= link_to t('Change Enrollment of Child'), school_results_path
+            %li= link_to t('Immunization Data'), immunizations_path
+    
+    - if ("L,LDB,A").include? current_user.category
+      %li
+        = link_to t('Household Surveys'), surveys_path
+        %ul
+          %li= link_to t('List'), surveys_path
+          %li= link_to t('Add New Household Survey'), new_survey_path(:step => 1)
     %li
       = link_to t('Institutions'), institutions_path
       %ul
         %li= link_to t('All'), institutions_path
         %li= link_to t('Kindergardens'), '/kindergartens'
         %li= link_to t('Schools'), '/schools'
-        %li= link_to t('Add New Institution'), new_institution_path
-    %li
-      = link_to t('Localities'), localities_path
-      %ul
-        %li= link_to t('Add New Locality'), new_locality_path
-    / %li
-    /   = link_to t('Countries'), countries_path
-    /   %ul
-    /     %li= link_to t('Add New Country'), new_country_path
-    %li
-      = link_to t('Menu Items'), menu_items_path
-      %ul
-        %li= link_to t('Translations of form field values'), menu_items_path 
-        %li= link_to t('Other Translations'), "/tolk"
-    %li=  link_to t('Statistics'), menu_items_path
+        - unless ['REF','ME'].include? current_user.category
+          %li= link_to t('Add New Institution'), new_institution_path
+    - if ("REF,A").include? current_user.category
+      %li
+        = link_to t('Localities'), localities_path
+        %ul
+          %li= link_to t('Add New Locality'), new_locality_path
+      %li
+        = link_to t('Countries'), countries_path
+        %ul
+          %li= link_to t('Add New Country'), new_country_path
+    - if current_user.category == 'A'
+      %li
+        = link_to t('Menu Items'), menu_items_path
+        %ul
+          %li= link_to t('Translations of form field values'), menu_items_path 
+          %li= link_to t('Other Translations'), "/tolk"
+    / - if ["REF","ME","A"].include? current_user.category
+    %li=  link_to t('Statistics'), user_path(current_user)
+    %li=  link_to t('Hotline'), '/hotline'
     %li= link_to (current_user.full_name + ': ' + t('My profile')), edit_user_path(current_user) unless current_user.blank?
     %li= link_to t('Logout'), '/users/sign_out' unless current_user.blank?
     %li= link_to t('Login'), '/users/sign_in' if current_user.blank?

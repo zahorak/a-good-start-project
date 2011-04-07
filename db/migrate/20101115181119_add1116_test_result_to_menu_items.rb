@@ -12,6 +12,8 @@ class Add1116TestResultToMenuItems < ActiveRecord::Migration
     mi.save
     mi = MenuItem.new(:name => 'I don\'t know / No answer', :position => 6, :category => 'test_result')
     mi.save
+    mi = MenuItem.new(:name => 'Other', :position => 7, :category => 'test_result')
+    mi.save
   end
 
   def self.down

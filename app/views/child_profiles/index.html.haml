@@ -6,18 +6,23 @@
     %th= t('Family')
     %th= t('Birthdate')
     %th= t('Gender')
+    %th= t('Institution')
     %th
     %th
 
   - @child_profiles.each do |child_profile|
-    %tr
-      %td= link_to child_profile.full_name, edit_child_profile_path(child_profile)
-      %td= link_to child_profile.family.family_name, child_profile.family unless child_profile.family.blank?
+    %tr.row
+      %td= link_to child_profile.full_name_reversed, edit_child_profile_path(child_profile)
+      -if current_user.category == 'A'
+        %td= link_to child_profile.family.family_name, edit_family_profile_path(child_profile.family) unless child_profile.family.blank?
+      - else
+        %td= child_profile.family.family_name unless child_profile.family.blank?
       %td= child_profile.date_of_birth
       %td= child_profile.full_gender
-      %td= link_to t('Edit'), edit_child_profile_path(child_profile)
-      %td= link_to t('Delete'), child_profile, :confirm => t('Are you sure?'), :method => :delete
+      %td= child_profile.institution.name unless child_profile.institution.blank?
+      / %td= link_to t('Edit'), edit_child_profile_path(child_profile)
 
-%br
-.commit
-  = link_to t('Add Child'), new_child_profile_path
+
+/ %br
+/ .commit
+/   = link_to t('Add Child'), new_child_profile_path

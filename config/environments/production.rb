@@ -26,6 +26,8 @@ GoodStart::Application.configure do
 
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
+  config.action_mailer.delivery_method = :sendmail
+  config.action_mailer.perform_deliveries = true
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this

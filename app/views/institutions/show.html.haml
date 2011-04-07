@@ -1,6 +1,20 @@
 %p#notice= notice
 
+#steps
+  %form
+    %fieldset.step
+      %div
+        %span= @institution.name + ' - ' + @institution.locality.full_name
 
-= link_to 'Edit', edit_institution_path(@institution)
-\|
-= link_to 'Back', institutions_path
+      %ol
+        %li.string.optional
+          %label= raw(@institution.name)
+          %label= raw(@institution.code.full_name)
+
+      %ol
+        %li.string.optional
+          %label Children
+          %label
+            - @institution.children.each do |ch|
+              %p= ch.full_name
+              

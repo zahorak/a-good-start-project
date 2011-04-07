@@ -1,13 +1,83 @@
 %h1= t('You are editing survey no: ') + @survey.number
 
-- if @survey.current_step==2
-  = render 'form_2'
-- elsif @survey.current_step==3
-  = render 'form_3'
-- elsif @survey.current_step==4
-  = render 'form'
-- else
-  = render 'form'
+#navigation
+  %ul
+    %li{ :class => params[:step]=='1' ? 'selected' : ''}  
+      - if @survey.current_step >= 2
+        %a{ :href => edit_survey_path(@survey) + '?step=1'} 1 & 2
+      -else
+        %p 1 & 2
+
+    %li{ :class => params[:step]=='3' ? 'selected' : ''}  
+      - if @survey.current_step > 2
+        %a{ :href => edit_survey_path(@survey) + '?step=3'} 3
+      - else
+        %p 3
+
+    %li{ :class => params[:step]=='4' ? 'selected' : ''}  
+      - if @survey.current_step > 3
+        %a{ :href => edit_survey_path(@survey) + '?step=4'} 4
+      - else
+        %p 4
+
+    %li{ :class => params[:step]=='5' ? 'selected' : ''}  
+      - if @survey.current_step > 4
+        %a{ :href => edit_survey_path(@survey) + '?step=5'} 5
+      - else
+        %p 5
+
+    %li{ :class => params[:step]=='6' ? 'selected' : ''}  
+      - if @survey.current_step > 5
+        %a{ :href => edit_survey_path(@survey) + '?step=6'} 6
+      - else
+        %p 6
+
+    %li{ :class => params[:step]=='7' ? 'selected' : ''}  
+      - if @survey.current_step > 6
+        %a{ :href => edit_survey_path(@survey) + '?step=7'} 7
+      - else
+        %p 7
+
+    %li{ :class => params[:step]=='8' ? 'selected' : ''}  
+      - if @survey.current_step > 7
+        %a{ :href => edit_survey_path(@survey) + '?step=8'} 8
+      - else
+        %p 8
+
+    %li{ :class => params[:step]=='9' ? 'selected' : ''}  
+      - if @survey.current_step > 8
+        %a{ :href => edit_survey_path(@survey) + '?step=9'} 9
+      - else
+        %p  9
+
+    %li{ :class => params[:step]=='10' ? 'selected' : ''}  
+      - if @survey.current_step > 9
+        %a{ :href => edit_survey_path(@survey) + '?step=10'} 10
+      - else
+        %p 10
+
+    %li{ :class => params[:step]=='11' ? 'selected' : ''}  
+      - if @survey.current_step > 10
+        %a{ :href => edit_survey_path(@survey) + '?step=11'} 11
+      - else
+        %p 11
+
+    %li{ :class => params[:step]=='12' ? 'selected' : ''}  
+      - if @survey.current_step > 11
+        %a{ :href => edit_survey_path(@survey) + '?step=12'} 12
+      - else
+        %p 12
+
+
+= render 'form_' + @step.to_s
+/ - if @survey.current_step==2
+/   = render 'form_2'
+/ - elsif @survey.current_step==3
+/   = render 'form_3'
+/ - elsif @survey.current_step==4
+/   = render 'form'
+/ - else
+/   = render 'form'
 
 .commit
   = link_to t('Back'), surveys_path

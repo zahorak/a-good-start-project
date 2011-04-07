@@ -1,0 +1,39 @@
+#steps
+  - semantic_form_for @survey, :html => {:name => 'survey',:class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("children_below_three"), :id => "children_below_three", :class => 'step' do
+      - unless @survey.child_bellow_3_attending_creche.blank?
+        - f.inputs t("reason_for_creche"), :id => "reason_for_creche" do
+          = f.input :reason_for_creche_likes, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_free_meal, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_time, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche();"}
+          = f.input :reason_for_creche_trust, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_friendships, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_playing, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_learning, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_language, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_other, :input_html => {:style => 'width:650px', :rows => 1 }
+          = f.input :reason_for_creche_no_answer, :as => :boolean, :input_html => { :onclick => "reason_for_creche2(this);"}
+        = f.input :talk_with_teacher, :as => :radio, :collection => MenuItem.frequency_extended
+      - else
+        %fieldset{:class => 'inputs'}
+          %div
+            %span= t('Q101a102under3')
+      - unless @survey.child_bellow_3_at_home.blank?
+        - f.inputs t("reason_not_attend"), :id => "reason_not_attend" do
+          = f.input :reason_not_attend_expensive, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_no_creche, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_no_place, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_no_work, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_no_trust, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_bad_treating, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_language, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_family, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_other, :input_html => {:style => 'width:650px', :rows => 1 }
+          = f.input :reason_not_attend_no_answer, :as => :boolean, :input_html => { :onclick => "reason_not_attend2(this);"}
+      - else
+        %fieldset{:class => 'inputs'}
+          %div
+            %span= t('Q103under3home')
+    = hidden_field_tag "step", "10"
+
+    = render :partial => 'buttons'

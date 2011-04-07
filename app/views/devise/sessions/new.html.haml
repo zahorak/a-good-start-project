@@ -1,15 +1,15 @@
 #steps
   %h1= t('Sign in')
-  = semantic_form_for resource, :as => resource_name, :url => session_path(resource_name) do |f|
+  = semantic_form_for resource, :as => resource_name, :url => session_path(resource_name),:html => {:class => 'form'} do |f|
     = devise_error_messages!
     - f.inputs t('Sign in'), :id => "sign_in", :class => 'step' do
-      = f.input :email
+      = f.input :email, :input_html => {:size => 30}
       = f.input :password
       - if devise_mapping.rememberable?
         = f.input :remember_me, :as => 'boolean'
       %li
         = f.submit t("Sign in")
-  %form{ :method=>'post', :action=>'/'}
+  %form{ :method=>'post', :action=>'/',:class => 'form'}
     %input{ :name=>"authenticity_token", :type=>"hidden", :value=> "#{form_authenticity_token}" }
     %fieldset.step
       %ol

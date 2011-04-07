@@ -1,9 +1,14 @@
 class ChildProfilesController < ApplicationController
-  # GET /child_profiles
-  # GET /child_profiles.xml
   def index
-    @child_profiles = ChildProfile.all
-#    flash[:notice] = t("hello")
+    if current_user.category == 'A'
+      @child_profiles = ChildProfile.all
+    else
+      if current_user.localities.blank?
+        @child_profiles = current_user.children(:order=> 'childs_last_name,childs_first_name')
+      else
+        @child_profiles = ChildProfile.find(:all, :conditions => current_user.id.to_s + "=child_profiles.created_by or child_profiles.locality_id in(" + current_user.locality_ids*"," + ")")
+      end
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -36,13 +41,19 @@ class ChildProfilesController < ApplicationController
   # GET /child_profiles/1/edit
   def edit
     @child_profile = ChildProfile.find(params[:id])
+    if current_user.category == 'LDB'
+      if @child_profile.created_by != current_user.id
+        render :text => t('You do not have right to edit this child!')
+      end
+    end
   end
 
   # POST /child_profiles
   # POST /child_profiles.xml
   def create
     @child_profile = ChildProfile.new(params[:child_profile])
-
+    @child_profile.created_by =  current_user.id
+    
     respond_to do |format|
       if @child_profile.save
         format.html { redirect_to(child_profiles_path, :notice => 'Child profile was successfully created.') }
@@ -61,7 +72,7 @@ class ChildProfilesController < ApplicationController
 
     respond_to do |format|
       if @child_profile.update_attributes(params[:child_profile])
-        format.html { redirect_to(child_profiles_path, :notice => 'Child profile was successfully updated.') }
+        format.html { redirect_to(child_profiles_path, :notice => t('Child profile was successfully updated.')) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -81,4 +92,5 @@ class ChildProfilesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
 end

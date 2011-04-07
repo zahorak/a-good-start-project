@@ -1,626 +1,731 @@
 --- 
 ro: 
-  ? "1 Interview details"
-  : "1. Detalii despre interviu/ aplicarea chestionarului"
-  ? "10 Children younger than 3 years"
-  : "10.	Întrebări pentru părinţii care au copii între 0 şi 3 ani "
-  ? "11 Children 3 to 7 years"
-  : "11.	Întrebări pentru părinţi cu copii între 3-7 ani"
-  ? "12 Other socio-economic data"
-  : "12.	Alte date socio-economice"
-  ? "2 Family details"
-  : "2.	Informaţii despre familie:"
-  ? "3 Children details"
-  : "3. Detalii despre copiii"
-  ? "4 Child assessment for children aged 3-7 years"
-  : "4.	Evaluare pentru copii cu vârste între 3-7 ani"
-  ? "4 Children assesment"
-  : " 4. Evaluarea copiilor"
-  ? "5 Household details"
-  : "5.	Informaţii despre gospodărie"
-  ? "55 What language is spoken in your household?"
-  : "5.5 Ce limbă vorbiţi acasă? "
-  ? "56 What is the mother tongue of your children?"
-  : "5.6 Care este limba maternă pe care o vorbesc copiii dvs?"
-  ? "6 Parent's attitude"
-  : "6.	Atitudinea părinţilor faţă de educaţia şi îngrijirea copiilor la o vârstă timpurie"
-  ? "7 Parent's expectations"
-  : "7.	Aşteptările părinţilor cu privire la realizările şcolare viitoare ale copiilor lor"
-  ? "8 Immunization and health care"
-  : "8.	Îngrijirea stării de sănătate şi vaccinare"
-  ? "9 Parent's attitude towards learning at home"
-  : "9.	Atitudinea părinţilor privind studiul copiilor şi dezvoltarea lor acasă"
-  ? "A - at home and not enrolled"
-  : "A –acasă şi nu este înscris undeva   "
-  ? "A Good Start"
-  : "UN START BUN"
-  ? "Add Child"
-  : "Adauga un copil nou"
-  ? "Add Family"
-  : "Adauga familia"
-  ? "Add New Child"
-  : "Adauga un copil nou"
-  ? "Add New Country"
-  : "Adauga o noua tara"
-  ? "Add New Family"
-  : "Adauga o noua familia"
-  ? "Add New Household Survey"
-  : "Adauga o noua gospodarie"
-  ? "Add New Institution"
-  : "Adauga o noua institutie"
-  ? "Add New Locality"
-  : "Adauga o noua Localitate"
-  ? "Adding Family"
-  : "Familie adaugata"
-  All: Totii
-  ? "Attendance in after School Activities"
-  : "Prezenta in activitati de dupa scoala"
-  Back: "Inapoi la lista"
-  ? "Back to List"
-  : "Inapoi la lista"
-  Birthdate: "Data de nastere"
-  ? "Change Enrollment of Child"
-  : "Schimbarea inscrierii copilului"
-  Child: Copil
-  Children: Copiii
-  ? "Children below seven"
-  : "Copii cu vârsta cuprinsă între 0-7 ani"
-  Countries: Tari
-  Country: Tara
-  Date: Data
-  Delete: Sterge
-  Destroy: Sterge
-  Edit: Editare
-  ? "Editing institution"
-  : "Institutia care a editat\n"
-  Families: Familii
-  Family: Familie
-  ? "Family name"
-  : "Numele familiei"
-  ? "Fathers age"
-  : "Vârsta tatălui "
-  Gender: "Sexul copilului"
-  Home: Casa
-  ? "Household Survey"
-  : "Cercetarea gospodariei"
-  ? "Household Surveys"
-  : "Cercetarii in gospodarie"
-  ? "Household in settlement"
-  : "Gospodarie in comunitate"
-  ? "Immunization Data"
-  : "Date despre imunizare"
-  ? "Immunization Information Source"
-  : "Sursa de infromatiie pentru imunizare"
-  Institution: Institutie
-  Institutions: Institutii
-  Kindergardens: Gradinite
-  Kindergarten: Gradinita
-  Kindergartens: "Gradinite\n"
-  List: Lista
-  Localities: Localitati
+  play: "9.4 \xC3\x8En ultimele 3 zile, cineva mai mare de 15  ani, care locuie\xC5\x9Fte \xC3\xAEn aceea\xC5\x9Fi cas\xC4\x83/ gospod\xC4\x83rie, s-a jucat cu copiii? "
+  Number of Schooldays in month: "Num\xC4\x83rul de zile de educa\xC5\xA3ie \xC3\xAEn luna"
+  reason_for_creche: "10.1 V\xC4\x83 rog s\xC4\x83 \xC3\xAEmi spune\xC5\xA3i care sunt cele mai importante trei motive pentru care copilul dvs merge la cre\xC5\x9F\xC4\x83, gr\xC4\x83dini\xC5\xA3\xC4\x83 sau alt program comunitar."
+  Voluntary: Voluntar
+  Other Translations: Alte traduceri
+  Add New Child: Adauga un copil nou
+  8 Immunization and health care: "8.\t\xC3\x8Engrijirea st\xC4\x83rii de s\xC4\x83n\xC4\x83tate \xC5\x9Fi vaccinare"
+  55 What language is spoken in your household?: "5.5 Ce limb\xC4\x83 vorbi\xC5\xA3i acas\xC4\x83? "
+  book_reading: "9.2 \xC3\x8En ultimele 3 zile, cineva mai mare de 15 ani, care locuie\xC5\x9Fte \xC3\xAEn aceea\xC5\x9Fi cas\xC4\x83/ gospod\xC4\x83rie, a citit c\xC4\x83rti sau s-a uitat la c\xC4\x83rti cu ilustra\xC5\xA3ii \xC3\xAEmpreun\xC4\x83 cu copilul/ copiii? "
+  Family name: Numele familiei
   Locality: Localitate
-  Login: Inregistrare
-  Logout: Iesire
-  ? "Menu Items"
-  : Traduceri
-  ? "Monthly Attendance in Kindergarten"
-  : "Prezenta lunara la gradinita"
-  ? "Mothers age"
-  : "Vârsta mamei "
-  Name: Nume
-  ? "New Institution"
-  : "Institutie noua"
-  ? "New Survey"
-  : "Chestionar nou"
-  ? "Number of children"
-  : "Numărul de copii"
-  ? "Number of children below seven"
-  : "Numarul copiilor cu vârsta cuprinsă între 0-7 ani"
-  ? "Other Translations"
-  : "Alte traduceri"
-  School: Scoala
-  ? "School Results - Children Tutored at School"
-  : "Rezultate scolare - copil asistat/mentorat"
-  ? "School Results - Children from Preschool Programs"
-  : "Rezultatele scolare - copil 6 ani"
-  ? "Sign in"
-  : "Intra "
-  ? "Sign out"
-  : Iesire
-  ? "Sign up"
-  : Inscrie-te
-  Statistics: Statistici
-  ? "Survey No"
-  : "Chestionarul numarul"
-  ? "Translations of form fields"
-  : "Traducerea campurilor din formular"
-  ? "You are editing survey no: "
-  : "Editati cercetarea numarul:"
-  activerecord: 
-    attributes: 
-      child_profile: 
-        alphabet: "4.1 Poate numi/ spune cel puţin zece litere din alfabet?"
-        buttons: "4.6 Îsi poate incheia singur nasturii la îmbrăcăminte?"
-        childs_first_name: "Prenumele copilului"
-        childs_last_name: "Numele de familie al copilului"
-        childs_surname: "Numele de familie al copilului"
-        date_of_birth: "Data naşterii"
-        enrolled_to: "Este copilul înscris la grădiniţă, şcoală…? Vă rog să specificaţi numele şcolii/ al instituţiei."
-        family: "Numele familiei"
-        family_name: "Numele familiei"
-        gender: "Sexul copilului"
-        numbers: "4.5 Recunoaşte simbolurile pentru numerele de la 1 la 10?"
-        other_children: "4.9 Se înţelege bine cu ceilalţi copii?"
-        reading_words: "4.2 Poate citi patru cuvinte simple, obişnuite?"
-        routine_activities: "4.7 Face activităţi de zi cu zi fără a i se reaminti (cum ar fi să se spele pe dinţi, să strângă după ce mănâncă sau se joacă sau să ajute cu treburile prin casă)?"
-        selfconfidence: "4.8 Are încredere în el/ ea?"
-        sentences: "4.4 Poate înţelege propoziţii simple în limba naţională/ regională?"
-        writing: "4.3 Îşi poate scrie propriul nume?"
-      family_profile: 
-        family_name: "2.1 Numele familiei"
-        fathers_age: "2.2 Vârsta tatălui"
-        mothers_age: "2.3 Vârsta mamei"
-        number_of_children: "2.4 Numărul de copii"
-        number_of_children_below_seven: "2.5 Numarul copiilor cu vârsta cuprinsă între 0-7 ani"
-      institution: 
-        category: Categorii
-        code: Cod
-        locality: Localitate
-        name: Nume
-      menu_items: 
-        code: Cod
-      survey: 
-        are_teachers_helpfull: "11.13 Învăţătorii vă ajută copilul să înveţe limba în care se predă?"
-        better_in_school: "6.1 Ce credeţi, când se descurcă mai bine copiii la scoală?"
-        birth_certificate: "12.3 Toţi copiii au certificate de naştere?"
-        book_count: "9.8 Cât de multe cărti sau cărţi cu ilustraţii aveţi pentru copiii mai mici?"
-        book_reading_father: tata
-        book_reading_mother: mama
-        book_reading_no_answer: "Nu ştiu/ nu răspund"
-        book_reading_noone: nimeni
-        book_reading_other: altcineva
-        boys_girls_success_importance: "7.3 Cât de important este pentru băieţi şi fete să aibă succes la şcoală?"
-        breastfeeding_importance: "8.7 Ce credeţi, cât este important este alăptatul pentru  copii?"
-        caregiver_activity: "Persoana care are grijă de copii"
-        caregiver_activity_other: "Altceva:"
-        children_language_albanian: Albaneză
-        children_language_hungarian: Maghiară
-        children_language_macedonian: Macedoneană
-        children_language_other: "Altceva:"
-        children_language_romani: Romani
-        children_language_romanian: Română
-        children_language_slovak: Slovacă
-        childs_development_information_source_books: "Citesc cărţi"
-        childs_development_information_source_newspapers: "Citesc articole de ziare despre asta"
-        childs_development_information_source_no_idea: "Nu ştiu de unde iau informaţia "
-        childs_development_information_source_no_need: "Nu am nevoie de mai multe informaţii "
-        childs_development_information_source_other_persons: "Întreb alte persoane "
-        childs_development_information_source_others: Altceva
-        childs_development_information_source_tv: "Mă uit la programe TV care prezintă aceste lucruri "
-        class_roma: "11.4 În clasa în care este copilul dvs la grădiniţă, ceilalti copii sunt ….? "
-        comment: Comentarii
-        created_by: "Introdus de"
-        date_of_the_interview: "1.1 Data la care are loc interviului  "
-        doctor_visit_after_birth: "8.6 În primele luni de la naşterea celui mai mic dintre copii, a fost copilul  consultat vreun doctor (pediatru sau de alta specializare) sau asistentă medicală?"
-        draw_father: tata
-        draw_mother: mama
-        draw_no_answer: "Nu ştiu/ nu răspund"
-        draw_noone: nimeni
-        draw_other: altcineva
-        duration_of_interview: "1.2 Durata interviului"
-        father_activity: Tata
-        father_activity_other: altcineva
-        fathers_age: "2.2 Vârsta tatălui "
-        home_computer: "Un calculator? "
-        home_electricity: "Curent electric?"
-        home_internet: "Conexiune la internet?  "
-        home_kitchen: "Bucatarie în interior? "
-        home_latrine: "O latrină? "
-        home_phone: "Telefon mobil şi/ sau fix? "
-        home_radio: "Un aparat de radio? "
-        home_sewerage: "Canalizare? "
-        home_shower: "Duş sau baie in interior? "
-        home_toilet: "Toaletă în interior? "
-        home_tv: "Televizor? "
-        home_water: "Apă curentă in interior? "
-        homework_father: tata
-        homework_mother: mama
-        homework_no_answer: "Nu ştiu/ nu răspund"
-        homework_no_child_in_school_yet: "Niciun copil nu este încă înscris la şcoală"
-        homework_noone: nimeni
-        homework_other: altcineva
-        immunization_importance: "8.1 Cât de importantă credeţi că este vaccinarea pentru copii, în general?"
-        immunization_in_household: "8.2 Din câte ştiţi, toţi copiii din casa/ gospodăria în care locuiţi au vaccinurile făcute?"
-        immunization_information_source_do_not_know: "Nu ştiu/ nu răspund"
-        immunization_information_source_doctor: Doctor
-        immunization_information_source_mediator: "Mediator comunitar"
-        immunization_information_source_no_info: "Nu am fost informat(ă)/ nu am primit explicaţii"
-        immunization_information_source_nurse: "Asistent medical sau altcineva care lucrează în domeniul sanitar"
-        immunization_information_source_nurse_other: "Altă persoană (vă rugăm completaţi): "
-        interviewer_id: Intervievator
-        kindergarten_days: "11.2 În ultima săptamână (ultimele 5 zile lucrătoare), câte zile a mers copilul dvs la grădiniţă?"
-        kindergarten_importance: "6.2 Cât de important este pentru copii, în general, să meargă la grădiniţă sau la alte programe de educaţie pentru copii mici, pentru a avea un viitor bun?"
-        kindergarten_roma: "11.3 La grădinita copilului dvs, ceilalti copii sunt ….? "
-        language_albanian: Albaneză
-        language_hungarian: Maghiară
-        language_macedonian: Macedoneană
-        language_other: "Altceva: \n\
-            (Vă rugăm completaţi): "
-        language_romani: "Romani "
-        language_romanian: Română
-        language_slovak: Slovacă
-        lesson_difficulty: "11.12 Este dificil pentru copilul dvs să înţeleagă lecţiile din cauza limbii în care se predă?"
-        lesson_language_understanding: "11.6 Este dificil pentru copilul dvs să înţeleagă lecţiile din cauza limbii în care se predă?"
-        locality: Localitate
-        mediator: Mediator
-        mediator_id: Mediator
-        mediator_survey_counter: "Număr chestionar"
-        mother_activity: Mama
-        mother_activity_other: altele
-        mother_has_id: "12.2 Mama copiilor are acte de identitate? "
-        mothers_age: "2.3 Vârsta mamei "
-        number_of_all_children: "2.4 Numărul de copii"
-        number_of_children_below_seven: "2.5 Numarul copiilor cu vârsta cuprinsă între 0-7 ani"
-        number_of_people_over_18: "12.6 Numărul persoanelor din casă/ gospodărie care au peste 18 ani"
-        number_of_people_under_18: "12.5 Numărul persoanelor din casă/ gospodărie care au mai puţin de 18 ani"
-        play_father: tata
-        play_mother: mama
-        play_no_answer: "Nu ştiu/ nu răspund"
-        play_noone: nimeni
-        play_other: altcineva
-        primary_caregiver: "5.2 Sunteti persoana principală care are grijă de copii?"
-        primary_caregiver_age: "5.4 Ce vârstă are această persoană? "
-        reason_for_creche_free_meal: "Prin program se oferă o masă caldă sau alt sprijin material."
-        reason_for_creche_friendships: "Copilul meu îşi poate face noi prieteni la grădiniţă."
-        reason_for_creche_language: "Acolo, copilul meu poate învăţa limba oficială/ care se vorbeşte în regiune."
-        reason_for_creche_learning: "Acolo, copilul meu poate să înveţe."
-        reason_for_creche_likes: "Copilului meu îi place să meargă la creşă/ program."
-        reason_for_creche_no_answer: "Nu ştiu/ nu răspund"
-        reason_for_creche_other: "Alte motive: "
-        reason_for_creche_playing: "Acolo, copilul meu se poate juca."
-        reason_for_creche_time: "Astfel am timp să muncesc/ să mă ocup de alte lucruri."
-        reason_for_creche_trust: "Îmi plac/ am încredere în educatori. "
-        reason_for_kindergarten_better_chance: "Copilul meu va avea mai multe şanse să se descurce apoi la şcoală."
-        reason_for_kindergarten_compulsory: "Grădiniţa este obligatorie pentru copilul meu."
-        reason_for_kindergarten_free_meal: "La grădiniţă se oferă o masă caldă sau alt sprijin material."
-        reason_for_kindergarten_friendships: "Copilul meu îsi poate face noi prieteni la grădiniţă."
-        reason_for_kindergarten_language: "Acolo, copilul meu poate învăţa limba oficială/ care se vorbeşte în regiune."
-        reason_for_kindergarten_learning: "Acolo, copilul meu poate să înveţe."
-        reason_for_kindergarten_likes: "Copilului meu îi place să meargă la grădiniţă."
-        reason_for_kindergarten_no_answer: "Nu ştiu/ nu răspund"
-        reason_for_kindergarten_other: "Alte motive: "
-        reason_for_kindergarten_playing: "Acolo, copilul meu se poate juca."
-        reason_for_kindergarten_time: "Astfel am timp să muncesc/ să mă ocup de alte lucruri."
-        reason_for_kindergarten_trust: "Îmi plac/ am incredere în educatori. "
-        reason_not_attend_bad_treating: "Nu se poartă bine cu copilul meu."
-        reason_not_attend_expensive: "Este prea scump."
-        reason_not_attend_family: "Copilul meu ar trebui să stea cu familia."
-        reason_not_attend_language: "Copilul meu nu vorbeşte limba."
-        reason_not_attend_no_answer: "Nu ştiu/ nu răspund"
-        reason_not_attend_no_creche: "Nu există o creşă/ grădiniţă/ centru comunitar (pentru copii până în 3 ani) în apropiere."
-        reason_not_attend_no_place: "Nu sunt locuri."
-        reason_not_attend_no_trust: "Nu îmi plac/ nu am incredere în educatori."
-        reason_not_attend_no_work: "Nu lucrez şi pot sta acasa să am grija de copil."
-        reason_not_attend_other: "Alte motive: "
-        reason_not_enrolled_children_treating: "Ceilalţi copii nu se poartă bine cu copilul meu."
-        reason_not_enrolled_expensive: "Este prea scump."
-        reason_not_enrolled_family: "Copilul meu trebuie să stea cu familia."
-        reason_not_enrolled_language: "Copilul meu nu vorbeşte limba în care se predă."
-        reason_not_enrolled_no_answer: "Nu ştiu/ nu răspund"
-        reason_not_enrolled_no_clothes: "Nu am bani sa îi cumpăr copilului meu haine/ încaltăminte pentru a merge la grădiniţă."
-        reason_not_enrolled_no_like: "Copilului meu nu îi place să meargă la grădiniţă."
-        reason_not_enrolled_no_place: "Nu sunt locuri suficiente la grădiniţă."
-        reason_not_enrolled_no_work: "Nu lucrez şi pot sta acasă să am grijă de copil."
-        reason_not_enrolled_not_nearby: "Nu există o grădiniţă în apropiere."
-        reason_not_enrolled_other: "Alte motive: "
-        reason_not_enrolled_trust: "Nu îmi plac/ nu am încredere în educatori."
-        relation_to_children: "5.1 Ce relaţie de rudenie aveţi cu copiii din gospodărie (cu referire la copiii între 0 şi 7 ani)"
-        relation_to_children_other: "Altceva: (vă rugăm specificaţi ce anume) "
-        roma_village: "13.2 Este casa/ gospodăria amplasată într-o parte a satului sau un cartier al oraşului unde toţi/ aproape toţi vecinii sunt romi?"
-        school_caregiver: "Persoana care are grijă de copii"
-        school_caregiver_other: "Altceva:"
-        school_class_roma: "11.10 În clasa în care este copilul dvs la şcoală, ceilalţi copii sunt ….? "
-        school_father: Tata
-        school_father_other: "Altceva:"
-        school_good_bad: "11.14 Cât de bună sau proastă credeţi că este şcoala primară? "
-        school_mother: Mama
-        school_mother_other: "Altceva:"
-        school_roma: "11.9 La şcoala copilului dvs, ceilalţi copii sunt ….? "
-        school_teacher_information: "11.11 Învăţătorii vă vorbesc şi vă informează despre copilul dvs şi despre cum se descurcă la şcoală?"
-        separate_place: "9.9 Aveţi în casă/ gospodărie un un loc/ masă/ colţ separat în care copilul se poate juca sau poate învăţa?"
-        separated_settlement: "13.1 Este casa/ gospodăria amplasată undeva în afara oraşului/satului? "
-        talk_with_teacher: "10.2 Educatorii vă vorbesc şi vă informează despre copilul dvs şi despre cum se descurcă acolo? "
-        talked_about_pregnancy: "8.5 V-a vorbit vreodată cineva despre sarcina atunci când eraţi însărcinată şi înainte să se nască cel mai mic dintre copiii dvs? "
-        talked_about_pregnancy_community_mediator: "Mediator comunitar"
-        talked_about_pregnancy_doctor: Doctor
-        talked_about_pregnancy_health_mediator: "Mediator sanitar"
-        talked_about_pregnancy_no_answer: "Nu ştiu/ nu răspund"
-        talked_about_pregnancy_noone: Nimeni
-        talked_about_pregnancy_nurse: "Asistent medical "
-        talked_about_pregnancy_other: "Altă persoană (vă rugăm completaţi): "
-        teach_letters_father: tata
-        teach_letters_mother: mama
-        teach_letters_no_answer: "Nu ştiu/ nu răspund"
-        teach_letters_noone: nimeni
-        teach_letters_other: altcineva
-        teacher_help: "11.7 Dacă are dificultăţi de înţelegere, educatorii vă ajută copilul să înveţe limba în care se predă?"
-        teacher_informs: "11.5 Educatorii vă vorbesc şi vă informează despre copilul dvs şi despre cum se descurcă la grădiniţă? "
-        tell_stories_father: tata
-        tell_stories_mother: mama
-        tell_stories_no_answer: "Nu ştiu/ nu răspund"
-        tell_stories_noone: nimeni
-        tell_stories_other: altcineva
-        test_before_school: "11.15 Înainte de a se înscrie la şcoala primară, copilul dvs a dat vreun test?"
-        test_before_school_other: "Altele:"
-        test_before_school_result: "11.16 Dacă DA, care a fost rezultatul?   "
-        visited_hospital_during_pregnancy: "8.4 Când eraţi dvs însărcinată cu cel mai mic dintre copii, aţi mers la spital sau la doctor pentru consult?"
-        who_is_primary_caregiver: "5.3 Dacă NU, atunci cine este acea persoană? "
-        who_is_primary_caregiver_other: "Altcineva: (vă rugăm specificaţi cine) "
-        wished_daugters_education: "7.1 Ce credeţi despre viitorul fiicei dvs, ce şcoală ar trebui ea să termine? "
-        wished_daugters_education_other: "Altele:"
-        wished_sons_education: "7.2 Ce credeţi despre viitorul fiului dvs, ce şcoală ar trebui el să termine? "
-        wished_sons_education_other: "Altele:"
-      user: 
-        email: Email
-        password: Parola
-    errors: 
-      messages: 
-        record_invalid: "Validare nereuşită %{errors}"
-        taken: "este deja folosit"
-    models: 
-      ? "Child Profile"
-      : Copil
-      ? "Family Profile"
-      : Familie
-      Survey: Cercetare
-  activities: "12.7 Vă rog să îmi spuneţi care este principala ocupaţie a persoanelor din casă/ gospodărie."
-  book_reading: "9.2 În ultimele 3 zile, cineva mai mare de 15 ani, care locuieşte în aceeaşi casă/ gospodărie, a citit cărti sau s-a uitat la cărti cu ilustraţii împreună cu copilul/ copiii? "
-  children_below_seven: "11.	Întrebări pentru părinţi cu copii între 3-7 ani"
-  children_below_three: "10.	Întrebări pentru părinţii care au copii între 0 şi 3 ani "
-  childs_development_information_source: "9.1 Când aveţi o întrebare despre creşterea şi dezvoltarea copilului dvs, de unde aflaţi informaţia?"
-  date: 
-    abbr_day_names: 
-      - Dum
-      - Lun
-      - Mar
-      - Mie
-      - Joi
-      - Vin
-      - Sâm
-    abbr_month_names: 
-      - ~
-      - Ian
-      - Feb
-      - Mar
-      - Apr
-      - Mai
-      - Iun
-      - Iul
-      - Aug
-      - Sep
-      - Oct
-      - Noi
-      - Dec
-    day_names: 
-      - Duminică
-      - Luni
-      - Marți
-      - Miercuri
-      - Joi
-      - Vineri
-      - Sâmbată
-    formats: 
-      default: "%d-%m-%Y"
-      long: "%d %B %Y"
-      short: "%d %b"
-    month_names: 
-      - ~
-      - Ianuarie
-      - Februarie
-      - Martie
-      - Aprilie
-      - Mai
-      - Iunie
-      - Iulie
-      - August
-      - Septembrie
-      - Octombrie
-      - Noiembrie
-      - Decembrie
-    order: 
-      - !ruby/symbol day
-      - !ruby/symbol month
-      - !ruby/symbol year
-  datetime: 
-    distance_in_words: 
-      about_x_hours: 
-        one: "aproximativ o oră"
-        other: "aproximativ %{count} ore"
-      about_x_months: 
-        one: "aproximativ o lună"
-        other: "aproximativ %{count} luni"
-      about_x_years: 
-        one: "aproximativ un an"
-        other: "aproximativ %{count} ani"
-      almost_x_years: 
-        one: "aproape 1 an"
-        other: "aproape %{count} ani"
-      half_a_minute: "jumătate de minut"
-      less_than_x_minutes: 
-        one: "mai puțin de un minut"
-        other: "mai puțin de %{count} minute"
-      less_than_x_seconds: 
-        one: "mai puțin de o secundă"
-        other: "mai puțin de %{count} secunde"
-      over_x_years: 
-        one: "mai mult de un an"
-        other: "mai mult de %{count} ani"
-      x_days: 
-        one: "1 zi"
-        other: "%{count} zile"
-      x_minutes: 
-        one: "1 minut"
-        other: "%{count} minute"
-      x_months: 
-        one: "1 lună"
-        other: "%{count} luni"
-      x_seconds: 
-        one: "1 secundă"
-        other: "%{count} secunde"
-    prompts: 
-      day: Ziua
-      hour: Ora
-      minute: Minutul
-      month: Luna
-      second: Secunda
-      year: Anul
-  devise: 
-    confirmations: 
-      confirmed: "Contul dumneavostra a fost confimat cu succes. Acum sunteti inscris."
-      send_instructions: "Veti primii un email cu instructiuniile despre cum sa va confirmati acest cont in cateva minute."
-    failure: 
-      inactive: "Contul dumneavostra nu a fost inca activat."
-      invalid: "Parola sau email-ul nu sunt valide."
-      invalid_token: "Autentificarea jetonului invalida."
-      locked: "Contul dumneavoastra este blocat."
-      timeout: "Sesiunea dumneavostra a expirat, va rugam sa va reconectati pentru a continua.\n"
-      unauthenticated: "Trebuie sa va conectati sau sa va inscrie-ti pentru a continua."
-      unconfirmed: "Trebuie sa va confirmati contul pentru continuare."
-    mailer: 
-      confirmation_instructions: 
-        subject: "Confirmati instructiunile."
-      reset_password_instructions: 
-        subject: "Instructiuni de resetare a parolei."
-      unlock_instructions: 
-        subject: "Instructiuni de deblocare."
-    passwords: 
-      send_instructions: "Veti primii un email cu instructiunile despre cum sa va resetati parola in cateva minute."
-      updated: "Parola dumneavoastra a fost schimbata cu succes. Acum sunteti conectat."
-    registrations: 
-      destroyed: "La revedere, contul dumneavoastra a fost anulat cu success. Speram sa va revedem incurand."
-      signed_up: "Ati fost inscris cu succes. "
-      updated: "Contul dumneavostra a fost confirmat cu succes."
-    sessions: 
-      admin: 
-        errors: 
-          messages: 
-            not_found: "Nu a fost gasit"
-            not_locked: "Nu a fost blocat"
-      email: Email
-      password: Parola
-      signed_in: "V-ati conectat cu succes."
-    unlocks: 
-      send_instructions: "Ve-ti primi un email cu instructiunile de deblocare a contului dumneavoastra, in cateva minute."
-      unlocked: "Contul dumneavostra a fost deblocat cu succes. Acum, sunteti conectat."
-  draw: "9.5 În ultimele 3 zile, cineva mai mare de 15 ani, care locuieşte în aceeaşi casă/ gospodărie, a desenat împreună cu copiii? "
-  errors: 
-    format: "%{attribute} %{message} "
-    messages: 
-      accepted: "Trebuie sa fie acceptat"
-      already_confirmed: "A fost confirmat deja"
-      blank: "Nu poate fi spatiu necompletat"
-      confirmation: "Nu se potriveste cu confirmarea"
-      empty: "Nu poate fi lasat gol"
-      equal_to: "Trebuie sa fie egal la %{count}\n"
-      even: "Trebuie sa fie chiar"
-      exclusion: "Este rezervat"
-      greater_than: "Trebuie sa fie mai mare decat %{count}"
-      greater_than_or_equal_to: "Trebuie sa fie mai mare sau egal cu %{count}"
-      inclusion: "Nu este inclus in lista"
-      invalid: "Nu corespunde"
-      less_than: "Trebuie sa fie mai mic decat %{count}"
-      less_than_or_equal_to: "Trebuie sa fie mai mic sau egal cu %{count}"
-      not_a_number: "Nu este un numar"
-      not_an_integer: "Trebuie sa fie un numar intreg"
-      not_found: "Nu a fost gasit"
-      not_locked: "Nu a fost blocat"
-      odd: "Trebuie sa fie ciudat"
-      too_long: "Este foarte lung (maximum este de %{count} caractere)"
-      too_short: "Este foarte scurt (minim este %{count} caractere"
-      wrong_length: "Este lungimea gresita (ar tebuii sa fie%{count} caractere)\n"
+  All: Totii
+  tell_stories: "9.3 \xC3\x8En ultimele 3 zile, cineva mai mare de 15  ani, care locuie\xC5\x9Fte \xC3\xAEn aceea\xC5\x9Fi cas\xC4\x83/ gospod\xC4\x83rie, a spus pove\xC5\x9Fti copiilor?"
   female: " Feminin"
-  formtastic: 
-    create: Creaza
-    ? "no"
-    : Nu
-    required: Solicita
-    save: Salveaza
-    submit: Depun
-    update: Reinnoiesc
-    ? "yes"
-    : Da
-  helpers: 
-    select: 
-      prompt: "Va rugam selectati"
-    submit: 
-      create: "Creaza %{model} "
-      submit: "Salveaza %{model} "
-      update: "Reinnoieste %{model}"
-  home_equipment: "12.4 În casa- gospodăria în care locuiţi, aveţi...?"
-  homework: "9.7 În ultimele 3 zile, cineva mai mare de 15 ani, care locuieşte în aceeaşi casă/ gospodărie, i-a ajutat pe copiii care sunt la şcoală să-şi facă temele? "
-  immunization_information_source: |-
-      8.3 Aţi fost vreodată informat (ă) sau vi s-a explicat vreodată importanţa vaccinării?
-      Dacă DA, vă rog să îmi spuneţi cine v-a informat
-  male: Masculin
-  number: 
-    currency: 
-      format: 
-        delimiter: ","
-        format: "%n %u"
-        precision: 2
-        separator: "."
-        significant: 0
-        strip_insignificant_zeros: 0
-        unit: RON
-    format: 
-      delimiter: ","
-      precision: 3
-      separator: "."
-      significant: 0
-      strip_insignificant_zeros: 0
-    human: 
-      decimal_units: 
-        format: "%n %u"
-        units: 
-          billion: Miliard
-          million: Milion
-          quadrillion: Catralion
-          thousand: mii
-          trillion: Trilion
-      format: 
-        delimiter: ","
-        precision: 3
-        significant: 1
-        strip_insignificant_zeros: 1
-      storage_units: 
-        format: "%n %u"
-        units: 
-          byte: 
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
-    percentage: 
-      format: 
-        delimiter: ","
-  play: "9.4 În ultimele 3 zile, cineva mai mare de 15  ani, care locuieşte în aceeaşi casă/ gospodărie, s-a jucat cu copiii? "
-  reason_for_creche: "10.1 Vă rog să îmi spuneţi care sunt cele mai importante trei motive pentru care copilul dvs merge la creşă, grădiniţă sau alt program comunitar."
-  reason_for_kindergarten: "11.1 De ce merge copilul dvs la grădiniţă? Vă rog să îmi spuneţi principalele 3 motive. "
-  reason_not_attend: "10.3 Vă rog să îmi spuneţi care sunt principalele  motive pentru care copilul dvs nu merge la creşă, grădiniţă sau alt program comunitar. "
-  reason_not_enrolled: "11.8 Vă rog să îmi spuneţi care sunt principalele trei motive pentru care copilul dvs nu este încă înscris la şcoală şi NU MERGE la grădiniţă."
-  schools: "12.1 Ce şcoală au terminat părinţii/ cei care au grijă în principal de copii?"
+  Vaccinations: "Vaccin\xC4\x83rile"
+  Save and Add New Survey: "Salva \xC5\x9Fi a ad\xC4\x83uga noi chestionar"
+  Roma: Romi
+  Number of children below seven: "Numarul copiilor cu v\xC3\xA2rsta cuprins\xC4\x83 \xC3\xAEntre 0-7 ani"
+  A new survey has been completed in your locality: "Un nou chestionar a fost completat \xC3\xAEn localitatea dvs."
+  "User name:": "Nume de utilizator:"
+  Survey was saved and marked as completed: "Chestionarul a fost salvat \xC5\x9Fi marcat ca finalizat."
+  New Survey: Chestionar nou
+  Add Child: Adauga un copil nou
+  Families: Familii
+  "My Locality:": "Meu localitate:"
   support: 
     array: 
-      last_word_connector: " şi "
-      two_words_connector: " şi "
       words_connector: ", "
-  talked_about_pregnancy: "8.5 V-a vorbit vreodată cineva despre sarcina atunci când eraţi însărcinată şi înainte să se nască cel mai mic dintre copiii dvs? "
-  teach_letters: "9.6 În ultimele 3 zile, cineva mai mare de 15 ani, care locuieşte în aceeaşi casă/ gospodărie, i-a învăţat pe copii literele sau să numere?"
-  tell_stories: "9.3 În ultimele 3 zile, cineva mai mare de 15  ani, care locuieşte în aceeaşi casă/ gospodărie, a spus poveşti copiilor?"
+      last_word_connector: !binary |
+        IMWfaSA=
+
+      two_words_connector: !binary |
+        IMWfaSA=
+
+  male: Masculin
+  This survey is Marked as Complete: Acest chestionar este marcat ca finalizat
+  Statistics: Statistici
+  Add New Institution: Adauga o noua institutie
+  Change Enrollment of Child: Schimbarea inscrierii copilului
+  2 Family details: "2.\tInforma\xC5\xA3ii despre familie:"
+  Login: Inregistrare
+  Birthdate: Data de nastere
+  Localities: Localitati
+  Sign up: Inscrie-te
+  "Number of completed surveys:": "Num\xC4\x83rul de chestionare completate:"
+  Country: Tara
+  25 Number of children below seven: "2.5 Numarul copiilor cu v\xC3\xA2rsta cuprins\xC4\x83 \xC3\xAEntre 0-7 ani:"
+  A Good Start: UN START BUN
+  the total expected number of surveys has been completed: "num\xC4\x83rul total preconizat de chestionare a fost finalizat\xC4\x83"
+  School Results - Children Tutored at School: Rezultate scolare - copil asistat/mentorat
+  PCV: "PCV "
+  "Other data for parents/children?:": "Alte date pentru p\xC4\x83rin\xC5\xA3i / copii?:"
+  A Good Start - all expected surveys verified: "Un \xC3\xAEnceput bun - toate chestionarele de a\xC5\x9Fteptat verificate"
+  12 Other socio-economic data: 12.	Alte date socio-economice
+  BCG: BCG
+  Previous month was not yet entered: "Datele pentru luna precedent\xC4\x83 nu a fost \xC3\xAEnc\xC4\x83 introdus"
+  Family: Familie
+  Add New Country: Adauga o noua tara
+  IPV/PVi: "IPV/PVi "
+  Back to List: Inapoi la lista
+  Editing children attendances: "Editarea copii particip\xC4\x83ri"
   time: 
     formats: 
       default: "%a %d %b %Y, %H:%M:%S %z"
-      long: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
+      long: "%d %B %Y %H:%M"
+  home_equipment: "12.4 \xC3\x8En casa- gospod\xC4\x83ria \xC3\xAEn care locui\xC5\xA3i, ave\xC5\xA3i...?"
+  Translations of form fields: Traducerea campurilor din formular
+  Obligatory: Obligatoriu
+  "All children aged 0-7:": "To\xC5\xA3i copiii de 0-7 ani:"
+  Institution: Institutie
+  helpers: 
+    submit: 
+      submit: "Salveaza %{model} "
+      create: "Creaza %{model} "
+      update: Reinnoieste %{model}
+    select: 
+      prompt: Va rugam selectati
+  activerecord: 
+    models: 
+      Survey: Cercetare
+      Family Profile: Familie
+      Child Profile: Copil
+    attributes: 
+      menu_items: 
+        code: Cod
+      institution: 
+        name: Nume
+        category: Categorii
+        code: Cod
+        locality: Localitate
+      immunization: 
+        dtp: "DTP (Difteria, Tetanus, Pertussis) "
+        hib: "Hib (Haemophilus influenzae B) "
+        pcv: PCV (Pneumococcus)
+        ipv: IPV (Polio)
+        vhb: "VHB (Viral hepatitis BB) "
+        bcg: BCG (Tuberculosis)
+        mmr: MMR (Morbilli, Mumps, Rubeola)
+        child_id: Copil
+      family_profile: 
+        fathers_age: "2.2 V\xC3\xA2rsta tat\xC4\x83lui"
+        family_name: 2.1 Numele familiei
+        number_of_children_below_seven: "2.5 Numarul copiilor cu v\xC3\xA2rsta cuprins\xC4\x83 \xC3\xAEntre 0-7 ani"
+        mothers_age: "2.3 V\xC3\xA2rsta mamei"
+        number_of_children: "2.4 Num\xC4\x83rul de copii"
+      child_profile: 
+        enrolled_to: "Este copilul \xC3\xAEnscris la gr\xC4\x83dini\xC5\xA3\xC4\x83, \xC5\x9Fcoal\xC4\x83\xE2\x80\xA6? V\xC4\x83 rog s\xC4\x83 specifica\xC5\xA3i numele \xC5\x9Fcolii/ al institu\xC5\xA3iei."
+        buttons: "4.6 \xC3\x8Esi poate incheia singur nasturii la \xC3\xAEmbr\xC4\x83c\xC4\x83minte?"
+        selfconfidence: "4.8 Are \xC3\xAEncredere \xC3\xAEn el/ ea?"
+        reading_words: "4.2 Poate citi patru cuvinte simple, obi\xC5\x9Fnuite?"
+        childs_last_name: Numele de familie al copilului
+        sentences: "4.4 Poate \xC3\xAEn\xC5\xA3elege propozi\xC5\xA3ii simple \xC3\xAEn limba na\xC5\xA3ional\xC4\x83/ regional\xC4\x83?"
+        other_children: "4.9 Se \xC3\xAEn\xC5\xA3elege bine cu ceilal\xC5\xA3i copii?"
+        gender: Sexul copilului
+        family_name: Numele familiei
+        family: Numele familiei
+        childs_first_name: Prenumele copilului
+        writing: "4.3 \xC3\x8E\xC5\x9Fi poate scrie propriul nume?"
+        date_of_birth: "Data na\xC5\x9Fterii"
+        routine_activities: "4.7 Face activit\xC4\x83\xC5\xA3i de zi cu zi, f\xC4\x83r\xC4\x83 a i se reaminti (cum ar fi s\xC4\x83 se spele pe din\xC5\xA3i, s\xC4\x83 str\xC3\xA2ng\xC4\x83 dup\xC4\x83 ce m\xC4\x83n\xC3\xA2nc\xC4\x83 sau sa se joace sau s\xC4\x83 ajute cu treburile prin cas\xC4\x83)?"
+        numbers: "4.5 Recunoa\xC5\x9Fte simbolurile pentru numerele de la 1 la 10?"
+        childs_surname: Numele de familie al copilului
+        alphabet: "4.1 Poate numi/ spune cel pu\xC5\xA3in zece litere din alfabet?"
+      survey: 
+        tell_stories_father: tata
+        school_teacher_information: "11.11 \xC3\x8Env\xC4\x83\xC5\xA3\xC4\x83torii v\xC4\x83 vorbesc \xC5\x9Fi v\xC4\x83 informeaz\xC4\x83 despre copilul dvs \xC5\x9Fi despre cum se descurc\xC4\x83 la \xC5\x9Fcoal\xC4\x83?"
+        father_activity_other: altcineva
+        reason_for_kindergarten_language: "Acolo, copilul meu poate \xC3\xAEnv\xC4\x83\xC5\xA3a limba oficial\xC4\x83/ care se vorbe\xC5\x9Fte \xC3\xAEn regiune."
+        homework_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        comment: Comentarii
+        separate_place: "9.9 Ave\xC5\xA3i \xC3\xAEn cas\xC4\x83/ gospod\xC4\x83rie un un loc/ mas\xC4\x83/ col\xC5\xA3 separat \xC3\xAEn care copilul se poate juca sau poate \xC3\xAEnv\xC4\x83\xC5\xA3a?"
+        reason_not_attend_other: "Alte motive: "
+        who_is_primary_caregiver: "5.3 Dac\xC4\x83 NU, atunci cine este acea persoan\xC4\x83? "
+        talked_about_pregnancy_other: "Alt\xC4\x83 persoan\xC4\x83 (v\xC4\x83 rug\xC4\x83m completa\xC5\xA3i): "
+        reason_for_kindergarten_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        reason_for_creche_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        homework_noone: nimeni
+        school_father_other: "Altceva:"
+        reason_for_kindergarten_compulsory: "Gr\xC4\x83dini\xC5\xA3a este obligatorie pentru copilul meu."
+        immunization_information_source_do_not_know: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        household_in_settlement: Gospodarie in comunitate
+        tell_stories_mother: mama
+        reason_not_enrolled_not_nearby: "Nu exist\xC4\x83 o gr\xC4\x83dini\xC5\xA3\xC4\x83 \xC3\xAEn apropiere."
+        reason_not_attend_no_work: "Nu lucrez \xC5\x9Fi pot sta acasa s\xC4\x83 am grija de copil."
+        caregiver_activity: "Persoana care are grij\xC4\x83 de copii"
+        home_latrine: "O latrin\xC4\x83? "
+        childs_development_information_source_other_persons: "\xC3\x8Entreb alte persoane "
+        home_phone: "Telefon mobil \xC5\x9Fi/ sau fix? "
+        language_romanian: !binary |
+          Um9tw6JuxIM=
+
+        talked_about_pregnancy_community_mediator: Mediator comunitar
+        separated_settlement: "13.1 Este casa/ gospod\xC4\x83ria amplasat\xC4\x83 undeva \xC3\xAEn afara ora\xC5\x9Fului/satului? "
+        mothers_age_at_first_pregnancy: "2.6 Mamei varsta la care ea a dat prima na\xC5\x9Ftere"
+        language_slovak: "Slovac\xC4\x83"
+        reason_not_enrolled_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        homework_mother: mama
+        primary_caregiver: "5.2 Sunteti persoana principal\xC4\x83 care are grij\xC4\x83 de copii?"
+        home_internet: "Conexiune la internet?  "
+        number_of_children_below_seven: "2.5 Numarul copiilor cu v\xC3\xA2rsta cuprins\xC4\x83 \xC3\xAEntre 0-7 ani"
+        birth_certificate: "12.3 To\xC5\xA3i copiii au certificate de na\xC5\x9Ftere?"
+        school_roma: "11.9 La \xC5\x9Fcoala copilului dvs, ceilal\xC5\xA3i copii sunt \xE2\x80\xA6.? "
+        relation_to_children_other: "Altceva: (v\xC4\x83 rug\xC4\x83m specifica\xC5\xA3i ce anume) "
+        home_kitchen: "Bucatarie \xC3\xAEn interior? "
+        teach_letters_other: altcineva
+        talked_about_pregnancy_doctor: Doctor
+        roma_village: "13.2 Este casa/ gospod\xC4\x83ria amplasat\xC4\x83 \xC3\xAEntr-o parte a satului sau un cartier al ora\xC5\x9Fului unde to\xC5\xA3i/ aproape to\xC5\xA3i vecinii sunt romi?"
+        breastfeeding_importance: "8.7 Ce crede\xC5\xA3i, c\xC3\xA2t este important este al\xC4\x83ptatul pentru  copii?"
+        childs_development_information_source_books: "Citesc c\xC4\x83r\xC5\xA3i"
+        homework_no_child_in_school_yet: "Niciun copil nu este \xC3\xAEnc\xC4\x83 \xC3\xAEnscris la \xC5\x9Fcoal\xC4\x83"
+        kindergarten_importance: "6.2 C\xC3\xA2t de important este pentru copii, \xC3\xAEn general, s\xC4\x83 mearg\xC4\x83 la gr\xC4\x83dini\xC5\xA3\xC4\x83 sau la alte programe de educa\xC5\xA3ie pentru copii mici, pentru a avea un viitor bun?"
+        play_noone: nimeni
+        immunization_information_source_doctor: Doctor
+        locality: Localitate
+        school_caregiver_other: "Altceva:"
+        reason_not_attend_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        book_count: "9.8 C\xC3\xA2t de multe c\xC4\x83rti sau c\xC4\x83r\xC5\xA3i cu ilustra\xC5\xA3ii ave\xC5\xA3i pentru copiii mai mici?"
+        draw_other: altcineva
+        book_reading_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        book_reading_other: altcineva
+        reason_for_kindergarten_likes: "Copilului meu \xC3\xAEi place s\xC4\x83 mearg\xC4\x83 la gr\xC4\x83dini\xC5\xA3\xC4\x83."
+        tell_stories_other: altcineva
+        reason_not_attend_bad_treating: "Nu se poart\xC4\x83 bine cu copilul meu."
+        reason_for_kindergarten_learning: "Acolo, copilul meu poate s\xC4\x83 \xC3\xAEnve\xC5\xA3e."
+        reason_for_kindergarten_better_chance: "Copilul meu va avea mai multe \xC5\x9Fanse s\xC4\x83 se descurce apoi la \xC5\x9Fcoal\xC4\x83."
+        mother_has_id: "12.2 Mama copiilor are acte de identitate? "
+        interviewer_id: Intervievator
+        fathers_age: "2.2 V\xC3\xA2rsta tat\xC4\x83lui "
+        reason_not_enrolled_expensive: Este prea scump.
+        language_other: "Altceva: \n\
+          (V\xC4\x83 rug\xC4\x83m completa\xC5\xA3i): "
+        father_activity: Tata
+        primary_caregiver_age: "5.4 Ce v\xC3\xA2rst\xC4\x83 are aceast\xC4\x83 persoan\xC4\x83? "
+        better_in_school: "6.1 Ce crede\xC5\xA3i, c\xC3\xA2nd se descurc\xC4\x83 mai bine copiii la scoal\xC4\x83?"
+        children_language_hungarian: "Maghiar\xC4\x83"
+        reason_for_creche_playing: Acolo, copilul meu se poate juca.
+        talked_about_pregnancy_nurse: "Asistent medical "
+        talked_about_pregnancy_noone: Nimeni
+        children_language_romanian: !binary |
+          Um9tw6JuxIM=
+
+        immunization_information_source_no_info: "Nu am fost informat(\xC4\x83)/ nu am primit explica\xC5\xA3ii"
+        children_language_other: "Altceva:"
+        test_before_school_other: "Altele:"
+        reason_for_creche_free_meal: "Prin program se ofer\xC4\x83 o mas\xC4\x83 cald\xC4\x83 sau alt sprijin material."
+        book_reading_noone: nimeni
+        reason_for_creche_time: "Astfel am timp s\xC4\x83 muncesc/ s\xC4\x83 m\xC4\x83 ocup de alte lucruri."
+        childs_development_information_source_tv: "M\xC4\x83 uit la programe TV care prezint\xC4\x83 aceste lucruri "
+        language_hungarian: "Maghiar\xC4\x83"
+        reason_for_creche_learning: "Acolo, copilul meu poate s\xC4\x83 \xC3\xAEnve\xC5\xA3e."
+        wished_sons_education_other: "Altele:"
+        reason_not_enrolled_no_place: "Nu sunt locuri suficiente la gr\xC4\x83dini\xC5\xA3\xC4\x83."
+        mediator_id: Mediator
+        immunization_information_source_nurse_other: "Alt\xC4\x83 persoan\xC4\x83 (v\xC4\x83 rug\xC4\x83m completa\xC5\xA3i): "
+        test_before_school_result: "11.16 Dac\xC4\x83 DA, care a fost rezultatul?   "
+        reason_for_kindergarten_trust: "\xC3\x8Emi plac/ am incredere \xC3\xAEn educatori. "
+        childs_development_information_source_no_need: "Nu am nevoie de mai multe informa\xC5\xA3ii "
+        doctor_visit_after_birth: "8.6 \xC3\x8En primele luni de la na\xC5\x9Fterea celui mai mic dintre copii, a fost copilul  consultat vreun doctor (pediatru sau de alta specializare) sau asistent\xC4\x83 medical\xC4\x83?"
+        talked_about_pregnancy_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        reason_not_enrolled_no_work: "Nu lucrez \xC5\x9Fi pot sta acas\xC4\x83 s\xC4\x83 am grij\xC4\x83 de copil."
+        kindergarten_days: "11.2 \xC3\x8En ultima s\xC4\x83ptam\xC3\xA2n\xC4\x83 (ultimele 5 zile lucr\xC4\x83toare), c\xC3\xA2te zile a mers copilul dvs la gr\xC4\x83dini\xC5\xA3\xC4\x83?"
+        caregiver_activity_other: "Altceva:"
+        children_language_romani: Romani
+        childs_development_information_source_newspapers: Citesc articole de ziare despre asta
+        number_of_people_over_18: "12.6 Num\xC4\x83rul persoanelor din cas\xC4\x83/ gospod\xC4\x83rie care au peste 18 ani"
+        reason_not_enrolled_children_treating: "Ceilal\xC5\xA3i copii nu se poart\xC4\x83 bine cu copilul meu."
+        immunization_in_household: "8.2 Din c\xC3\xA2te \xC5\x9Fti\xC5\xA3i, to\xC5\xA3i copiii din casa/ gospod\xC4\x83ria \xC3\xAEn care locui\xC5\xA3i au vaccinurile f\xC4\x83cute?"
+        number_of_people_under_18: "12.5 Num\xC4\x83rul persoanelor din cas\xC4\x83/ gospod\xC4\x83rie care au mai pu\xC5\xA3in de 18 ani"
+        mediator_survey_counter: "Num\xC4\x83r chestionar"
+        lesson_language_understanding: "11.6 Este dificil pentru copilul dvs s\xC4\x83 \xC3\xAEn\xC5\xA3eleag\xC4\x83 lec\xC5\xA3iile din cauza limbii \xC3\xAEn care se pred\xC4\x83?"
+        childs_development_information_source_no_idea: "Nu \xC5\x9Ftiu de unde iau informa\xC5\xA3ia "
+        teach_letters_father: tata
+        reason_for_kindergarten_other: "Alte motive: "
+        who_is_primary_caregiver_other: "Altcineva: (v\xC4\x83 rug\xC4\x83m specifica\xC5\xA3i cine) "
+        school_class_roma: "11.10 \xC3\x8En clasa \xC3\xAEn care este copilul dvs la \xC5\x9Fcoal\xC4\x83, ceilal\xC5\xA3i copii sunt \xE2\x80\xA6.? "
+        reason_not_attend_family: "Copilul meu ar trebui s\xC4\x83 stea cu familia."
+        children_language_slovak: "Slovac\xC4\x83"
+        immunization_information_source_nurse: "Asistent medical sau altcineva care lucreaz\xC4\x83 \xC3\xAEn domeniul sanitar"
+        home_radio: "Un aparat de radio? "
+        are_teachers_helpfull: "11.13 \xC3\x8Env\xC4\x83\xC5\xA3\xC4\x83torii v\xC4\x83 ajut\xC4\x83 copilul s\xC4\x83 \xC3\xAEnve\xC5\xA3e limba \xC3\xAEn care se pred\xC4\x83?"
+        reason_for_creche_friendships: "Copilul meu \xC3\xAE\xC5\x9Fi poate face noi prieteni la gr\xC4\x83dini\xC5\xA3\xC4\x83."
+        wished_sons_education: "7.2 Ce crede\xC5\xA3i despre viitorul fiului dvs, ce \xC5\x9Fcoal\xC4\x83 ar trebui el s\xC4\x83 termine? "
+        wished_daugters_education_other: "Altele:"
+        teach_letters_noone: nimeni
+        school_mother_other: "Altceva:"
+        date_of_the_interview: "1.1 Data la care are loc interviului  "
+        draw_noone: nimeni
+        wished_daugters_education: "7.1 Ce crede\xC5\xA3i despre viitorul fiicei dvs, ce \xC5\x9Fcoal\xC4\x83 ar trebui ea s\xC4\x83 termine? "
+        visited_hospital_during_pregnancy: "8.4 C\xC3\xA2nd era\xC5\xA3i dvs \xC3\xAEns\xC4\x83rcinat\xC4\x83 cu cel mai mic dintre copii, a\xC5\xA3i mers la spital sau la doctor pentru consult?"
+        school_good_bad: "11.14 C\xC3\xA2t de bun\xC4\x83 sau proast\xC4\x83 crede\xC5\xA3i c\xC4\x83 este \xC5\x9Fcoala primar\xC4\x83? "
+        reason_not_attend_no_place: Nu sunt locuri.
+        language_albanian: "Albanez\xC4\x83"
+        language_romani: "Romani "
+        mediator: Mediator
+        draw_mother: mama
+        tell_stories_noone: nimeni
+        teacher_help: "11.7 Dac\xC4\x83 are dificult\xC4\x83\xC5\xA3i de \xC3\xAEn\xC5\xA3elegere, educatorii v\xC4\x83 ajut\xC4\x83 copilul s\xC4\x83 \xC3\xAEnve\xC5\xA3e limba \xC3\xAEn care se pred\xC4\x83?"
+        talk_with_teacher: "10.2 Educatorii v\xC4\x83 vorbesc \xC5\x9Fi v\xC4\x83 informeaz\xC4\x83 despre copilul dvs \xC5\x9Fi despre cum se descurc\xC4\x83 acolo? "
+        school_caregiver: "Persoana care are grij\xC4\x83 de copii"
+        kindergarten_roma: "11.3 La gr\xC4\x83dinita copilului dvs, ceilalti copii sunt \xE2\x80\xA6.? "
+        lesson_difficulty: "11.12 Este dificil pentru copilul dvs s\xC4\x83 \xC3\xAEn\xC5\xA3eleag\xC4\x83 lec\xC5\xA3iile din cauza limbii \xC3\xAEn care se pred\xC4\x83?"
+        homework_other: altcineva
+        home_sewerage: "Canalizare? "
+        reason_for_creche_language: "Acolo, copilul meu poate \xC3\xAEnv\xC4\x83\xC5\xA3a limba oficial\xC4\x83/ care se vorbe\xC5\x9Fte \xC3\xAEn regiune."
+        reason_for_creche_likes: "Copilului meu \xC3\xAEi place s\xC4\x83 mearg\xC4\x83 la cre\xC5\x9F\xC4\x83/ program."
+        immunization_information_source_mediator: Mediator comunitar
+        immunization_importance: "8.1 C\xC3\xA2t de important\xC4\x83 crede\xC5\xA3i c\xC4\x83 este vaccinarea pentru copii, \xC3\xAEn general?"
+        teach_letters_mother: mama
+        draw_father: tata
+        home_electricity: Curent electric?
+        play_father: tata
+        reason_for_creche_trust: "\xC3\x8Emi plac/ am \xC3\xAEncredere \xC3\xAEn educatori. "
+        reason_for_kindergarten_time: "Astfel am timp s\xC4\x83 muncesc/ s\xC4\x83 m\xC4\x83 ocup de alte lucruri."
+        created_by: Introdus de
+        play_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        boys_girls_success_importance: "7.3 C\xC3\xA2t de important este pentru b\xC4\x83ie\xC5\xA3i \xC5\x9Fi fete s\xC4\x83 aib\xC4\x83 succes la \xC5\x9Fcoal\xC4\x83?"
+        test_before_school: "11.15 \xC3\x8Enainte de a se \xC3\xAEnscrie la \xC5\x9Fcoala primar\xC4\x83, copilul dvs a dat vreun test?"
+        reason_not_enrolled_family: "Copilul meu trebuie s\xC4\x83 stea cu familia."
+        book_reading_father: tata
+        duration_of_interview: 1.2 Durata interviului
+        tell_stories_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        school_mother: Mama
+        reason_not_enrolled_no_like: "Copilului meu nu \xC3\xAEi place s\xC4\x83 mearg\xC4\x83 la gr\xC4\x83dini\xC5\xA3\xC4\x83."
+        reason_not_enrolled_language: "Copilul meu nu vorbe\xC5\x9Fte limba \xC3\xAEn care se pred\xC4\x83."
+        reason_not_attend_no_creche: "Nu exist\xC4\x83 o cre\xC5\x9F\xC4\x83/ gr\xC4\x83dini\xC5\xA3\xC4\x83/ centru comunitar (pentru copii p\xC3\xA2n\xC4\x83 \xC3\xAEn 3 ani) \xC3\xAEn apropiere."
+        reason_for_creche_other: "Alte motive: "
+        mothers_age: "2.3 V\xC3\xA2rsta mamei "
+        home_water: "Ap\xC4\x83 curent\xC4\x83 in interior? "
+        mother_activity: Mama
+        school_father: Tata
+        reason_not_attend_no_trust: "Nu \xC3\xAEmi plac/ nu am incredere \xC3\xAEn educatori."
+        childs_development_information_source_others: Altceva
+        homework_father: tata
+        class_roma: "11.4 \xC3\x8En clasa \xC3\xAEn care este copilul dvs la gr\xC4\x83dini\xC5\xA3\xC4\x83, ceilalti copii sunt \xE2\x80\xA6.? "
+        children_language_macedonian: "Macedonean\xC4\x83"
+        home_toilet: "Toalet\xC4\x83 \xC3\xAEn interior? "
+        language_macedonian: "Macedonean\xC4\x83"
+        teach_letters_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        roma: Este reclamat de romi?
+        relation_to_children: "5.1 Ce rela\xC5\xA3ie de rudenie ave\xC5\xA3i cu copiii din gospod\xC4\x83rie (cu referire la copiii \xC3\xAEntre 0 \xC5\x9Fi 7 ani)"
+        reason_for_kindergarten_free_meal: "La gr\xC4\x83dini\xC5\xA3\xC4\x83 se ofer\xC4\x83 o mas\xC4\x83 cald\xC4\x83 sau alt sprijin material."
+        draw_no_answer: "Nu \xC5\x9Ftiu/ nu r\xC4\x83spund"
+        play_mother: mama
+        reason_not_enrolled_trust: "Nu \xC3\xAEmi plac/ nu am \xC3\xAEncredere \xC3\xAEn educatori."
+        reason_not_attend_expensive: Este prea scump.
+        home_shower: "Du\xC5\x9F sau baie in interior? "
+        home_tv: "Televizor? "
+        home_computer: "Un calculator? "
+        book_reading_mother: mama
+        talked_about_pregnancy_health_mediator: Mediator sanitar
+        talked_about_pregnancy: "8.5 V-a vorbit vreodat\xC4\x83 cineva despre sarcina atunci c\xC3\xA2nd era\xC5\xA3i \xC3\xAEns\xC4\x83rcinat\xC4\x83 \xC5\x9Fi \xC3\xAEnainte s\xC4\x83 se nasc\xC4\x83 cel mai mic dintre copiii dvs? "
+        reason_not_enrolled_other: "Alte motive: "
+        reason_not_enrolled_no_clothes: "Nu am bani sa \xC3\xAEi cump\xC4\x83r copilului meu haine/ \xC3\xAEncalt\xC4\x83minte pentru a merge la gr\xC4\x83dini\xC5\xA3\xC4\x83."
+        play_other: altcineva
+        mother_activity_other: altele
+        teacher_informs: "11.5 Educatorii v\xC4\x83 vorbesc \xC5\x9Fi v\xC4\x83 informeaz\xC4\x83 despre copilul dvs \xC5\x9Fi despre cum se descurc\xC4\x83 la gr\xC4\x83dini\xC5\xA3\xC4\x83? "
+        reason_not_attend_language: "Copilul meu nu vorbe\xC5\x9Fte limba."
+        reason_for_kindergarten_playing: Acolo, copilul meu se poate juca.
+        reason_for_kindergarten_friendships: "Copilul meu \xC3\xAEsi poate face noi prieteni la gr\xC4\x83dini\xC5\xA3\xC4\x83."
+        children_language_albanian: "Albanez\xC4\x83"
+        number_of_all_children: "2.4 Num\xC4\x83rul de copii"
+      user: 
+        remember_me: Tine-ma minte
+        localities: Localitati
+        category: Categorie
+        code: Cod
+        language: !binary |
+          TGltYsSD
+
+        locality: Localitate
+        last_name: Numele de familie
+        password: Parola
+        first_name: Prenumele
+        email: Email
+    errors: 
+      messages: 
+        record_invalid: "Validare nereu\xC5\x9Fit\xC4\x83 %{errors}"
+        taken: este deja folosit
+  View All: Vezi toate
+  There is no child aged below 7 years: "Nu exist\xC4\x83 nici un copil cu v\xC3\xA2rsta sub 7 ani."
+  There is no child aged 3-7 years: "Nu exist\xC4\x83 nici un copil \xC3\xAEn v\xC3\xA2rst\xC4\x83 de 3-7 ani."
+  "Children enrollment:": "Copii \xC3\xAEnscriere:"
+  Menu Items: Traduceri
+  Logout: Iesire
+  Hello!: "Bun\xC4\x83 ziua!"
+  6 Parent's attitude: "6.\tAtitudinea p\xC4\x83rin\xC5\xA3ilor fa\xC5\xA3\xC4\x83 de educa\xC5\xA3ia \xC5\x9Fi \xC3\xAEngrijirea copiilor la o v\xC3\xA2rst\xC4\x83 timpurie"
+  Institutions: Institutii
+  Are you sure? This will disable editing of this survey: "Esti sigur? Aceast\xC4\x83 ac\xC5\xA3iune va dezactiva editarea acestui studiu."
+  Attendance Data were succesfully updated: Datele de participare a fost actualizat cu succes.
+  7 Parent's expectations: "7.\tA\xC5\x9Ftept\xC4\x83rile p\xC4\x83rin\xC5\xA3ilor cu privire la realiz\xC4\x83rile \xC5\x9Fcolare viitoare ale copiilor lor"
+  Life Skills program: "Programul extracurriculare pe deprinderilor de via\xC5\xA3\xC4\x83"
+  teach_letters: "9.6 \xC3\x8En ultimele 3 zile, cineva mai mare de 15 ani, care locuie\xC5\x9Fte \xC3\xAEn aceea\xC5\x9Fi cas\xC4\x83/ gospod\xC4\x83rie, i-a \xC3\xAEnv\xC4\x83\xC5\xA3at pe copii literele sau s\xC4\x83 numere?"
+  surveys in locality: "chestionare \xC3\xAEn localitate"
+  children_below_three: "10.\t\xC3\x8Entreb\xC4\x83ri pentru p\xC4\x83rin\xC5\xA3ii care au copii \xC3\xAEntre 0 \xC5\x9Fi 3 ani "
+  Name: Nume
+  You are editing family: "Sunte\xC5\xA3i de familie de editare:"
+  New Institution: Institutie noua
+  Kindergarten: Gradinita
+  Monthly Attendance in Kindergarten: Prezenta lunara la gradinita
+  A Good Start - a new survey completed: Un start bun - un nou chestionar completat
+  School Results - Children from Preschool Programs: Rezultatele scolare - copil 6 ani
+  Save: Salveaza
+  schools: "12.1 Ce \xC5\x9Fcoal\xC4\x83 au terminat p\xC4\x83rin\xC5\xA3ii/ cei care au grij\xC4\x83 \xC3\xAEn principal de copii?"
+  This survey is Marked as Verified: "Acest chestionar este marcat ca verificat\xC4\x83"
+  Number of children: "Num\xC4\x83rul de copii"
+  "No": Nu
+  Family Profile: Familie profil
+  Household in settlement: Gospodarie in comunitate
+  9 Parent's attitude towards learning at home: "9.\tAtitudinea p\xC4\x83rin\xC5\xA3ilor privind studiul copiilor \xC5\x9Fi dezvoltarea lor acas\xC4\x83"
+  MMR/ROR: MMR/ROR
+  Workshops on education/health: "Seminarii pe educa\xC5\xA3ie / s\xC4\x83n\xC4\x83tate"
+  School: Scoala
+  Q111-117enrolled: "\xC3\x8Entreb\xC4\x83rile 11.1-11.7 nu sunt afi\xC5\x9Fate, deoarece nici un copil de 3-7 ani este \xC3\xAEnscris."
+  Add New Household Survey: Adauga o noua gospodarie
+  "All children:": "To\xC5\xA3i copii:"
+  Children: Copiii
+  datetime: 
+    prompts: 
+      minute: Minutul
+      second: Secunda
+      month: Luna
+      hour: Ora
+      day: Ziua
+      year: Anul
+    distance_in_words: 
+      less_than_x_minutes: 
+        one: "mai pu\xC8\x9Bin de un minut"
+        other: "mai pu\xC8\x9Bin de %{count} minute"
+      x_days: 
+        one: 1 zi
+        other: "%{count} zile"
+      almost_x_years: 
+        one: aproape 1 an
+        other: aproape %{count} ani
+      x_seconds: 
+        one: "1 secund\xC4\x83"
+        other: "%{count} secunde"
+      x_months: 
+        one: "1 lun\xC4\x83"
+        other: "%{count} luni"
+      x_minutes: 
+        one: 1 minut
+        other: "%{count} minute"
+      less_than_x_seconds: 
+        one: "mai pu\xC8\x9Bin de o secund\xC4\x83"
+        other: "mai pu\xC8\x9Bin de %{count} secunde"
+      about_x_hours: 
+        one: "aproximativ o or\xC4\x83"
+        other: aproximativ %{count} ore
+      about_x_years: 
+        one: aproximativ un an
+        other: aproximativ %{count} ani
+      about_x_months: 
+        one: "aproximativ o lun\xC4\x83"
+        other: aproximativ %{count} luni
+      over_x_years: 
+        one: mai mult de un an
+        other: mai mult de %{count} ani
+      half_a_minute: "jum\xC4\x83tate de minut"
+  Survey No: Chestionarul numarul
+  1 Interview details: 1. Detalii despre interviu/ aplicarea chestionarului
+  DTP: "DTP "
+  List: Lista
+  Back: Inapoi la lista
+  Fathers age: "V\xC3\xA2rsta tat\xC4\x83lui "
+  Mark as verified: "Marca\xC5\xA3i ca verificate"
+  Saved: Salvate
+  Hib: "Hib "
+  Child: Copil
+  56 What is the mother tongue of your children?: "5.6 Care este limba matern\xC4\x83 pe care o vorbesc copiii dvs?"
+  Immunization Information Source: Sursa de infromatiie pentru imunizare
+  "Locality:": "Localitate:"
+  Close: Inchide
+  reason_not_enrolled: "11.8 V\xC4\x83 rog s\xC4\x83 \xC3\xAEmi spune\xC5\xA3i care sunt principalele trei motive pentru care copilul dvs nu este \xC3\xAEnc\xC4\x83 \xC3\xAEnscris la \xC5\x9Fcoal\xC4\x83 \xC5\x9Fi NU MERGE la gr\xC4\x83dini\xC5\xA3\xC4\x83."
+  "All survey data verified?:": "Toate datele sondajului verificate?:"
+  date: 
+    month_names: 
+    - 
+    - Ianuarie
+    - Februarie
+    - Martie
+    - Aprilie
+    - Mai
+    - Iunie
+    - Iulie
+    - August
+    - Septembrie
+    - Octombrie
+    - Noiembrie
+    - Decembrie
+    order: 
+    - :day
+    - :month
+    - :year
+    abbr_day_names: 
+    - Dum
+    - Lun
+    - Mar
+    - Mie
+    - Joi
+    - Vin
+    - !binary |
+      U8OibQ==
+
+    formats: 
+      default: "%d-%m-%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+    day_names: 
+    - "Duminic\xC4\x83"
+    - Luni
+    - !binary |
+      TWFyyJtp
+
+    - Miercuri
+    - Joi
+    - Vineri
+    - !binary |
+      U8OibWJhdMSD
+
+    abbr_month_names: 
+    - 
+    - Ian
+    - Feb
+    - Mar
+    - Apr
+    - Mai
+    - Iun
+    - Iul
+    - Aug
+    - Sep
+    - Oct
+    - Noi
+    - Dec
+  View surveys here: Vezi aici chestionare
+  Tutoring at School: "Medita\xC5\xA3ii suplimentare de copii la \xC5\x9Fcoal\xC4\x83"
+  Q103under3home: "\xC3\x8Entrebarea 10.3 nu este afi\xC5\x9Fat, deoarece nici un copil sub 3 ani este la ea acas\xC4\x83."
+  Non Formal Education: Educatie non-formala
+  Completed: Terminat
+  Adding Family: Familie adaugata
+  Destroy: Sterge
+  Add Family: Adauga familia
+  Set date: "Seta\xC5\xA3i data"
+  Save and Next: "Salva\xC5\xA3i \xC5\x9Fi merge\xC5\xA3i la pagina urm\xC4\x83toare"
+  24 Number of children: "2.4 Num\xC4\x83rul de copii:"
+  Attendance in after School Activities: Prezenta in activitati de dupa scoala
+  homework: "9.7 \xC3\x8En ultimele 3 zile, cineva mai mare de 15 ani, care locuie\xC5\x9Fte \xC3\xAEn aceea\xC5\x9Fi cas\xC4\x83/ gospod\xC4\x83rie, i-a ajutat pe copiii care sunt la \xC5\x9Fcoal\xC4\x83 s\xC4\x83-\xC5\x9Fi fac\xC4\x83 temele? "
+  errors: 
+    messages: 
+      not_locked: Nu a fost blocat
+      not_found: Nu a fost gasit
+      greater_than_or_equal_to: Trebuie sa fie mai mare sau egal cu %{count}
+      less_than_or_equal_to: Trebuie sa fie mai mic sau egal cu %{count}
+      confirmation: Nu se potriveste cu confirmarea
+      not_an_integer: Trebuie sa fie un numar intreg
+      blank: Nu poate fi spatiu necompletat
+      invalid: Nu corespunde
+      exclusion: Este rezervat
+      odd: Trebuie sa fie ciudat
+      wrong_length: |
+        Este lungimea gresita (ar tebuii sa fie%{count} caractere)
+
+      too_short: Este foarte scurt (minim este %{count} caractere
+      even: Trebuie sa fie chiar
+      empty: Nu poate fi lasat gol
+      already_confirmed: A fost confirmat deja
+      less_than: Trebuie sa fie mai mic decat %{count}
+      greater_than: Trebuie sa fie mai mare decat %{count}
+      equal_to: |
+        Trebuie sa fie egal la %{count}
+
+      too_long: Este foarte lung (maximum este de %{count} caractere)
+      accepted: Trebuie sa fie acceptat
+      not_a_number: Nu este un numar
+      inclusion: Nu este inclus in lista
+    format: "%{attribute} %{message} "
+  draw: "9.5 \xC3\x8En ultimele 3 zile, cineva mai mare de 15 ani, care locuie\xC5\x9Fte \xC3\xAEn aceea\xC5\x9Fi cas\xC4\x83/ gospod\xC4\x83rie, a desenat \xC3\xAEmpreun\xC4\x83 cu copiii? "
+  activities: "12.7 V\xC4\x83 rog s\xC4\x83 \xC3\xAEmi spune\xC5\xA3i care este principala ocupa\xC5\xA3ie a persoanelor din cas\xC4\x83/ gospod\xC4\x83rie."
+  VHB: "VHB "
+  Set language: "Setare limb\xC4\x83"
+  Save and Mark Survey as Completed: "Salva \xC5\x9Fi a ad\xC4\x83uga chestionarul completat ca marca"
+  Children below seven: "Copii cu v\xC3\xA2rsta cuprins\xC4\x83 \xC3\xAEntre 0-7 ani"
+  Delete: Sterge
+  Edit User: Editare utilizator
+  Attendance Data were succesfully saved You can add another one: "Datele de participare au fost salvate cu succes. Pute\xC5\xA3i ad\xC4\x83uga altul."
+  Date: Data
+  (Unmark): (Demarcare)
+  immunization_information_source: "8.3 A\xC5\xA3i fost vreodat\xC4\x83 informat (\xC4\x83) sau vi s-a explicat vreodat\xC4\x83 importan\xC5\xA3a vaccin\xC4\x83rii?\n\
+    Dac\xC4\x83 DA, v\xC4\x83 rog s\xC4\x83 \xC3\xAEmi spune\xC5\xA3i cine v-a informat"
+  You do not have right to edit this child!: "Nu ave\xC5\xA3i dreptul de a edita acest copil!"
+  This will delete survey and all of its data: "Aceasta va \xC5\x9Fterge chestionar \xC5\x9Fi toate datele sale (copii, familie). Esti sigur?"
+  Sign out: Iesire
+  26 Household in settlement: "2.6 Gospodarie in comunitate:"
+  Monthly Attendance in Preschool Program: "Frecventarea lunar\xC4\x83 \xC3\xAEn program pre\xC5\x9Fcolar"
+  Child profile was successfully updated: Profilul copilului a fost actualizat cu succes.
+  Didn't receive confirmation instructions?: "A\xC5\xA3i nu primesc instruc\xC5\xA3iuni de confirmare?"
+  View survey here: Vezi aici chestionar
+  "Q119\xE2\x80\x931116notshownFG": "\xC3\x8Entreb\xC4\x83ri 11.9-11.16 nu sunt prezentate, deoarece nici un copil \xC3\xAEn v\xC3\xA2rst\xC4\x83 de 5-7 este \xC3\xAEnscri\xC5\x9Fi \xC3\xAEn institu\xC5\xA3ii de tip F sau G."
+  Editing institution: |
+    Institutia care a editat
+
+  22 Fathers age: "2.2 V\xC3\xA2rsta tat\xC4\x83lui:"
+  4 Child assessment for children aged 3-7 years: "4.\tEvaluare pentru copii cu v\xC3\xA2rste \xC3\xAEntre 3-7 ani"
+  Mark for Delete: "Mark pentru a \xC5\x9Fterge"
+  10 Children younger than 3 years: "10.\t\xC3\x8Entreb\xC4\x83ri pentru p\xC4\x83rin\xC5\xA3ii care au copii \xC3\xAEntre 0 \xC5\x9Fi 3 ani "
+  reason_for_kindergarten: "11.1 De ce merge copilul dvs la gr\xC4\x83dini\xC5\xA3\xC4\x83? V\xC4\x83 rog s\xC4\x83 \xC3\xAEmi spune\xC5\xA3i principalele 3 motive. "
+  Title: Numele
+  Q118CDFG: "\xC3\x8Entrebarea 11.8 nu este afi\xC5\x9Fat, deoarece nu exist\xC4\x83 nici un copil de 3-7 ani, care nu este \xC3\xAEnscris \xC3\xAEn institu\xC5\xA3ii de tip C, D, F sau G."
+  Countries: Tari
+  of: de
+  Q101a102under3: "\xC3\x8Entreb\xC4\x83ri 10.1 \xC5\x9Fi 10.2 nu sunt afi\xC5\x9Fate, deoarece nici un copil sub 3 ani este \xC3\xAEnscris."
+  Household Surveys: Cercetarii in gospodarie
+  Kindergartens: |
+    Gradinite
+
+  Add New Locality: Adauga o noua Localitate
+  Household Surveys - Incomplete: Chestionare incomplete
+  Didn't receive unlock instructions?: "Ai s\xC4\x83 nu primeasc\xC4\x83 instruc\xC5\xA3iuni debloca?"
+  "Yes": Da
+  Please select Date: "Selecta\xC5\xA3i data"
+  Completed Household Surveys: Chestionarele completate
+  "You are editing child: ": "Tu esti copilul de editare:"
+  This will mark this survey for deletion: 
+    " Are you sure?": "Acest lucru va marca acest chestionar pentru \xC5\x9Ftergere. Esti sigur?"
+  "Number of expected surveys:": "Num\xC4\x83rul de chestionare a\xC5\x9Fteptate:"
+  3 Children details: 3. Detalii despre copiii
+  Immunization Data: Date despre imunizare
+  11 Children 3 to 7 years: "11.\t\xC3\x8Entreb\xC4\x83ri pentru p\xC4\x83rin\xC5\xA3i cu copii \xC3\xAEntre 3-7 ani"
+  devise: 
+    failure: 
+      unauthenticated: Trebuie sa va conectati sau sa va inscrie-ti pentru a continua.
+      timeout: |
+        Sesiunea dumneavostra a expirat, va rugam sa va reconectati pentru a continua.
+
+      invalid: Parola sau email-ul nu sunt valide.
+      inactive: Contul dumneavostra nu a fost inca activat.
+      unconfirmed: Trebuie sa va confirmati contul pentru continuare.
+      locked: Contul dumneavoastra este blocat.
+      invalid_token: Autentificarea jetonului invalida.
+    passwords: 
+      send_instructions: Veti primii un email cu instructiunile despre cum sa va resetati parola in cateva minute.
+      updated: Parola dumneavoastra a fost schimbata cu succes. Acum sunteti conectat.
+    unlocks: 
+      unlocked: Contul dumneavostra a fost deblocat cu succes. Acum, sunteti conectat.
+      send_instructions: Ve-ti primi un email cu instructiunile de deblocare a contului dumneavoastra, in cateva minute.
+    mailer: 
+      unlock_instructions: 
+        subject: Instructiuni de deblocare.
+      reset_password_instructions: 
+        subject: Instructiuni de resetare a parolei.
+      confirmation_instructions: 
+        subject: Confirmati instructiunile.
+    omniauth_callbacks: 
+      failure: "Nu ai putut s\xC4\x83 autorizeze de la% {kind}, deoarece \"% {reason}\"."
+      success: Autorizat cu succes de la% {kind} cont.
+    registrations: 
+      inactive_signed_up: "Ati fost inscris cu succes. Cu toate acestea, nu am putut v\xC4\x83 conecta\xC5\xA3i \xC3\xAEn contul dvs., deoarece este% {reason}."
+      destroyed: La revedere, contul dumneavoastra a fost anulat cu success. Speram sa va revedem incurand.
+      updated: Contul dumneavostra a fost confirmat cu succes.
+      signed_up: "Ati fost inscris cu succes. "
+    sessions: 
+      signed_out: Semnat cu succes.
+      admin: 
+        errors: 
+          messages: 
+            not_locked: Nu a fost blocat
+            not_found: Nu a fost gasit
+            already_confirmed: "a fost confirmat deja, v\xC4\x83 rug\xC4\x83m s\xC4\x83 \xC3\xAEncerca\xC5\xA3i s\xC4\x83 v\xC4\x83 conecta\xC5\xA3i \xC3\xAEn"
+        signed_in: Buna ziua admin!
+      user: 
+        signed_in: "Bine ati venit utilizator, sunte\xC5\xA3i conectat inch."
+      password: Parola
+      signed_in: V-ati conectat cu succes.
+      email: Email
+    confirmations: 
+      confirmed: Contul dumneavostra a fost confimat cu succes. Acum sunteti inscris.
+      send_instructions: Veti primii un email cu instructiuniile despre cum sa va confirmati acest cont in cateva minute.
+  This month is already entered: "Aceast\xC4\x83 lun\xC4\x83 este deja introdus."
+  There was a problem to save data: "Nu a fost o problem\xC4\x83 pentru a salva datele."
+  Parental Involvement in Preschool: "Implicarea p\xC4\x83rin\xC5\xA3ilor \xC3\xAEn gr\xC4\x83dini\xC5\xA3\xC4\x83"
+  Overview: "Prezentare general\xC4\x83"
+  23 Mothers age: "2.3 V\xC3\xA2rsta mamei:"
+  My profile: Profilul meu
+  A - at home and not enrolled: "A \xE2\x80\x93acas\xC4\x83 \xC5\x9Fi nu este \xC3\xAEnscris undeva   "
+  Extracurricular activities: "Dup\xC4\x83 activit\xC4\x83\xC5\xA3ile \xC5\x9Fcolare"
+  Hotline: !binary |
+    QXNpc3RlbsWjxIM=
+
+  Add new: Adauga date noi
+  In the locality of: "\xC3\x8En localitatea de"
+  Are you sure?: Esti sigur?
+  number: 
+    format: 
+      separator: .
+      precision: 3
+      delimiter: ","
+      strip_insignificant_zeros: 0
+      significant: 0
+    human: 
+      format: 
+        precision: 3
+        delimiter: ","
+        strip_insignificant_zeros: 1
+        significant: 1
+      storage_units: 
+        format: "%n %u"
+        units: 
+          kb: KB
+          tb: TB
+          gb: GB
+          byte: 
+            one: Byte
+            other: Bytes
+          mb: MB
+      decimal_units: 
+        format: "%n %u"
+        units: 
+          trillion: Trilion
+          quadrillion: Catralion
+          billion: Miliard
+          million: Milion
+          thousand: mii
+    percentage: 
+      format: 
+        delimiter: ","
+    currency: 
+      format: 
+        format: "%n %u"
+        unit: RON
+        separator: .
+        precision: 2
+        delimiter: ","
+        strip_insignificant_zeros: 0
+        significant: 0
+  children_below_seven: "11.\t\xC3\x8Entreb\xC4\x83ri pentru p\xC4\x83rin\xC5\xA3i cu copii \xC3\xAEntre 3-7 ani"
+  "You are editing survey no: ": "Editati cercetarea numarul:"
+  Number of Children: "Num\xC4\x83rul de copii"
+  Edit: Editare
+  Gender: Sexul copilului
+  Forgot your password?: Ai uitat parola?
+  the total expected number of surveys has been verified by the local partner team leader: "num\xC4\x83rul total preconizat de chestionare a fost de liderul partener local"
+  reason_not_attend: "10.3 V\xC4\x83 rog s\xC4\x83 \xC3\xAEmi spune\xC5\xA3i care sunt principalele  motive pentru care copilul dvs nu merge la cre\xC5\x9F\xC4\x83, gr\xC4\x83dini\xC5\xA3\xC4\x83 sau alt program comunitar. "
+  childs_development_information_source: "9.1 C\xC3\xA2nd ave\xC5\xA3i o \xC3\xAEntrebare despre cre\xC5\x9Fterea \xC5\x9Fi dezvoltarea copilului dvs, de unde afla\xC5\xA3i informa\xC5\xA3ia?"
+  Schools: !binary |
+    xZ5jb2xp
+
+  Number of days absent in month: "Num\xC4\x83rul de zile de absen\xC5\xA3\xC4\x83 \xC3\xAEn luna"
+  Campaign on Reading Out Loud: Campanie pe citirea cu glas tare
+  formtastic: 
+    required: Solicita
+    "no": Nu
+    submit: Depun
+    "yes": Da
+    save: Salveaza
+    create: Creaza
+    update: Salveaza
+  Sign in: "Intra "
+  School Results: "Rezultate \xC5\x9Fcoal\xC4\x83"
+  Add New Family: Adauga o noua familia
+  5 Household details: "5.\tInforma\xC5\xA3ii despre gospod\xC4\x83rie"
+  Household Survey: Cercetarea gospodariei
+  Kindergardens: Gradinite
+  Mothers age: "V\xC3\xA2rsta mamei "
+  talked_about_pregnancy: "8.5 V-a vorbit vreodat\xC4\x83 cineva despre sarcina atunci c\xC3\xA2nd era\xC5\xA3i \xC3\xAEns\xC4\x83rcinat\xC4\x83 \xC5\x9Fi \xC3\xAEnainte s\xC4\x83 se nasc\xC4\x83 cel mai mic dintre copiii dvs? "
+  4 Children assesment: " 4. Evaluarea copiilor"
+  Home: Casa
+  Survey was successfully updated: Chestionarelor a fost actualizat cu succes.
+  Back to list of institutions: "Inapoi la lista institu\xC5\xA3iilor"

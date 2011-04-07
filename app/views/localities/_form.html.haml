@@ -1,7 +1,9 @@
 #steps
-  - semantic_form_for @locality do |f|
+  - semantic_form_for @locality,:html => {:class => 'form'} do |f|
     - f.inputs 'Locality', :id => "locality", :class => 'step' do
       = f.input :code
       = f.input :city
       = f.input :country
+      -if ['L','A'].include? current_user.category
+        = f.input :survey_count, :input_html => { :size => 2 }
       = f.buttons

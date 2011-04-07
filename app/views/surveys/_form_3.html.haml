@@ -1,19 +1,22 @@
 #steps
-  - semantic_form_for @survey do |f|
-    - f.inputs t("4 Child assessment for children aged 3-7 years"), :id => "children_assesment", :class => 'step' do
-      - if @survey.children_above_three_and_bellow_seven.blank?
-        %p= t('There is no child aged 3-7 years.')
+  - semantic_form_for @survey, :html => {:name => 'survey',:class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("3 Children details"), :id => "children_details", :class => 'step' do
+      - if @survey.number_of_children_below_seven < 1
+        %h2= t('There is no child aged below 7 years.')
       - else
-        = f.fields_for :children_above_three_and_bellow_seven do |builder|
-          = builder.input :childs_first_name, :as => :string, :wrapper_html => {:class => 'spacer'}
-          = builder.input :alphabet, :as => :radio, :collection => MenuItem.classic, :wrapper_html => { :class => 'together' }
-          = builder.input :reading_words, :as => :radio, :collection => MenuItem.classic
-          = builder.input :writing, :as => :radio, :collection => MenuItem.classic
-          = builder.input :sentences, :as => :radio, :collection => MenuItem.classic
-          = builder.input :numbers, :as => :radio, :collection => MenuItem.classic
-          = builder.input :buttons, :as => :radio, :collection => MenuItem.classic
-          = builder.input :routine_activities, :as => :radio, :collection => MenuItem.classic
-          = builder.input :selfconfidence, :as => :radio, :collection => MenuItem.classic
-          = builder.input :other_children, :as => :radio, :collection => MenuItem.frequency
-          = hidden_field_tag "step", "4"
-      = f.buttons
+        = f.fields_for :children do |builder|
+          = builder.input :family, :as => :select, :collection => FamilyProfile.all, :wrapper_html => {:class => 'spacer'}, :label_method => 'family_name', :input_html => { :disabled => 'disabled' }
+          = builder.input :created_by, :as => :hidden, :wrapper_html => {:style => 'visibility:hidden;'}
+          = builder.input :locality_id, :as => :hidden, :wrapper_html => {:style => 'visibility:hidden;'}
+          = builder.input :childs_first_name, :input_html => { :size => 30, :class => "required"}, :wrapper_html => {:class => 'spacer'}
+          = builder.input :childs_last_name, :input_html => { :size => 30, :class => "required"}
+          = builder.input :date_of_birth, :start_year => 2002, :end_year => Time.now.year, :input_html => { :class => "required"}, :include_blank => false
+          = builder.input :gender, :as => :radio, :collection => MenuItem.genders, :input_html => { :class => "required"}
+          = builder.input :enrolled_to, :collection => Institution.find(:all, :order => "name", :conditions => ['id=51 or locality_id=?',@survey.locality_id])
+          / , :input_html => { :class => "required"}
+          %li
+            = submit_tag t("Add New Institution"), :value => t("Add New Institution")
+          = builder.input :family_id, :as => :hidden, :wrapper_html => {:style => 'visibility:hidden;'}
+    = hidden_field_tag "step", "3"
+
+    = render :partial => 'buttons'

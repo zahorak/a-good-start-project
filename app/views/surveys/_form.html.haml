@@ -1,42 +1,34 @@
 / encoding: utf-8
-<script>
-$(document).ready(function(){
-$("#edit_survey_1").validate();
-onfocusout: true
-onkeyup: true
-});
-</script>
-
-#navigation{ :style => "display:none;"}
-  %ul
-    %li.selected  
-      %a{ :href => "#"} 1
-    %li 
-      %a{ :href => "#"} 2
-    %li 
-      %a{ :href => "#"} 3
-    %li
-      %a{ :href => "#"} 4
-    %li 
-      %a{ :href => "#"} 5
-    %li 
-      %a{ :href => "#"} 6
-    %li 
-      %a{ :href => "#"} 7
-    %li 
-      %a{ :href => "#"} 8
-    %li 
-      %a{ :href => "#"} 9
-    %li 
-      %a{ :href => "#"} 10
-    %li 
-      %a{ :href => "#"} 11
-    %li 
-      %a{ :href => "#"} 12
+/ #navigation{ :style => "display:none;"}
+/   %ul
+/     %li.selected  
+/       %a{ :href => "#"} 1
+/     %li 
+/       %a{ :href => "#"} 2
+/     %li 
+/       %a{ :href => "#"} 3
+/     %li
+/       %a{ :href => "#"} 4
+/     %li 
+/       %a{ :href => "#"} 5
+/     %li 
+/       %a{ :href => "#"} 6
+/     %li 
+/       %a{ :href => "#"} 7
+/     %li 
+/       %a{ :href => "#"} 8
+/     %li 
+/       %a{ :href => "#"} 9
+/     %li 
+/       %a{ :href => "#"} 10
+/     %li 
+/       %a{ :href => "#"} 11
+/     %li 
+/       %a{ :href => "#"} 12
 
 #steps
 
-  - semantic_form_for @survey do |f|
+  - semantic_form_for(@survey, :html => {:name => 'survey'}) do |f|
 
     - f.inputs t('1 Interview details'), :id => "interview_details", :class => 'step' do
       = f.input :date_of_the_interview, :start_year => 2010, :end_year => 2012
@@ -73,6 +65,7 @@ onkeyup: true
           %li
             = submit_tag t("Add New Institution"), :value => t("Add New Institution")
         = f.buttons
+
     - f.inputs t("4 Child assessment for children aged 3-7 years"), :id => "children_assesment", :class => 'step' do
       - if @survey.children_above_three_and_bellow_seven.blank?
         %h2= t('There is no child aged 3-7 years.')
@@ -93,7 +86,7 @@ onkeyup: true
     - f.inputs t("5 Household details"), :id => "household_details", :class => 'step' do
       = f.input :relation_to_children, :as => :radio, :collection => MenuItem.relatives
       = f.input :relation_to_children_other, :input_html => { :optional => 'optional'}, :wrapper_html => {:class => 'other' }
-      = f.input :primary_caregiver, :as  => :radio
+      = f.input :primary_caregiver, :as  => :radio, :collection => MenuItem.classic_reduced, :input_html => { :onclick => 'display_switch(this,46,"survey_who_is_primary_caregiver_input");display_switch(this,46,"survey_who_is_primary_caregiver_other_input");'}
       = f.input :who_is_primary_caregiver, :as => :radio, :collection => MenuItem.relatives
       = f.input :who_is_primary_caregiver_other, :wrapper_html => {:class => 'other' }
       = f.input :primary_caregiver_age, :input_html => { :size => 2 }
@@ -137,7 +130,7 @@ onkeyup: true
         = f.input :immunization_information_source_mediator, :as => :boolean
         = f.input :immunization_information_source_nurse_other, :input_html => { :rows => 2 }
         = f.input :immunization_information_source_no_info, :as => :boolean
-        = f.input :immunization_information_source_do_not_know, :as => :boolean
+        = f.input :immunization_information_source_do_not_know, :as => :boolean, :input_html => { :onclick => "imun(this);"}
       = f.input :visited_hospital_during_pregnancy, :as => :radio, :collection => MenuItem.classic
       - f.inputs t("talked_about_pregnancy"), :id => "talked_about_pregnancy" do
         = f.input :talked_about_pregnancy_doctor, :as => :boolean
@@ -146,7 +139,7 @@ onkeyup: true
         = f.input :talked_about_pregnancy_health_mediator, :as => :boolean
         = f.input :talked_about_pregnancy_noone, :as => :boolean
         = f.input :talked_about_pregnancy_other, :input_html => { :rows => 2 }
-        = f.input :talked_about_pregnancy_no_answer, :as => :boolean
+        = f.input :talked_about_pregnancy_no_answer, :as => :boolean, :input_html => { :onclick => "preg(this);"}
       = f.input :doctor_visit_after_birth, :as => :radio, :collection => MenuItem.classic
       = f.input :breastfeeding_importance, :as => :radio, :collection => MenuItem.importance
       = f.buttons
@@ -159,121 +152,133 @@ onkeyup: true
         = f.input :childs_development_information_source_tv, :as => :boolean
         / = f.input :childs_development_information_source_other_persons, :input_html => { :rows => 2 }
         = f.input :childs_development_information_source_others, :input_html => { :rows => 2 }
-        = f.input :childs_development_information_source_no_idea, :as => :boolean
+        = f.input :childs_development_information_source_no_idea, :as => :boolean, :input_html => { :onclick => "info(this);"}
       - f.inputs t("book_reading"), :id => "book_reading", :class => 'together' do
         = f.input :book_reading_mother, :as => :boolean
         = f.input :book_reading_father, :as => :boolean
         = f.input :book_reading_other, :input_html => { :rows => 2 }
         = f.input :book_reading_noone, :as => :boolean
-        = f.input :book_reading_no_answer, :as => :boolean
+        = f.input :book_reading_no_answer, :as => :boolean, :input_html => { :onclick => "book(this);"}
       - f.inputs t("tell_stories"), :id => "tell_stories" do
         = f.input :tell_stories_mother, :as => :boolean
         = f.input :tell_stories_father, :as => :boolean
         = f.input :tell_stories_other, :input_html => { :rows => 2 }
         = f.input :tell_stories_noone, :as => :boolean
-        = f.input :tell_stories_no_answer, :as => :boolean
+        = f.input :tell_stories_no_answer, :as => :boolean, :input_html => { :onclick => "tell_stories(this);"}
       - f.inputs t("play"), :id => "play" do
         = f.input :play_mother, :as => :boolean
         = f.input :play_father, :as => :boolean
         = f.input :play_other, :input_html => { :rows => 2 }
         = f.input :play_noone, :as => :boolean
-        = f.input :play_no_answer, :as => :boolean
+        = f.input :play_no_answer, :as => :boolean, :input_html => { :onclick => "play(this);"}
       - f.inputs t("draw"), :id => "draw" do
         = f.input :draw_mother, :as => :boolean
         = f.input :draw_father, :as => :boolean
         = f.input :draw_other, :input_html => { :rows => 2 }
         = f.input :draw_noone, :as => :boolean
-        = f.input :draw_no_answer, :as => :boolean
+        = f.input :draw_no_answer, :as => :boolean, :input_html => { :onclick => "draw(this);"}
       - f.inputs t("teach_letters"), :id => "teach_letters" do
         = f.input :teach_letters_mother, :as => :boolean
         = f.input :teach_letters_father, :as => :boolean
         = f.input :teach_letters_other, :input_html => { :rows => 2 }
         = f.input :teach_letters_noone, :as => :boolean
-        = f.input :teach_letters_no_answer, :as => :boolean
+        = f.input :teach_letters_no_answer, :as => :boolean, :input_html => { :onclick => "teach_letters(this);"}
       - f.inputs t("homework"), :id => "homework" do
         = f.input :homework_mother, :as => :boolean
         = f.input :homework_father, :as => :boolean
         = f.input :homework_other, :input_html => { :rows => 2 }
         = f.input :homework_noone, :as => :boolean
         = f.input :homework_no_child_in_school_yet, :as => :boolean
-        = f.input :homework_no_answer, :as => :boolean
-      = f.input :book_count, :input_html => { :rows => 2 }
+        = f.input :homework_no_answer, :as => :boolean, :input_html => { :onclick => "homework(this);"}
+      = f.input :book_count, :input_html => { :rows => 2, :class => 'number', :min => '0' }
       = f.input :separate_place, :as => :radio, :collection => MenuItem.classic
       = f.buttons
 
     - f.inputs t("children_below_three"), :id => "children_below_three", :class => 'step' do
-      - f.inputs t("reason_for_creche"), :id => "reason_for_creche" do
-        = f.input :reason_for_creche_likes, :as => :boolean
-        = f.input :reason_for_creche_free_meal, :as => :boolean
-        = f.input :reason_for_creche_time, :as => :boolean
-        = f.input :reason_for_creche_trust, :as => :boolean
-        = f.input :reason_for_creche_friendships, :as => :boolean
-        = f.input :reason_for_creche_playing, :as => :boolean
-        = f.input :reason_for_creche_learning, :as => :boolean
-        = f.input :reason_for_creche_language, :as => :boolean
-        = f.input :reason_for_creche_other, :input_html => { :rows => 2 }
-        = f.input :reason_for_creche_no_answer, :as => :boolean
-      = f.input :talk_with_teacher, :as => :radio, :collection => MenuItem.frequency_extended
-      - f.inputs t("reason_not_attend"), :id => "reason_not_attend" do
-        = f.input :reason_not_attend_expensive, :as => :boolean
-        = f.input :reason_not_attend_no_creche, :as => :boolean
-        = f.input :reason_not_attend_no_place, :as => :boolean
-        = f.input :reason_not_attend_no_work, :as => :boolean
-        = f.input :reason_not_attend_no_trust, :as => :boolean
-        = f.input :reason_not_attend_bad_treating, :as => :boolean
-        = f.input :reason_not_attend_language, :as => :boolean
-        = f.input :reason_not_attend_family, :as => :boolean
-        = f.input :reason_not_attend_other, :input_html => { :rows => 2 }
-        = f.input :reason_not_attend_no_answer, :as => :boolean
+      - unless @survey.child_bellow_3_attending_creche.blank?
+        - f.inputs t("reason_for_creche"), :id => "reason_for_creche" do
+          = f.input :reason_for_creche_likes, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_free_meal, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_time, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche();"}
+          = f.input :reason_for_creche_trust, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_friendships, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_playing, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_learning, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_language, :as => :boolean, :input_html => { :onclick => "max3_reason_for_creche(this);"}
+          = f.input :reason_for_creche_other, :input_html => { :rows => 2 }
+          = f.input :reason_for_creche_no_answer, :as => :boolean, :input_html => { :onclick => "reason_for_creche(this);"}
+        = f.input :talk_with_teacher, :as => :radio, :collection => MenuItem.frequency_extended
+      - else
+        %fieldset{:class => 'inputs'}
+          %div
+            %span Questions 10.1 and 10.2 are not shown, because no child under age 3 is enrolled.
+      - unless @survey.child_bellow_3_at_home.blank?
+        - f.inputs t("reason_not_attend"), :id => "reason_not_attend" do
+          = f.input :reason_not_attend_expensive, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_no_creche, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_no_place, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_no_work, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_no_trust, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_bad_treating, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_language, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_family, :as => :boolean, :input_html => { :onclick => "max3_reason_not_attend(this);"}
+          = f.input :reason_not_attend_other, :input_html => { :rows => 2 }
+          = f.input :reason_not_attend_no_answer, :as => :boolean, :input_html => { :onclick => "reason_not_attend(this);"}
+      - else
+        %fieldset{:class => 'inputs'}
+          %div
+            %span Question 10.3 is not shown, because now child under age 3 is at home.
         = f.buttons
 
+    // #11
     - f.inputs t("children_below_seven"), :id => "children_below_seven", :class => 'step' do
-      - f.inputs t("reason_for_kindergarten"), :id => "reason_for_kindergarten" do
-        = f.input :reason_for_kindergarten_likes, :as => :boolean
-        = f.input :reason_for_kindergarten_free_meal, :as => :boolean
-        = f.input :reason_for_kindergarten_time, :as => :boolean
-        = f.input :reason_for_kindergarten_trust, :as => :boolean
-        = f.input :reason_for_kindergarten_friendships, :as => :boolean
-        = f.input :reason_for_kindergarten_better_chance, :as => :boolean
-        = f.input :reason_for_kindergarten_playing, :as => :boolean
-        = f.input :reason_for_kindergarten_learning, :as => :boolean
-        = f.input :reason_for_kindergarten_language, :as => :boolean
-        = f.input :reason_for_kindergarten_compulsory, :as => :boolean
-        = f.input :reason_for_kindergarten_other, :input_html => { :rows => 2 }
-        = f.input :reason_for_kindergarten_no_answer, :as => :boolean
-      = f.input :kindergarten_days, :input_html => { :size => 2 }
-      = f.input :kindergarten_roma, :as => :radio, :collection => MenuItem.roma
-      = f.input :class_roma, :as => :radio, :collection => MenuItem.roma
-      = f.input :teacher_informs, :as => :radio, :collection => MenuItem.frequency_extended
-      = f.input :lesson_language_understanding, :as => :radio, :collection => MenuItem.language_understanding
-      = f.input :teacher_help, :as => :radio, :collection => MenuItem.language_difficulties
+      - unless @survey.child_above_3_below_7_attending_creche.blank?
+        - f.inputs t("reason_for_kindergarten"), :id => "reason_for_kindergarten" do
+          = f.input :reason_for_kindergarten_likes, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_free_meal, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_time, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_trust, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_friendships, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_better_chance, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_playing, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_learning, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_language, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_compulsory, :as => :boolean, :input_html => { :onclick => "max3_reason_for_kindergarten(this);"}
+          = f.input :reason_for_kindergarten_other, :input_html => { :rows => 2 }
+          = f.input :reason_for_kindergarten_no_answer, :as => :boolean, :input_html => { :onclick => "reason_for_kindergarten(this);"}
+        = f.input :kindergarten_days, :input_html => { :size => 2, :max => 5, :min => 0  }
+        = f.input :kindergarten_roma, :as => :radio, :collection => MenuItem.roma
+        = f.input :class_roma, :as => :radio, :collection => MenuItem.roma
+        = f.input :teacher_informs, :as => :radio, :collection => MenuItem.frequency_extended
+        = f.input :lesson_language_understanding, :as => :radio, :collection => MenuItem.language_understanding, :input_html => { :onclick => 'display_switch(this,"57 58 59","survey_teacher_help_input");'}
+        = f.input :teacher_help, :as => :radio, :collection => MenuItem.language_difficulties
       - f.inputs t("reason_not_enrolled"), :id => "reason_not_enrolled" do
         / - f.inputs t("reason_not_enrolled"), :id => "reason_not_enrolled" do
-        = f.input :reason_not_enrolled_no_like, :as => :boolean
-        = f.input :reason_not_enrolled_expensive, :as => :boolean
-        = f.input :reason_not_enrolled_no_clothes, :as => :boolean
-        = f.input :reason_not_enrolled_no_work, :as => :boolean
-        = f.input :reason_not_enrolled_trust, :as => :boolean
-        = f.input :reason_not_enrolled_children_treating, :as => :boolean
-        = f.input :reason_not_enrolled_not_nearby, :as => :boolean
-        = f.input :reason_not_enrolled_no_place, :as => :boolean
-        = f.input :reason_not_enrolled_family, :as => :boolean
-        = f.input :reason_not_enrolled_language, :as => :boolean
+        = f.input :reason_not_enrolled_no_like, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_expensive, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_no_clothes, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_no_work, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_trust, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_children_treating, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_not_nearby, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_no_place, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_family, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
+        = f.input :reason_not_enrolled_language, :as => :boolean, :input_html => { :onclick => "max3_reason_not_enrolled(this);"}
         = f.input :reason_not_enrolled_other, :input_html => { :rows => 2 }
-        = f.input :reason_not_enrolled_no_answer, :as => :boolean
+        = f.input :reason_not_enrolled_no_answer, :as => :boolean, :input_html => { :onclick => "reason_not_enrolled(this);"}
       = f.input :school_roma, :as => :radio, :collection => MenuItem.roma
       = f.input :school_class_roma, :as => :radio, :collection => MenuItem.roma
       = f.input :school_teacher_information, :as => :radio, :collection => MenuItem.frequency_extended
-      = f.input :lesson_difficulty, :as => :radio, :collection => MenuItem.language_understanding
+      = f.input :lesson_difficulty, :as => :radio, :collection => MenuItem.language_understanding, :input_html => { :onclick => 'display_switch(this,"57 58 59","survey_are_teachers_helpfull_input");'}
       = f.input :are_teachers_helpfull, :as => :radio, :collection => MenuItem.frequency_extended
       = f.input :school_good_bad, :as => :radio, :collection => MenuItem.good_bad
-      = f.input :test_before_school, :as => :radio, :collection => MenuItem.classic
+      = f.input :test_before_school, :as => :radio, :collection => MenuItem.classic, :input_html => { :onclick => 'display_switch(this,"31 33","survey_test_before_school_result_input");'}
       = f.input :test_before_school_result, :as => :radio, :collection => MenuItem.test_result
       = f.input :test_before_school_other, :input_html => { :rows => 2 }
       = f.buttons
 
     - f.inputs t("12 Other socio-economic data"), :id => "other_data", :class => 'step' do
-      - if (@survey.relation_to_children == 1 or @survey.relation_to_children == 2) and @survey.primary_caregiver == 1
+      - if (@survey.relation_to_children == 1 or @survey.relation_to_children == 2) and @survey.primary_caregiver == 45
         - f.inputs t("schools"), :id => "schools" do
           = f.input :school_mother, :as => :select, :collection => MenuItem.school_type.order(:position)
           = f.input :school_mother_other, :input_html => { :rows => 2 }
@@ -307,5 +312,5 @@ onkeyup: true
         = f.input :caregiver_activity_other, :input_html => { :rows => 2 }
       = f.input :separated_settlement, :as => :radio
       = f.input :roma_village, :as => :radio
-      = f.buttons
+    = f.buttons
   

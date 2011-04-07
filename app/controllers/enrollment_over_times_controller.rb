@@ -41,6 +41,7 @@ class EnrollmentOverTimesController < ApplicationController
   # POST /enrollment_over_times.xml
   def create
     @enrollment_over_time = EnrollmentOverTime.new(params[:enrollment_over_time])
+    @enrollment_over_time.created_by =  current_user.id
 
     respond_to do |format|
       if @enrollment_over_time.save

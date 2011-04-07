@@ -1,381 +1,901 @@
 --- 
 hu: 
-  ? "1 Interview details"
-  : "1. Az interjú részletei "
-  ? "10 Children younger than 3 years"
-  : "10.	0 és 3 év közötti gyermekek szüleinek szánt kérdések "
-  ? "11 Children 3 to 7 years"
-  : "11.	3-7 év közötti gyermekeket nevelő szülőknek szánt kérdések"
-  ? "12 Other socio-economic data"
-  : "12.	Egyéb társadalmi-gazdasági adat"
-  ? "2 Family details"
-  : "2.	A családra vonatkozó részletek:"
-  ? "4 Child assessment for children aged 3-7 years"
-  : "4.	3-7 év közötti gyermekekre vonatkozó felmérés"
-  ? "5 Household details"
-  : "5.	Háztartással kapcsolatos adatok "
-  ? "55 What language is spoken in your household?"
-  : "5.5 Milyen nyelvet beszélnek a háztartásban?"
-  ? "56 What is the mother tongue of your children?"
-  : "5.6 Mi a gyermekei anyanyelve?"
-  ? "6 Parent's attitude"
-  : "6.	Szülők hozzáállása a kora gyermekkori neveléshez és gondozáshoz"
-  ? "7 Parent's expectations"
-  : "7.	Szülői elvárások gyermekeik jövőbeni iskolai végzettségével kapcsolatban"
-  ? "8 Immunization and health care"
-  : "8.	Védőoltás és egészséggondozás "
-  ? "9 Parent's attitude towards learning at home"
-  : "9.	Szülői hozzáállás a gyermekek otthon tanulásával, és fejlődésével kapcsolatban"
-  ? "A Good Start"
-  : "EGY JÓ KEZDET PROJEKT"
-  ? "Family name"
-  : Vezetéknév
-  ? "Fathers age"
-  : "Édesapa kora"
-  Gender: Neme
-  ? "Mothers age"
-  : "Édesanya kora"
-  ? "Number of children"
-  : "Gyermekek száma"
-  ? "Number of children below seven"
-  : "0-7 év közötti gyermekek száma"
-  activerecord: 
-    attributes: 
-      child_profile: 
-        alphabet: "4.1 Ismeri-e/meg tudja-e nevezni az ABC legalább 10 betűjét?"
-        buttons: "4.6 Be tud gombolni egy inget vagy kardigánt?"
-        childs_first_name: "Gyermek keresztneve"
-        childs_last_name: "Gyermek vezetékneve"
-        childs_surname: "Gyermek vezetékneve"
-        enrolled_to: "Milyen intézménybe jár a gyermek? Nevezze meg az iskolát/intézményt. "
-        numbers: "4.5 Felismeri-e  1-10-ig a számjegyeket?"
-        other_children: "4.9 Jól kijön más gyermekekkel? "
-        reading_words: "4.2 Le tud-e írni legalább négy egyszerű közismert szót?"
-        routine_activities: "4.7 A mindennapi rutin tevékenységeket különösebb figyelmeztetés nélkül hajtja végre?"
-        selfconfidence: "4.8 Van önbizalma?"
-        sentences: "4.4 Meg tud érteni egyszerű mondatokat a hivatalos, állami nyelven?"
-        writing: "4.3 Le tudja írni a saját nevét?"
-      family_profile: 
-        family_name: "2.1 Vezetéknév"
-        fathers_age: "2.2 Édesapa kora"
-        mothers_age: "2.3 Édesanya kora"
-        number_of_children: "2.4 Gyermekek száma"
-        number_of_children_below_seven: "2.5 0-7 év közötti gyermekek száma"
-      survey: 
-        are_teachers_helpfull: "11.13 Amennyiben gyermekének vannak nehézségei, segítenek-e neki a nevelők a nyelvi nehézségek leküzdésében?"
-        better_in_school: "6.1 Mi a véleménye, az iskolában jobban boldogulnak a gyermekek"
-        birth_certificate: "12.3 Minden gyermeknek van-e születési anyakönyvi kivonata?"
-        book_count: "9.8 Hány gyermekkönyv vagy képeskönyv áll rendelkezésre a háztartásban, amit a kisebb gyerekeinek oda tud adni?"
-        book_reading_father: Édesapa
-        book_reading_mother: Édesanya
-        book_reading_noone: Senki
-        book_reading_other: Más
-        boys_girls_success_importance: "7.3 Mennyire fontos a fiúk és a lányok számára, hogy sikeresek legyenek az iskolában?"
-        breastfeeding_importance: "8.7 Mi a véleménye, mennyire fontos szoptatni a gyermekeket?"
-        caregiver_activity: "Fő gondozó"
-        caregiver_activity_other: Más
-        children_language_hungarian: Magyar
-        children_language_macedonian: Macedón
-        children_language_other: "Egyéb nyelv: (kérjük jelölje meg):"
-        children_language_romani: Cigány
-        children_language_romanian: Román
-        children_language_slovak: Szlovák
-        childs_development_information_source_books: "Könyveket olvasok"
-        childs_development_information_source_newspapers: "Elolvasom az erre vonatkozó újságcikkeket"
-        childs_development_information_source_no_idea: "Nem tudom hol kaphatok ilyen információt"
-        childs_development_information_source_no_need: "Nincs szükségem kiegészítő információra "
-        childs_development_information_source_other_persons: "Megkérdezem másoktól"
-        childs_development_information_source_others: "Egyéb:"
-        childs_development_information_source_tv: "Megnézem az erre vonatkozó TV műsorokat "
-        class_roma: "11.4 Az óvodai csoportban, ahova a gyermeke jár, a többi gyerek:"
-        comment: Észrevételek
-        date_of_the_interview: "1.1 Interjú készítésének dátuma"
-        doctor_visit_after_birth: "8.6 Miután megszületett a legkisebbik gyermeke, meglátogatta-e Önt az első hónapokban egy nővér vagy egy orvos, vagy elment-e Ön kórházba?"
-        draw_father: Édesapa
-        draw_mother: Édesanya
-        draw_noone: Senki
-        draw_other: Más
-        duration_of_interview: "1.2 Interjú időtartama"
-        father_activity: Édesapa
-        father_activity_other: Más
-        home_computer: Számítógép?
-        home_electricity: "Elektromos áram?"
-        home_internet: Internethozzáférés?
-        home_kitchen: "Konyhaa házon belül?"
-        home_latrine: Latrina?
-        home_phone: "Mobiltelefon/vezetékes telefon? "
-        home_radio: Rádió?
-        home_sewerage: "Csatorna a szennyvíz elvezetéséhez?"
-        home_shower: "Benti zuhanyzó/fürdőszoba?"
-        home_toilet: "Benti WC?"
-        home_tv: TV?
-        home_water: "Folyó víz a lakásban?"
-        homework_father: Édesapa
-        homework_mother: Édesanya
-        homework_no_child_in_school_yet: "Nincs még iskolába járó gyermek"
-        homework_noone: Senki
-        homework_other: Más
-        immunization_importance: "Mi a véleménye, általában mennyire fontos a gyermekek számára a védőoltás?"
-        immunization_in_household: "8.2 Ön szerint minden, a háztartásban élő gyermeknek megvan az összes védőoltása?"
-        immunization_information_source_do_not_know: "Nem tudom/Nincs válasz"
-        immunization_information_source_doctor: Orvos
-        immunization_information_source_mediator: "Közösségi mediátor"
-        immunization_information_source_no_info: "Nem kaptam ilyen információt/tájékoztatást"
-        immunization_information_source_nurse: "Nővér vagy más egészségügyi dolgozó"
-        immunization_information_source_nurse_other: "Más személy (kérem jelölje meg):"
-        kindergarten_days: "11.2 Az elmúlt héten (az elmúlt 5 munkanapon) körülbelül hány napon volt a gyermeke óvodában?"
-        kindergarten_importance: "6.2 Mennyire fontos a 0-6 éves gyermekek számára, hogy bölcsődébe, óvodába járjanak, vagy részt vegyenek más nevelési programban?"
-        kindergarten_roma: "11.3 Abban az óvodában, ahova a gyermeke jár, a többi gyerek:"
-        language_hungarian: Magyar
-        language_macedonian: Macedón
-        language_other: "Egyéb nyelv: (kérjük jelölje meg)"
-        language_romani: Cigány
-        language_romanian: Román
-        language_slovak: Szlovák
-        lesson_difficulty: "11.12 Vannak-e a gyermekének nehézségei a foglalkozásokon használt nyelv megértésével?"
-        lesson_language_understanding: "11.6 Amennyiben az oktatás nyelve más, mint a gyermek anyanyelve, tegye fel az interjúalanynak a következő kérdést: mennyire komoly megértési nehézségekkel küzd a gyermeke az órákon?"
-        mediator_id: Mediátor
-        mother_activity: Édesanya
-        mother_activity_other: egyéb
-        mother_has_id: "12.2 Van-e a gyermekek édesanyjának személyi igazolványa?"
-        number_of_all_children: "2.4 Gyermekek száma"
-        number_of_children_below_seven: "2.5 0-7 év közötti gyermekek száma"
-        number_of_people_over_18: "A háztartásban élő 18 év felettiek száma"
-        number_of_people_under_18: "A háztartásban élő 18 év alattiak száma"
-        play_father: Édesapa
-        play_mother: Édesanya
-        play_noone: "Senki "
-        play_other: Más
-        primary_caregiver: "5.2 Ön a gyermekek fő gondozója?"
-        primary_caregiver_age: "5.4 Hány éves a fő gondozó?"
-        reason_for_creche_free_meal: "A program ingyen ételt biztosít, vagy más anyagi támogatást."
-        reason_for_creche_friendships: "Az óvodában a gyermekem új barátokra tud szert tenni."
-        reason_for_creche_language: "A gyermekem ott megtanulhatja a hivatalos állami nyelvet."
-        reason_for_creche_learning: "ott tanulhat a gyermekem."
-        reason_for_creche_likes: "A gyermekem szeret bölcsődébe járni/részt venni a közösségi programban."
-        reason_for_creche_no_answer: "Nem tudom/ Nincs válasz"
-        reason_for_creche_other: "Egyéb okok:"
-        reason_for_creche_playing: "ott játszani tud a gyermekem."
-        reason_for_creche_time: "Időt biztosít számomra, hogy dolgozzak/elintézzem az egyéb ügyeimet."
-        reason_for_creche_trust: "Kedvelem a nevelőket/megbízom bennük."
-        reason_for_kindergarten_better_chance: "A gyermekemnek jobb esélyei lesznek arra, hogy jól tanuljon az iskolában és a továbbiakban is."
-        reason_for_kindergarten_compulsory: "Az óvoda kötelező a gyermekem számára "
-        reason_for_kindergarten_free_meal: "Ingyen ételt biztosítanak vagy más anyagi támogatást."
-        reason_for_kindergarten_friendships: "Az óvodában a gyermekem új barátokra tud szert tenni."
-        reason_for_kindergarten_language: "A gyermekem ott megtanulhatja a hivatalos állami nyelvet."
-        reason_for_kindergarten_learning: "Ott tanulni tud a gyermekem."
-        reason_for_kindergarten_likes: "A gyermekem szeret óvodába járni."
-        reason_for_kindergarten_no_answer: "Nem tudom/Nincs válasz"
-        reason_for_kindergarten_other: "Egyéb okok"
-        reason_for_kindergarten_playing: "Ott játszani tud a gyermekem."
-        reason_for_kindergarten_time: "Időt biztosít számomra, hogy dolgozzak/elintézzem az egyéb ügyeimet."
-        reason_for_kindergarten_trust: "Kedvelem a nevelőket/megbízom bennük."
-        reason_not_attend_bad_treating: "Nem bánnak jól a gyermekemmel."
-        reason_not_attend_expensive: "Túl sokba kerül."
-        reason_not_attend_family: "A gyermekemnek a családjában a helye."
-        reason_not_attend_language: "A gyermekem nem beszéli a nyelvet."
-        reason_not_attend_no_answer: "Nem tudom/Nincs válasz"
-        reason_not_attend_no_creche: "Nincs a közelben bölcsőde/óvoda/közösségi központ (3 év alatti gyermekek számára)."
-        reason_not_attend_no_place: "Nincs hely."
-        reason_not_attend_no_trust: "Nem szeretem a tanárokat/nem bízom bennük."
-        reason_not_attend_no_work: "Nem dolgozom, ezért otthon tudok lenni a gyermekemmel."
-        reason_not_attend_other: "Más okok"
-        reason_not_enrolled_children_treating: "A többi gyermek nem bánik jól a gyermekemmel."
-        reason_not_enrolled_expensive: "Túl költséges."
-        reason_not_enrolled_family: "A gyermekemnek a családjában a helye."
-        reason_not_enrolled_language: "A gyermekem nem érti a foglalkozások nyelvét."
-        reason_not_enrolled_no_answer: "Nem tudom/Nincs válasz"
-        reason_not_enrolled_no_clothes: "Nincs pénzem, hogy a gyermekemnek ruhát/cipőt vegyek az óvodába járáshoz."
-        reason_not_enrolled_no_like: "Gyermekem nem szeret óvodába járni."
-        reason_not_enrolled_no_place: "Nincs elég hely az óvodában."
-        reason_not_enrolled_no_work: "Én nem dolgozom, ezért otthon tudok lenni a gyermekemmel."
-        reason_not_enrolled_not_nearby: "Nincs a közelben óvoda."
-        reason_not_enrolled_other: "Egyéb okok"
-        reason_not_enrolled_trust: "Nem kedvelem a tanárokat/nem bízom meg bennük."
-        relation_to_children: "5.1 Milyen rokoni kapcsolatban áll a háztartásban élő gyermekekkel (a 0-7 év közötti kedvezményezett gyermekekre fektesse a hangsúlyt)"
-        relation_to_children_other: "Más: (nevezze meg) "
-        roma_village: "13.2 A háztartás a város/falu olyan részén található, ahol csak/főleg romák élnek?"
-        school_caregiver: "Fő gondozó"
-        school_caregiver_other: egyéb
-        school_class_roma: "11.10 Abban az osztályban, ahova a gyermeke jár, a többi gyerek"
-        school_father: Édesapa
-        school_father_other: Egyéb
-        school_good_bad: "11.14 Ön szerint mennyire jó vagy nem jó az általános iskola?"
-        school_mother: Édesanya
-        school_mother_other: Egyéb
-        school_roma: "11.9 Abban az iskolában, ahova a gyermeke jár, a többi gyerek:"
-        school_teacher_information: "11.11 Beszélnek-e Önnel a nevelők, és adnak-e hasznos tájékoztatást a gyermekével, valamint azzal kapcsolatban, hogyan boldogul gyermeke az iskolában?"
-        separate_place: "9.9 Van-e a háztartásukban külön helyiség/asztal/sarok, ahol a gyermekek játszani vagy tanulni tudnak?"
-        separated_settlement: "13.1 A háztartás a városon/falun kívül, elkülönített telepen található?"
-        talk_with_teacher: "10.2 Beszélnek-e Önnel a nevelők, és adnak-e Önnek hasznos információt gyermekével kapcsolatban, valamint arról, hogy a gyermeke hogy érzi magát ott?"
-        talked_about_pregnancy: "8.5 Amennyiben a 8.4-as kérdésre adott válasz nemleges, tegye fel a következő kérdést: Beszélt-e Önnel valaki a terhességről, amikor a legkisebbik gyermekével volt várandós?"
-        talked_about_pregnancy_other: "Más személy (kérem jelölje meg):"
-        teach_letters_father: Édesapa
-        teach_letters_mother: "Édesanya "
-        teach_letters_noone: Senki
-        teach_letters_other: Más
-        teacher_help: "11.7 Amennyiben a gyermeke nehézségekkel küzd, segítenek a nevelők az oktatási nyelv elsajátításában?"
-        teacher_informs: "11.5 Beszélnek-e Önnel a nevelők, és adnak-e hasznos tájékoztatást a gyermekével, valamint azzal kapcsolatban, hogyan boldogul gyermeke az óvodában?"
-        tell_stories_father: Édesapa
-        tell_stories_mother: "Édesanya "
-        tell_stories_noone: Senki
-        tell_stories_other: Más
-        test_before_school: "11.15 A beiratkozás előtt el kellett végeznie gyermekének egy tesztet?"
-        test_before_school_other: Egyéb
-        test_before_school_result: "11.16 Amennyiben KELLETT, mi volt annak eredménye?"
-        visited_hospital_during_pregnancy: "8.4 Amikor terhes volt a legkisebb gyermekével, volt-e kórházban, vagy elment-e orvoshoz?"
-        who_is_primary_caregiver: "5.3 Amennyiben NEM, ki a fő gondozó?"
-        who_is_primary_caregiver_other: "Más: (nevezze meg)"
-        wished_daugters_education: "7.1 Ha lánya jövőjére gondol, Ön szerint milyen iskolát kellene elvégeznie?"
-        wished_daugters_education_other: "Egyéb: (kérem jelölje meg)"
-        wished_sons_education: "7.2 Ha fia jövőjére gondol, Ön szerint, milyen iskolát kellene  elvégeznie?"
-        wished_sons_education_other: "Egyéb: (kérem jelölje meg)"
-    errors: 
-      messages: 
-        record_invalid: "Sikertelen validálás %{errors}"
-        taken: "már foglalt"
-  activities: "12.7 Kérem mondja el, hogy mivel foglalkoznak a háztartás tagjai?"
-  book_reading: "9.2 Az elmúlt 3 napban, olvasott-e könyvet valamelyik 15 évesnél idősebb háztartásbeli a gyermeknek, vagy nézegetett-e képes könyvet a gyermek(ek)kel?"
-  children_below_seven: "11.	3-7 év közötti gyermekeket nevelő szülőknek szánt kérdések"
-  children_below_three: "10.	0 és 3 év közötti gyermekek szüleinek szánt kérdések "
-  childs_development_information_source: "9.1 Amikor kérdések merülnek fel Önben gyermeke fejlődésével kapcsolatban, hol kaphat tájékoztatást ezzel kapcsolatban?"
-  date: 
-    abbr_day_names: 
-      - v.
-      - h.
-      - k.
-      - sze.
-      - cs.
-      - p.
-      - szo.
-    abbr_month_names: 
-      - ~
-      - jan.
-      - febr.
-      - márc.
-      - ápr.
-      - máj.
-      - jún.
-      - júl.
-      - aug.
-      - szept.
-      - okt.
-      - nov.
-      - dec.
-    day_names: 
-      - vasárnap
-      - hétfő
-      - kedd
-      - szerda
-      - csütörtök
-      - péntek
-      - szombat
-    formats: 
-      default: "%Y.%m.%d."
-      long: "%Y. %B %e."
-      short: "%b %e."
-    month_names: 
-      - ~
-      - január
-      - február
-      - március
-      - április
-      - május
-      - június
-      - július
-      - augusztus
-      - szeptember
-      - október
-      - november
-      - december
-    order: 
-      - !ruby/symbol year
-      - !ruby/symbol month
-      - !ruby/symbol day
-  datetime: 
-    distance_in_words: 
-      about_x_hours: 
-        one: "kb 1 óra"
-        other: "kb %{count} óra"
-      about_x_months: 
-        one: "kb 1 hónap"
-        other: "kb %{count} hónap"
-      about_x_years: 
-        one: "kb 1 év"
-        other: "kb %{count} év"
-      almost_x_years: 
-        one: "majdnem 1 év"
-        other: "majdnem %{count} év"
-      half_a_minute: "fél perc"
-      less_than_x_minutes: 
-        one: "kevesebb, mint 1 perc"
-        other: "kevesebb, mint %{count} perc"
-      less_than_x_seconds: 
-        one: "kevesebb, mint 1 másodperc"
-        other: "kevesebb, mint %{count} másodperc"
-      over_x_years: 
-        one: "több, mint 1 év"
-        other: "több, mint %{count} év"
-      x_days: 
-        one: "1 nap"
-        other: "%{count} nap"
-      x_minutes: 
-        one: "1 perc"
-        other: "%{count} perc"
-      x_months: 
-        one: "1 hónap"
-        other: "%{count} hónap"
-      x_seconds: 
-        one: "1 másodperc"
-        other: "%{count} másodperc"
-    prompts: 
-      day: Nap
-      hour: Óra
-      minute: Perc
-      month: Hónap
-      second: Másodperc
-      year: Év
-  draw: "9.5 Az elmúlt 3 napban, rajzolt-e valamelyik 15 évesnél idősebb háztartásbeli a gyermekkel?"
-  home_equipment: "12.4 Az alábbi tárgyak közül mi az, ami megtalálható az otthonukban?"
-  homework: "9.7 Az elmúlt 3 napban, segített-e valamelyik 15 évesnél idősebb háztartásbeli megcsinálni a házi feladatot azoknak a gyermekeknek, akik iskolába járnak?"
-  immunization_information_source: |-
-      8.3 Kapott valaha információt/tájékoztatást a védőoltás fontosságáról?
-      Amennyiben KAPOTT, kérem jelölje meg kitől kapta az információt
-  number: 
-    currency: 
-      format: 
-        format: "%n %u"
-        unit: Ft
-    format: 
-      separator: ","
-    human: 
-      storage_units: 
-        format: "%n %u"
-        units: 
-          byte: 
-            one: bájt
-            other: bájt
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
-  play: "9.4 Az elmúlt 3 napban, játszott-e valamelyik 15 évesnél idősebb háztartásbeli a gyermekekkel? "
-  reason_for_creche: "10.1 Kérem mondja meg , mi a 3 legfőbb érv arra, amiért gyermeke bölcsődébe/óvodába jár, vagy részt vesz egyéb közösségi program/okban."
-  reason_for_kindergarten: "11.1 Miért jár a gyermeke óvodába? Ossza meg velünk kérem a 3 legfontosabb okot."
-  reason_not_attend: "10.3 Mik a fő okai annak, hogy a gyermeke nem jár bölcsődébe/óvodába/közösségi központba?"
-  reason_not_enrolled: "11.8 Kérem nevezze meg azt a 3 legfontosabb okot, amiért gyermekét még nem iratta be általános iskolába és amiért óviodába SEM JÁR."
-  schools: "12.1 Milyen iskolai végzettsége van a szülőknek/fő gondozónak?"
+  play: "9.4 Az elm\xC3\xBAlt 3 napban, j\xC3\xA1tszott-e valamelyik 15 \xC3\xA9vesn\xC3\xA9l id\xC5\x91sebb h\xC3\xA1ztart\xC3\xA1sbeli a gyermekekkel? "
+  Number of Schooldays in month: "Tan\xC3\xADt\xC3\xA1si napok sz\xC3\xA1ma az adott h\xC3\xB3napban "
+  reason_for_creche: "10.1 K\xC3\xA9rem mondja meg , mi a 3 legf\xC5\x91bb \xC3\xA9rv arra, ami\xC3\xA9rt gyermeke b\xC3\xB6lcs\xC5\x91d\xC3\xA9be/\xC3\xB3vod\xC3\xA1ba j\xC3\xA1r, vagy r\xC3\xA9szt vesz egy\xC3\xA9b k\xC3\xB6z\xC3\xB6ss\xC3\xA9gi program/okban."
+  Voluntary: !binary |
+    w5Zua8OpbnRlcw==
+
+  Other Translations: !binary |
+    RWd5w6liIGZvcmTDrXTDoXNvaw==
+
+  Add New Child: "\xC3\x9Aj gyermek hozz\xC3\xA1ad\xC3\xA1sa"
+  8 Immunization and health care: !binary |
+    OC4JVsOpZMWRb2x0w6FzIMOpcyBlZ8Opc3pzw6lnZ29uZG96w6FzIA==
+
+  55 What language is spoken in your household?: "5.5 Milyen nyelvet besz\xC3\xA9lnek a h\xC3\xA1ztart\xC3\xA1sban?"
+  book_reading: "9.2 Az elm\xC3\xBAlt 3 napban, olvasott-e k\xC3\xB6nyvet valamelyik 15 \xC3\xA9vesn\xC3\xA9l id\xC5\x91sebb h\xC3\xA1ztart\xC3\xA1sbeli a gyermeknek, vagy n\xC3\xA9zegetett-e k\xC3\xA9pes k\xC3\xB6nyvet a gyermek(ek)kel?"
+  Family name: !binary |
+    VmV6ZXTDqWtuw6l2
+
+  Locality: "Lak\xC3\xB3negyed"
+  All: "\xC3\x96sszes"
+  tell_stories: "9.3 Az elm\xC3\xBAlt 3 napban, mes\xC3\xA9lt-e valamelyik 15 \xC3\xA9vesn\xC3\xA9l id\xC5\x91sebb h\xC3\xA1ztart\xC3\xA1sbeli t\xC3\xB6rt\xC3\xA9neteket a gyermekeknek?"
+  female: !binary |
+    bMOhbnk=
+
+  Vaccinations: !binary |
+    VsOpZMWRb2x0w6Fzb2s=
+
+  Save and Add New Survey: !binary |
+    TWVudMOpcyDDqXMgw7pqIGZlbG3DqXLDqXMgaG96esOhYWTDoXNh
+
+  Roma: "Roma "
+  Number of children below seven: "0-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekek sz\xC3\xA1ma"
+  A new survey has been completed in your locality: "Egy \xC3\xBAj felm\xC3\xA9r\xC3\xA9s fejez\xC5\x91d\xC3\xB6tt be a telep\xC3\xBCl\xC3\xA9sen"
+  "User name:": "Felhaszn\xC3\xA1l\xC3\xB3 neve: "
+  Survey was saved and marked as completed: "Felm\xC3\xA9r\xC3\xA9s volt mentve, \xC3\xA9s megjel\xC3\xB6lve befejez\xC5\x91d\xC3\xB6tt."
+  New Survey: !binary |
+    w5pqIGZlbG3DqXLDqXM=
+
+  Add Child: "\xC3\x9Aj gyermek hozz\xC3\xA1ad\xC3\xA1sa"
+  Families: "Csal\xC3\xA1dok"
+  "My Locality:": "Az \xC3\xA9n lak\xC3\xB3negyedem:"
   support: 
     array: 
-      last_word_connector: " és "
-      two_words_connector: " és "
       words_connector: ", "
-  teach_letters: "9.6 Az elmúlt 3 napban, tanított-e a gyermekeknek betűket vagy tanította-e számolni, valamelyik 15 évesnél idősebb háztartásbeli?"
-  tell_stories: "9.3 Az elmúlt 3 napban, mesélt-e valamelyik 15 évesnél idősebb háztartásbeli történeteket a gyermekeknek?"
+      last_word_connector: !binary |
+        IMOpcyA=
+
+      two_words_connector: !binary |
+        IMOpcyA=
+
+  male: !binary |
+    ZmnDug==
+
+  This survey is Marked as Complete: "Ez a k\xC3\xA9rd\xC5\x91\xC3\xADv van megjel\xC3\xB6lve befejez\xC5\x91d\xC3\xB6tt"
+  Statistics: "Statisztika "
+  Add New Institution: !binary |
+    w5pqIGludMOpem3DqW55IGhvenrDoWFkw6FzYQ==
+
+  Change Enrollment of Child: "Gyermek beiratkoz\xC3\xA1s\xC3\xA1nak megv\xC3\xA1ltoztat\xC3\xA1sa"
+  2 Family details: "2.\tA csal\xC3\xA1dra vonatkoz\xC3\xB3 r\xC3\xA9szletek:"
+  Login: "Bejelentkez\xC3\xA9s"
+  Birthdate: !binary |
+    U3rDvGxldMOpc8OpbmVrIGTDoXR1bWE=
+
+  Localities: "Lak\xC3\xB3negyedek"
+  Sign up: "Regisztr\xC3\xA1l\xC3\xA1s"
+  "Number of completed surveys:": "Elv\xC3\xA9gzett felm\xC3\xA9r\xC3\xA9sek sz\xC3\xA1ma:"
+  Country: "Orsz\xC3\xA1g"
+  25 Number of children below seven: "2.5 0-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekek sz\xC3\xA1ma:"
+  A Good Start: "EGY J\xC3\x93 KEZDET PROJEKT"
+  the total expected number of surveys has been completed: !binary |
+    YXogw7Zzc3plcyB2w6FyaGF0w7Mgc3rDoW1hIGvDqXJkxZHDrXZlayBsZXrD
+    oXJ1bHQ=
+
+  School Results - Children Tutored at School: "Iskolai eredm\xC3\xA9nyek \xE2\x80\x93 iskolai oktat\xC3\xA1sban r\xC3\xA9sztvev\xC5\x91 gyermekek"
+  PCV: PCV
+  "Other data for parents/children?:": "Egy\xC3\xA9b, a sz\xC3\xBCl\xC5\x91kre / gyerekekre vonatkoz\xC3\xB3 adatok?:"
+  A Good Start - all expected surveys verified: "EGY J\xC3\x93 KEZDET PROJEKT - Az \xC3\xB6sszes elv\xC3\xA1rt felm\xC3\xA9r\xC3\xA9sek ellen\xC5\x91rizt\xC3\xA9k"
+  12 Other socio-economic data: "12.\tEgy\xC3\xA9b t\xC3\xA1rsadalmi-gazdas\xC3\xA1gi adat"
+  BCG: "BCG "
+  Previous month was not yet entered: !binary |
+    RWzFkXrFkSBow7NuYXAgbcOpZyBuZW0gbMOpcGV0dA==
+
+  Family: "Csal\xC3\xA1d"
+  Add New Country: !binary |
+    w5pqIG9yc3rDoWcgaG96esOhYWTDoXNhCg==
+
+  IPV/PVi: IPV/PVi
+  Back to List: "Vissza a list\xC3\xA1hoz"
+  Editing children attendances: "Gyermekek r\xC3\xA9szv\xC3\xA9tel szerkeszt\xC3\xA9se"
   time: 
     am: de.
     formats: 
       default: "%Y. %b %e., %H:%M"
-      long: "%Y. %B %e., %A, %H:%M"
       short: "%b %e., %H:%M"
+      long: "%Y. %B %e., %A, %H:%M"
     pm: du.
+  home_equipment: "12.4 Az al\xC3\xA1bbi t\xC3\xA1rgyak k\xC3\xB6z\xC3\xBCl mi az, ami megtal\xC3\xA1lhat\xC3\xB3 az otthonukban?"
+  Translations of form fields: !binary |
+    xbBybGFwbWV6xZFrIGZvcmTDrXTDoXNhaQ==
+
+  Obligatory: !binary |
+    S8O2dGVsZXrFkQ==
+
+  "All children aged 0-7:": "\xC3\x96sszes 7 \xC3\xA9v alatti gyermek:"
+  Institution: !binary |
+    SW50w6l6bcOpbnkg
+
+  helpers: 
+    submit: 
+      submit: "Ment %{model} "
+      create: "L\xC3\xA9trehoz %{model} "
+      update: "Friss\xC3\xADt %{model} "
+    select: 
+      prompt: "K\xC3\xA9rj\xC3\xBCk, v\xC3\xA1lasszon!"
+  activerecord: 
+    models: 
+      Survey: !binary |
+        RmVsbcOpcsOpcw==
+
+      Family Profile: "Csal\xC3\xA1d"
+      Child Profile: Gyermek
+    attributes: 
+      menu_items: 
+        code: !binary |
+          S8OzZA==
+
+      institution: 
+        name: !binary |
+          TsOpdg==
+
+        category: "Kateg\xC3\xB3ria "
+        code: !binary |
+          S8OzZAo=
+
+        locality: "Helys\xC3\xA9g"
+      immunization: 
+        dtp: "DTP (Difteria, Tetanus, Pertussis) "
+        hib: "Hib (Haemophilus influenzae B) "
+        pcv: "PCV (Pneumococcus) "
+        ipv: "IPV (Polio) "
+        vhb: "VHB (Viral hepatitis BB) "
+        bcg: BCG (Tuberculosis)
+        mmr: "MMR (Morbilli, Mumps, Rubeola) "
+        child_id: Gyermek
+      family_profile: 
+        fathers_age: "2.2 \xC3\x89desapa kora"
+        family_name: "2.1 Vezet\xC3\xA9kn\xC3\xA9v"
+        number_of_children_below_seven: "2.5 0-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekek sz\xC3\xA1ma"
+        mothers_age: "2.3 \xC3\x89desanya kora"
+        number_of_children: "2.4 Gyermekek sz\xC3\xA1ma"
+      child_profile: 
+        enrolled_to: "Milyen int\xC3\xA9zm\xC3\xA9nybe j\xC3\xA1r a gyermek? Nevezze meg az iskol\xC3\xA1t/int\xC3\xA9zm\xC3\xA9nyt. "
+        buttons: "4.6 Be tud gombolni egy inget vagy kardig\xC3\xA1nt?"
+        selfconfidence: "4.8 Van \xC3\xB6nbizalma?"
+        reading_words: "4.2 Le tud-e \xC3\xADrni legal\xC3\xA1bb n\xC3\xA9gy egyszer\xC5\xB1 k\xC3\xB6zismert sz\xC3\xB3t?"
+        childs_last_name: "Gyermek vezet\xC3\xA9kneve"
+        sentences: "4.4 Meg tud \xC3\xA9rteni egyszer\xC5\xB1 mondatokat a hivatalos, \xC3\xA1llami nyelven?"
+        other_children: "4.9 J\xC3\xB3l kij\xC3\xB6n m\xC3\xA1s gyermekekkel? "
+        gender: Neme
+        family_name: !binary |
+          VmV6ZXTDqWtuw6l2
+
+        family: !binary |
+          VmV6ZXTDqWtuw6l2
+
+        childs_first_name: Gyermek keresztneve
+        writing: "4.3 Le tudja \xC3\xADrni a saj\xC3\xA1t nev\xC3\xA9t?"
+        date_of_birth: !binary |
+          U3rDvGxldMOpc8OpbmVrIGTDoXR1bWE=
+
+        routine_activities: "4.7 A mindennapi rutin tev\xC3\xA9kenys\xC3\xA9geket k\xC3\xBCl\xC3\xB6n\xC3\xB6sebb figyelmeztet\xC3\xA9s n\xC3\xA9lk\xC3\xBCl hajtja v\xC3\xA9gre?"
+        numbers: "4.5 Felismeri-e  1-10-ig a sz\xC3\xA1mjegyeket?"
+        childs_surname: "Gyermek vezet\xC3\xA9kneve"
+        alphabet: "4.1 Ismeri-e/meg tudja-e nevezni az ABC legal\xC3\xA1bb 10 bet\xC5\xB1j\xC3\xA9t?"
+      survey: 
+        tell_stories_father: "\xC3\x89desapa"
+        school_teacher_information: "11.11 Besz\xC3\xA9lnek-e \xC3\x96nnel a nevel\xC5\x91k, \xC3\xA9s adnak-e hasznos t\xC3\xA1j\xC3\xA9koztat\xC3\xA1st a gyermek\xC3\xA9vel, valamint azzal kapcsolatban, hogyan boldogul gyermeke az iskol\xC3\xA1ban?"
+        father_activity_other: !binary |
+          TcOhcw==
+
+        reason_for_kindergarten_language: "A gyermekem ott megtanulhatja a hivatalos \xC3\xA1llami nyelvet."
+        homework_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        comment: "\xC3\x89szrev\xC3\xA9telek"
+        separate_place: "9.9 Van-e a h\xC3\xA1ztart\xC3\xA1sukban k\xC3\xBCl\xC3\xB6n helyis\xC3\xA9g/asztal/sarok, ahol a gyermekek j\xC3\xA1tszani vagy tanulni tudnak?"
+        reason_not_attend_other: "M\xC3\xA1s okok"
+        who_is_primary_caregiver: "5.3 Amennyiben NEM, ki a f\xC5\x91 gondoz\xC3\xB3?"
+        talked_about_pregnancy_other: "M\xC3\xA1s szem\xC3\xA9ly (k\xC3\xA9rem jel\xC3\xB6lje meg):"
+        reason_for_kindergarten_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        reason_for_creche_no_answer: "Nem tudom/ Nincs v\xC3\xA1lasz"
+        homework_noone: Senki
+        school_father_other: !binary |
+          RWd5w6li
+
+        reason_for_kindergarten_compulsory: "Az \xC3\xB3voda k\xC3\xB6telez\xC5\x91 a gyermekem sz\xC3\xA1m\xC3\xA1ra "
+        immunization_information_source_do_not_know: "Nem tudom/Nincs v\xC3\xA1lasz"
+        household_in_settlement: "H\xC3\xA1ztart\xC3\xA1s a telepen"
+        tell_stories_mother: "\xC3\x89desanya "
+        reason_not_enrolled_not_nearby: "Nincs a k\xC3\xB6zelben \xC3\xB3voda."
+        reason_not_attend_no_work: "Nem dolgozom, ez\xC3\xA9rt otthon tudok lenni a gyermekemmel."
+        caregiver_activity: !binary |
+          RsWRIGdvbmRvesOz
+
+        home_latrine: Latrina?
+        childs_development_information_source_other_persons: "Megk\xC3\xA9rdezem m\xC3\xA1sokt\xC3\xB3l"
+        home_phone: "Mobiltelefon/vezet\xC3\xA9kes telefon? "
+        language_romanian: !binary |
+          Um9tw6Fu
+
+        talked_about_pregnancy_community_mediator: !binary |
+          S8O2esO2c3PDqWdpIG1lZGnDoXRvcg==
+
+        separated_settlement: "13.1 A h\xC3\xA1ztart\xC3\xA1s a v\xC3\xA1roson/falun k\xC3\xADv\xC3\xBCl, elk\xC3\xBCl\xC3\xB6n\xC3\xADtett telepen tal\xC3\xA1lhat\xC3\xB3?"
+        mothers_age_at_first_pregnancy: "2.6 \xC3\x89desanya \xC3\xA9letkora az els\xC5\x91 sz\xC3\xBCl\xC3\xA9s idej\xC3\xA9n "
+        language_slovak: "Szlov\xC3\xA1k"
+        reason_not_enrolled_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        homework_mother: "\xC3\x89desanya"
+        primary_caregiver: "5.2 \xC3\x96n a gyermekek f\xC5\x91 gondoz\xC3\xB3ja?"
+        home_internet: "Internethozz\xC3\xA1f\xC3\xA9r\xC3\xA9s?"
+        number_of_children_below_seven: "2.5 0-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekek sz\xC3\xA1ma"
+        birth_certificate: "12.3 Minden gyermeknek van-e sz\xC3\xBClet\xC3\xA9si anyak\xC3\xB6nyvi kivonata?"
+        school_roma: "11.9 Abban az iskol\xC3\xA1ban, ahova a gyermeke j\xC3\xA1r, a t\xC3\xB6bbi gyerek:"
+        relation_to_children_other: "M\xC3\xA1s: (nevezze meg) "
+        home_kitchen: "Konyhaa h\xC3\xA1zon bel\xC3\xBCl?"
+        teach_letters_other: !binary |
+          TcOhcw==
+
+        talked_about_pregnancy_doctor: Orvos
+        roma_village: "13.2 A h\xC3\xA1ztart\xC3\xA1s a v\xC3\xA1ros/falu olyan r\xC3\xA9sz\xC3\xA9n tal\xC3\xA1lhat\xC3\xB3, ahol csak/f\xC5\x91leg rom\xC3\xA1k \xC3\xA9lnek?"
+        breastfeeding_importance: "8.7 Mi a v\xC3\xA9lem\xC3\xA9nye, mennyire fontos szoptatni a gyermekeket?"
+        childs_development_information_source_books: "K\xC3\xB6nyveket olvasok"
+        homework_no_child_in_school_yet: "Nincs m\xC3\xA9g iskol\xC3\xA1ba j\xC3\xA1r\xC3\xB3 gyermek"
+        kindergarten_importance: "6.2 Mennyire fontos a 0-6 \xC3\xA9ves gyermekek sz\xC3\xA1m\xC3\xA1ra, hogy b\xC3\xB6lcs\xC5\x91d\xC3\xA9be, \xC3\xB3vod\xC3\xA1ba j\xC3\xA1rjanak, vagy r\xC3\xA9szt vegyenek m\xC3\xA1s nevel\xC3\xA9si programban?"
+        play_noone: "Senki "
+        immunization_information_source_doctor: Orvos
+        locality: "Helys\xC3\xA9g"
+        school_caregiver_other: !binary |
+          ZWd5w6li
+
+        reason_not_attend_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        book_count: "9.8 H\xC3\xA1ny gyermekk\xC3\xB6nyv vagy k\xC3\xA9pesk\xC3\xB6nyv \xC3\xA1ll rendelkez\xC3\xA9sre a h\xC3\xA1ztart\xC3\xA1sban, amit a kisebb gyerekeinek oda tud adni?"
+        draw_other: !binary |
+          TcOhcw==
+
+        book_reading_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        book_reading_other: !binary |
+          TcOhcw==
+
+        reason_for_kindergarten_likes: "A gyermekem szeret \xC3\xB3vod\xC3\xA1ba j\xC3\xA1rni."
+        tell_stories_other: !binary |
+          TcOhcw==
+
+        reason_not_attend_bad_treating: "Nem b\xC3\xA1nnak j\xC3\xB3l a gyermekemmel."
+        reason_for_kindergarten_learning: Ott tanulni tud a gyermekem.
+        reason_for_kindergarten_better_chance: "A gyermekemnek jobb es\xC3\xA9lyei lesznek arra, hogy j\xC3\xB3l tanuljon az iskol\xC3\xA1ban \xC3\xA9s a tov\xC3\xA1bbiakban is."
+        mother_has_id: "12.2 Van-e a gyermekek \xC3\xA9desanyj\xC3\xA1nak szem\xC3\xA9lyi igazolv\xC3\xA1nya?"
+        interviewer_id: "K\xC3\xA9rdez\xC5\x91biztos"
+        fathers_age: "2.2 \xC3\x89desapa \xC3\xA9letkora "
+        reason_not_enrolled_expensive: !binary |
+          VMO6bCBrw7ZsdHPDqWdlcy4=
+
+        language_other: "Egy\xC3\xA9b nyelv: (k\xC3\xA9rj\xC3\xBCk jel\xC3\xB6lje meg)"
+        father_activity: "\xC3\x89desapa"
+        primary_caregiver_age: "5.4 H\xC3\xA1ny \xC3\xA9ves a f\xC5\x91 gondoz\xC3\xB3?"
+        better_in_school: "6.1 Mi a v\xC3\xA9lem\xC3\xA9nye, az iskol\xC3\xA1ban jobban boldogulnak a gyermekek"
+        children_language_hungarian: Magyar
+        reason_for_creche_playing: "ott j\xC3\xA1tszani tud a gyermekem."
+        talked_about_pregnancy_nurse: !binary |
+          TsWRdsOpcg==
+
+        talked_about_pregnancy_noone: Senki
+        children_language_romanian: !binary |
+          Um9tw6Fu
+
+        immunization_information_source_no_info: "Nem kaptam ilyen inform\xC3\xA1ci\xC3\xB3t/t\xC3\xA1j\xC3\xA9koztat\xC3\xA1st"
+        children_language_other: "Egy\xC3\xA9b nyelv: (k\xC3\xA9rj\xC3\xBCk jel\xC3\xB6lje meg):"
+        test_before_school_other: !binary |
+          RWd5w6li
+
+        reason_for_creche_free_meal: "A program ingyen \xC3\xA9telt biztos\xC3\xADt, vagy m\xC3\xA1s anyagi t\xC3\xA1mogat\xC3\xA1st."
+        book_reading_noone: Senki
+        reason_for_creche_time: "Id\xC5\x91t biztos\xC3\xADt sz\xC3\xA1momra, hogy dolgozzak/elint\xC3\xA9zzem az egy\xC3\xA9b \xC3\xBCgyeimet."
+        childs_development_information_source_tv: "Megn\xC3\xA9zem az erre vonatkoz\xC3\xB3 TV m\xC5\xB1sorokat "
+        language_hungarian: Magyar
+        reason_for_creche_learning: ott tanulhat a gyermekem.
+        wished_sons_education_other: "Egy\xC3\xA9b: (k\xC3\xA9rem jel\xC3\xB6lje meg)"
+        reason_not_enrolled_no_place: "Nincs el\xC3\xA9g hely az \xC3\xB3vod\xC3\xA1ban."
+        mediator_id: "Medi\xC3\xA1tor"
+        immunization_information_source_nurse_other: "M\xC3\xA1s szem\xC3\xA9ly (k\xC3\xA9rem jel\xC3\xB6lje meg):"
+        test_before_school_result: "11.16 Amennyiben KELLETT, mi volt annak eredm\xC3\xA9nye?"
+        reason_for_kindergarten_trust: "Kedvelem a nevel\xC5\x91ket/megb\xC3\xADzom benn\xC3\xBCk."
+        childs_development_information_source_no_need: "Nincs sz\xC3\xBCks\xC3\xA9gem kieg\xC3\xA9sz\xC3\xADt\xC5\x91 inform\xC3\xA1ci\xC3\xB3ra "
+        doctor_visit_after_birth: "8.6 Miut\xC3\xA1n megsz\xC3\xBCletett a legkisebbik gyermeke, megl\xC3\xA1togatta-e \xC3\x96nt az els\xC5\x91 h\xC3\xB3napokban egy n\xC5\x91v\xC3\xA9r vagy egy orvos, vagy elment-e \xC3\x96n k\xC3\xB3rh\xC3\xA1zba?"
+        talked_about_pregnancy_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        reason_not_enrolled_no_work: "\xC3\x89n nem dolgozom, ez\xC3\xA9rt otthon tudok lenni a gyermekemmel."
+        kindergarten_days: "11.2 Az elm\xC3\xBAlt h\xC3\xA9ten (az elm\xC3\xBAlt 5 munkanapon) k\xC3\xB6r\xC3\xBClbel\xC3\xBCl h\xC3\xA1ny napon volt a gyermeke \xC3\xB3vod\xC3\xA1ban?"
+        caregiver_activity_other: !binary |
+          TcOhcw==
+
+        children_language_romani: "Cig\xC3\xA1ny"
+        childs_development_information_source_newspapers: "Elolvasom az erre vonatkoz\xC3\xB3 \xC3\xBAjs\xC3\xA1gcikkeket"
+        number_of_people_over_18: "A h\xC3\xA1ztart\xC3\xA1sban \xC3\xA9l\xC5\x91 18 \xC3\xA9v felettiek sz\xC3\xA1ma"
+        reason_not_enrolled_children_treating: "A t\xC3\xB6bbi gyermek nem b\xC3\xA1nik j\xC3\xB3l a gyermekemmel."
+        immunization_in_household: "8.2 \xC3\x96n szerint minden, a h\xC3\xA1ztart\xC3\xA1sban \xC3\xA9l\xC5\x91 gyermeknek megvan az \xC3\xB6sszes v\xC3\xA9d\xC5\x91olt\xC3\xA1sa?"
+        number_of_people_under_18: "A h\xC3\xA1ztart\xC3\xA1sban \xC3\xA9l\xC5\x91 18 \xC3\xA9v alattiak sz\xC3\xA1ma"
+        mediator_survey_counter: !binary |
+          S8OpcmTFkcOtdiBzesOhbWE=
+
+        lesson_language_understanding: "11.6 Amennyiben az oktat\xC3\xA1s nyelve m\xC3\xA1s, mint a gyermek anyanyelve, tegye fel az interj\xC3\xBAalanynak a k\xC3\xB6vetkez\xC5\x91 k\xC3\xA9rd\xC3\xA9st: mennyire komoly meg\xC3\xA9rt\xC3\xA9si neh\xC3\xA9zs\xC3\xA9gekkel k\xC3\xBCzd a gyermeke az \xC3\xB3r\xC3\xA1kon?"
+        childs_development_information_source_no_idea: "Nem tudom hol kaphatok ilyen inform\xC3\xA1ci\xC3\xB3t"
+        teach_letters_father: "\xC3\x89desapa"
+        reason_for_kindergarten_other: "Egy\xC3\xA9b okok"
+        who_is_primary_caregiver_other: "M\xC3\xA1s: (nevezze meg)"
+        school_class_roma: "11.10 Abban az oszt\xC3\xA1lyban, ahova a gyermeke j\xC3\xA1r, a t\xC3\xB6bbi gyerek"
+        reason_not_attend_family: "A gyermekemnek a csal\xC3\xA1dj\xC3\xA1ban a helye."
+        children_language_slovak: "Szlov\xC3\xA1k"
+        immunization_information_source_nurse: !binary |
+          TsWRdsOpciB2YWd5IG3DoXMgZWfDqXN6c8OpZ8O8Z3lpIGRvbGdvesOz
+
+        home_radio: !binary |
+          UsOhZGnDsz8=
+
+        are_teachers_helpfull: "11.13 Amennyiben gyermek\xC3\xA9nek vannak neh\xC3\xA9zs\xC3\xA9gei, seg\xC3\xADtenek-e neki a nevel\xC5\x91k a nyelvi neh\xC3\xA9zs\xC3\xA9gek lek\xC3\xBCzd\xC3\xA9s\xC3\xA9ben?"
+        reason_for_creche_friendships: "Az \xC3\xB3vod\xC3\xA1ban a gyermekem \xC3\xBAj bar\xC3\xA1tokra tud szert tenni."
+        wished_sons_education: "7.2 Ha fia j\xC3\xB6v\xC5\x91j\xC3\xA9re gondol, \xC3\x96n szerint, milyen iskol\xC3\xA1t kellene  elv\xC3\xA9geznie?"
+        wished_daugters_education_other: "Egy\xC3\xA9b: (k\xC3\xA9rem jel\xC3\xB6lje meg)"
+        teach_letters_noone: Senki
+        school_mother_other: !binary |
+          RWd5w6li
+
+        date_of_the_interview: !binary |
+          MS4xIEludGVyasO6IGvDqXN6w610w6lzw6luZWsgZMOhdHVtYQ==
+
+        draw_noone: Senki
+        wished_daugters_education: "7.1 Ha l\xC3\xA1nya j\xC3\xB6v\xC5\x91j\xC3\xA9re gondol, \xC3\x96n szerint milyen iskol\xC3\xA1t kellene elv\xC3\xA9geznie?"
+        visited_hospital_during_pregnancy: "8.4 Amikor terhes volt a legkisebb gyermek\xC3\xA9vel, volt-e k\xC3\xB3rh\xC3\xA1zban, vagy elment-e orvoshoz?"
+        school_good_bad: "11.14 \xC3\x96n szerint mennyire j\xC3\xB3 vagy nem j\xC3\xB3 az \xC3\xA1ltal\xC3\xA1nos iskola?"
+        reason_not_attend_no_place: Nincs hely.
+        language_albanian: !binary |
+          QWxiw6Fu
+
+        language_romani: "Cig\xC3\xA1ny"
+        mediator: Mentor
+        draw_mother: "\xC3\x89desanya"
+        tell_stories_noone: Senki
+        teacher_help: "11.7 Amennyiben a gyermeke neh\xC3\xA9zs\xC3\xA9gekkel k\xC3\xBCzd, seg\xC3\xADtenek a nevel\xC5\x91k az oktat\xC3\xA1si nyelv elsaj\xC3\xA1t\xC3\xADt\xC3\xA1s\xC3\xA1ban?"
+        talk_with_teacher: "10.2 Besz\xC3\xA9lnek-e \xC3\x96nnel a nevel\xC5\x91k, \xC3\xA9s adnak-e \xC3\x96nnek hasznos inform\xC3\xA1ci\xC3\xB3t gyermek\xC3\xA9vel kapcsolatban, valamint arr\xC3\xB3l, hogy a gyermeke hogy \xC3\xA9rzi mag\xC3\xA1t ott?"
+        school_caregiver: !binary |
+          RsWRIGdvbmRvesOz
+
+        kindergarten_roma: "11.3 Abban az \xC3\xB3vod\xC3\xA1ban, ahova a gyermeke j\xC3\xA1r, a t\xC3\xB6bbi gyerek:"
+        lesson_difficulty: "11.12 Vannak-e a gyermek\xC3\xA9nek neh\xC3\xA9zs\xC3\xA9gei a foglalkoz\xC3\xA1sokon haszn\xC3\xA1lt nyelv meg\xC3\xA9rt\xC3\xA9s\xC3\xA9vel?"
+        homework_other: !binary |
+          TcOhcw==
+
+        home_sewerage: "Csatorna a szennyv\xC3\xADz elvezet\xC3\xA9s\xC3\xA9hez?"
+        reason_for_creche_language: "A gyermekem ott megtanulhatja a hivatalos \xC3\xA1llami nyelvet."
+        reason_for_creche_likes: "A gyermekem szeret b\xC3\xB6lcs\xC5\x91d\xC3\xA9be j\xC3\xA1rni/r\xC3\xA9szt venni a k\xC3\xB6z\xC3\xB6ss\xC3\xA9gi programban."
+        immunization_information_source_mediator: !binary |
+          S8O2esO2c3PDqWdpIG1lZGnDoXRvcg==
+
+        immunization_importance: "Mi a v\xC3\xA9lem\xC3\xA9nye, \xC3\xA1ltal\xC3\xA1ban mennyire fontos a gyermekek sz\xC3\xA1m\xC3\xA1ra a v\xC3\xA9d\xC5\x91olt\xC3\xA1s?"
+        teach_letters_mother: "\xC3\x89desanya "
+        draw_father: "\xC3\x89desapa"
+        home_electricity: "Elektromos \xC3\xA1ram?"
+        play_father: "\xC3\x89desapa"
+        reason_for_creche_trust: "Kedvelem a nevel\xC5\x91ket/megb\xC3\xADzom benn\xC3\xBCk."
+        reason_for_kindergarten_time: "Id\xC5\x91t biztos\xC3\xADt sz\xC3\xA1momra, hogy dolgozzak/elint\xC3\xA9zzem az egy\xC3\xA9b \xC3\xBCgyeimet."
+        created_by: Adatokat bevitte
+        play_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        boys_girls_success_importance: "7.3 Mennyire fontos a fi\xC3\xBAk \xC3\xA9s a l\xC3\xA1nyok sz\xC3\xA1m\xC3\xA1ra, hogy sikeresek legyenek az iskol\xC3\xA1ban?"
+        test_before_school: "11.15 A beiratkoz\xC3\xA1s el\xC5\x91tt el kellett v\xC3\xA9geznie gyermek\xC3\xA9nek egy tesztet?"
+        reason_not_enrolled_family: "A gyermekemnek a csal\xC3\xA1dj\xC3\xA1ban a helye."
+        book_reading_father: "\xC3\x89desapa"
+        duration_of_interview: "1.2 Interj\xC3\xBA id\xC5\x91tartama"
+        tell_stories_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        school_mother: "\xC3\x89desanya"
+        reason_not_enrolled_no_like: "Gyermekem nem szeret \xC3\xB3vod\xC3\xA1ba j\xC3\xA1rni."
+        reason_not_enrolled_language: "A gyermekem nem \xC3\xA9rti a foglalkoz\xC3\xA1sok nyelv\xC3\xA9t."
+        reason_not_attend_no_creche: "Nincs a k\xC3\xB6zelben b\xC3\xB6lcs\xC5\x91de/\xC3\xB3voda/k\xC3\xB6z\xC3\xB6ss\xC3\xA9gi k\xC3\xB6zpont (3 \xC3\xA9v alatti gyermekek sz\xC3\xA1m\xC3\xA1ra)."
+        reason_for_creche_other: "Egy\xC3\xA9b okok:"
+        mothers_age: "2.3 \xC3\x89desanya \xC3\xA9letkora "
+        home_water: "Foly\xC3\xB3 v\xC3\xADz a lak\xC3\xA1sban?"
+        mother_activity: "\xC3\x89desanya"
+        school_father: "\xC3\x89desapa"
+        reason_not_attend_no_trust: "Nem szeretem a tan\xC3\xA1rokat/nem b\xC3\xADzom benn\xC3\xBCk."
+        childs_development_information_source_others: "Egy\xC3\xA9b:"
+        homework_father: "\xC3\x89desapa"
+        class_roma: "11.4 Az \xC3\xB3vodai csoportban, ahova a gyermeke j\xC3\xA1r, a t\xC3\xB6bbi gyerek:"
+        children_language_macedonian: "Maced\xC3\xB3n"
+        home_toilet: Benti WC?
+        language_macedonian: "Maced\xC3\xB3n"
+        teach_letters_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        roma: "A v\xC3\xA1laszad\xC3\xB3 roma?"
+        relation_to_children: "5.1 Milyen rokoni kapcsolatban \xC3\xA1ll a h\xC3\xA1ztart\xC3\xA1sban \xC3\xA9l\xC5\x91 gyermekekkel (a 0-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti kedvezm\xC3\xA9nyezett gyermekekre fektesse a hangs\xC3\xBAlyt)"
+        reason_for_kindergarten_free_meal: "Ingyen \xC3\xA9telt biztos\xC3\xADtanak vagy m\xC3\xA1s anyagi t\xC3\xA1mogat\xC3\xA1st."
+        draw_no_answer: "Nem tudom/Nincs v\xC3\xA1lasz"
+        play_mother: "\xC3\x89desanya"
+        reason_not_enrolled_trust: "Nem kedvelem a tan\xC3\xA1rokat/nem b\xC3\xADzom meg benn\xC3\xBCk."
+        reason_not_attend_expensive: "T\xC3\xBAl sokba ker\xC3\xBCl."
+        home_shower: "Benti zuhanyz\xC3\xB3/f\xC3\xBCrd\xC5\x91szoba?"
+        home_tv: TV?
+        home_computer: !binary |
+          U3rDoW3DrXTDs2fDqXA/
+
+        book_reading_mother: "\xC3\x89desanya"
+        talked_about_pregnancy_health_mediator: !binary |
+          RWfDqXN6c8OpZ8O8Z3lpIG1lZGnDoXRvcg==
+
+        talked_about_pregnancy: "8.5 Amennyiben a 8.4-as k\xC3\xA9rd\xC3\xA9sre adott v\xC3\xA1lasz nemleges, tegye fel a k\xC3\xB6vetkez\xC5\x91 k\xC3\xA9rd\xC3\xA9st: Besz\xC3\xA9lt-e \xC3\x96nnel valaki a terhess\xC3\xA9gr\xC5\x91l, amikor a legkisebbik gyermek\xC3\xA9vel volt v\xC3\xA1rand\xC3\xB3s?"
+        reason_not_enrolled_other: "Egy\xC3\xA9b okok"
+        reason_not_enrolled_no_clothes: "Nincs p\xC3\xA9nzem, hogy a gyermekemnek ruh\xC3\xA1t/cip\xC5\x91t vegyek az \xC3\xB3vod\xC3\xA1ba j\xC3\xA1r\xC3\xA1shoz."
+        play_other: !binary |
+          TcOhcw==
+
+        mother_activity_other: !binary |
+          ZWd5w6li
+
+        teacher_informs: "11.5 Besz\xC3\xA9lnek-e \xC3\x96nnel a nevel\xC5\x91k, \xC3\xA9s adnak-e hasznos t\xC3\xA1j\xC3\xA9koztat\xC3\xA1st a gyermek\xC3\xA9vel, valamint azzal kapcsolatban, hogyan boldogul gyermeke az \xC3\xB3vod\xC3\xA1ban?"
+        reason_not_attend_language: "A gyermekem nem besz\xC3\xA9li a nyelvet."
+        reason_for_kindergarten_playing: "Ott j\xC3\xA1tszani tud a gyermekem."
+        reason_for_kindergarten_friendships: "Az \xC3\xB3vod\xC3\xA1ban a gyermekem \xC3\xBAj bar\xC3\xA1tokra tud szert tenni."
+        children_language_albanian: !binary |
+          QWxiw6Fu
+
+        number_of_all_children: "2.4 Gyermekek sz\xC3\xA1ma"
+      user: 
+        remember_me: Jegyezd meg az adataimat!
+        localities: "Lak\xC3\xB3negyedek"
+        category: "Kateg\xC3\xB3ria "
+        code: !binary |
+          S8OzZA==
+
+        language: Nyelv
+        locality: "Lak\xC3\xB3negyed"
+        last_name: !binary |
+          VmV6ZXTDqWtuw6l2
+
+        password: "Jelsz\xC3\xB3"
+        first_name: "Keresztn\xC3\xA9v"
+        email: Email
+    errors: 
+      messages: 
+        record_invalid: "Sikertelen valid\xC3\xA1l\xC3\xA1s %{errors}"
+        taken: "m\xC3\xA1r foglalt"
+  View All: "\xC3\x96sszes megjelen\xC3\xADt\xC3\xA9se"
+  There is no child aged below 7 years: "Nincs 7 \xC3\xA9v alatti gyermek"
+  There is no child aged 3-7 years: "Nincs 3-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermek"
+  "Children enrollment:": "Gyermekek beiratkoz\xC3\xA1sa:"
+  Menu Items: !binary |
+    Rm9yZMOtdMOhc29r
+
+  Logout: !binary |
+    S2lsw6lww6lz
+
+  Hello!: !binary |
+    w5xkdsO2emxldCE=
+
+  6 Parent's attitude: "6.\tSz\xC3\xBCl\xC5\x91k hozz\xC3\xA1\xC3\xA1ll\xC3\xA1sa a kora gyermekkori nevel\xC3\xA9shez \xC3\xA9s gondoz\xC3\xA1shoz"
+  Institutions: !binary |
+    SW50w6l6bcOpbnllaw==
+
+  Are you sure? This will disable editing of this survey: "Biztos benne? Az igen gomb megnyom\xC3\xA1s\xC3\xA1val lez\xC3\xA1rja a felm\xC3\xA9r\xC3\xA9s szerkeszt\xC3\xA9s\xC3\xA9t."
+  Attendance Data were succesfully updated: "N\xC3\xA9z\xC5\x91sz\xC3\xA1m adatok sikeresen friss\xC3\xADtve."
+  7 Parent's expectations: "7.\tSz\xC3\xBCl\xC5\x91i elv\xC3\xA1r\xC3\xA1sok gyermekeik j\xC3\xB6v\xC5\x91beni iskolai v\xC3\xA9gzetts\xC3\xA9g\xC3\xA9vel kapcsolatban"
+  Life Skills program: "\xC3\x89letre val\xC3\xB3 felk\xC3\xA9sz\xC3\xADt\xC3\xA9s program"
+  teach_letters: "9.6 Az elm\xC3\xBAlt 3 napban, tan\xC3\xADtott-e a gyermekeknek bet\xC5\xB1ket vagy tan\xC3\xADtotta-e sz\xC3\xA1molni, valamelyik 15 \xC3\xA9vesn\xC3\xA9l id\xC5\x91sebb h\xC3\xA1ztart\xC3\xA1sbeli?"
+  surveys in locality: "Lak\xC3\xB3negyedben v\xC3\xA9gzett felm\xC3\xA9r\xC3\xA9sek"
+  children_below_three: "10.\t0 \xC3\xA9s 3 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekek sz\xC3\xBCleinek sz\xC3\xA1nt k\xC3\xA9rd\xC3\xA9sek "
+  Name: !binary |
+    TsOpdg==
+
+  You are editing family: "A csal\xC3\xA1d adatait szerkeszti:"
+  New Institution: !binary |
+    w5pqIGludMOpem3DqW55
+
+  Kindergarten: !binary |
+    w5N2b2Rh
+
+  Monthly Attendance in Kindergarten: "\xC3\x93vodai r\xC3\xA9szv\xC3\xA9tel havi szinten "
+  A Good Start - a new survey completed: "EGY J\xC3\x93 KEZDET PROJEKT - Egy \xC3\xBAj felm\xC3\xA9r\xC3\xA9s elk\xC3\xA9sz\xC3\xBClt"
+  School Results - Children from Preschool Programs: "Iskolai eredm\xC3\xA9nyek \xE2\x80\x93 gyermekek az iskol\xC3\xA1skor el\xC5\x91tti programokban"
+  Save: Ment
+  schools: "12.1 Milyen iskolai v\xC3\xA9gzetts\xC3\xA9ge van a sz\xC3\xBCl\xC5\x91knek/f\xC5\x91 gondoz\xC3\xB3nak?"
+  This survey is Marked as Verified: "Ez a k\xC3\xA9rd\xC5\x91\xC3\xADv van megjel\xC3\xB6lve igazolt"
+  Number of children: "Gyermekek sz\xC3\xA1ma"
+  "No": Nem
+  Family Profile: "A csal\xC3\xA1d profilj\xC3\xA1nak"
+  Household in settlement: "H\xC3\xA1ztart\xC3\xA1s a telepen"
+  9 Parent's attitude towards learning at home: "9.\tSz\xC3\xBCl\xC5\x91i hozz\xC3\xA1\xC3\xA1ll\xC3\xA1s a gyermekek otthon tanul\xC3\xA1s\xC3\xA1val, \xC3\xA9s fejl\xC5\x91d\xC3\xA9s\xC3\xA9vel kapcsolatban"
+  MMR/ROR: "MMR/ROR "
+  Workshops on education/health: "Tal\xC3\xA1lkoz\xC3\xB3k az oktat\xC3\xA1si / eg\xC3\xA9szs\xC3\xA9g\xC3\xBCgyi"
+  School: Iskola
+  Q111-117enrolled: "A 11.1-11.7-es k\xC3\xA9rd\xC3\xA9sek nem jelennek meg, mert nincs 3-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermek, aki beiratkozott volna. "
+  Add New Household Survey: !binary |
+    w5pqIGNzYWzDoWRsw6F0b2dhdMOhc2kgZmVsbcOpcsOpcyBob3p6w6FhZMOh
+    c2E=
+
+  "All children:": "\xC3\x96sszes gyermek: "
+  Children: Gyermekek
+  datetime: 
+    prompts: 
+      minute: Perc
+      second: "M\xC3\xA1sodperc"
+      month: !binary |
+        SMOzbmFw
+
+      hour: !binary |
+        w5NyYQ==
+
+      day: Nap
+      year: !binary |
+        w4l2
+
+    distance_in_words: 
+      less_than_x_minutes: 
+        one: kevesebb, mint 1 perc
+        other: kevesebb, mint %{count} perc
+      x_days: 
+        one: 1 nap
+        other: "%{count} nap"
+      almost_x_years: 
+        one: "majdnem 1 \xC3\xA9v"
+        other: "majdnem %{count} \xC3\xA9v"
+      x_seconds: 
+        one: "1 m\xC3\xA1sodperc"
+        other: "%{count} m\xC3\xA1sodperc"
+      x_months: 
+        one: "1 h\xC3\xB3nap"
+        other: "%{count} h\xC3\xB3nap"
+      x_minutes: 
+        one: 1 perc
+        other: "%{count} perc"
+      less_than_x_seconds: 
+        one: "kevesebb, mint 1 m\xC3\xA1sodperc"
+        other: "kevesebb, mint %{count} m\xC3\xA1sodperc"
+      about_x_hours: 
+        one: "kb 1 \xC3\xB3ra"
+        other: "kb %{count} \xC3\xB3ra"
+      about_x_years: 
+        one: "kb 1 \xC3\xA9v"
+        other: "kb %{count} \xC3\xA9v"
+      about_x_months: 
+        one: "kb 1 h\xC3\xB3nap"
+        other: "kb %{count} h\xC3\xB3nap"
+      over_x_years: 
+        one: "t\xC3\xB6bb, mint 1 \xC3\xA9v"
+        other: "t\xC3\xB6bb, mint %{count} \xC3\xA9v"
+      half_a_minute: "f\xC3\xA9l perc"
+  Survey No: !binary |
+    S8OpcmTFkcOtdiBzesOhbWE=
+
+  1 Interview details: "1. Az interj\xC3\xBA r\xC3\xA9szletei "
+  DTP: "DTP "
+  List: "Lista "
+  Back: "Vissza a list\xC3\xA1hoz"
+  Fathers age: "\xC3\x89desapa kora"
+  Mark as verified: Mark igazolt
+  Saved: Mentett
+  Hib: Hib
+  Child: Gyermek
+  56 What is the mother tongue of your children?: 5.6 Mi a gyermekei anyanyelve?
+  Immunization Information Source: "Mentes\xC3\xADt\xC3\xA9ssel kapcsolatos inform\xC3\xA1ci\xC3\xB3k forr\xC3\xA1sa  "
+  "Locality:": "Lak\xC3\xB3negyed:"
+  Close: !binary |
+    QmV6w6Fyw6Fzw6Fob3o=
+
+  reason_not_enrolled: "11.8 K\xC3\xA9rem nevezze meg azt a 3 legfontosabb okot, ami\xC3\xA9rt gyermek\xC3\xA9t m\xC3\xA9g nem iratta be \xC3\xA1ltal\xC3\xA1nos iskol\xC3\xA1ba \xC3\xA9s ami\xC3\xA9rt \xC3\xB3viod\xC3\xA1ba SEM J\xC3\x81R."
+  "All survey data verified?:": "Az \xC3\xB6sszes felm\xC3\xA9r\xC3\xA9si adatot ellen\xC5\x91rizte?"
+  date: 
+    month_names: 
+    - 
+    - "janu\xC3\xA1r"
+    - "febru\xC3\xA1r"
+    - "m\xC3\xA1rcius"
+    - "\xC3\xA1prilis"
+    - !binary |
+      bcOhanVz
+
+    - "j\xC3\xBAnius"
+    - "j\xC3\xBAlius"
+    - augusztus
+    - szeptember
+    - "okt\xC3\xB3ber"
+    - november
+    - december
+    order: 
+    - :year
+    - :month
+    - :day
+    abbr_day_names: 
+    - v.
+    - h.
+    - k.
+    - sze.
+    - cs.
+    - p.
+    - szo.
+    formats: 
+      default: "%Y.%m.%d."
+      short: "%b %e."
+      long: "%Y. %B %e."
+    day_names: 
+    - "vas\xC3\xA1rnap"
+    - !binary |
+      aMOpdGbFkQ==
+
+    - kedd
+    - szerda
+    - !binary |
+      Y3PDvHTDtnJ0w7Zr
+
+    - "p\xC3\xA9ntek"
+    - szombat
+    abbr_month_names: 
+    - 
+    - jan.
+    - febr.
+    - !binary |
+      bcOhcmMu
+
+    - !binary |
+      w6Fwci4=
+
+    - !binary |
+      bcOhai4=
+
+    - !binary |
+      asO6bi4=
+
+    - !binary |
+      asO6bC4=
+
+    - aug.
+    - szept.
+    - okt.
+    - nov.
+    - dec.
+  View surveys here: "N\xC3\xA9zd meg itt felm\xC3\xA9r\xC3\xA9sek"
+  Tutoring at School: "Iskol\xC3\xA1n bel\xC3\xBCli tutor\xC3\xA1l\xC3\xA1s/mentor\xC3\xA1l\xC3\xA1s"
+  Q103under3home: "A 10.3-as k\xC3\xA9rd\xC3\xA9s nem jelenik meg, mert jelenleg a 3 \xC3\xA9vesn\xC3\xA9l kisebb gyermek otthon van. "
+  Non Formal Education: "Nem form\xC3\xA1lis oktat\xC3\xA1s a sz\xC3\xBCl\xC5\x91k sz\xC3\xA1m\xC3\xA1ra"
+  Completed: Befejezve
+  Adding Family: "Csal\xC3\xA1d hozz\xC3\xA1ad\xC3\xA1sa"
+  Destroy: !binary |
+    VMO2csO2bA==
+
+  Add Family: "Csal\xC3\xA1d hozz\xC3\xA1ad\xC3\xA1sa"
+  Set date: "A d\xC3\xA1tum kiv\xC3\xA1laszt\xC3\xA1sa"
+  Save and Next: !binary |
+    TWVudMOpcyDDqXMgbMOpcMOpcyBhIGvDtnZldGtlesWRcmU=
+
+  24 Number of children: "2.4 Gyermekek sz\xC3\xA1ma:"
+  Attendance in after School Activities: "Iskola ut\xC3\xA1ni tev\xC3\xA9kenys\xC3\xA9gekben val\xC3\xB3 r\xC3\xA9szv\xC3\xA9tel"
+  homework: "9.7 Az elm\xC3\xBAlt 3 napban, seg\xC3\xADtett-e valamelyik 15 \xC3\xA9vesn\xC3\xA9l id\xC5\x91sebb h\xC3\xA1ztart\xC3\xA1sbeli megcsin\xC3\xA1lni a h\xC3\xA1zi feladatot azoknak a gyermekeknek, akik iskol\xC3\xA1ba j\xC3\xA1rnak?"
+  errors: 
+    messages: 
+      not_locked: "nem volt z\xC3\xA1rolva"
+      not_found: "nem tal\xC3\xA1lhat\xC3\xB3"
+      greater_than_or_equal_to: "nagyobb, vagy azonos kell, hogy legyen %{count} "
+      less_than_or_equal_to: "kevesebbnek, vagy ugyanannyinak kell lennie mint %{count} "
+      confirmation: "nem egyezik meg a meger\xC5\x91s\xC3\xADt\xC3\xA9ssel "
+      not_an_integer: "eg\xC3\xA9sz sz\xC3\xA1m kell, hogy legyen"
+      blank: "nem maradhat \xC3\xBCresen"
+      invalid: !binary |
+        w6lydsOpbnl0ZWxlbg==
+
+      exclusion: fenntartva
+      odd: "p\xC3\xA1ratlannak kell lennie"
+      wrong_length: "nem megfelel\xC5\x91 hossz\xC3\xBAs\xC3\xA1g (%{count} karakternek kell lennie) "
+      too_short: "t\xC3\xBAl r\xC3\xB6vid (minimum %{count} karacter) "
+      even: "p\xC3\xA1rosnak kell lennie"
+      empty: "nem maradhat \xC3\xBCresen"
+      already_confirmed: "m\xC3\xA1r meger\xC5\x91s\xC3\xADtette"
+      less_than: "kevesebbnek kell lennie mint %{count} "
+      greater_than: "nagyobb kell, hogy legyen mint  %{count} "
+      equal_to: meg kell egyeznie a %{count} -val
+      too_long: "t\xC3\xBAl hossz\xC3\xBA (maximum %{count} karacter) "
+      accepted: el kell fogadni
+      not_a_number: "ez nem sz\xC3\xA1m"
+      inclusion: "nem szerepel a list\xC3\xA1n"
+    format: "%{attribute} %{message} "
+  draw: "9.5 Az elm\xC3\xBAlt 3 napban, rajzolt-e valamelyik 15 \xC3\xA9vesn\xC3\xA9l id\xC5\x91sebb h\xC3\xA1ztart\xC3\xA1sbeli a gyermekkel?"
+  activities: "12.7 K\xC3\xA9rem mondja el, hogy mivel foglalkoznak a h\xC3\xA1ztart\xC3\xA1s tagjai?"
+  VHB: VHB
+  Set language: "Nyelv kiv\xC3\xA1laszt\xC3\xA1sa"
+  Save and Mark Survey as Completed: "Ment\xC3\xA9s \xC3\xA9s a felm\xC3\xA9r\xC3\xA9s befejezettk\xC3\xA9nt val\xC3\xB3 megjel\xC3\xB6l\xC3\xA9se"
+  Children below seven: "7 \xC3\xA9v alatti gyermekek"
+  Delete: !binary |
+    VMO2csO2bA==
+
+  Edit User: "Felhaszn\xC3\xA1l\xC3\xB3i adatok szerkeszt\xC3\xA9se"
+  Attendance Data were succesfully saved You can add another one: "N\xC3\xA9z\xC5\x91sz\xC3\xA1m adatok sikeresen mentette. Felveheti egy m\xC3\xA1sik."
+  Date: !binary |
+    RMOhdHVt
+
+  (Unmark): !binary |
+    SmVsw7Zsw6lzIG1lZ3N6w7xudGV0w6lzZQ==
+
+  immunization_information_source: "8.3 Kapott valaha inform\xC3\xA1ci\xC3\xB3t/t\xC3\xA1j\xC3\xA9koztat\xC3\xA1st a v\xC3\xA9d\xC5\x91olt\xC3\xA1s fontoss\xC3\xA1g\xC3\xA1r\xC3\xB3l?\n\
+    Amennyiben KAPOTT, k\xC3\xA9rem jel\xC3\xB6lje meg kit\xC5\x91l kapta az inform\xC3\xA1ci\xC3\xB3t"
+  You do not have right to edit this child!: "Ennek a gyermeknek az adatait nem szerkesztheti! "
+  This will delete survey and all of its data: "Ezzel t\xC3\xB6r\xC3\xB6lni fogja a felm\xC3\xA9r\xC3\xA9st \xC3\xA9s annak \xC3\xB6sszes adat\xC3\xA1t (gyermekek, csal\xC3\xA1d). Biztos benne? "
+  Sign out: "Kijelentkez\xC3\xA9s"
+  26 Household in settlement: "2.6 H\xC3\xA1ztart\xC3\xA1s a telepen: "
+  Monthly Attendance in Preschool Program: "Iskol\xC3\xA1skor el\xC5\x91tti programban val\xC3\xB3 r\xC3\xA9szv\xC3\xA9tel havi szinten"
+  Child profile was successfully updated: "A gyermek profilj\xC3\xA1nak friss\xC3\xADt\xC3\xA9se sikeresen befejez\xC5\x91d\xC3\xB6tt."
+  Didn't receive confirmation instructions?: "Nem kapta meg a visszaigazol\xC3\xA1sra vonatkoz\xC3\xB3 instrukci\xC3\xB3kat? "
+  View survey here: "N\xC3\xA9zd felm\xC3\xA9r\xC3\xA9s itt"
+  "Q119\xE2\x80\x931116notshownFG": "A 11.9-11.16-os k\xC3\xA9rd\xC3\xA9sek nem jelennek meg, mert nincs 5-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermek, aki beiratkozott volna az F vagy a G t\xC3\xADpus\xC3\xBA int\xC3\xA9zm\xC3\xA9nybe. "
+  Editing institution: "Int\xC3\xA9zm\xC3\xA9nyi adatok szerkeszt\xC3\xA9se"
+  22 Fathers age: "2.2 \xC3\x89desapa \xC3\xA9letkora:"
+  4 Child assessment for children aged 3-7 years: "4.\t3-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekekre vonatkoz\xC3\xB3 felm\xC3\xA9r\xC3\xA9s"
+  Mark for Delete: !binary |
+    S2lqZWzDtmzDqXMgdMO2cmzDqXNyZQ==
+
+  10 Children younger than 3 years: "10.\t0 \xC3\xA9s 3 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekek sz\xC3\xBCleinek sz\xC3\xA1nt k\xC3\xA9rd\xC3\xA9sek "
+  reason_for_kindergarten: "11.1 Mi\xC3\xA9rt j\xC3\xA1r a gyermeke \xC3\xB3vod\xC3\xA1ba? Ossza meg vel\xC3\xBCnk k\xC3\xA9rem a 3 legfontosabb okot."
+  Title: !binary |
+    TsOpdg==
+
+  Q118CDFG: "A 11.8-as k\xC3\xA9rd\xC3\xA9s nem jelenik meg, mert nincs 3-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermek, aki nem iratkozott be C, D, F vagy G t\xC3\xADpus\xC3\xBA int\xC3\xA9zm\xC3\xA9nybe."
+  Countries: "Orsz\xC3\xA1gok"
+  of: !binary |
+    LWLDs2w=
+
+  Q101a102under3: "A 10.1-es \xC3\xA9s a 10.2-es k\xC3\xA9rd\xC3\xA9sek nem jelennek meg, mert nincs 3 \xC3\xA9vesn\xC3\xA9l kisebb gyermek, aki beiratkozott volna. "
+  Household Surveys: !binary |
+    Q3NhbMOhZGzDoXRvZ2F0w6FzaSBmZWxtw6lyw6lzZWs=
+
+  Kindergartens: !binary |
+    w5N2b2TDoWs=
+
+  Add New Locality: "\xC3\x9Aj lak\xC3\xB3negyed hozz\xC3\xA1ad\xC3\xA1sa"
+  Household Surveys - Incomplete: "Csal\xC3\xA1dl\xC3\xA1togat\xC3\xA1si felm\xC3\xA9r\xC3\xA9sek \xE2\x80\x93 nincs befejezve"
+  Didn't receive unlock instructions?: "Nem kapta meg a a z\xC3\xA1rol\xC3\xA1s felold\xC3\xA1s\xC3\xA1ra vonatkoz\xC3\xB3 instrukci\xC3\xB3kat?"
+  "Yes": Igen
+  Please select Date: "A d\xC3\xA1tum kiv\xC3\xA1laszt\xC3\xA1sa"
+  Completed Household Surveys: "Befejezett csal\xC3\xA1dl\xC3\xA1togat\xC3\xA1si felm\xC3\xA9r\xC3\xA9sek"
+  "You are editing child: ": "A gyermek adatait szerkeszti:"
+  This will mark this survey for deletion: 
+    " Are you sure?": "Ezzel a felm\xC3\xA9r\xC3\xA9st t\xC3\xB6rl\xC3\xA9sre jel\xC3\xB6li  ki. Biztos benne? "
+  "Number of expected surveys:": !binary |
+    RmVsbcOpcsOpc2VrIHbDoXJoYXTDsyBzesOhbWE6
+
+  3 Children details: "3. Gyermekekre vonatkoz\xC3\xB3 r\xC3\xA9szletek "
+  Immunization Data: "Mentes\xC3\xADt\xC3\xA9si adatok"
+  11 Children 3 to 7 years: "11.\t3-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekeket nevel\xC5\x91 sz\xC3\xBCl\xC5\x91knek sz\xC3\xA1nt k\xC3\xA9rd\xC3\xA9sek"
+  devise: 
+    failure: 
+      unauthenticated: "A folytat\xC3\xA1shoz bejelentkez\xC3\xA9s vagy regisztr\xC3\xA1ci\xC3\xB3 sz\xC3\xBCks\xC3\xA9ges."
+      timeout: "A munkamenet lej\xC3\xA1rt. A folytat\xC3\xA1shoz k\xC3\xA9rj\xC3\xBCk jelentkezzen be \xC3\xBAjra!"
+      invalid: "\xC3\x89rv\xC3\xA9nytelen e-mail vagy jelsz\xC3\xB3."
+      inactive: "A fi\xC3\xB3kja m\xC3\xA9g nincs aktiv\xC3\xA1lva."
+      unconfirmed: "A folytat\xC3\xA1shoz sz\xC3\xBCks\xC3\xA9g van a fi\xC3\xB3kra vonatkoz\xC3\xB3 meger\xC5\x91s\xC3\xADt\xC3\xA9re."
+      locked: !binary |
+        RmnDs2rDoXQgesOhcm9sdHVrLg==
+
+      invalid_token: "\xC3\x89rv\xC3\xA9nytelen hiteles\xC3\xADt\xC3\xA9si eszk\xC3\xB6z (token)."
+    passwords: 
+      send_instructions: "N\xC3\xA9h\xC3\xA1ny perc m\xC3\xBAlva e-mailt kapni fog arr\xC3\xB3l, mik\xC3\xA9nt \xC3\xA1ll\xC3\xADtsa vissza a jelszav\xC3\xA1t."
+      updated: "Sikeresen megv\xC3\xA1ltoztatta jelszav\xC3\xA1t. Sikeresen bejelentkezett."
+    unlocks: 
+      unlocked: "A fi\xC3\xB3kja z\xC3\xA1rol\xC3\xA1sa sikeresen fel lett oldva. Most be van jelentkezve. "
+      send_instructions: "N\xC3\xA9h\xC3\xA1ny perc m\xC3\xBAlva kapni fog egy e-mailt, mely arra vonatkoz\xC3\xB3 instrukci\xC3\xB3kat tartalmaz, mik\xC3\xA9nt oldja fel fi\xC3\xB3kja z\xC3\xA1rol\xC3\xA1s\xC3\xA1t."
+    mailer: 
+      unlock_instructions: 
+        subject: "Z\xC3\xA1rol\xC3\xA1s felold\xC3\xA1s\xC3\xA1ra vonatkoz\xC3\xB3 utas\xC3\xADt\xC3\xA1sok"
+      reset_password_instructions: 
+        subject: "A jelsz\xC3\xB3ra vonatkoz\xC3\xB3 utas\xC3\xADt\xC3\xA1sok vissza\xC3\xA1ll\xC3\xADt\xC3\xA1sa"
+      confirmation_instructions: 
+        subject: "Meger\xC5\x91s\xC3\xADt\xC3\xA9sre vonatkoz\xC3\xB3 utas\xC3\xADt\xC3\xA1sok"
+    omniauth_callbacks: 
+      failure: "Az enged\xC3\xA9lyez\xC3\xA9s %{kind} \"%{reason}\" miatt nem t\xC3\xB6rt\xC3\xA9nt meg. \n"
+      success: "Enged\xC3\xA9lyez\xC3\xA9s sikeres a %l{kind} fi\xC3\xB3k alapj\xC3\xA1n."
+    registrations: 
+      inactive_signed_up: "\xC3\x96n sikeresen regisztr\xC3\xA1lt, azonban nem siker\xC3\xBClt bejelentkeznie, mert a fi\xC3\xB3kja %{reason}."
+      destroyed: "Viszontl\xC3\xA1t\xC3\xA1sra! Fi\xC3\xB3kj\xC3\xA1nak t\xC3\xB6rl\xC3\xA9se sikeresen befejez\xC5\x91d\xC3\xB6tt. Rem\xC3\xA9lj\xC3\xBCk, hamarosan \xC3\xBAjra l\xC3\xA1tjuk."
+      updated: "\xC3\x96n sikeresen friss\xC3\xADtette fi\xC3\xB3kj\xC3\xA1t."
+      signed_up: "\xC3\x9Cdv\xC3\xB6zl\xC3\xB6m! \xC3\x96n sikeresen regisztr\xC3\xA1lt. "
+    sessions: 
+      signed_out: "A kijelentkez\xC3\xA9s sikeres volt."
+      admin: 
+        errors: 
+          messages: 
+            not_locked: "nem volt z\xC3\xA1rolva\n"
+            not_found: "nem tal\xC3\xA1lhat\xC3\xB3"
+            not_saved: 
+              one: "1 hiba miatt ez a ment\xC3\xA9s %{resource} tilt\xC3\xA1sra ker\xC3\xBClt:"
+              other: "%{count} hiba miatt ez a ment\xC3\xA9s %{resource} tilt\xC3\xA1sra"
+            already_confirmed: "K\xC3\xB6sz\xC3\xB6nj\xC3\xBCk a fi\xC3\xB3kj\xC3\xA1ra vonatkoz\xC3\xB3 meger\xC5\x91s\xC3\xADt\xC3\xA9st, k\xC3\xA9rj\xC3\xBCk pr\xC3\xB3b\xC3\xA1ljon meg bejelentkezni."
+        signed_in: "\xC3\x9Cdv. admin! "
+      user: 
+        signed_in: "\xC3\x9Cdv\xC3\xB6zl\xC3\xB6m, \xC3\x96n sikeresen bejelentkezett."
+      password: "Jelsz\xC3\xB3"
+      signed_in: "A bejelentkez\xC3\xA9s sikeres volt."
+      email: "E-mail "
+    confirmations: 
+      confirmed: "\xC3\x96n sikeresen regisztr\xC3\xA1lt, \xC3\xA9s be is jelentkezett a rendszerbe."
+      send_instructions: "N\xC3\xA9h\xC3\xA1ny perc m\xC3\xBAlva kapni fog egy e-mailt, mely arra vonatkoz\xC3\xB3 instrukci\xC3\xB3kat tartalmaz, hogyan er\xC5\x91s\xC3\xADtse meg regisztr\xC3\xA1ci\xC3\xB3j\xC3\xA1t."
+  This month is already entered: "Az adatok ebben a h\xC3\xB3napban m\xC3\xA1r be."
+  There was a problem to save data: "Probl\xC3\xA9ma l\xC3\xA9pett fel, az adatment\xC3\xA9s sikertelen volt."
+  Parental Involvement in Preschool: "A sz\xC3\xBCl\xC5\x91k bevon\xC3\xA1sa az \xC3\xB3vodai"
+  Overview: !binary |
+    w4F0dGVraW50w6lz
+
+  23 Mothers age: "2.3 \xC3\x89desanya \xC3\xA9letkora:"
+  My profile: "Az \xC3\xA9n profilom"
+  A - at home and not enrolled: "A \xE2\x80\x93 otthon van, \xC3\xA9s nem j\xC3\xA1r int\xC3\xA9zm\xC3\xA9nybe"
+  Extracurricular activities: "Tan\xC3\xADt\xC3\xA1son k\xC3\xADv\xC3\xBCli szabadid\xC5\x91s foglalkoz\xC3\xA1sok"
+  Hotline: !binary |
+    Rm9ycsOzZHLDs3Q=
+
+  Add new: "\xC3\x9Aj adatok hozz\xC3\xA1ad\xC3\xA1sa"
+  In the locality of: "A k\xC3\xB6vetkez\xC5\x91 hely"
+  Are you sure?: Biztos benne?
+  number: 
+    format: 
+      separator: ","
+      precision: 3
+      delimiter: ","
+      strip_insignificant_zeros: 0
+      significant: 0
+    human: 
+      format: 
+        precision: 3
+        strip_insignificant_zeros: 1
+        significant: 1
+      storage_units: 
+        format: "%n %u"
+        units: 
+          kb: KB
+          tb: TB
+          gb: GB
+          byte: 
+            one: !binary |
+              YsOhanQ=
+
+            other: !binary |
+              YsOhanQ=
+
+          mb: MB
+      decimal_units: 
+        format: "%n %u "
+        units: 
+          trillion: "Trilli\xC3\xB3"
+          quadrillion: "Kvadrilli\xC3\xB3"
+          billion: "Milli\xC3\xA1rd"
+          million: "Milli\xC3\xB3"
+          thousand: Ezer
+    currency: 
+      format: 
+        format: "%n %u"
+        unit: Ft
+        separator: .
+        precision: 2
+        delimiter: ","
+        strip_insignificant_zeros: 0
+        significant: 0
+  children_below_seven: "11.\t3-7 \xC3\xA9v k\xC3\xB6z\xC3\xB6tti gyermekeket nevel\xC5\x91 sz\xC3\xBCl\xC5\x91knek sz\xC3\xA1nt k\xC3\xA9rd\xC3\xA9sek"
+  "You are editing survey no: ": "A(z) sz\xC3\xA1m\xC3\xBA felm\xC3\xA9r\xC3\xA9st szerkeszti:"
+  Number of Children: "Gyermek sz\xC3\xA1ma"
+  Edit: Szerkeszt
+  Gender: Neme
+  Forgot your password?: "Elfelejtette a jelszav\xC3\xA1t?"
+  the total expected number of surveys has been verified by the local partner team leader: "az \xC3\xB6sszes v\xC3\xA1rhat\xC3\xB3 sz\xC3\xA1ma felm\xC3\xA9r\xC3\xA9sek igazolt\xC3\xA1k a helyi partner csoport vezet\xC5\x91je"
+  reason_not_attend: "10.3 Mik a f\xC5\x91 okai annak, hogy a gyermeke nem j\xC3\xA1r b\xC3\xB6lcs\xC5\x91d\xC3\xA9be/\xC3\xB3vod\xC3\xA1ba/k\xC3\xB6z\xC3\xB6ss\xC3\xA9gi k\xC3\xB6zpontba?"
+  childs_development_information_source: "9.1 Amikor k\xC3\xA9rd\xC3\xA9sek mer\xC3\xBClnek fel \xC3\x96nben gyermeke fejl\xC5\x91d\xC3\xA9s\xC3\xA9vel kapcsolatban, hol kaphat t\xC3\xA1j\xC3\xA9koztat\xC3\xA1st ezzel kapcsolatban?"
+  Schools: "Iskol\xC3\xA1k"
+  Number of days absent in month: "Hi\xC3\xA1nyz\xC3\xA1sok sz\xC3\xA1ma az adott h\xC3\xB3napban az adott gyermekre vonatkoz\xC3\xB3an "
+  Campaign on Reading Out Loud: "\"Mes\xC3\xA9d\" program  "
+  formtastic: 
+    required: !binary |
+      U3rDvGtzw6lnZXM=
+
+    "no": Nem
+    submit: "Bek\xC3\xBCld"
+    "yes": Igen
+    save: Ment
+    create: "L\xC3\xA9trehoz"
+    update: Ment
+  Sign in: "Bejelentkez\xC3\xA9s"
+  School Results: "Iskolai eredm\xC3\xA9nyek"
+  Add New Family: !binary |
+    w5pqIGNzYWzDoWQgaG96esOhYWTDoXNh
+
+  5 Household details: "5.\tH\xC3\xA1ztart\xC3\xA1ssal kapcsolatos adatok "
+  Household Survey: !binary |
+    Q3NhbMOhZGzDoXRvZ2F0w6FzaSBmZWxtw6lyw6lz
+
+  Kindergardens: !binary |
+    w5N2b2TDoWs=
+
+  Mothers age: "\xC3\x89desanya kora"
+  talked_about_pregnancy: "8.5 Besz\xC3\xA9lt-e \xC3\x96nnel valaki a terhess\xC3\xA9gr\xC5\x91l, amikor a legkisebbik gyermek\xC3\xA9vel volt v\xC3\xA1rand\xC3\xB3s?"
+  4 Children assesment: "4. Gyermekkel kapcsolatos felm\xC3\xA9r\xC3\xA9s "
+  Home: "Kezd\xC5\x91oldal"
+  Survey was successfully updated: "A felm\xC3\xA9r\xC3\xA9s friss\xC3\xADt\xC3\xA9se sikeresen befejez\xC5\x91d\xC3\xB6tt."
+  Back to list of institutions: "Vissza a list\xC3\xA1hoz az \xC3\xB3vodai int\xC3\xA9zm\xC3\xA9nyek"

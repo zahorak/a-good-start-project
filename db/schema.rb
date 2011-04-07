@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101210140312) do
+ActiveRecord::Schema.define(:version => 20110316145042) do
+
+  create_table "articles", :force => true do |t|
+    t.string  "title"
+    t.string  "subtitle"
+    t.text    "intro"
+    t.text    "main"
+    t.integer "category",    :limit => 2
+    t.string  "language_id", :limit => 2, :default => "en"
+    t.integer "related_id",  :limit => 3
+  end
 
   create_table "attendance_results", :force => true do |t|
     t.integer  "family_id"
@@ -21,6 +31,11 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "child_id",                             :limit => 8
+    t.integer  "institution_id",                       :limit => 8
+    t.integer  "extracurricular_activities",           :limit => 1
+    t.integer  "life_skill_program",                   :limit => 1
+    t.integer  "campaign_on_reading_on_loud",          :limit => 1
+    t.integer  "tutoring_at_school",                   :limit => 1
   end
 
   create_table "attendances", :force => true do |t|
@@ -37,6 +52,7 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
   create_table "child_profiles", :force => true do |t|
     t.integer  "survey_id",          :limit => 8
     t.integer  "family_id",          :limit => 8
+    t.integer  "locality_id",        :limit => 2
     t.integer  "created_by",         :limit => 3
     t.string   "childs_first_name"
     t.string   "childs_last_name"
@@ -54,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.integer  "other_children",     :limit => 1
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "marked_for_delete",  :limit => 1
   end
 
   create_table "countries", :force => true do |t|
@@ -72,15 +89,39 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
   end
 
   create_table "family_profiles", :force => true do |t|
-    t.integer  "survey_id",                      :limit => 8
-    t.integer  "created_by",                     :limit => 3
-    t.string   "family_name",                    :limit => 100
-    t.integer  "fathers_age",                    :limit => 2
-    t.integer  "mothers_age",                    :limit => 2
-    t.integer  "number_of_children",             :limit => 2
-    t.integer  "number_of_children_below_seven", :limit => 2
-    t.integer  "household_in_settlement",        :limit => 1
+    t.integer  "survey_id",                       :limit => 8
+    t.integer  "created_by",                      :limit => 3
+    t.integer  "locality_id",                     :limit => 3
+    t.string   "family_name",                     :limit => 100
+    t.integer  "fathers_age",                     :limit => 2
+    t.integer  "mothers_age",                     :limit => 2
+    t.integer  "number_of_children",              :limit => 2
+    t.integer  "number_of_children_below_seven",  :limit => 2
+    t.integer  "household_in_settlement",         :limit => 1
     t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "non_formal_education",            :limit => 1
+    t.integer  "workshops_on_education",          :limit => 1
+    t.integer  "parental_involment_in_preschool", :limit => 1
+  end
+
+  create_table "immunizations", :force => true do |t|
+    t.integer  "child_id"
+    t.integer  "created_by",                             :limit => 3
+    t.integer  "child_has_all_obligatory_vaccinations"
+    t.integer  "child_has_some_obligatory_vaccinations", :limit => 1
+    t.integer  "child_has_no_vaccinations",              :limit => 1
+    t.integer  "unknown",                                :limit => 1
+    t.text     "comment"
+    t.integer  "bcg",                                    :limit => 1
+    t.integer  "dtp",                                    :limit => 1
+    t.integer  "hib",                                    :limit => 1
+    t.integer  "vhb",                                    :limit => 1
+    t.integer  "ipv",                                    :limit => 1
+    t.integer  "pcv",                                    :limit => 1
+    t.integer  "mmr",                                    :limit => 1
+    t.date     "survey_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -96,11 +137,14 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
   end
 
   create_table "localities", :force => true do |t|
-    t.integer  "country_id", :limit => 2
-    t.string   "code",       :limit => 2
-    t.string   "city",       :limit => 100
+    t.integer  "country_id",   :limit => 2
+    t.string   "code",         :limit => 2
+    t.string   "city",         :limit => 100
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "survey_count"
+    t.integer  "complete",     :limit => 1
+    t.integer  "verified",     :limit => 1
   end
 
   create_table "menu_items", :force => true do |t|
@@ -114,24 +158,40 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.string   "name_mk",     :limit => 300
     t.string   "name_ro",     :limit => 300
     t.string   "name_sk",     :limit => 300
+    t.integer  "enabled",     :limit => 1,   :default => 1
+  end
+
+  create_table "registrations", :force => true do |t|
+    t.integer "user_id",     :limit => 8
+    t.integer "locality_id", :limit => 2
   end
 
   create_table "school_results", :force => true do |t|
-    t.integer  "child_id",                     :limit => 8
-    t.integer  "family_id",                    :limit => 8
-    t.integer  "institution_id",               :limit => 3
-    t.integer  "created_by",                   :limit => 3
+    t.integer  "child_id",                           :limit => 8
+    t.integer  "family_id",                          :limit => 8
+    t.integer  "institution_id",                     :limit => 3
+    t.integer  "created_by",                         :limit => 3
     t.boolean  "school_readiness_test_passed"
-    t.integer  "type_of_school_enrolled_to",   :limit => 1
-    t.integer  "type_of_class_enrolled_to",    :limit => 1
+    t.integer  "type_of_school_enrolled_to",         :limit => 1
+    t.integer  "type_of_class_enrolled_to",          :limit => 1
     t.integer  "gpa_in_first_grade"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "test_before_school",                 :limit => 3
+    t.integer  "test_before_school_result",          :limit => 3
+    t.string   "test_before_school_result_other",    :limit => 200
+    t.integer  "proceeded_to_next year",             :limit => 3
+    t.integer  "average_school_marks_midterm_10_11", :limit => 2
+    t.integer  "average_school_marks_yearend_10_11", :limit => 2
+    t.integer  "average_school_marks_midterm_11_12", :limit => 2
   end
 
   create_table "surveys", :force => true do |t|
     t.integer  "family_id",                                           :limit => 3
     t.integer  "created_by",                                          :limit => 3
+    t.integer  "verified",                                            :limit => 1
+    t.integer  "current_step",                                        :limit => 2,   :default => 1
+    t.integer  "locality_id",                                         :limit => 3
     t.date     "date_of_the_interview"
     t.integer  "duration_of_interview"
     t.integer  "interviewer_id"
@@ -147,20 +207,20 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.string   "relation_to_children_other",                          :limit => 100
     t.integer  "primary_caregiver",                                   :limit => 1
     t.integer  "who_is_primary_caregiver",                            :limit => 1
-    t.integer  "who_is_primary_caregiver_other"
+    t.string   "who_is_primary_caregiver_other",                      :limit => 200
     t.integer  "primary_caregiver_age",                               :limit => 2
     t.integer  "language_hungarian",                                  :limit => 1
     t.integer  "language_macedonian",                                 :limit => 1
     t.integer  "language_romani",                                     :limit => 1
     t.integer  "language_romanian",                                   :limit => 1
     t.integer  "language_slovak",                                     :limit => 1
-    t.integer  "language_other"
+    t.string   "language_other",                                      :limit => 200
     t.integer  "children_language_hungarian",                         :limit => 1
     t.integer  "children_language_macedonian",                        :limit => 1
     t.integer  "children_language_romani",                            :limit => 1
     t.integer  "children_language_romanian",                          :limit => 1
     t.integer  "children_language_slovak",                            :limit => 1
-    t.integer  "children_language_other"
+    t.string   "children_language_other",                             :limit => 200
     t.integer  "better_in_school",                                    :limit => 1
     t.integer  "kindergarten_importance",                             :limit => 1
     t.integer  "wished_daugters_education",                           :limit => 1
@@ -224,7 +284,7 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.integer  "reason_for_creche_learning"
     t.integer  "reason_for_creche_language"
     t.integer  "reason_for_creche_no_answer"
-    t.integer  "reason_for_creche_other"
+    t.string   "reason_for_creche_other",                             :limit => 200
     t.integer  "talk_with_teacher",                                   :limit => 1
     t.integer  "reason_not_attend_expensive"
     t.integer  "reason_not_attend_no_creche"
@@ -235,7 +295,7 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.integer  "reason_not_attend_language"
     t.integer  "reason_not_attend_family"
     t.integer  "reason_not_attend_no_answer"
-    t.integer  "reason_not_attend_other"
+    t.string   "reason_not_attend_other",                             :limit => 200
     t.integer  "reason_for_kindergarten_likes"
     t.integer  "reason_for_kindergarten_free_meal"
     t.integer  "reason_for_kindergarten_time"
@@ -246,7 +306,7 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.integer  "reason_for_kindergarten_learning"
     t.integer  "reason_for_kindergarten_language"
     t.integer  "reason_for_kindergarten_compulsory"
-    t.integer  "reason_for_kindergarten_other"
+    t.string   "reason_for_kindergarten_other",                       :limit => 200
     t.integer  "reason_for_kindergarten_no_answer"
     t.integer  "kindergarten_days",                                   :limit => 1
     t.integer  "kindergarten_roma",                                   :limit => 1
@@ -264,7 +324,7 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.integer  "reason_not_enrolled_no_place"
     t.integer  "reason_not_enrolled_family"
     t.integer  "reason_not_enrolled_language"
-    t.integer  "reason_not_enrolled_other"
+    t.string   "reason_not_enrolled_other",                           :limit => 200
     t.integer  "reason_not_enrolled_no_answer"
     t.integer  "school_roma",                                         :limit => 1
     t.integer  "school_class_roma",                                   :limit => 1
@@ -274,13 +334,13 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.integer  "school_good_bad",                                     :limit => 1
     t.integer  "test_before_school",                                  :limit => 1
     t.integer  "test_before_school_result",                           :limit => 1
-    t.integer  "test_before_school_other"
+    t.string   "test_before_school_other",                            :limit => 200
     t.integer  "school_mother",                                       :limit => 1
-    t.integer  "school_mother_other"
+    t.string   "school_mother_other",                                 :limit => 200
     t.integer  "school_father",                                       :limit => 1
-    t.integer  "school_father_other"
+    t.string   "school_father_other",                                 :limit => 200
     t.integer  "school_caregiver",                                    :limit => 1
-    t.integer  "school_caregiver_other"
+    t.string   "school_caregiver_other",                              :limit => 200
     t.integer  "mother_has_id"
     t.integer  "birth_certificate",                                   :limit => 1
     t.integer  "home_kitchen"
@@ -298,21 +358,19 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.integer  "number_of_people_under_18",                           :limit => 2
     t.integer  "number_of_people_over_18",                            :limit => 2
     t.integer  "mother_activity",                                     :limit => 2
-    t.integer  "mother_activity_other"
+    t.string   "mother_activity_other",                               :limit => 200
     t.integer  "father_activity",                                     :limit => 2
-    t.integer  "father_activity_other"
+    t.string   "father_activity_other",                               :limit => 200
     t.integer  "caregiver_activity",                                  :limit => 2
-    t.integer  "caregiver_activity_other"
+    t.string   "caregiver_activity_other",                            :limit => 200
     t.integer  "separated_settlement"
     t.integer  "roma_village"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "locality_id",                                         :limit => 3
     t.integer  "mediator_id",                                         :limit => 3
     t.string   "mediator_survey_counter",                             :limit => 10
     t.integer  "fathers_age",                                         :limit => 3
     t.integer  "mothers_age",                                         :limit => 3
-    t.integer  "current_step",                                        :limit => 1
     t.integer  "language_albanian"
     t.integer  "children_language_albanian"
     t.boolean  "talked_about_pregnancy_doctor"
@@ -327,6 +385,10 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.boolean  "teach_letters_no_answer"
     t.boolean  "homework_no_answer"
     t.boolean  "talked_about_pregnancy_no_answer"
+    t.integer  "marked_for_delete",                                   :limit => 1
+    t.integer  "roma",                                                :limit => 1
+    t.integer  "mothers_age_at_first_pregnancy",                      :limit => 2
+    t.integer  "completed",                                           :limit => 1
   end
 
   create_table "tolk_locales", :force => true do |t|
@@ -358,11 +420,11 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
   create_table "users", :force => true do |t|
     t.string   "first_name",           :limit => 100
     t.string   "last_name",            :limit => 100
-    t.string   "category",             :limit => 20
+    t.string   "category",             :limit => 20,  :default => "MED"
     t.string   "code",                 :limit => 5
-    t.string   "email",                               :default => "", :null => false
-    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
-    t.string   "password_salt",                       :default => "", :null => false
+    t.string   "email",                               :default => "",    :null => false
+    t.string   "encrypted_password",   :limit => 128, :default => "",    :null => false
+    t.string   "password_salt",                       :default => "",    :null => false
     t.string   "reset_password_token"
     t.string   "remember_token"
     t.datetime "remember_created_at"
@@ -382,6 +444,7 @@ ActiveRecord::Schema.define(:version => 20101210140312) do
     t.datetime "updated_at"
     t.string   "language",             :limit => 2
     t.integer  "locality_id",          :limit => 2
+    t.string   "localitiess",          :limit => 200
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

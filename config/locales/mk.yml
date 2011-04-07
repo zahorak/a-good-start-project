@@ -1,408 +1,2269 @@
 --- 
 mk: 
-  ? "1 Interview details"
-  : "1. Податоци за интервјуто"
-  ? "10 Children younger than 3 years"
-  : "10.	Прашања за родителите на деца на возраст до 3 години "
-  ? "11 Children 3 to 7 years"
-  : "11.	Прашања за родителите на деца на возраст од 3 до 7 години "
-  ? "12 Other socio-economic data"
-  : "12.	Други социоекономски податоци "
-  ? "2 Family details"
-  : "2.	Податоци за семејството"
-  ? "4 Child assessment for children aged 3-7 years"
-  : "4.	Проценка на деца на возраст од 3 до 7 години "
-  ? "4 Children assesment"
-  : "4.	Проценка на деца на возраст "
-  ? "5 Household details"
-  : "5.	Податоци за домаќинството"
-  ? "55 What language is spoken in your household?"
-  : "5.5 Кој јазик се зборува во вашето домаќинство? "
-  ? "56 What is the mother tongue of your children?"
-  : "5.6 Кој е мајчиниот јазик на вашите деца?"
-  ? "6 Parent's attitude"
-  : "6.	Ставови на родителите кон раното воспитување и образование на деца "
-  ? "7 Parent's expectations"
-  : "7.	Очекувања на родителите за идните образовни успеси (резултати) на нивното дете/деца? "
-  ? "8 Immunization and health care"
-  : "8.	Вакцинирање и здравствена грижа "
-  ? "9 Parent's attitude towards learning at home"
-  : "9.	Ставот на родителите кон учењето и развојот во домашни услови "
-  ? "A Good Start"
-  : "ПРОЕКТОТ ДОБАР ПОЧЕТОК"
-  Birthdate: "Датум на раѓање"
-  Child: Дете
-  Family: Cемејство
-  ? "Family name"
-  : Презиме
-  ? "Fathers age"
-  : "Старост на таткото"
-  Gender: Пол
-  Locality: Место
-  ? "Mothers age"
-  : "Старост на мајката"
-  ? "Number of children"
-  : "Бројка на деца"
-  ? "Number of children below seven"
-  : "Бројка на деца на возраст од 0 до 7 години"
-  ? "Survey No"
-  : "Број на прашалник"
-  activerecord: 
-    attributes: 
-      child_profile: 
-        alphabet: "4.1 Дали може да препознае/ именува најмалку четири букви од азбуката?"
-        buttons: "4.6 Дали може да си ја закопча кошулата или џемперот? "
-        childs_first_name: "Име на детето"
-        childs_last_name: "Презиме на детето"
-        childs_surname: "Презиме на детето"
-        enrolled_to: "Каде е запишано детето? Ве молиме кажете ни го името на училиштето/ установата."
-        numbers: "4.5 Дали ги препознава симболите за броевите од 1 до 10?"
-        other_children: "4.9 Дали се согласува со другите деца?"
-        reading_words: "4.2 Дали може да прочита најмалку четири едноставни, секојдневни зборови?"
-        routine_activities: "4.7 Дали ги извршува секојдневните вообичаени активности без да треба да се потсети?"
-        selfconfidence: "4.8 Дали покажува самодоверба? "
-        sentences: "4.4 Дали разбира прости реченици на државниот/ регионалниот јазик?"
-        writing: "4.3 Дали може да си го напише своето име? "
-      family_profile: 
-        family_name: "2.1 Презиме"
-        fathers_age: "2.2 Старост на таткото"
-        mothers_age: "2.3 Старост на мајката"
-        number_of_children: "2.4 Бројка на деца"
-        number_of_children_below_seven: "2.5 Бројка на деца на возраст од 0 до 7 години"
-      survey: 
-        are_teachers_helpfull: "11.13 Доколку вашето дете има проблеми, дали наставниците му помагаат на детето да го научи наставниот јазик?"
-        better_in_school: "6.1 Дали сметате дека децата постигнуваат подобри резултати на училиште? "
-        birth_certificate: "12.3 Дали сите деца имаат извод на родени?"
-        book_count: "9.8 Колку книги за деца или сликовници имате за мали деца?"
-        book_reading_father: Таткото
-        book_reading_mother: Мајката
-        book_reading_noone: Никој
-        book_reading_other: Друг
-        boys_girls_success_importance: "7.3 Колку е важно за момчињата и девојчињата да постигнат добри резултати на училиште?"
-        breastfeeding_importance: "8.7 Колку месеци сметате дека е важно да се дојат децата?"
-        caregiver_activity: "Лицето кое се грижи за децата"
-        caregiver_activity_other: Друго
-        children_language_hungarian: Унгарски
-        children_language_macedonian: Македонски
-        children_language_other: "Друг јазик:  (Ве молиме пополнете):"
-        children_language_romani: Ромски
-        children_language_romanian: Романски
-        children_language_slovak: Словачки
-        childs_development_information_source_books: "Читам книги"
-        childs_development_information_source_newspapers: "Читам написи во весник во врска со овие прашања "
-        childs_development_information_source_no_idea: "Не знам каде да добијам информации "
-        childs_development_information_source_no_need: "Не ми се потребни дополнителни информации "
-        childs_development_information_source_other_persons: "Прашувам други луѓе"
-        childs_development_information_source_others: Друго
-        childs_development_information_source_tv: "Гледам телевизиски програми во врска со овие прашања "
-        class_roma: "11.4 Во групата на вашето дете во градинка, останатите деца се ….?"
-        comment: Коментари
-        date_of_the_interview: "1.1 Датум на интервјуто"
-        doctor_visit_after_birth: "8.6 Дали во првите месеци по раѓањето на вашето најмало дете, медицинска сестра или доктор (педијатар или друг доктор) извршија преглед на детето?"
-        draw_father: Таткото
-        draw_mother: Мајката
-        draw_noone: Никој
-        draw_other: Друг
-        duration_of_interview: "1.2 Времетраење на интервјуто"
-        father_activity: Таткото
-        father_activity_other: Друг
-        home_computer: Компјутер?
-        home_electricity: "Електрична енергија? "
-        home_internet: "Пристап до интернет? "
-        home_kitchen: "Кујна внатре?  "
-        home_latrine: "Полски клозет? "
-        home_phone: "Мобилен/ фиксен телефон? "
-        home_radio: Радио?
-        home_sewerage: "Канализација внатре за исфрлање на отпадната (користена) вода? "
-        home_shower: "Туш/ бања внатре? "
-        home_toilet: "Тоалет внатре? "
-        home_tv: Телевизор?
-        home_water: "Проточна вода внатре? "
-        homework_father: Таткото
-        homework_mother: Мајката
-        homework_no_child_in_school_yet: "Ниедно дете сè уште не е запишано на училиште "
-        homework_noone: Никој
-        homework_other: Друг
-        immunization_importance: "8.1 Според вас колку вакцинирањето е важно за децата?"
-        immunization_in_household: "8.2 Според ваше сознание, дали сите деца во вашето домаќинство/дом се вакцинирани?"
-        immunization_information_source_do_not_know: "Не знам/ Немам одговор"
-        immunization_information_source_doctor: Лекар
-        immunization_information_source_mediator: "Посредник во заедницата"
-        immunization_information_source_no_info: "Не сум добил/а вакви информации/ појаснување"
-        immunization_information_source_nurse: "Медицинска сестра или друг здравствен работник"
-        immunization_information_source_nurse_other: "Друго лице (ве молиме пополнете)"
-        kindergarten_days: "11.2 Во текот на последнава недела (последните 5 работни дена) колку дена вашето дете беше во градинка?"
-        kindergarten_importance: "6.2 Колку е важно малите деца на возраст од 0 до 6 години да одат во јасли, градинка или други предучилишни програми за учење за да имаат добра иднина?"
-        kindergarten_roma: "11.3 Во градинката на вашето дете, останатите деца се ….?"
-        language_hungarian: Унгарски
-        language_macedonian: Македонски
-        language_other: "Друг јазик: (Ве молиме пополнете):"
-        language_romani: Ромски
-        language_romanian: Романски
-        language_slovak: Словачки
-        lesson_difficulty: "11.12 Дали на вашето дете му е тешко да го разбере наставниот јазик?"
-        lesson_language_understanding: "11.6 Доколку наставниот јазик е е различен од мајчиниот јазик на детето прашајте го лицето што го анкетирате: Дали на вашето дете му е тешко да ја следи наставата? (доколку јазикот не се разликува, продолжете со прашањето 11.8)."
-        mediator_id: Медијатор
-        mother_activity: Мајката
-        mother_activity_other: друго
-        mother_has_id: "12.2 Дали мајката на децата има документ за идентификација?"
-        number_of_all_children: "2.4 Бројка на деца"
-        number_of_children_below_seven: "2.5 Бројка на деца на возраст од 0 до 7 години"
-        number_of_people_over_18: "Бројка на луѓе во домаќинството над 18 години"
-        number_of_people_under_18: "Бројка на луѓе во домаќинството под 18 години"
-        play_father: Таткото
-        play_mother: Мајката
-        play_noone: Никој
-        play_other: Друг
-        primary_caregiver: "5.2 Дали вие сте лицето што се грижи за децата?"
-        primary_caregiver_age: "5.4 Колку години има лицето што се грижи за децата?"
-        reason_for_creche_free_meal: "Со програмата се обезбедува бесплатен оброк или друга материјална помош."
-        reason_for_creche_friendships: "Во градинката моето дете може да запознае нови другарчиња."
-        reason_for_creche_language: "Моето дете може да го научи службениот државен/ регионално доминантниот јазик таму."
-        reason_for_creche_learning: "Моето дете може да учи таму."
-        reason_for_creche_likes: "Моето дете сака да ја посетува програмата/ да оди во градинката."
-        reason_for_creche_no_answer: "Не знам/ Немам одговор"
-        reason_for_creche_other: "Други причини:"
-        reason_for_creche_playing: "Моето дете може да си игра таму."
-        reason_for_creche_time: "Ми остава време да работам/ да се грижам за други работи."
-        reason_for_creche_trust: "Ми се допаѓаат/ им верувам на воспитувачите."
-        reason_for_kindergarten_better_chance: "Моето дете ќе има поголеми можности да успее во основно училиште и подоцна."
-        reason_for_kindergarten_compulsory: "Градинката е задолжителна за моето дете. "
-        reason_for_kindergarten_free_meal: "Градинката обезбедува бесплатен оброк или друга материјална помош."
-        reason_for_kindergarten_friendships: "Во градинката моето дете може да запознае нови другарчиња."
-        reason_for_kindergarten_language: "Моето дете може да го научи службениот државен/ регионално доминантниот јазик  таму."
-        reason_for_kindergarten_learning: "Моето дете може да учи таму."
-        reason_for_kindergarten_likes: "Моето дете сака да оди во градинка."
-        reason_for_kindergarten_no_answer: "Не знам/ Немам одговор"
-        reason_for_kindergarten_other: "Други причини"
-        reason_for_kindergarten_playing: "Моето дете може да си игра таму."
-        reason_for_kindergarten_time: "Ми остава време да работам/ да се грижам за други работи."
-        reason_for_kindergarten_trust: "Ми се допаѓаат/ им верувам на воспитувачите."
-        reason_not_attend_bad_treating: "Не се однесуваат добро со моето дете."
-        reason_not_attend_expensive: "Премногу е скапо."
-        reason_not_attend_family: "Моето дете треба да остане заедно со семејството."
-        reason_not_attend_language: "Моето дете не го зборува јазикот."
-        reason_not_attend_no_answer: "Не знам/ Немам одговор"
-        reason_not_attend_no_creche: "Во близина нема јасли/ градинка/ општински центар (за деца помали од 3 години)."
-        reason_not_attend_no_place: "Нема слободни места."
-        reason_not_attend_no_trust: "Не ми се допаѓаат/ не им верувам на воспитувачите."
-        reason_not_attend_no_work: "Не работам и можам да се грижам за моето дете дома."
-        reason_not_attend_other: "Други причини"
-        reason_not_enrolled_children_treating: "Другите деца не се однесуваат добро со моето дете."
-        reason_not_enrolled_expensive: "Премногу е скапо."
-        reason_not_enrolled_family: "Моето дете треба да остане заедно со семејството."
-        reason_not_enrolled_language: "Моето дете не го разбира наставниот јазик. "
-        reason_not_enrolled_no_answer: "Не знам/ Немам одговор"
-        reason_not_enrolled_no_clothes: "Немам пари на моето дете да му купам облека/ обувки за градинка."
-        reason_not_enrolled_no_like: "Моето дете не сака да оди во градинка."
-        reason_not_enrolled_no_place: "Нема доволно места во градинката."
-        reason_not_enrolled_no_work: "Не работам и можам да се грижам за моето дете дома."
-        reason_not_enrolled_not_nearby: "Нема градинка во близина."
-        reason_not_enrolled_other: "Други причини"
-        reason_not_enrolled_trust: "Не ми се допаѓаат/ не им верувам на наставниците."
-        relation_to_children: "5.1 Какво е вашето сродство со децата во ова домаќинство?(фокусирајте се на децата корисници на возраст од 0 до 7 години)"
-        relation_to_children_other: "Друг: (ве молиме наведете) "
-        roma_village: "13.2 Дали домот се наоѓа во дел од градот/ селото каде сите/ речиси сите соседи ви се Роми?"
-        school_caregiver: "Лицето кое се грижи за децата"
-        school_caregiver_other: друго
-        school_class_roma: "11.10 Во одделението на вашето дете останатите деца се …?"
-        school_father: Таткото
-        school_father_other: друго
-        school_good_bad: "11.14 Според вас колку основното училиште е добро или лошо?"
-        school_mother: Мајката
-        school_mother_other: друго
-        school_roma: "11.9 Во училиштето на вашето дете останатите деца се …?"
-        school_teacher_information: "11.11 Дали наставниците зборуваат со вас и ви даваат корисни информации за вашето дете и како се снаоѓа на училиште?"
-        separate_place: "9.9 Дали во вашиот дом имате посебно место/ маса/ катче каде детето може да учи или да си игра?"
-        separated_settlement: "13.1 Дали домот ви се наоѓа во посебна населба надвор од градот/ селото?"
-        talk_with_teacher: "10.2 Дали воспитувачите зборуваат со вас и ви даваат корисни информации за вашето дете и како се снаоѓа таму?"
-        talked_about_pregnancy: "8.5 Доколку одговорот на прашањето 8.4 е НЕ, прашајте: Дали  зборувавте со некого за бременоста додека бевте бремена пред да ви се роди најмалото дете?"
-        talked_about_pregnancy_other: "Друго лице (ве молиме пополнете):"
-        teach_letters_father: Таткото
-        teach_letters_mother: Мајката
-        teach_letters_noone: Никој
-        teach_letters_other: Друг
-        teacher_help: "11.7 Доколку вашето дете има проблеми, дали воспитувачите му помагаат на детето да го научи наставниот јазик?"
-        teacher_informs: "11.5 Дали воспитувачите зборуваат со вас и ви даваат корисни информации за вашето дете и како се снаоѓа во градинката?"
-        tell_stories_father: Таткото
-        tell_stories_mother: Мајката
-        tell_stories_noone: Никој
-        tell_stories_other: Друг
-        test_before_school: "11.15 Дали вашето дете направи тест пред да се запише во основно училиште?"
-        test_before_school_other: "Друго:"
-        test_before_school_result: "11.16 Доколку одговорот е ДА, каков беше резултатот?"
-        visited_hospital_during_pregnancy: "8.4 Кога вие бевте бремена пред да ви се роди најмалото дете дали бевте во болница или на лекар за преглед или контрола?"
-        who_is_primary_caregiver: "5.3 Ако тоа НЕ сте вие, кој се грижи за децата?"
-        who_is_primary_caregiver_other: "Друг: (ве молиме наведете)"
-        wished_daugters_education: "7.1 Кога размислувате за иднината на вашата ќерка, каков вид на училиште треба да заврши вашата ќерка?"
-        wished_daugters_education_other: "Друго: (Ве молиме пополнете) "
-        wished_sons_education: "7.2 Кога размислувате за иднината на вашиот син, каков вид на училиште треба да заврши вашиот син?"
-        wished_sons_education_other: "Друго: (Ве молиме пополнете) "
-    errors: 
-      messages: 
-        taken: "е зафатено"
-    models: 
-      ? "Child Profile"
-      : Дете
-      ? "Family Profile"
-      : Cемејство
-  activities: "12.7 Ве молам кажете ми со каква дејност се занимаваат членовите од домаќинството?"
-  book_reading: "9.2 Во последните 3 дена, дали некој член од семејството постар од 15 години читаше или разлистуваше сликовница со детето/децата?"
-  children_below_seven: "11.	Прашања за родителите на деца на возраст од 3 до 7 години "
-  children_below_three: "10.	Прашања за родителите на деца на возраст до 3 години "
-  childs_development_information_source: "9.1 Кога имате одредени прашања за развојот на вашето дете, од каде можете да добиете информации?"
-  date: 
-    abbr_day_names: 
-      - Нед
-      - Пон
-      - Вто
-      - Сре
-      - Чет
-      - Пет
-      - Саб
-    abbr_month_names: 
-      - ~
-      - Јан
-      - Фев
-      - Мар
-      - Апр
-      - Мај
-      - Јун
-      - Јул
-      - Авг
-      - Сеп
-      - Окт
-      - Ное
-      - Дек
-    day_names: 
-      - Недела
-      - Понеделник
-      - Вторник
-      - Среда
-      - Четврток
-      - Петок
-      - Сабота
-    formats: 
-      default: "%d/%m/%Y"
-      long: "%B %e, %Y"
-      short: "%e %b"
-    month_names: 
-      - ~
-      - Јануари
-      - Февруари
-      - Март
-      - Април
-      - Мај
-      - Јуни
-      - Јули
-      - Август
-      - Септември
-      - Октомври
-      - Ноември
-      - Декември
-    order: 
-      - !ruby/symbol day
-      - !ruby/symbol month
-      - !ruby/symbol year
-  datetime: 
-    distance_in_words: 
-      about_x_hours: 
-        few: "околу %{count} часа"
-        one: "околу 1 час"
-        other: "околу %{count} часа"
-      about_x_months: 
-        few: "околу %{count} месеци"
-        one: "околу 1 месец"
-        other: "околу %{count} месеци"
-      about_x_years: 
-        one: "околу 1 година"
-        other: "околу %{count} години"
-      half_a_minute: "пола минута"
-      less_than_x_minutes: 
-        one: "помалку од 1 минута"
-        other: "помалку од %{count} минути"
-        zero: "помалку од минута"
-      less_than_x_seconds: 
-        few: "помалку од %{count} секунди"
-        one: "помалку од 1 секунда"
-        other: "помалку од %{count} секунди"
-        zero: "помалку од секунда"
-      over_x_years: 
-        one: "над 1 година"
-        other: "над %{count} години"
-      x_days: 
-        one: "1 ден"
-        other: "%{count} денови"
-      x_minutes: 
-        one: "1 минута"
-        other: "%{count} минути"
-      x_months: 
-        few: "%{count} месеци"
-        one: "1 месец"
-        other: "%{count} месеци"
-      x_seconds: 
-        few: "%{count} секунди"
-        one: "1 секунда"
-        other: "%{count} секунди"
-    prompts: 
-      day: ден
-      month: месец
-      year: год
-  draw: "9.5 Во последните 3 дена, дали некој член од семејството постар од 15 години црташе со децата?"
-  home_equipment: "12.4 Што од подолу наведеното имате во вашиот дом?"
-  homework: "9.7 Во последните 3 дена, дали некој член од семејството постар од 15 години им помогна со домашната на децата кои одат на училиште?"
-  immunization_information_source: "8.3 Дали некогаш сте добиле информации/ појаснувања за важноста на вакцинирањето? Доколку одговорот е ДА, ве молиме наведете кој ве информирал"
-  number: 
-    currency: 
-      format: 
-        delimiter: ","
-        format: "%n %u"
-        precision: 2
-        separator: "."
-        significant: 0
-        strip_insignificant_zeros: 0
-        unit: MKD
-    format: 
-      delimiter: "."
-      precision: 3
-      separator: ","
-      significant: 0
-      strip_insignificant_zeros: 0
-    human: 
-      decimal_units: 
-        units: 
-          billion: Billion
-          million: Million
-          quadrillion: Quadrillion
-          thousand: Thousand
-          trillion: Trillion
-      format: 
-        precision: 3
-        significant: 1
-        strip_insignificant_zeros: 1
-      storage_units: 
-        units: 
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
-  play: "9.4 Во последните 3 дена, дали некој член од семејството постар од 15 години играше со децата?"
-  reason_for_creche: "10.1 Ве молиме наведете ги трите најважни причини зошто вашето дете/деца одат во јасли/ градинка или друга програма во заедницата."
-  reason_for_kindergarten: "11.1 Зошто вашето дете оди во градинка? Ве молиме наведете ги трите најважни причини за тоа."
-  reason_not_attend: "10.3 Кои се главните причини зошто вашето дете НЕ оди во јасли/ градинка/ општинскиот центар?"
-  reason_not_enrolled: "11.8 Ве молиме да ни ги кажете главните 3 причини зошто вашето дете сè уште не е запишано во основно училиште и НЕ оди во градинка."
-  schools: "12.1 Каков вид на училиште завршиле родителите/ примарниот негувател на децата?"
+  play: !binary |
+    OS40INCS0L4g0L/QvtGB0LvQtdC00L3QuNGC0LUgMyDQtNC10L3QsCwg0LTQ
+    sNC70Lgg0L3QtdC60L7RmCDRh9C70LXQvSDQvtC0INGB0LXQvNC10ZjRgdGC
+    0LLQvtGC0L4g0L/QvtGB0YLQsNGAINC+0LQgMTUg0LPQvtC00LjQvdC4INC4
+    0LPRgNCw0YjQtSDRgdC+INC00LXRhtCw0YLQsD8=
+
+  Number of Schooldays in month: !binary |
+    0JHRgNC+0Zgg0L3QsCDQtNC10L3QvtCy0Lgg0L3QsCDQvtCx0YDQsNC30L7Q
+    stCw0L3QuNC1INCy0L4g0LXQtNC10L0g0LzQtdGB0LXRhg==
+
+  reason_for_creche: !binary |
+    MTAuMSDQktC1INC80L7Qu9C40LzQtSDQvdCw0LLQtdC00LXRgtC1INCz0Lgg
+    0YLRgNC40YLQtSDQvdCw0ZjQstCw0LbQvdC4INC/0YDQuNGH0LjQvdC4INC3
+    0L7RiNGC0L4g0LLQsNGI0LXRgtC+INC00LXRgtC1L9C00LXRhtCwINC+0LTQ
+    sNGCINCy0L4g0ZjQsNGB0LvQuC8g0LPRgNCw0LTQuNC90LrQsCDQuNC70Lgg
+    0LTRgNGD0LPQsCDQv9GA0L7Qs9GA0LDQvNCwINCy0L4g0LfQsNC10LTQvdC4
+    0YbQsNGC0LAu
+
+  Voluntary: !binary |
+    0JTQvtCx0YDQvtCy0L7Qu9C90Lg=
+
+  Other Translations: !binary |
+    0JTRgNGD0LPQuCDQv9GA0LXQstC+0LTQuA==
+
+  Add New Child: !binary |
+    0JTQvtC00LDRmCDQvdC+0LLQviDQtNC10YLQtQ==
+
+  8 Immunization and health care: !binary |
+    OC4J0JLQsNC60YbQuNC90LjRgNCw0ZrQtSDQuCDQt9C00YDQsNCy0YHRgtCy
+    0LXQvdCwINCz0YDQuNC20LAg
+
+  55 What language is spoken in your household?: !binary |
+    NS41INCa0L7RmCDRmNCw0LfQuNC6INGB0LUg0LfQsdC+0YDRg9Cy0LAg0LLQ
+    viDQstCw0YjQtdGC0L4g0LTQvtC80LDRnNC40L3RgdGC0LLQvj8g
+
+  book_reading: !binary |
+    OS4yINCS0L4g0L/QvtGB0LvQtdC00L3QuNGC0LUgMyDQtNC10L3QsCwg0LTQ
+    sNC70Lgg0L3QtdC60L7RmCDRh9C70LXQvSDQvtC0INGB0LXQvNC10ZjRgdGC
+    0LLQvtGC0L4g0L/QvtGB0YLQsNGAINC+0LQgMTUg0LPQvtC00LjQvdC4INGH
+    0LjRgtCw0YjQtSDQuNC70Lgg0YDQsNC30LvQuNGB0YLRg9Cy0LDRiNC1INGB
+    0LvQuNC60L7QstC90LjRhtCwINGB0L4g0LTQtdGC0LXRgtC+L9C00LXRhtCw
+    0YLQsD8=
+
+  Family name: !binary |
+    0J/RgNC10LfQuNC80LU=
+
+  Locality: !binary |
+    0JzQtdGB0YLQvg==
+
+  All: !binary |
+    0KHQtQ==
+
+  tell_stories: !binary |
+    OS4zINCS0L4g0L/QvtGB0LvQtdC00L3QuNGC0LUgMyDQtNC10L3QsCwg0LTQ
+    sNC70Lgg0L3QtdC60L7RmCDRh9C70LXQvSDQvtC0INGB0LXQvNC10ZjRgdGC
+    0LLQvtGC0L4g0L/QvtGB0YLQsNGAINC+0LQgMTUg0LPQvtC00LjQvdC4INC4
+    0Lwg0YDQsNGB0LrQsNC20YPQstCw0YjQtSDQv9GA0LjQutCw0LfQvdC4INC9
+    0LAg0LTQtdGG0LDRgtCwPw==
+
+  female: !binary |
+    0JbQtdC90YHQutC4
+
+  Vaccinations: !binary |
+    0JLQsNC60YbQuNC90LDRhtC40Lg=
+
+  Save and Add New Survey: !binary |
+    0JfQsNGH0YPQstCw0Zgg0Lgg0JTQvtC00LDQtNC4INC90L7QstCw0YLQsCDQ
+    sNC90LrQtdGC0LA=
+
+  Roma: !binary |
+    0KDQvtC80Lg=
+
+  Number of children below seven: !binary |
+    0JHRgNC+0ZjQutCwINC90LAg0LTQtdGG0LAg0L3QsCDQstC+0LfRgNCw0YHR
+    giDQvtC0IDAg0LTQviA3INCz0L7QtNC40L3QuA==
+
+  A new survey has been completed in your locality: !binary |
+    0JXQtNC90LAg0L3QvtCy0LAg0LDQvdC60LXRgtCwINCx0LXRiNC1INC30LDQ
+    stGA0YjQtdC9INCy0L4g0LLQsNGI0LDRgtCwINC70L7QutCw0YbQuNGY0LAu
+
+  "User name:": !binary |
+    0JrQvtGA0LjRgdC90LjRh9C60L4g0LjQvNC1Og==
+
+  Survey was saved and marked as completed: !binary |
+    0J/RgNCw0YjQsNC70L3QuNC60L7RgiDQsdC10YjQtSDRgdC/0LDRgdC10L0g
+    0Lgg0L7QsdC10LvQtdC20LDQvdC4INC60LDQutC+INGI0YLQviDQt9Cw0LLR
+    gNGI0Lgu
+
+  New Survey: !binary |
+    0J3QvtCy0LAg0JDQvdC60LXRgtCw
+
+  Add Child: !binary |
+    0JTQvtC00LDRmCDQvdC+0LLQviDQtNC10YLQtQ==
+
+  Families: !binary |
+    0KTQsNC80LjQu9C40Lg=
+
+  "My Locality:": !binary |
+    0JzQvtGY0LDRgtCwINC70L7QutCw0YbQuNGY0LA6
+
   support: 
     array: 
+      words_connector: ","
       last_word_connector: ", and"
       two_words_connector: and
-      words_connector: ","
-  teach_letters: "9.6 Во последните 3 дена, дали некој член од семејството постар од 15 години ги учеше децата буквите или да бројат?"
-  tell_stories: "9.3 Во последните 3 дена, дали некој член од семејството постар од 15 години им раскажуваше приказни на децата?"
+  male: !binary |
+    0JzQsNGI0LrQuA==
+
+  This survey is Marked as Complete: !binary |
+    0J7QstCw0LAg0LDQvdC60LXRgtCwINC1INC+0LfQvdCw0YfQtdC9INC60LDQ
+    utC+INC30LDQstGA0YjQtdC90LA=
+
+  Statistics: !binary |
+    0KHRgtCw0YLQuNGB0YLQuNC60Lg=
+
+  Add New Institution: !binary |
+    0JTQvtC00LDRmCDQvdC+0LLQsCDQuNC90YHRgtC40YLRg9GG0LjRmNCw
+
+  Change Enrollment of Child: !binary |
+    0J/RgNC+0LzQtdC90LAg0L3QsCDQt9Cw0L/QuNGI0YPQstCw0ZrQtSDQvdCw
+    INC00LXRgtC1
+
+  2 Family details: !binary |
+    Mi4J0J/QvtC00LDRgtC+0YbQuCDQt9CwINGB0LXQvNC10ZjRgdGC0LLQvtGC
+    0L4=
+
+  Login: !binary |
+    0J/RgNC40ZjQsNCy0Lgg0YHQtQ==
+
+  Birthdate: !binary |
+    0JTQsNGC0YPQvCDQvdCwINGA0LDRk9Cw0ZrQtQ==
+
+  Localities: !binary |
+    0JvQvtC60LDRhtC40Lg=
+
+  Sign up: !binary |
+    0KDQtdCz0LjRgdGC0YDQuNGA0LDRmCDRgdC1
+
+  "Number of completed surveys:": !binary |
+    0JHRgNC+0Zgg0L3QsCDQt9Cw0LLRgNGI0LXQvdC4INCw0L3QutC10YLQuDo=
+
+  Country: !binary |
+    0JTRgNC20LDQstCw
+
+  25 Number of children below seven: !binary |
+    Mi41INCR0YDQvtGY0LrQsCDQvdCwINC00LXRhtCwINC90LAg0LLQvtC30YDQ
+    sNGB0YIg0L7QtCAwINC00L4gNyDQs9C+0LTQuNC90Lg6
+
+  A Good Start: !binary |
+    0J/QoNCe0JXQmtCi0J7QoiDQlNCe0JHQkNCgINCf0J7Qp9CV0KLQntCa
+
+  the total expected number of surveys has been completed: !binary |
+    0LLQutGD0L/QvdC40L7RgiDQvtGH0LXQutGD0LLQsNC90LjQvtGCINCx0YDQ
+    vtGYINC90LAg0LDQvdC60LXRgtC4INC1INC30LDQstGA0YjQtdC90LA=
+
+  School Results - Children Tutored at School: !binary |
+    0KDQtdC30YPQu9GC0LDRgtC4INC90LAg0YPRh9C40LvQuNGI0YLQtdGC0L4g
+    LSDQlNC10YbQsCDQvNC10L3RgtC+0YDQuNGA0LDQvdC4INCy0L4g0YPRh9C4
+    0LvQuNGI0YLQtQ==
+
+  PCV: PCV
+  "Other data for parents/children?:": !binary |
+    0JTRgNGD0LPQuCDQv9C+0LTQsNGC0L7RhtC4INC30LAg0YDQvtC00LjRgtC1
+    0LvQuCAvINC00LXRhtCwOg==
+
+  A Good Start - all expected surveys verified: !binary |
+    0J/QoNCe0JXQmtCi0J7QoiDQlNCe0JHQkNCgINCf0J7Qp9CV0KLQntCaIC0g
+    0YHQuNGC0LUg0LDQvdC60LXRgtC4INGB0LUg0L7Rh9C10LrRg9Cy0LAg0L/Q
+    vtGC0LLRgNC00LXQvQ==
+
+  12 Other socio-economic data: !binary |
+    MTIuCdCU0YDRg9Cz0Lgg0YHQvtGG0LjQvtC10LrQvtC90L7QvNGB0LrQuCDQ
+    v9C+0LTQsNGC0L7RhtC4IA==
+
+  BCG: "BCG "
+  Previous month was not yet entered: !binary |
+    0J/RgNC10YLRhdC+0LTQtdC9INC80LXRgdC10YYg0YPRiNGC0LUg0L3QtSDQ
+    sdC10YjQtSDQstC70LXQs9C+0Ls=
+
+  Family: !binary |
+    Q9C10LzQtdGY0YHRgtCy0L4=
+
+  Add New Country: !binary |
+    0JTQvtC00LDRmCDQvdC+0LLQsCDQtNGA0LbQsNCy0LA=
+
+  IPV/PVi: "IPV/PVi "
+  Back to List: !binary |
+    0JLRgNCw0YLQtdGC0LUg0YHQtSDQvdCw0LfQsNC0INC90LAg0LvQuNGB0YLQ
+    sNGC0LA=
+
+  Editing children attendances: !binary |
+    0KPRgNC10LTRg9Cy0LDRmtC1INC90LAg0LTQtdGG0LAg0L/QvtGB0LXRgtC1
+    0L3QvtGB0YI=
+
   time: 
-    am: АМ
+    am: !binary |
+      0JDQnA==
+
     formats: 
       default: "%a %b %d %H:%M:%S %Z %Y"
-      long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
-    pm: ПМ
+      long: "%B %d, %Y %H:%M"
+    pm: !binary |
+      0J/QnA==
+
+  home_equipment: !binary |
+    MTIuNCDQqNGC0L4g0L7QtCDQv9C+0LTQvtC70YMg0L3QsNCy0LXQtNC10L3Q
+    vtGC0L4g0LjQvNCw0YLQtSDQstC+INCy0LDRiNC40L7RgiDQtNC+0Lw/
+
+  Translations of form fields: !binary |
+    0J/RgNC10LLQvtC00Lgg0L3QsCDQstC40LTQvtCy0Lgg0L/QvtC70LjRmtCw
+
+  Obligatory: !binary |
+    0JfQsNC00L7Qu9C20LjRgtC10LvQvdC+
+
+  "All children aged 0-7:": !binary |
+    0KHQtSDQtNC10YbQsCDQvdCwINCy0L7Qt9GA0LDRgdGCINC+0LQgMCDQtNC+
+    IDcg0LPQvtC00LjQvdC4Og==
+
+  Institution: !binary |
+    0JjQvdGB0YLQuNGC0YPRhtC40ZjQsA==
+
+  helpers: 
+    submit: 
+      submit: !binary |
+        0JfQsNGH0YPQstCw0ZggJXttb2RlbH0=
+
+      create: !binary |
+        0JrRgNC10LDQuNGA0LDRmCAle21vZGVsfQ==
+
+      update: !binary |
+        0J7QsdC90L7QstC4ICAle21vZGVsfQ==
+
+    select: 
+      prompt: !binary |
+        0JLQtSDQvNC+0LvQuNC80LUg0L7QtNCx0LXRgNC10YLQtQ==
+
+  activerecord: 
+    models: 
+      Survey: !binary |
+        0JDQvdC60LXRgtCw
+
+      Family Profile: !binary |
+        Q9C10LzQtdGY0YHRgtCy0L4=
+
+      Child Profile: !binary |
+        0JTQtdGC0LU=
+
+    attributes: 
+      menu_items: 
+        code: !binary |
+          0JrQvtC0
+
+      institution: 
+        name: !binary |
+          0JjQvNC10YLQvg==
+
+        category: !binary |
+          0JrQsNGC0LXQs9C+0YDQuNGY0LA=
+
+        code: !binary |
+          0JrQvtC0
+
+        locality: !binary |
+          0JzQtdGB0YLQvg==
+
+      immunization: 
+        dtp: DTP (Difteria, Tetanus, Pertussis)
+        hib: Hib (Haemophilus influenzae B)
+        pcv: PCV (Pneumococcus)
+        ipv: IPV (Polio)
+        vhb: VHB (Viral hepatitis BB)
+        bcg: "BCG (Tuberculosis) "
+        mmr: MMR (Morbilli, Mumps, Rubeola)
+        child_id: !binary |
+          0JTQtdGC0LU=
+
+      family_profile: 
+        fathers_age: !binary |
+          Mi4yINCh0YLQsNGA0L7RgdGCINC90LAg0YLQsNGC0LrQvtGC0L4=
+
+        family_name: !binary |
+          Mi4xINCf0YDQtdC30LjQvNC1
+
+        number_of_children_below_seven: !binary |
+          Mi41INCR0YDQvtGY0LrQsCDQvdCwINC00LXRhtCwINC90LAg0LLQvtC30YDQ
+          sNGB0YIg0L7QtCAwINC00L4gNyDQs9C+0LTQuNC90Lg=
+
+        mothers_age: !binary |
+          Mi4zINCh0YLQsNGA0L7RgdGCINC90LAg0LzQsNGY0LrQsNGC0LA=
+
+        number_of_children: !binary |
+          Mi40INCR0YDQvtGY0LrQsCDQvdCwINC00LXRhtCw
+
+      child_profile: 
+        enrolled_to: !binary |
+          0JrQsNC00LUg0LUg0LfQsNC/0LjRiNCw0L3QviDQtNC10YLQtdGC0L4/INCS
+          0LUg0LzQvtC70LjQvNC1INC60LDQttC10YLQtSDQvdC4INCz0L4g0LjQvNC1
+          0YLQviDQvdCwINGD0YfQuNC70LjRiNGC0LXRgtC+LyDRg9GB0YLQsNC90L7Q
+          stCw0YLQsC4=
+
+        buttons: !binary |
+          NC42INCU0LDQu9C4INC80L7QttC1INC00LAg0YHQuCDRmNCwINC30LDQutC+
+          0L/Rh9CwINC60L7RiNGD0LvQsNGC0LAg0LjQu9C4INGf0LXQvNC/0LXRgNC+
+          0YI/IA==
+
+        selfconfidence: !binary |
+          NC44INCU0LDQu9C4INC/0L7QutCw0LbRg9Cy0LAg0YHQsNC80L7QtNC+0LLQ
+          tdGA0LHQsD8g
+
+        reading_words: !binary |
+          NC4yINCU0LDQu9C4INC80L7QttC1INC00LAg0L/RgNC+0YfQuNGC0LAg0L3Q
+          sNGY0LzQsNC70LrRgyDRh9C10YLQuNGA0Lgg0LXQtNC90L7RgdGC0LDQstC9
+          0LgsINGB0LXQutC+0ZjQtNC90LXQstC90Lgg0LfQsdC+0YDQvtCy0Lg/
+
+        childs_last_name: !binary |
+          0J/RgNC10LfQuNC80LUg0L3QsCDQtNC10YLQtdGC0L4=
+
+        sentences: !binary |
+          NC40INCU0LDQu9C4INGA0LDQt9Cx0LjRgNCwINC/0YDQvtGB0YLQuCDRgNC1
+          0YfQtdC90LjRhtC4INC90LAg0LTRgNC20LDQstC90LjQvtGCLyDRgNC10LPQ
+          uNC+0L3QsNC70L3QuNC+0YIg0ZjQsNC30LjQuj8=
+
+        other_children: !binary |
+          NC45INCU0LDQu9C4INGB0LUg0YHQvtCz0LvQsNGB0YPQstCwINGB0L4g0LTR
+          gNGD0LPQuNGC0LUg0LTQtdGG0LA/
+
+        gender: !binary |
+          0J/QvtC7
+
+        family_name: !binary |
+          0J/RgNC10LfQuNC80LU=
+
+        family: !binary |
+          0J/RgNC10LfQuNC80LU=
+
+        childs_first_name: !binary |
+          0JjQvNC1INC90LAg0LTQtdGC0LXRgtC+
+
+        writing: !binary |
+          NC4zINCU0LDQu9C4INC80L7QttC1INC00LAg0YHQuCDQs9C+INC90LDQv9C4
+          0YjQtSDRgdCy0L7QtdGC0L4g0LjQvNC1PyA=
+
+        date_of_birth: !binary |
+          0JTQsNGC0YPQvCDQvdCwINGA0LDRk9Cw0ZrQtQ==
+
+        routine_activities: !binary |
+          NC43INCU0LDQu9C4INCz0Lgg0LjQt9Cy0YDRiNGD0LLQsCDRgdC10LrQvtGY
+          0LTQvdC10LLQvdC40YLQtSDQstC+0L7QsdC40YfQsNC10L3QuCDQsNC60YLQ
+          uNCy0L3QvtGB0YLQuCDQsdC10Lcg0LTQsCDRgtGA0LXQsdCwINC00LAg0YHQ
+          tSDQv9C+0YLRgdC10YLQuD8=
+
+        numbers: !binary |
+          NC41INCU0LDQu9C4INCz0Lgg0L/RgNC10L/QvtC30L3QsNCy0LAg0YHQuNC8
+          0LHQvtC70LjRgtC1INC30LAg0LHRgNC+0LXQstC40YLQtSDQvtC0IDEg0LTQ
+          viAxMD8=
+
+        childs_surname: !binary |
+          0J/RgNC10LfQuNC80LUg0L3QsCDQtNC10YLQtdGC0L4=
+
+        alphabet: !binary |
+          NC4xINCU0LDQu9C4INC80L7QttC1INC00LAg0L/RgNC10L/QvtC30L3QsNC1
+          LyDQuNC80LXQvdGD0LLQsCDQvdCw0ZjQvNCw0LvQutGDINGH0LXRgtC40YDQ
+          uCDQsdGD0LrQstC4INC+0LQg0LDQt9Cx0YPQutCw0YLQsD8=
+
+      survey: 
+        tell_stories_father: !binary |
+          0KLQsNGC0LrQvtGC0L4=
+
+        school_teacher_information: !binary |
+          MTEuMTEg0JTQsNC70Lgg0L3QsNGB0YLQsNCy0L3QuNGG0LjRgtC1INC30LHQ
+          vtGA0YPQstCw0LDRgiDRgdC+INCy0LDRgSDQuCDQstC4INC00LDQstCw0LDR
+          giDQutC+0YDQuNGB0L3QuCDQuNC90YTQvtGA0LzQsNGG0LjQuCDQt9CwINCy
+          0LDRiNC10YLQviDQtNC10YLQtSDQuCDQutCw0LrQviDRgdC1INGB0L3QsNC+
+          0ZPQsCDQvdCwINGD0YfQuNC70LjRiNGC0LU/
+
+        father_activity_other: !binary |
+          0JTRgNGD0LM=
+
+        reason_for_kindergarten_language: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvNC+0LbQtSDQtNCwINCz0L4g0L3QsNGD
+          0YfQuCDRgdC70YPQttCx0LXQvdC40L7RgiDQtNGA0LbQsNCy0LXQvS8g0YDQ
+          tdCz0LjQvtC90LDQu9C90L4g0LTQvtC80LjQvdCw0L3RgtC90LjQvtGCINGY
+          0LDQt9C40LogINGC0LDQvNGDLg==
+
+        homework_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        comment: !binary |
+          0JrQvtC80LXQvdGC0LDRgNC4
+
+        separate_place: !binary |
+          OS45INCU0LDQu9C4INCy0L4g0LLQsNGI0LjQvtGCINC00L7QvCDQuNC80LDR
+          gtC1INC/0L7RgdC10LHQvdC+INC80LXRgdGC0L4vINC80LDRgdCwLyDQutCw
+          0YLRh9C1INC60LDQtNC1INC00LXRgtC10YLQviDQvNC+0LbQtSDQtNCwINGD
+          0YfQuCDQuNC70Lgg0LTQsCDRgdC4INC40LPRgNCwPw==
+
+        reason_not_attend_other: !binary |
+          0JTRgNGD0LPQuCDQv9GA0LjRh9C40L3QuA==
+
+        who_is_primary_caregiver: !binary |
+          NS4zINCQ0LrQviDRgtC+0LAg0J3QlSDRgdGC0LUg0LLQuNC1LCDQutC+0Zgg
+          0YHQtSDQs9GA0LjQttC4INC30LAg0LTQtdGG0LDRgtCwPw==
+
+        talked_about_pregnancy_other: !binary |
+          0JTRgNGD0LPQviDQu9C40YbQtSAo0LLQtSDQvNC+0LvQuNC80LUg0L/QvtC/
+          0L7Qu9C90LXRgtC1KTo=
+
+        reason_for_kindergarten_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        reason_for_creche_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        homework_noone: !binary |
+          0J3QuNC60L7RmA==
+
+        school_father_other: !binary |
+          0LTRgNGD0LPQvg==
+
+        reason_for_kindergarten_compulsory: !binary |
+          0JPRgNCw0LTQuNC90LrQsNGC0LAg0LUg0LfQsNC00L7Qu9C20LjRgtC10LvQ
+          vdCwINC30LAg0LzQvtC10YLQviDQtNC10YLQtS4g
+
+        immunization_information_source_do_not_know: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        household_in_settlement: !binary |
+          0JTQvtC80ZzQuNC90YHRgtCy0L4g0LLQviDQvdCw0YHQtdC70LHQsA==
+
+        tell_stories_mother: !binary |
+          0JzQsNGY0LrQsNGC0LA=
+
+        reason_not_enrolled_not_nearby: !binary |
+          0J3QtdC80LAg0LPRgNCw0LTQuNC90LrQsCDQstC+INCx0LvQuNC30LjQvdCw
+          Lg==
+
+        reason_not_attend_no_work: !binary |
+          0J3QtSDRgNCw0LHQvtGC0LDQvCDQuCDQvNC+0LbQsNC8INC00LAg0YHQtSDQ
+          s9GA0LjQttCw0Lwg0LfQsCDQvNC+0LXRgtC+INC00LXRgtC1INC00L7QvNCw
+          Lg==
+
+        caregiver_activity: !binary |
+          0JvQuNGG0LXRgtC+INC60L7QtSDRgdC1INCz0YDQuNC20Lgg0LfQsCDQtNC1
+          0YbQsNGC0LA=
+
+        home_latrine: !binary |
+          0J/QvtC70YHQutC4INC60LvQvtC30LXRgj8g
+
+        childs_development_information_source_other_persons: !binary |
+          0J/RgNCw0YjRg9Cy0LDQvCDQtNGA0YPQs9C4INC70YPRk9C1
+
+        home_phone: !binary |
+          0JzQvtCx0LjQu9C10L0vINGE0LjQutGB0LXQvSDRgtC10LvQtdGE0L7QvT8g
+
+        language_romanian: !binary |
+          0KDQvtC80LDQvdGB0LrQuA==
+
+        talked_about_pregnancy_community_mediator: !binary |
+          0J/QvtGB0YDQtdC00L3QuNC6INCy0L4g0LfQsNC10LTQvdC40YbQsNGC0LA=
+
+        separated_settlement: !binary |
+          MTMuMSDQlNCw0LvQuCDQtNC+0LzQvtGCINCy0Lgg0YHQtSDQvdCw0L7Rk9Cw
+          INCy0L4g0L/QvtGB0LXQsdC90LAg0L3QsNGB0LXQu9Cx0LAg0L3QsNC00LLQ
+          vtGAINC+0LQg0LPRgNCw0LTQvtGCLyDRgdC10LvQvtGC0L4/
+
+        mothers_age_at_first_pregnancy: !binary |
+          Mi42INCS0L7Qt9GA0LDRgdGCINC90LAg0LzQsNGY0LrQsNGC0LAg0LrQvtCz
+          0LAg0L/RgNCy0L/QsNGCINGA0L7QtNC40LvQsA==
+
+        language_slovak: !binary |
+          0KHQu9C+0LLQsNGH0LrQuA==
+
+        reason_not_enrolled_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        homework_mother: !binary |
+          0JzQsNGY0LrQsNGC0LA=
+
+        primary_caregiver: !binary |
+          NS4yINCU0LDQu9C4INCy0LjQtSDRgdGC0LUg0LvQuNGG0LXRgtC+INGI0YLQ
+          viDRgdC1INCz0YDQuNC20Lgg0LfQsCDQtNC10YbQsNGC0LA/
+
+        home_internet: !binary |
+          0J/RgNC40YHRgtCw0L8g0LTQviDQuNC90YLQtdGA0L3QtdGCPyA=
+
+        number_of_children_below_seven: !binary |
+          Mi41INCR0YDQvtGY0LrQsCDQvdCwINC00LXRhtCwINC90LAg0LLQvtC30YDQ
+          sNGB0YIg0L7QtCAwINC00L4gNyDQs9C+0LTQuNC90Lg=
+
+        birth_certificate: !binary |
+          MTIuMyDQlNCw0LvQuCDRgdC40YLQtSDQtNC10YbQsCDQuNC80LDQsNGCINC4
+          0LfQstC+0LQg0L3QsCDRgNC+0LTQtdC90Lg/
+
+        school_roma: !binary |
+          MTEuOSDQktC+INGD0YfQuNC70LjRiNGC0LXRgtC+INC90LAg0LLQsNGI0LXR
+          gtC+INC00LXRgtC1INC+0YHRgtCw0L3QsNGC0LjRgtC1INC00LXRhtCwINGB
+          0LUg4oCmPw==
+
+        relation_to_children_other: !binary |
+          0JTRgNGD0LM6ICjQstC1INC80L7Qu9C40LzQtSDQvdCw0LLQtdC00LXRgtC1
+          KSA=
+
+        home_kitchen: !binary |
+          0JrRg9GY0L3QsCDQstC90LDRgtGA0LU/ICA=
+
+        teach_letters_other: !binary |
+          0JTRgNGD0LM=
+
+        talked_about_pregnancy_doctor: !binary |
+          0JvQtdC60LDRgA==
+
+        roma_village: !binary |
+          MTMuMiDQlNCw0LvQuCDQtNC+0LzQvtGCINGB0LUg0L3QsNC+0ZPQsCDQstC+
+          INC00LXQuyDQvtC0INCz0YDQsNC00L7Rgi8g0YHQtdC70L7RgtC+INC60LDQ
+          tNC1INGB0LjRgtC1LyDRgNC10YfQuNGB0Lgg0YHQuNGC0LUg0YHQvtGB0LXQ
+          tNC4INCy0Lgg0YHQtSDQoNC+0LzQuD8=
+
+        breastfeeding_importance: !binary |
+          OC43INCa0L7Qu9C60YMg0LzQtdGB0LXRhtC4INGB0LzQtdGC0LDRgtC1INC0
+          0LXQutCwINC1INCy0LDQttC90L4g0LTQsCDRgdC1INC00L7RmNCw0YIg0LTQ
+          tdGG0LDRgtCwPw==
+
+        childs_development_information_source_books: !binary |
+          0KfQuNGC0LDQvCDQutC90LjQs9C4
+
+        homework_no_child_in_school_yet: !binary |
+          0J3QuNC10LTQvdC+INC00LXRgtC1INGBw6gg0YPRiNGC0LUg0L3QtSDQtSDQ
+          t9Cw0L/QuNGI0LDQvdC+INC90LAg0YPRh9C40LvQuNGI0YLQtSA=
+
+        kindergarten_importance: !binary |
+          Ni4yINCa0L7Qu9C60YMg0LUg0LLQsNC20L3QviDQvNCw0LvQuNGC0LUg0LTQ
+          tdGG0LAg0L3QsCDQstC+0LfRgNCw0YHRgiDQvtC0IDAg0LTQviA2INCz0L7Q
+          tNC40L3QuCDQtNCwINC+0LTQsNGCINCy0L4g0ZjQsNGB0LvQuCwg0LPRgNCw
+          0LTQuNC90LrQsCDQuNC70Lgg0LTRgNGD0LPQuCDQv9GA0LXQtNGD0YfQuNC7
+          0LjRiNC90Lgg0L/RgNC+0LPRgNCw0LzQuCDQt9CwINGD0YfQtdGa0LUg0LfQ
+          sCDQtNCwINC40LzQsNCw0YIg0LTQvtCx0YDQsCDQuNC00L3QuNC90LA/
+
+        play_noone: !binary |
+          0J3QuNC60L7RmA==
+
+        immunization_information_source_doctor: !binary |
+          0JvQtdC60LDRgA==
+
+        locality: !binary |
+          0JzQtdGB0YLQvg==
+
+        school_caregiver_other: !binary |
+          0LTRgNGD0LPQvg==
+
+        reason_not_attend_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        book_count: !binary |
+          OS44INCa0L7Qu9C60YMg0LrQvdC40LPQuCDQt9CwINC00LXRhtCwINC40LvQ
+          uCDRgdC70LjQutC+0LLQvdC40YbQuCDQuNC80LDRgtC1INC30LAg0LzQsNC7
+          0Lgg0LTQtdGG0LA/
+
+        draw_other: !binary |
+          0JTRgNGD0LM=
+
+        book_reading_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        book_reading_other: !binary |
+          0JTRgNGD0LM=
+
+        reason_for_kindergarten_likes: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDRgdCw0LrQsCDQtNCwINC+0LTQuCDQstC+
+          INCz0YDQsNC00LjQvdC60LAu
+
+        tell_stories_other: !binary |
+          0JTRgNGD0LM=
+
+        reason_not_attend_bad_treating: !binary |
+          0J3QtSDRgdC1INC+0LTQvdC10YHRg9Cy0LDQsNGCINC00L7QsdGA0L4g0YHQ
+          viDQvNC+0LXRgtC+INC00LXRgtC1Lg==
+
+        reason_for_kindergarten_learning: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvNC+0LbQtSDQtNCwINGD0YfQuCDRgtCw
+          0LzRgy4=
+
+        reason_for_kindergarten_better_chance: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDRnNC1INC40LzQsCDQv9C+0LPQvtC70LXQ
+          vNC4INC80L7QttC90L7RgdGC0Lgg0LTQsCDRg9GB0L/QtdC1INCy0L4g0L7R
+          gdC90L7QstC90L4g0YPRh9C40LvQuNGI0YLQtSDQuCDQv9C+0LTQvtGG0L3Q
+          sC4=
+
+        mother_has_id: !binary |
+          MTIuMiDQlNCw0LvQuCDQvNCw0ZjQutCw0YLQsCDQvdCwINC00LXRhtCw0YLQ
+          sCDQuNC80LAg0LTQvtC60YPQvNC10L3RgiDQt9CwINC40LTQtdC90YLQuNGE
+          0LjQutCw0YbQuNGY0LA/
+
+        interviewer_id: !binary |
+          0J/QvtGB0YDQtdC00L3QuNC6
+
+        fathers_age: !binary |
+          Mi4yINCh0YLQsNGA0L7RgdGCINC90LAg0YLQsNGC0LrQvtGC0L4=
+
+        reason_not_enrolled_expensive: !binary |
+          0J/RgNC10LzQvdC+0LPRgyDQtSDRgdC60LDQv9C+Lg==
+
+        language_other: !binary |
+          0JTRgNGD0LMg0ZjQsNC30LjQujogKNCS0LUg0LzQvtC70LjQvNC1INC/0L7Q
+          v9C+0LvQvdC10YLQtSk6
+
+        father_activity: !binary |
+          0KLQsNGC0LrQvtGC0L4=
+
+        primary_caregiver_age: !binary |
+          NS40INCa0L7Qu9C60YMg0LPQvtC00LjQvdC4INC40LzQsCDQu9C40YbQtdGC
+          0L4g0YjRgtC+INGB0LUg0LPRgNC40LbQuCDQt9CwINC00LXRhtCw0YLQsD8=
+
+        better_in_school: !binary |
+          Ni4xINCU0LDQu9C4INGB0LzQtdGC0LDRgtC1INC00LXQutCwINC00LXRhtCw
+          0YLQsCDQv9C+0YHRgtC40LPQvdGD0LLQsNCw0YIg0L/QvtC00L7QsdGA0Lgg
+          0YDQtdC30YPQu9GC0LDRgtC4INC90LAg0YPRh9C40LvQuNGI0YLQtT8g
+
+        children_language_hungarian: !binary |
+          0KPQvdCz0LDRgNGB0LrQuA==
+
+        reason_for_creche_playing: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvNC+0LbQtSDQtNCwINGB0Lgg0LjQs9GA
+          0LAg0YLQsNC80YMu
+
+        talked_about_pregnancy_nurse: !binary |
+          0JzQtdC00LjRhtC40L3RgdC60LAg0YHQtdGB0YLRgNCw
+
+        talked_about_pregnancy_noone: !binary |
+          0J3QuNC60L7RmA==
+
+        children_language_romanian: !binary |
+          0KDQvtC80LDQvdGB0LrQuA==
+
+        immunization_information_source_no_info: !binary |
+          0J3QtSDRgdGD0Lwg0LTQvtCx0LjQuy/QsCDQstCw0LrQstC4INC40L3RhNC+
+          0YDQvNCw0YbQuNC4LyDQv9C+0ZjQsNGB0L3Rg9Cy0LDRmtC1
+
+        children_language_other: !binary |
+          0JTRgNGD0LMg0ZjQsNC30LjQujogICjQktC1INC80L7Qu9C40LzQtSDQv9C+
+          0L/QvtC70L3QtdGC0LUpOg==
+
+        test_before_school_other: !binary |
+          0JTRgNGD0LPQvjo=
+
+        reason_for_creche_free_meal: !binary |
+          0KHQviDQv9GA0L7Qs9GA0LDQvNCw0YLQsCDRgdC1INC+0LHQtdC30LHQtdC0
+          0YPQstCwINCx0LXRgdC/0LvQsNGC0LXQvSDQvtCx0YDQvtC6INC40LvQuCDQ
+          tNGA0YPQs9CwINC80LDRgtC10YDQuNGY0LDQu9C90LAg0L/QvtC80L7RiC4=
+
+        book_reading_noone: !binary |
+          0J3QuNC60L7RmA==
+
+        reason_for_creche_time: !binary |
+          0JzQuCDQvtGB0YLQsNCy0LAg0LLRgNC10LzQtSDQtNCwINGA0LDQsdC+0YLQ
+          sNC8LyDQtNCwINGB0LUg0LPRgNC40LbQsNC8INC30LAg0LTRgNGD0LPQuCDR
+          gNCw0LHQvtGC0Lgu
+
+        childs_development_information_source_tv: !binary |
+          0JPQu9C10LTQsNC8INGC0LXQu9C10LLQuNC30LjRgdC60Lgg0L/RgNC+0LPR
+          gNCw0LzQuCDQstC+INCy0YDRgdC60LAg0YHQviDQvtCy0LjQtSDQv9GA0LDR
+          iNCw0ZrQsCA=
+
+        language_hungarian: !binary |
+          0KPQvdCz0LDRgNGB0LrQuA==
+
+        reason_for_creche_learning: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvNC+0LbQtSDQtNCwINGD0YfQuCDRgtCw
+          0LzRgy4=
+
+        wished_sons_education_other: !binary |
+          0JTRgNGD0LPQvjogKNCS0LUg0LzQvtC70LjQvNC1INC/0L7Qv9C+0LvQvdC1
+          0YLQtSkg
+
+        reason_not_enrolled_no_place: !binary |
+          0J3QtdC80LAg0LTQvtCy0L7Qu9C90L4g0LzQtdGB0YLQsCDQstC+INCz0YDQ
+          sNC00LjQvdC60LDRgtCwLg==
+
+        mediator_id: !binary |
+          0JzQtdC00LjRmNCw0YLQvtGA
+
+        immunization_information_source_nurse_other: !binary |
+          0JTRgNGD0LPQviDQu9C40YbQtSAo0LLQtSDQvNC+0LvQuNC80LUg0L/QvtC/
+          0L7Qu9C90LXRgtC1KQ==
+
+        test_before_school_result: !binary |
+          MTEuMTYg0JTQvtC60L7Qu9C60YMg0L7QtNCz0L7QstC+0YDQvtGCINC1INCU
+          0JAsINC60LDQutC+0LIg0LHQtdGI0LUg0YDQtdC30YPQu9GC0LDRgtC+0YI/
+
+        reason_for_kindergarten_trust: !binary |
+          0JzQuCDRgdC1INC00L7Qv9Cw0ZPQsNCw0YIvINC40Lwg0LLQtdGA0YPQstCw
+          0Lwg0L3QsCDQstC+0YHQv9C40YLRg9Cy0LDRh9C40YLQtS4=
+
+        childs_development_information_source_no_need: !binary |
+          0J3QtSDQvNC4INGB0LUg0L/QvtGC0YDQtdCx0L3QuCDQtNC+0L/QvtC70L3Q
+          uNGC0LXQu9C90Lgg0LjQvdGE0L7RgNC80LDRhtC40Lgg
+
+        doctor_visit_after_birth: !binary |
+          OC42INCU0LDQu9C4INCy0L4g0L/RgNCy0LjRgtC1INC80LXRgdC10YbQuCDQ
+          v9C+INGA0LDRk9Cw0ZrQtdGC0L4g0L3QsCDQstCw0YjQtdGC0L4g0L3QsNGY
+          0LzQsNC70L4g0LTQtdGC0LUsINC80LXQtNC40YbQuNC90YHQutCwINGB0LXR
+          gdGC0YDQsCDQuNC70Lgg0LTQvtC60YLQvtGAICjQv9C10LTQuNGY0LDRgtCw
+          0YAg0LjQu9C4INC00YDRg9CzINC00L7QutGC0L7RgCkg0LjQt9Cy0YDRiNC4
+          0ZjQsCDQv9GA0LXQs9C70LXQtCDQvdCwINC00LXRgtC10YLQvj8=
+
+        talked_about_pregnancy_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        reason_not_enrolled_no_work: !binary |
+          0J3QtSDRgNCw0LHQvtGC0LDQvCDQuCDQvNC+0LbQsNC8INC00LAg0YHQtSDQ
+          s9GA0LjQttCw0Lwg0LfQsCDQvNC+0LXRgtC+INC00LXRgtC1INC00L7QvNCw
+          Lg==
+
+        kindergarten_days: !binary |
+          MTEuMiDQktC+INGC0LXQutC+0YIg0L3QsCDQv9C+0YHQu9C10LTQvdCw0LLQ
+          sCDQvdC10LTQtdC70LAgKNC/0L7RgdC70LXQtNC90LjRgtC1IDUg0YDQsNCx
+          0L7RgtC90Lgg0LTQtdC90LApINC60L7Qu9C60YMg0LTQtdC90LAg0LLQsNGI
+          0LXRgtC+INC00LXRgtC1INCx0LXRiNC1INCy0L4g0LPRgNCw0LTQuNC90LrQ
+          sD8=
+
+        caregiver_activity_other: !binary |
+          0JTRgNGD0LPQvg==
+
+        children_language_romani: !binary |
+          0KDQvtC80YHQutC4
+
+        childs_development_information_source_newspapers: !binary |
+          0KfQuNGC0LDQvCDQvdCw0L/QuNGB0Lgg0LLQviDQstC10YHQvdC40Log0LLQ
+          viDQstGA0YHQutCwINGB0L4g0L7QstC40LUg0L/RgNCw0YjQsNGa0LAg
+
+        number_of_people_over_18: !binary |
+          0JHRgNC+0ZjQutCwINC90LAg0LvRg9GT0LUg0LLQviDQtNC+0LzQsNGc0LjQ
+          vdGB0YLQstC+0YLQviDQvdCw0LQgMTgg0LPQvtC00LjQvdC4
+
+        reason_not_enrolled_children_treating: !binary |
+          0JTRgNGD0LPQuNGC0LUg0LTQtdGG0LAg0L3QtSDRgdC1INC+0LTQvdC10YHR
+          g9Cy0LDQsNGCINC00L7QsdGA0L4g0YHQviDQvNC+0LXRgtC+INC00LXRgtC1
+          Lg==
+
+        immunization_in_household: !binary |
+          OC4yINCh0L/QvtGA0LXQtCDQstCw0YjQtSDRgdC+0LfQvdCw0L3QuNC1LCDQ
+          tNCw0LvQuCDRgdC40YLQtSDQtNC10YbQsCDQstC+INCy0LDRiNC10YLQviDQ
+          tNC+0LzQsNGc0LjQvdGB0YLQstC+L9C00L7QvCDRgdC1INCy0LDQutGG0LjQ
+          vdC40YDQsNC90Lg/
+
+        number_of_people_under_18: !binary |
+          0JHRgNC+0ZjQutCwINC90LAg0LvRg9GT0LUg0LLQviDQtNC+0LzQsNGc0LjQ
+          vdGB0YLQstC+0YLQviDQv9C+0LQgMTgg0LPQvtC00LjQvdC4
+
+        mediator_survey_counter: !binary |
+          0JHRgNC+0Zgg0L3QsCDQn9GA0LDRiNCw0LvQvdC40Lo=
+
+        lesson_language_understanding: !binary |
+          MTEuNiDQlNC+0LrQvtC70LrRgyDQvdCw0YHRgtCw0LLQvdC40L7RgiDRmNCw
+          0LfQuNC6INC1INC1INGA0LDQt9C70LjRh9C10L0g0L7QtCDQvNCw0ZjRh9C4
+          0L3QuNC+0YIg0ZjQsNC30LjQuiDQvdCwINC00LXRgtC10YLQviDQv9GA0LDR
+          iNCw0ZjRgtC1INCz0L4g0LvQuNGG0LXRgtC+INGI0YLQviDQs9C+INCw0L3Q
+          utC10YLQuNGA0LDRgtC1OiDQlNCw0LvQuCDQvdCwINCy0LDRiNC10YLQviDQ
+          tNC10YLQtSDQvNGDINC1INGC0LXRiNC60L4g0LTQsCDRmNCwINGB0LvQtdC0
+          0Lgg0L3QsNGB0YLQsNCy0LDRgtCwPyAo0LTQvtC60L7Qu9C60YMg0ZjQsNC3
+          0LjQutC+0YIg0L3QtSDRgdC1INGA0LDQt9C70LjQutGD0LLQsCwg0L/RgNC+
+          0LTQvtC70LbQtdGC0LUg0YHQviDQv9GA0LDRiNCw0ZrQtdGC0L4gMTEuOCku
+
+        childs_development_information_source_no_idea: !binary |
+          0J3QtSDQt9C90LDQvCDQutCw0LTQtSDQtNCwINC00L7QsdC40ZjQsNC8INC4
+          0L3RhNC+0YDQvNCw0YbQuNC4IA==
+
+        teach_letters_father: !binary |
+          0KLQsNGC0LrQvtGC0L4=
+
+        reason_for_kindergarten_other: !binary |
+          0JTRgNGD0LPQuCDQv9GA0LjRh9C40L3QuA==
+
+        who_is_primary_caregiver_other: !binary |
+          0JTRgNGD0LM6ICjQstC1INC80L7Qu9C40LzQtSDQvdCw0LLQtdC00LXRgtC1
+          KQ==
+
+        school_class_roma: !binary |
+          MTEuMTAg0JLQviDQvtC00LTQtdC70LXQvdC40LXRgtC+INC90LAg0LLQsNGI
+          0LXRgtC+INC00LXRgtC1INC+0YHRgtCw0L3QsNGC0LjRgtC1INC00LXRhtCw
+          INGB0LUg4oCmPw==
+
+        reason_not_attend_family: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDRgtGA0LXQsdCwINC00LAg0L7RgdGC0LDQ
+          vdC1INC30LDQtdC00L3QviDRgdC+INGB0LXQvNC10ZjRgdGC0LLQvtGC0L4u
+
+        children_language_slovak: !binary |
+          0KHQu9C+0LLQsNGH0LrQuA==
+
+        immunization_information_source_nurse: !binary |
+          0JzQtdC00LjRhtC40L3RgdC60LAg0YHQtdGB0YLRgNCwINC40LvQuCDQtNGA
+          0YPQsyDQt9C00YDQsNCy0YHRgtCy0LXQvSDRgNCw0LHQvtGC0L3QuNC6
+
+        home_radio: !binary |
+          0KDQsNC00LjQvj8=
+
+        are_teachers_helpfull: !binary |
+          MTEuMTMg0JTQvtC60L7Qu9C60YMg0LLQsNGI0LXRgtC+INC00LXRgtC1INC4
+          0LzQsCDQv9GA0L7QsdC70LXQvNC4LCDQtNCw0LvQuCDQvdCw0YHRgtCw0LLQ
+          vdC40YbQuNGC0LUg0LzRgyDQv9C+0LzQsNCz0LDQsNGCINC90LAg0LTQtdGC
+          0LXRgtC+INC00LAg0LPQviDQvdCw0YPRh9C4INC90LDRgdGC0LDQstC90LjQ
+          vtGCINGY0LDQt9C40Lo/
+
+        reason_for_creche_friendships: !binary |
+          0JLQviDQs9GA0LDQtNC40L3QutCw0YLQsCDQvNC+0LXRgtC+INC00LXRgtC1
+          INC80L7QttC1INC00LAg0LfQsNC/0L7Qt9C90LDQtSDQvdC+0LLQuCDQtNGA
+          0YPQs9Cw0YDRh9C40ZrQsC4=
+
+        wished_sons_education: !binary |
+          Ny4yINCa0L7Qs9CwINGA0LDQt9C80LjRgdC70YPQstCw0YLQtSDQt9CwINC4
+          0LTQvdC40L3QsNGC0LAg0L3QsCDQstCw0YjQuNC+0YIg0YHQuNC9LCDQutCw
+          0LrQvtCyINCy0LjQtCDQvdCwINGD0YfQuNC70LjRiNGC0LUg0YLRgNC10LHQ
+          sCDQtNCwINC30LDQstGA0YjQuCDQstCw0YjQuNC+0YIg0YHQuNC9Pw==
+
+        wished_daugters_education_other: !binary |
+          0JTRgNGD0LPQvjogKNCS0LUg0LzQvtC70LjQvNC1INC/0L7Qv9C+0LvQvdC1
+          0YLQtSkg
+
+        teach_letters_noone: !binary |
+          0J3QuNC60L7RmA==
+
+        school_mother_other: !binary |
+          0LTRgNGD0LPQvg==
+
+        date_of_the_interview: !binary |
+          MS4xINCU0LDRgtGD0Lwg0L3QsCDQuNC90YLQtdGA0LLRmNGD0YLQvg==
+
+        draw_noone: !binary |
+          0J3QuNC60L7RmA==
+
+        wished_daugters_education: !binary |
+          Ny4xINCa0L7Qs9CwINGA0LDQt9C80LjRgdC70YPQstCw0YLQtSDQt9CwINC4
+          0LTQvdC40L3QsNGC0LAg0L3QsCDQstCw0YjQsNGC0LAg0ZzQtdGA0LrQsCwg
+          0LrQsNC60L7QsiDQstC40LQg0L3QsCDRg9GH0LjQu9C40YjRgtC1INGC0YDQ
+          tdCx0LAg0LTQsCDQt9Cw0LLRgNGI0Lgg0LLQsNGI0LDRgtCwINGc0LXRgNC6
+          0LA/
+
+        visited_hospital_during_pregnancy: !binary |
+          OC40INCa0L7Qs9CwINCy0LjQtSDQsdC10LLRgtC1INCx0YDQtdC80LXQvdCw
+          INC/0YDQtdC0INC00LAg0LLQuCDRgdC1INGA0L7QtNC4INC90LDRmNC80LDQ
+          u9C+0YLQviDQtNC10YLQtSDQtNCw0LvQuCDQsdC10LLRgtC1INCy0L4g0LHQ
+          vtC70L3QuNGG0LAg0LjQu9C4INC90LAg0LvQtdC60LDRgCDQt9CwINC/0YDQ
+          tdCz0LvQtdC0INC40LvQuCDQutC+0L3RgtGA0L7Qu9CwPw==
+
+        school_good_bad: !binary |
+          MTEuMTQg0KHQv9C+0YDQtdC0INCy0LDRgSDQutC+0LvQutGDINC+0YHQvdC+
+          0LLQvdC+0YLQviDRg9GH0LjQu9C40YjRgtC1INC1INC00L7QsdGA0L4g0LjQ
+          u9C4INC70L7RiNC+Pw==
+
+        reason_not_attend_no_place: !binary |
+          0J3QtdC80LAg0YHQu9C+0LHQvtC00L3QuCDQvNC10YHRgtCwLg==
+
+        language_albanian: !binary |
+          0JDQu9Cx0LDQvdGB0LrQuA==
+
+        language_romani: !binary |
+          0KDQvtC80YHQutC4
+
+        mediator: !binary |
+          0J/QvtGB0YDQtdC00L3QuNC6
+
+        draw_mother: !binary |
+          0JzQsNGY0LrQsNGC0LA=
+
+        tell_stories_noone: !binary |
+          0J3QuNC60L7RmA==
+
+        teacher_help: !binary |
+          MTEuNyDQlNC+0LrQvtC70LrRgyDQstCw0YjQtdGC0L4g0LTQtdGC0LUg0LjQ
+          vNCwINC/0YDQvtCx0LvQtdC80LgsINC00LDQu9C4INCy0L7RgdC/0LjRgtGD
+          0LLQsNGH0LjRgtC1INC80YMg0L/QvtC80LDQs9Cw0LDRgiDQvdCwINC00LXR
+          gtC10YLQviDQtNCwINCz0L4g0L3QsNGD0YfQuCDQvdCw0YHRgtCw0LLQvdC4
+          0L7RgiDRmNCw0LfQuNC6Pw==
+
+        talk_with_teacher: !binary |
+          MTAuMiDQlNCw0LvQuCDQstC+0YHQv9C40YLRg9Cy0LDRh9C40YLQtSDQt9Cx
+          0L7RgNGD0LLQsNCw0YIg0YHQviDQstCw0YEg0Lgg0LLQuCDQtNCw0LLQsNCw
+          0YIg0LrQvtGA0LjRgdC90Lgg0LjQvdGE0L7RgNC80LDRhtC40Lgg0LfQsCDQ
+          stCw0YjQtdGC0L4g0LTQtdGC0LUg0Lgg0LrQsNC60L4g0YHQtSDRgdC90LDQ
+          vtGT0LAg0YLQsNC80YM/
+
+        school_caregiver: !binary |
+          0JvQuNGG0LXRgtC+INC60L7QtSDRgdC1INCz0YDQuNC20Lgg0LfQsCDQtNC1
+          0YbQsNGC0LA=
+
+        kindergarten_roma: !binary |
+          MTEuMyDQktC+INCz0YDQsNC00LjQvdC60LDRgtCwINC90LAg0LLQsNGI0LXR
+          gtC+INC00LXRgtC1LCDQvtGB0YLQsNC90LDRgtC40YLQtSDQtNC10YbQsCDR
+          gdC1IOKApi4/
+
+        lesson_difficulty: !binary |
+          MTEuMTIg0JTQsNC70Lgg0L3QsCDQstCw0YjQtdGC0L4g0LTQtdGC0LUg0LzR
+          gyDQtSDRgtC10YjQutC+INC00LAg0LPQviDRgNCw0LfQsdC10YDQtSDQvdCw
+          0YHRgtCw0LLQvdC40L7RgiDRmNCw0LfQuNC6Pw==
+
+        homework_other: !binary |
+          0JTRgNGD0LM=
+
+        home_sewerage: !binary |
+          0JrQsNC90LDQu9C40LfQsNGG0LjRmNCwINCy0L3QsNGC0YDQtSDQt9CwINC4
+          0YHRhNGA0LvQsNGa0LUg0L3QsCDQvtGC0L/QsNC00L3QsNGC0LAgKNC60L7R
+          gNC40YHRgtC10L3QsCkg0LLQvtC00LA/IA==
+
+        reason_for_creche_language: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvNC+0LbQtSDQtNCwINCz0L4g0L3QsNGD
+          0YfQuCDRgdC70YPQttCx0LXQvdC40L7RgiDQtNGA0LbQsNCy0LXQvS8g0YDQ
+          tdCz0LjQvtC90LDQu9C90L4g0LTQvtC80LjQvdCw0L3RgtC90LjQvtGCINGY
+          0LDQt9C40Log0YLQsNC80YMu
+
+        reason_for_creche_likes: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDRgdCw0LrQsCDQtNCwINGY0LAg0L/QvtGB
+          0LXRgtGD0LLQsCDQv9GA0L7Qs9GA0LDQvNCw0YLQsC8g0LTQsCDQvtC00Lgg
+          0LLQviDQs9GA0LDQtNC40L3QutCw0YLQsC4=
+
+        immunization_information_source_mediator: !binary |
+          0J/QvtGB0YDQtdC00L3QuNC6INCy0L4g0LfQsNC10LTQvdC40YbQsNGC0LA=
+
+        immunization_importance: !binary |
+          OC4xINCh0L/QvtGA0LXQtCDQstCw0YEg0LrQvtC70LrRgyDQstCw0LrRhtC4
+          0L3QuNGA0LDRmtC10YLQviDQtSDQstCw0LbQvdC+INC30LAg0LTQtdGG0LDR
+          gtCwPw==
+
+        teach_letters_mother: !binary |
+          0JzQsNGY0LrQsNGC0LA=
+
+        draw_father: !binary |
+          0KLQsNGC0LrQvtGC0L4=
+
+        home_electricity: !binary |
+          0JXQu9C10LrRgtGA0LjRh9C90LAg0LXQvdC10YDQs9C40ZjQsD8g
+
+        play_father: !binary |
+          0KLQsNGC0LrQvtGC0L4=
+
+        reason_for_creche_trust: !binary |
+          0JzQuCDRgdC1INC00L7Qv9Cw0ZPQsNCw0YIvINC40Lwg0LLQtdGA0YPQstCw
+          0Lwg0L3QsCDQstC+0YHQv9C40YLRg9Cy0LDRh9C40YLQtS4=
+
+        reason_for_kindergarten_time: !binary |
+          0JzQuCDQvtGB0YLQsNCy0LAg0LLRgNC10LzQtSDQtNCwINGA0LDQsdC+0YLQ
+          sNC8LyDQtNCwINGB0LUg0LPRgNC40LbQsNC8INC30LAg0LTRgNGD0LPQuCDR
+          gNCw0LHQvtGC0Lgu
+
+        created_by: !binary |
+          0JLQvdC10YHQtdC90L4g0L7QtA==
+
+        play_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        boys_girls_success_importance: !binary |
+          Ny4zINCa0L7Qu9C60YMg0LUg0LLQsNC20L3QviDQt9CwINC80L7QvNGH0LjR
+          mtCw0YLQsCDQuCDQtNC10LLQvtGY0YfQuNGa0LDRgtCwINC00LAg0L/QvtGB
+          0YLQuNCz0L3QsNGCINC00L7QsdGA0Lgg0YDQtdC30YPQu9GC0LDRgtC4INC9
+          0LAg0YPRh9C40LvQuNGI0YLQtT8=
+
+        test_before_school: !binary |
+          MTEuMTUg0JTQsNC70Lgg0LLQsNGI0LXRgtC+INC00LXRgtC1INC90LDQv9GA
+          0LDQstC4INGC0LXRgdGCINC/0YDQtdC0INC00LAg0YHQtSDQt9Cw0L/QuNGI
+          0LUg0LLQviDQvtGB0L3QvtCy0L3QviDRg9GH0LjQu9C40YjRgtC1Pw==
+
+        reason_not_enrolled_family: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDRgtGA0LXQsdCwINC00LAg0L7RgdGC0LDQ
+          vdC1INC30LDQtdC00L3QviDRgdC+INGB0LXQvNC10ZjRgdGC0LLQvtGC0L4u
+
+        book_reading_father: !binary |
+          0KLQsNGC0LrQvtGC0L4=
+
+        duration_of_interview: !binary |
+          MS4yINCS0YDQtdC80LXRgtGA0LDQtdGa0LUg0L3QsCDQuNC90YLQtdGA0LLR
+          mNGD0YLQvg==
+
+        tell_stories_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        school_mother: !binary |
+          0JzQsNGY0LrQsNGC0LA=
+
+        reason_not_enrolled_no_like: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvdC1INGB0LDQutCwINC00LAg0L7QtNC4
+          INCy0L4g0LPRgNCw0LTQuNC90LrQsC4=
+
+        reason_not_enrolled_language: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvdC1INCz0L4g0YDQsNC30LHQuNGA0LAg
+          0L3QsNGB0YLQsNCy0L3QuNC+0YIg0ZjQsNC30LjQui4g
+
+        reason_not_attend_no_creche: !binary |
+          0JLQviDQsdC70LjQt9C40L3QsCDQvdC10LzQsCDRmNCw0YHQu9C4LyDQs9GA
+          0LDQtNC40L3QutCwLyDQvtC/0YjRgtC40L3RgdC60Lgg0YbQtdC90YLQsNGA
+          ICjQt9CwINC00LXRhtCwINC/0L7QvNCw0LvQuCDQvtC0IDMg0LPQvtC00LjQ
+          vdC4KS4=
+
+        reason_for_creche_other: !binary |
+          0JTRgNGD0LPQuCDQv9GA0LjRh9C40L3QuDo=
+
+        mothers_age: !binary |
+          Mi4zINCh0YLQsNGA0L7RgdGCINC90LAg0LzQsNGY0LrQsNGC0LA=
+
+        home_water: !binary |
+          0J/RgNC+0YLQvtGH0L3QsCDQstC+0LTQsCDQstC90LDRgtGA0LU/IA==
+
+        mother_activity: !binary |
+          0JzQsNGY0LrQsNGC0LA=
+
+        school_father: !binary |
+          0KLQsNGC0LrQvtGC0L4=
+
+        reason_not_attend_no_trust: !binary |
+          0J3QtSDQvNC4INGB0LUg0LTQvtC/0LDRk9Cw0LDRgi8g0L3QtSDQuNC8INCy
+          0LXRgNGD0LLQsNC8INC90LAg0LLQvtGB0L/QuNGC0YPQstCw0YfQuNGC0LUu
+
+        childs_development_information_source_others: !binary |
+          0JTRgNGD0LPQvg==
+
+        homework_father: !binary |
+          0KLQsNGC0LrQvtGC0L4=
+
+        class_roma: !binary |
+          MTEuNCDQktC+INCz0YDRg9C/0LDRgtCwINC90LAg0LLQsNGI0LXRgtC+INC0
+          0LXRgtC1INCy0L4g0LPRgNCw0LTQuNC90LrQsCwg0L7RgdGC0LDQvdCw0YLQ
+          uNGC0LUg0LTQtdGG0LAg0YHQtSDigKYuPw==
+
+        children_language_macedonian: !binary |
+          0JzQsNC60LXQtNC+0L3RgdC60Lg=
+
+        home_toilet: !binary |
+          0KLQvtCw0LvQtdGCINCy0L3QsNGC0YDQtT8g
+
+        language_macedonian: !binary |
+          0JzQsNC60LXQtNC+0L3RgdC60Lg=
+
+        teach_letters_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        roma: !binary |
+          0JTQsNC70Lgg0LjRgdC/0YDQsNGI0YPQstCw0L3QvtGC0L4g0LvQuNGG0LUg
+          0LUg0KDQvtC8Pwo=
+
+        relation_to_children: !binary |
+          NS4xINCa0LDQutCy0L4g0LUg0LLQsNGI0LXRgtC+INGB0YDQvtC00YHRgtCy
+          0L4g0YHQviDQtNC10YbQsNGC0LAg0LLQviDQvtCy0LAg0LTQvtC80LDRnNC4
+          0L3RgdGC0LLQvj8o0YTQvtC60YPRgdC40YDQsNGY0YLQtSDRgdC1INC90LAg
+          0LTQtdGG0LDRgtCwINC60L7RgNC40YHQvdC40YbQuCDQvdCwINCy0L7Qt9GA
+          0LDRgdGCINC+0LQgMCDQtNC+IDcg0LPQvtC00LjQvdC4KQ==
+
+        reason_for_kindergarten_free_meal: !binary |
+          0JPRgNCw0LTQuNC90LrQsNGC0LAg0L7QsdC10LfQsdC10LTRg9Cy0LAg0LHQ
+          tdGB0L/Qu9Cw0YLQtdC9INC+0LHRgNC+0Log0LjQu9C4INC00YDRg9Cz0LAg
+          0LzQsNGC0LXRgNC40ZjQsNC70L3QsCDQv9C+0LzQvtGILg==
+
+        draw_no_answer: !binary |
+          0J3QtSDQt9C90LDQvC8g0J3QtdC80LDQvCDQvtC00LPQvtCy0L7RgA==
+
+        play_mother: !binary |
+          0JzQsNGY0LrQsNGC0LA=
+
+        reason_not_enrolled_trust: !binary |
+          0J3QtSDQvNC4INGB0LUg0LTQvtC/0LDRk9Cw0LDRgi8g0L3QtSDQuNC8INCy
+          0LXRgNGD0LLQsNC8INC90LAg0L3QsNGB0YLQsNCy0L3QuNGG0LjRgtC1Lg==
+
+        reason_not_attend_expensive: !binary |
+          0J/RgNC10LzQvdC+0LPRgyDQtSDRgdC60LDQv9C+Lg==
+
+        home_shower: !binary |
+          0KLRg9GILyDQsdCw0ZrQsCDQstC90LDRgtGA0LU/IA==
+
+        home_tv: !binary |
+          0KLQtdC70LXQstC40LfQvtGAPw==
+
+        home_computer: !binary |
+          0JrQvtC80L/RmNGD0YLQtdGAPw==
+
+        book_reading_mother: !binary |
+          0JzQsNGY0LrQsNGC0LA=
+
+        talked_about_pregnancy_health_mediator: !binary |
+          0JfQtNGA0LDQstGB0YLQstC10L0g0L/QvtGB0YDQtdC00L3QuNC6
+
+        talked_about_pregnancy: !binary |
+          OC41INCU0L7QutC+0LvQutGDINC+0LTQs9C+0LLQvtGA0L7RgiDQvdCwINC/
+          0YDQsNGI0LDRmtC10YLQviA4LjQg0LUg0J3QlSwg0L/RgNCw0YjQsNGY0YLQ
+          tTog0JTQsNC70LggINC30LHQvtGA0YPQstCw0LLRgtC1INGB0L4g0L3QtdC6
+          0L7Qs9C+INC30LAg0LHRgNC10LzQtdC90L7RgdGC0LAg0LTQvtC00LXQutCw
+          INCx0LXQstGC0LUg0LHRgNC10LzQtdC90LAg0L/RgNC10LQg0LTQsCDQstC4
+          INGB0LUg0YDQvtC00Lgg0L3QsNGY0LzQsNC70L7RgtC+INC00LXRgtC1Pw==
+
+        reason_not_enrolled_other: !binary |
+          0JTRgNGD0LPQuCDQv9GA0LjRh9C40L3QuA==
+
+        reason_not_enrolled_no_clothes: !binary |
+          0J3QtdC80LDQvCDQv9Cw0YDQuCDQvdCwINC80L7QtdGC0L4g0LTQtdGC0LUg
+          0LTQsCDQvNGDINC60YPQv9Cw0Lwg0L7QsdC70LXQutCwLyDQvtCx0YPQstC6
+          0Lgg0LfQsCDQs9GA0LDQtNC40L3QutCwLg==
+
+        play_other: !binary |
+          0JTRgNGD0LM=
+
+        mother_activity_other: !binary |
+          0LTRgNGD0LPQvg==
+
+        teacher_informs: !binary |
+          MTEuNSDQlNCw0LvQuCDQstC+0YHQv9C40YLRg9Cy0LDRh9C40YLQtSDQt9Cx
+          0L7RgNGD0LLQsNCw0YIg0YHQviDQstCw0YEg0Lgg0LLQuCDQtNCw0LLQsNCw
+          0YIg0LrQvtGA0LjRgdC90Lgg0LjQvdGE0L7RgNC80LDRhtC40Lgg0LfQsCDQ
+          stCw0YjQtdGC0L4g0LTQtdGC0LUg0Lgg0LrQsNC60L4g0YHQtSDRgdC90LDQ
+          vtGT0LAg0LLQviDQs9GA0LDQtNC40L3QutCw0YLQsD8=
+
+        reason_not_attend_language: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvdC1INCz0L4g0LfQsdC+0YDRg9Cy0LAg
+          0ZjQsNC30LjQutC+0YIu
+
+        reason_for_kindergarten_playing: !binary |
+          0JzQvtC10YLQviDQtNC10YLQtSDQvNC+0LbQtSDQtNCwINGB0Lgg0LjQs9GA
+          0LAg0YLQsNC80YMu
+
+        reason_for_kindergarten_friendships: !binary |
+          0JLQviDQs9GA0LDQtNC40L3QutCw0YLQsCDQvNC+0LXRgtC+INC00LXRgtC1
+          INC80L7QttC1INC00LAg0LfQsNC/0L7Qt9C90LDQtSDQvdC+0LLQuCDQtNGA
+          0YPQs9Cw0YDRh9C40ZrQsC4=
+
+        children_language_albanian: !binary |
+          0JDQu9Cx0LDQvdGB0LrQuA==
+
+        number_of_all_children: !binary |
+          Mi40INCR0YDQvtGY0LrQsCDQvdCwINC00LXRhtCw
+
+      user: 
+        remember_me: !binary |
+          0JfQsNC/0L7QvNGC0Lgg0LzQtQ==
+
+        localities: !binary |
+          0JvQvtC60LDRhtC40Lg=
+
+        category: !binary |
+          0JrQsNGC0LXQs9C+0YDQuNGY0LA=
+
+        code: !binary |
+          0JrQvtC0
+
+        language: !binary |
+          0IjQsNC30LjQug==
+
+        locality: !binary |
+          0JvQvtC60LDRhtC40ZjQsA==
+
+        last_name: !binary |
+          0J/RgNC10LfQuNC80LU=
+
+        password: !binary |
+          0JvQvtC30LjQvdC60LA=
+
+        first_name: !binary |
+          0JjQvNC1
+
+        email: !binary |
+          0JXQu9C10LrRgtGA0L7QvdGB0LrQsCDQv9C+0YjRgtCw
+
+    errors: 
+      messages: 
+        record_invalid: !binary |
+          0J3QtdGD0YHQv9C10YjQvdCwINC/0YDQvtCy0LXRgNC60LA6ICV7ZXJyb3Jz
+          XQ==
+
+        taken: !binary |
+          0LUg0LfQsNGE0LDRgtC10L3Qvg==
+
+  View All: !binary |
+    0JLQuNC00Lgg0LPQuCDRgdC40YLQtQ==
+
+  There is no child aged below 7 years: !binary |
+    0J3QtdC80LAg0LTQtdGG0LAg0L3QsCDQstC+0LfRgNCw0YHRgiDQv9C+0LQg
+    NyDQs9C+0LTQuNC90Lgu
+
+  There is no child aged 3-7 years: !binary |
+    0J3QtdC80LAg0LTQtdGG0LAg0L3QsCDQstC+0LfRgNCw0YHRgiDQvtC0IDMt
+    NyDQs9C+0LTQuNC90Lgu
+
+  "Children enrollment:": !binary |
+    0JfQsNC/0LjRiNGD0LLQsNGa0LUg0L3QsCDQtNC10YLQtTo=
+
+  Menu Items: !binary |
+    0J/RgNC10LLQvtC00Lg=
+
+  Logout: !binary |
+    0J7QtNGY0LDQstC4INGB0LU=
+
+  Hello!: !binary |
+    0JfQtNGA0LDQstC+IQ==
+
+  6 Parent's attitude: !binary |
+    Ni4J0KHRgtCw0LLQvtCy0Lgg0L3QsCDRgNC+0LTQuNGC0LXQu9C40YLQtSDQ
+    utC+0L0g0YDQsNC90L7RgtC+INCy0L7RgdC/0LjRgtGD0LLQsNGa0LUg0Lgg
+    0L7QsdGA0LDQt9C+0LLQsNC90LjQtSDQvdCwINC00LXRhtCwIA==
+
+  Institutions: !binary |
+    0JjQvdGB0YLQuNGC0YPRhtC40Lg=
+
+  Are you sure? This will disable editing of this survey: !binary |
+    0JTQsNC70Lgg0YHRgtC1INGB0LjQs9GD0YDQvdC4PyDQntCy0LAg0ZzQtSDQ
+    vtC90LXQstC+0LfQvNC+0LbQuCDRg9GA0LXQtNGD0LLQsNGa0LUg0L3QsCDQ
+    vtCy0LDQsCDQsNC90LrQtdGC0LAu
+
+  Attendance Data were succesfully updated: !binary |
+    0J/Rg9Cx0LvQuNC60LAg0L3QsCDQv9C+0LTQsNGC0L7RhtC4INCx0LXRiNC1
+    INGD0YHQv9C10YjQvdC+INCw0LbRg9GA0LjRgNCw0L3QsC4=
+
+  7 Parent's expectations: !binary |
+    Ny4J0J7Rh9C10LrRg9Cy0LDRmtCwINC90LAg0YDQvtC00LjRgtC10LvQuNGC
+    0LUg0LfQsCDQuNC00L3QuNGC0LUg0L7QsdGA0LDQt9C+0LLQvdC4INGD0YHQ
+    v9C10YHQuCAo0YDQtdC30YPQu9GC0LDRgtC4KSDQvdCwINC90LjQstC90L7R
+    gtC+INC00LXRgtC1L9C00LXRhtCwPyA=
+
+  Life Skills program: !binary |
+    0J/RgNC+0LPRgNCw0LzQsCDQt9CwINC20LjQstC+0YLQvdC4INCy0LXRiNGC
+    0LjQvdC4
+
+  teach_letters: !binary |
+    OS42INCS0L4g0L/QvtGB0LvQtdC00L3QuNGC0LUgMyDQtNC10L3QsCwg0LTQ
+    sNC70Lgg0L3QtdC60L7RmCDRh9C70LXQvSDQvtC0INGB0LXQvNC10ZjRgdGC
+    0LLQvtGC0L4g0L/QvtGB0YLQsNGAINC+0LQgMTUg0LPQvtC00LjQvdC4INCz
+    0Lgg0YPRh9C10YjQtSDQtNC10YbQsNGC0LAg0LHRg9C60LLQuNGC0LUg0LjQ
+    u9C4INC00LAg0LHRgNC+0ZjQsNGCPw==
+
+  surveys in locality: !binary |
+    0LDQvdC60LXRgtC4INCy0L4g0LvQvtC60LDQu9C40YLQtdGC0L7Rgg==
+
+  children_below_three: !binary |
+    MTAuCdCf0YDQsNGI0LDRmtCwINC30LAg0YDQvtC00LjRgtC10LvQuNGC0LUg
+    0L3QsCDQtNC10YbQsCDQvdCwINCy0L7Qt9GA0LDRgdGCINC00L4gMyDQs9C+
+    0LTQuNC90Lgg
+
+  Name: !binary |
+    0JjQvNC1
+
+  You are editing family: !binary |
+    0KPRgNC10LTRg9Cy0LDRgtC1INGE0LDQvNC40LvQuNGY0LA6
+
+  New Institution: !binary |
+    0J3QvtCy0LAg0LjQvdGB0YLQuNGC0YPRhtC40ZjQsA==
+
+  Kindergarten: !binary |
+    0JPRgNCw0LTQuNC90LrQsA==
+
+  Monthly Attendance in Kindergarten: !binary |
+    0JzQtdGB0LXRh9C90L4g0L/RgNC40YHRg9GB0YLQstC+INCy0L4g0JTQtdGC
+    0YHQutCw0YLQsCDQs9GA0LDQtNC40L3QutCw
+
+  A Good Start - a new survey completed: !binary |
+    0J/QoNCe0JXQmtCi0J7QoiDQlNCe0JHQkNCgINCf0J7Qp9CV0KLQntCaIC0g
+    0L3QvtCyINC/0YDQsNGI0LDQu9C90LjQutC+0YIg0LfQsNCy0YDRiNC4
+
+  School Results - Children from Preschool Programs: !binary |
+    0KDQtdC30YPQu9GC0LDRgtC4INC90LAg0YPRh9C40LvQuNGI0YLQtdGC0L4g
+    LSDQlNC10YbQsCDQvtC0INC/0YDQtdC00YjQutC+0LvRgdC60Lgg0L/RgNC+
+    0LPRgNCw0LzQuA==
+
+  Save: !binary |
+    0JfQsNGH0YPQstCw0Zg=
+
+  schools: !binary |
+    MTIuMSDQmtCw0LrQvtCyINCy0LjQtCDQvdCwINGD0YfQuNC70LjRiNGC0LUg
+    0LfQsNCy0YDRiNC40LvQtSDRgNC+0LTQuNGC0LXQu9C40YLQtS8g0L/RgNC4
+    0LzQsNGA0L3QuNC+0YIg0L3QtdCz0YPQstCw0YLQtdC7INC90LAg0LTQtdGG
+    0LDRgtCwPw==
+
+  This survey is Marked as Verified: !binary |
+    0J7QstCw0LAg0LDQvdC60LXRgtCwINC1INC+0LfQvdCw0YfQtdC9INC60LDQ
+    utC+INC30LDQstC10YDQtdC9
+
+  Number of children: !binary |
+    0JHRgNC+0ZjQutCwINC90LAg0LTQtdGG0LA=
+
+  "No": !binary |
+    0J3QtQ==
+
+  Family Profile: !binary |
+    0J/RgNC+0YTQuNC7INC90LAg0YTQsNC80LjQu9C40ZjQsNGC0LA=
+
+  Household in settlement: !binary |
+    0JTQvtC80ZzQuNC90YHRgtCy0L4g0LLQviDQvdCw0YHQtdC70LHQsA==
+
+  9 Parent's attitude towards learning at home: !binary |
+    OS4J0KHRgtCw0LLQvtGCINC90LAg0YDQvtC00LjRgtC10LvQuNGC0LUg0LrQ
+    vtC9INGD0YfQtdGa0LXRgtC+INC4INGA0LDQt9Cy0L7RmNC+0YIg0LLQviDQ
+    tNC+0LzQsNGI0L3QuCDRg9GB0LvQvtCy0Lgg
+
+  MMR/ROR: MMR/ROR
+  Workshops on education/health: !binary |
+    0KHQtdC80LjQvdCw0YDQuCDQt9CwINC+0LHRgNCw0LfQvtCy0LDQvdC40LUg
+    LyDQt9C00YDQsNCy0YHRgtCy0L4=
+
+  School: !binary |
+    0KPRh9C40LvQuNGI0YLQtQ==
+
+  Q111-117enrolled: !binary |
+    0J/RgNCw0YjQsNGa0LDRgtCwIDExLjEgLSAxMS43ICDQvdC1INGB0LUg0L/R
+    gNC40LrQsNC20LDQvdC4LCDQsdC40LTQtdGY0ZzQuCDQvdC40LXQtNC90L4g
+    0LTQtdGC0LUg0L3QsCDQstC+0LfRgNCw0YHRgiDQvtC0IDMtNyDQs9C+0LTQ
+    uNC90Lgg0LUg0LfQsNC/0LjRiNCw0L3Qvi4=
+
+  Add New Household Survey: !binary |
+    0JTQvtC00LDRmCDQsNC90LrQtdGC0LAg0LfQsCDQvdC+0LLQviDQtNC+0LzQ
+    sNGc0LjQvdGB0YLQstC+
+
+  "All children:": !binary |
+    0KHQtSDQtNC10YbQsDoK
+
+  Children: !binary |
+    0JTQtdGG0LA=
+
+  datetime: 
+    prompts: 
+      minute: !binary |
+        0JzQuNC90YPRgtCw
+
+      second: !binary |
+        0KHQtdC60YPQvdC00Lg=
+
+      month: !binary |
+        0LzQtdGB0LXRhg==
+
+      hour: !binary |
+        0KfQsNGB
+
+      day: !binary |
+        0LTQtdC9
+
+      year: !binary |
+        0LPQvtC0
+
+    distance_in_words: 
+      less_than_x_minutes: 
+        one: !binary |
+          0L/QvtC80LDQu9C60YMg0L7QtCAxINC80LjQvdGD0YLQsA==
+
+        other: !binary |
+          0L/QvtC80LDQu9C60YMg0L7QtCAle2NvdW50fSDQvNC40L3Rg9GC0Lg=
+
+        zero: !binary |
+          0L/QvtC80LDQu9C60YMg0L7QtCDQvNC40L3Rg9GC0LA=
+
+      x_days: 
+        one: !binary |
+          MSDQtNC10L0=
+
+        other: !binary |
+          JXtjb3VudH0g0LTQtdC90L7QstC4
+
+      x_seconds: 
+        few: !binary |
+          JXtjb3VudH0g0YHQtdC60YPQvdC00Lg=
+
+        one: !binary |
+          MSDRgdC10LrRg9C90LTQsA==
+
+        other: !binary |
+          JXtjb3VudH0g0YHQtdC60YPQvdC00Lg=
+
+      x_months: 
+        few: !binary |
+          JXtjb3VudH0g0LzQtdGB0LXRhtC4
+
+        one: !binary |
+          MSDQvNC10YHQtdGG
+
+        other: !binary |
+          JXtjb3VudH0g0LzQtdGB0LXRhtC4
+
+      x_minutes: 
+        one: !binary |
+          MSDQvNC40L3Rg9GC0LA=
+
+        other: !binary |
+          JXtjb3VudH0g0LzQuNC90YPRgtC4
+
+      less_than_x_seconds: 
+        few: !binary |
+          0L/QvtC80LDQu9C60YMg0L7QtCAle2NvdW50fSDRgdC10LrRg9C90LTQuA==
+
+        one: !binary |
+          0L/QvtC80LDQu9C60YMg0L7QtCAxINGB0LXQutGD0L3QtNCw
+
+        other: !binary |
+          0L/QvtC80LDQu9C60YMg0L7QtCAle2NvdW50fSDRgdC10LrRg9C90LTQuA==
+
+        zero: !binary |
+          0L/QvtC80LDQu9C60YMg0L7QtCDRgdC10LrRg9C90LTQsA==
+
+      about_x_hours: 
+        few: !binary |
+          0L7QutC+0LvRgyAle2NvdW50fSDRh9Cw0YHQsA==
+
+        one: !binary |
+          0L7QutC+0LvRgyAxINGH0LDRgQ==
+
+        other: !binary |
+          0L7QutC+0LvRgyAle2NvdW50fSDRh9Cw0YHQsA==
+
+      about_x_years: 
+        one: !binary |
+          0L7QutC+0LvRgyAxINCz0L7QtNC40L3QsA==
+
+        other: !binary |
+          0L7QutC+0LvRgyAle2NvdW50fSDQs9C+0LTQuNC90Lg=
+
+      about_x_months: 
+        few: !binary |
+          0L7QutC+0LvRgyAle2NvdW50fSDQvNC10YHQtdGG0Lg=
+
+        one: !binary |
+          0L7QutC+0LvRgyAxINC80LXRgdC10YY=
+
+        other: !binary |
+          0L7QutC+0LvRgyAle2NvdW50fSDQvNC10YHQtdGG0Lg=
+
+      over_x_years: 
+        one: !binary |
+          0L3QsNC0IDEg0LPQvtC00LjQvdCw
+
+        other: !binary |
+          0L3QsNC0ICV7Y291bnR9INCz0L7QtNC40L3QuA==
+
+      half_a_minute: !binary |
+        0L/QvtC70LAg0LzQuNC90YPRgtCw
+
+  Survey No: !binary |
+    0JHRgNC+0Zgg0L3QsCDQv9GA0LDRiNCw0LvQvdC40Lo=
+
+  1 Interview details: !binary |
+    MS4g0J/QvtC00LDRgtC+0YbQuCDQt9CwINC40L3RgtC10YDQstGY0YPRgtC+
+
+  DTP: DTP
+  List: !binary |
+    0JvQuNGB0YLQuA==
+
+  Back: !binary |
+    0JLRgNCw0YLQtdGC0LUg0YHQtSDQvdCw0LfQsNC0INC90LAg0LvQuNGB0YLQ
+    sNGC0LA=
+
+  Fathers age: !binary |
+    0KHRgtCw0YDQvtGB0YIg0L3QsCDRgtCw0YLQutC+0YLQvg==
+
+  Mark as verified: !binary |
+    0J7Qt9C90LDRh9C4INCz0Lgg0LrQsNC60L4g0LfQsNCy0LXRgNC10L0=
+
+  Saved: !binary |
+    0JfQsNGH0YPQstCw0L3QuA==
+
+  Hib: Hib
+  Child: !binary |
+    0JTQtdGC0LU=
+
+  56 What is the mother tongue of your children?: !binary |
+    NS42INCa0L7RmCDQtSDQvNCw0ZjRh9C40L3QuNC+0YIg0ZjQsNC30LjQuiDQ
+    vdCwINCy0LDRiNC40YLQtSDQtNC10YbQsD8=
+
+  Immunization Information Source: !binary |
+    0JjQt9Cy0L7RgCDQvdCwINCY0L3RhNC+0YDQvNCw0YbQuNC4INC30LAg0JjQ
+    vNGD0L3QuNC30LDRhtC40ZjQsNGC0LA=
+
+  "Locality:": !binary |
+    0JvQvtC60LDRhtC40ZjQsDo=
+
+  Close: !binary |
+    0JfQsNGC0LLQvtGA0Lg=
+
+  reason_not_enrolled: !binary |
+    MTEuOCDQktC1INC80L7Qu9C40LzQtSDQtNCwINC90Lgg0LPQuCDQutCw0LbQ
+    tdGC0LUg0LPQu9Cw0LLQvdC40YLQtSAzINC/0YDQuNGH0LjQvdC4INC30L7R
+    iNGC0L4g0LLQsNGI0LXRgtC+INC00LXRgtC1INGBw6gg0YPRiNGC0LUg0L3Q
+    tSDQtSDQt9Cw0L/QuNGI0LDQvdC+INCy0L4g0L7RgdC90L7QstC90L4g0YPR
+    h9C40LvQuNGI0YLQtSDQuCDQndCVINC+0LTQuCDQstC+INCz0YDQsNC00LjQ
+    vdC60LAu
+
+  "All survey data verified?:": !binary |
+    0KHQuNGC0LUg0L/QvtC00LDRgtC+0YbQuCDQvtC0INCw0L3QutC10YLQsCDQ
+    v9C+0YLQstGA0LTQtdC90LA/
+
+  date: 
+    month_names: 
+    - 
+    - !binary |
+      0IjQsNC90YPQsNGA0Lg=
+
+    - !binary |
+      0KTQtdCy0YDRg9Cw0YDQuA==
+
+    - !binary |
+      0JzQsNGA0YI=
+
+    - !binary |
+      0JDQv9GA0LjQuw==
+
+    - !binary |
+      0JzQsNGY
+
+    - !binary |
+      0IjRg9C90Lg=
+
+    - !binary |
+      0IjRg9C70Lg=
+
+    - !binary |
+      0JDQstCz0YPRgdGC
+
+    - !binary |
+      0KHQtdC/0YLQtdC80LLRgNC4
+
+    - !binary |
+      0J7QutGC0L7QvNCy0YDQuA==
+
+    - !binary |
+      0J3QvtC10LzQstGA0Lg=
+
+    - !binary |
+      0JTQtdC60LXQvNCy0YDQuA==
+
+    order: 
+    - :day
+    - :month
+    - :year
+    abbr_day_names: 
+    - !binary |
+      0J3QtdC0
+
+    - !binary |
+      0J/QvtC9
+
+    - !binary |
+      0JLRgtC+
+
+    - !binary |
+      0KHRgNC1
+
+    - !binary |
+      0KfQtdGC
+
+    - !binary |
+      0J/QtdGC
+
+    - !binary |
+      0KHQsNCx
+
+    formats: 
+      default: "%d/%m/%Y"
+      short: "%e %b"
+      long: "%B %e, %Y"
+    day_names: 
+    - !binary |
+      0J3QtdC00LXQu9Cw
+
+    - !binary |
+      0J/QvtC90LXQtNC10LvQvdC40Lo=
+
+    - !binary |
+      0JLRgtC+0YDQvdC40Lo=
+
+    - !binary |
+      0KHRgNC10LTQsA==
+
+    - !binary |
+      0KfQtdGC0LLRgNGC0L7Qug==
+
+    - !binary |
+      0J/QtdGC0L7Qug==
+
+    - !binary |
+      0KHQsNCx0L7RgtCw
+
+    abbr_month_names: 
+    - 
+    - !binary |
+      0IjQsNC9
+
+    - !binary |
+      0KTQtdCy
+
+    - !binary |
+      0JzQsNGA
+
+    - !binary |
+      0JDQv9GA
+
+    - !binary |
+      0JzQsNGY
+
+    - !binary |
+      0IjRg9C9
+
+    - !binary |
+      0IjRg9C7
+
+    - !binary |
+      0JDQstCz
+
+    - !binary |
+      0KHQtdC/
+
+    - !binary |
+      0J7QutGC
+
+    - !binary |
+      0J3QvtC1
+
+    - !binary |
+      0JTQtdC6
+
+  View surveys here: !binary |
+    0J/QvtCz0LvQtdC00L3QuCDQv9GA0LDRiNCw0LvQvdC40YbQuCDRgtGD0LrQ
+    sA==
+
+  Tutoring at School: !binary |
+    0KLRg9GC0L7RgNGB0YLQstC+INC90LAg0YjQutC+0LvQsNGC0LA=
+
+  Q103under3home: !binary |
+    0J/RgNCw0YjQsNGa0LXRgtC+IDEwLjMg0L3QtdC1INC/0YDQuNC60LDQttCw
+    0L3Qviwg0LHQuNC00LXRmNGc0Lgg0YHQtdCz0LAg0LTQtdGC0LXRgtC+INC/
+    0L7QvNCw0LvQviDQvtC0IDMg0LPQvtC00LjQvdC4INC1INC00L7QvNCwLg==
+
+  Non Formal Education: !binary |
+    0J3QtdGE0L7RgNC80LDQu9C90L4g0L7QsdGA0LDQt9C+0LLQsNC90LjQtSDQ
+    t9CwINGA0L7QtNC40YLQtdC70LjRgtC1
+
+  Completed: !binary |
+    0JfQsNCy0YDRiNC10L3QuA==
+
+  Adding Family: !binary |
+    0JTQvtC00LDRmCDQvdC+0LLQsCDRhNCw0LzQuNC70LjRmNCw
+
+  Destroy: !binary |
+    0JjQt9Cx0YDQuNGI0Lg=
+
+  Add Family: !binary |
+    0JTQvtC00LDRmCDRhNCw0LzQuNC70LjRmNCw
+
+  Set date: !binary |
+    0J/QvtGB0YLQsNCy0Lgg0LTQsNGC0YPQvA==
+
+  Save and Next: !binary |
+    0JfQsNGH0YPQstCw0Zgg0Lgg0L/RgNC+0LTQvtC70LbQuCDQv9C+0L3QsNGC
+    0LDQvNGD
+
+  24 Number of children: !binary |
+    Mi40INCR0YDQvtGY0LrQsCDQvdCwINC00LXRhtCwOg==
+
+  Attendance in after School Activities: !binary |
+    0J/QvtGB0LXRgtC10L3QvtGB0YIg0L3QsCDQstC+0L3RiNC60L7Qu9GB0LrQ
+    uCDQsNC60YLQuNCy0L3QvtGB0YLQuA==
+
+  homework: !binary |
+    OS43INCS0L4g0L/QvtGB0LvQtdC00L3QuNGC0LUgMyDQtNC10L3QsCwg0LTQ
+    sNC70Lgg0L3QtdC60L7RmCDRh9C70LXQvSDQvtC0INGB0LXQvNC10ZjRgdGC
+    0LLQvtGC0L4g0L/QvtGB0YLQsNGAINC+0LQgMTUg0LPQvtC00LjQvdC4INC4
+    0Lwg0L/QvtC80L7Qs9C90LAg0YHQviDQtNC+0LzQsNGI0L3QsNGC0LAg0L3Q
+    sCDQtNC10YbQsNGC0LAg0LrQvtC4INC+0LTQsNGCINC90LAg0YPRh9C40LvQ
+    uNGI0YLQtT8=
+
+  errors: 
+    messages: 
+      not_locked: !binary |
+        0L3QtSDQsdC10YjQtSDQt9Cw0LrQu9GD0YfQtdC90L4=
+
+      not_found: !binary |
+        0L3QtSDQtSDQv9GA0L7QvdCw0ZjQtNC10L0=
+
+      greater_than_or_equal_to: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQv9C+0LPQvtC70LXQvNC+INC40LvQ
+        uCDQtdC00L3QsNC60LLQviDRgdC+ICV7Y291bnR9
+
+      less_than_or_equal_to: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQv9C+0LPQvtC70LXQvNC+INC40LvQ
+        uCDQtdC00L3QsNC60LLQviDRgdC+ICV7Y291bnR9
+
+      confirmation: !binary |
+        0L3QtSDRgdC1INC/0L7QutC70L7Qv9GD0LLQsCDRgdC+INC/0L7RgtCy0YDQ
+        tNCw0YLQsA==
+
+      not_an_integer: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQsdGA0L7RmA==
+
+      blank: !binary |
+        0L3QtdGB0LzQtdC1INC00LAg0LHQuNC00LUg0L/RgNCw0LfQvdC+
+
+      invalid: !binary |
+        0LUg0L3QtdCy0LDQu9C40LTQtdC9
+
+      exclusion: !binary |
+        0YDQtdC30LXRgNCy0LjRgNCw0L3QviDQtQ==
+
+      odd: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQvdC10L/QsNGA0LXQvQ==
+
+      wrong_length: !binary |
+        0JTQsNC70Lgg0LUg0L/QvtCz0YDQtdGI0L3QsCDQtNC+0LvQttC40L3QsCAo
+        0YLRgNC10LHQsCDQtNCwINC1ICV7Y291bnR9INC60LDRgNCw0LrRgtC10YDQ
+        uCk=
+
+      too_short: !binary |
+        0L/RgNC10LrRgNCw0YLQutC+INC1ICjQvNC40L3QuNC80YPQvCDQtSAlIHtj
+        b3VudH0g0LrQsNGA0LDQutGC0LXRgNC4KQ==
+
+      even: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQv9Cw0YDQtdC9INCx0YDQvtGY
+
+      empty: !binary |
+        0L3QtdGB0LzQtdC1INC00LAg0LHQuNC00LUg0L3QtdC/0L7Qv9C+0LvQvdC1
+        0YLQvg==
+
+      already_confirmed: !binary |
+        0LLQtdGc0LUg0LUg0L/QvtGC0LLRgNC00LXQvdC+
+
+      less_than: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQv9C+0LzQsNC70LrRgyDQvtC0ICV7
+        Y291bnR9
+
+      greater_than: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQv9C+0LPQvtC70LXQvNC+INC+0LQg
+        JXtjb3VudH0=
+
+      equal_to: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQtdC00L3QsNC60LLQviDQvdCwICV7
+        Y291bnR9
+
+      too_long: !binary |
+        0L/RgNC10LTQvtC70LPQviDQtSAo0LzQsNC60YHQuNC80YPQvCDQtSAle2Nv
+        dW50fSDQutCw0YDQsNC60YLQtdGA0Lgp
+
+      accepted: !binary |
+        0LzQvtGA0LAg0LTQsCDQsdC40LTQtSDQv9GA0LjRhNCw0YLQtdC90L4=
+
+      not_a_number: !binary |
+        0L3QtSDQtSDQsdGA0L7RmA==
+
+      inclusion: !binary |
+        0L3QtdC1INCy0LrQu9GD0YfQtdC9INCy0L4g0LvQuNGB0YLQsNGC0LA=
+
+    format: "%{attribute} %{message} "
+  draw: !binary |
+    OS41INCS0L4g0L/QvtGB0LvQtdC00L3QuNGC0LUgMyDQtNC10L3QsCwg0LTQ
+    sNC70Lgg0L3QtdC60L7RmCDRh9C70LXQvSDQvtC0INGB0LXQvNC10ZjRgdGC
+    0LLQvtGC0L4g0L/QvtGB0YLQsNGAINC+0LQgMTUg0LPQvtC00LjQvdC4INGG
+    0YDRgtCw0YjQtSDRgdC+INC00LXRhtCw0YLQsD8=
+
+  activities: !binary |
+    MTIuNyDQktC1INC80L7Qu9Cw0Lwg0LrQsNC20LXRgtC1INC80Lgg0YHQviDQ
+    utCw0LrQstCwINC00LXRmNC90L7RgdGCINGB0LUg0LfQsNC90LjQvNCw0LLQ
+    sNCw0YIg0YfQu9C10L3QvtCy0LjRgtC1INC+0LQg0LTQvtC80LDRnNC40L3R
+    gdGC0LLQvtGC0L4/
+
+  VHB: VHB
+  Set language: !binary |
+    0J/QvtGB0YLQsNCy0Lgg0ZjQsNC30LjQug==
+
+  Save and Mark Survey as Completed: !binary |
+    0JfQsNGH0YPQstCw0Zgg0Lgg0JzQsNGA0Log0JDQvdC60LXRgtCwINC60LDQ
+    utC+INCX0LDQstGA0YjQtdC90L4=
+
+  Children below seven: !binary |
+    0JTQtdGG0LAg0L/QvtC0INGB0LXQtNGD0Lwg0LPQvtC00LjRiNC90LAg0LLQ
+    vtC30YDQsNGB0YI=
+
+  Delete: !binary |
+    0JjQt9Cx0YDQuNGI0Lg=
+
+  Edit User: !binary |
+    0J7QsdGY0LDQstC4INCj0L/QvtGC0YDQtdCx0YPQstCw0Yc=
+
+  Attendance Data were succesfully saved You can add another one: !binary |
+    0J/Rg9Cx0LvQuNC60LAg0L3QsCDQv9C+0LTQsNGC0L7RhtC4INCx0LXRiNC1
+    INGD0YHQv9C10YjQvdC+INC30LDRh9GD0LLQsNC9LiDQnNC+0LbQtdGC0LUg
+    0LTQsCDQtNC+0LTQsNC00LXRgtC1INGD0YjRgtC1INC10LTQtdC9Lg==
+
+  Date: !binary |
+    0JTQsNGC0YPQvA==
+
+  (Unmark): !binary |
+    KNCS0YDQsNGC0Lgg0L7Qt9C90LDRh9GD0LLQsNGa0LUp
+
+  immunization_information_source: !binary |
+    OC4zINCU0LDQu9C4INC90LXQutC+0LPQsNGIINGB0YLQtSDQtNC+0LHQuNC7
+    0LUg0LjQvdGE0L7RgNC80LDRhtC40LgvINC/0L7RmNCw0YHQvdGD0LLQsNGa
+    0LAg0LfQsCDQstCw0LbQvdC+0YHRgtCwINC90LAg0LLQsNC60YbQuNC90LjR
+    gNCw0ZrQtdGC0L4/INCU0L7QutC+0LvQutGDINC+0LTQs9C+0LLQvtGA0L7R
+    giDQtSDQlNCQLCDQstC1INC80L7Qu9C40LzQtSDQvdCw0LLQtdC00LXRgtC1
+    INC60L7RmCDQstC1INC40L3RhNC+0YDQvNC40YDQsNC7
+
+  You do not have right to edit this child!: !binary |
+    0J3QtdC80LDRgtC1INC/0YDQsNCy0L4g0LTQsCDQs9C+INGD0YDQtdC00LjR
+    gtC1INC+0LLQsCDQtNC10YLQtSE=
+
+  This will delete survey and all of its data: !binary |
+    0J7QstCwINGc0LUg0LPQuCDQuNC30LHRgNC40YjQtSDQsNC90LrQtdGC0LDR
+    gtCwINC4INC90LAg0YHQuNGC0LUg0L3QtdGY0LfQuNC90Lgg0L/QvtC00LDR
+    gtC+0YbQuCAo0LTQtdGG0LAsINGB0LXQvNC10ZjRgdGC0LLQvikuINCU0LDQ
+    u9C4INGB0YLQtSDRgdC40LPRg9GA0L3QuD8=
+
+  Sign out: !binary |
+    0J7QtNGY0LDQstC4INGB0LU=
+
+  26 Household in settlement: !binary |
+    Mi42INCU0L7QvNGc0LjQvdGB0YLQstC+INCy0L4g0L3QsNGB0LXQu9Cx0LA=
+
+  Monthly Attendance in Preschool Program: !binary |
+    0JzQtdGB0LXRh9C90L4g0L/RgNC40YHRg9GB0YLQstC+INCy0L4g0L/RgNC1
+    0LTRiNC60L7Qu9GB0LphINC/0YDQvtCz0YDQsNC8YQ==
+
+  Child profile was successfully updated: !binary |
+    0J/RgNC+0YTQuNC70L7RgiDQvdCwINC00LXRgtC10YLQviDQtSDRg9GB0L/Q
+    tdGI0L3QviDQvtCx0L3QvtCy0LXQvS4=
+
+  Didn't receive confirmation instructions?: !binary |
+    0J3QtSDQv9GA0LjQvNC40LLRgtC1INC40L3RgdGC0YDRg9C60YbQuNC4INC3
+    0LAg0L/QvtGC0LLRgNC00LA/
+
+  View survey here: !binary |
+    0J/QvtCz0LvQtdC00L3QuCDQv9GA0LDRiNCw0LvQvdC40Log0YLRg9C60LA=
+
+  "Q119\xE2\x80\x931116notshownFG": !binary |
+    0J/RgNCw0YjQsNGa0LDRgtCwIDExLjkgLSAxMS4xNiDQvdC1INGB0LUg0L/R
+    gNC40LrQsNC20LDQvdC4INCx0LjQtNC10ZjRnNC4INC90LjQtdC00L3QviDQ
+    tNC10YLQtSDQvdCwINCy0L7Qt9GA0LDRgdGCINC/0L7QvNC10ZPRgyA1LTcg
+    0LPQvtC00LjQvdC4LCAg0LUg0LfQsNC/0LjRiNCw0L3QviDQstC+INC40L3R
+    gdGC0LjRgtGD0YbQuNC40YLQtSDQvtC0INGC0LjQv9C+0YIgRSDQuNC70Lgg
+    0IMu
+
+  Editing institution: !binary |
+    0JjQvdGB0YLRgNGD0LrRhtC40Lgg0LfQsCDQntCx0ZjQsNCy0YPQstCw0ZrQ
+    tQ==
+
+  22 Fathers age: !binary |
+    Mi4yINCh0YLQsNGA0L7RgdGCINC90LAg0YLQsNGC0LrQvtGC0L46
+
+  4 Child assessment for children aged 3-7 years: !binary |
+    NC4J0J/RgNC+0YbQtdC90LrQsCDQvdCwINC00LXRhtCwINC90LAg0LLQvtC3
+    0YDQsNGB0YIg0L7QtCAzINC00L4gNyDQs9C+0LTQuNC90Lgg
+
+  Mark for Delete: !binary |
+    0J7QsdC10LvQtdC20Lgg0LfQsCDQsdGA0LjRiNC10ZrQtQ==
+
+  10 Children younger than 3 years: !binary |
+    MTAuCdCf0YDQsNGI0LDRmtCwINC30LAg0YDQvtC00LjRgtC10LvQuNGC0LUg
+    0L3QsCDQtNC10YbQsCDQvdCwINCy0L7Qt9GA0LDRgdGCINC00L4gMyDQs9C+
+    0LTQuNC90Lgg
+
+  reason_for_kindergarten: !binary |
+    MTEuMSDQl9C+0YjRgtC+INCy0LDRiNC10YLQviDQtNC10YLQtSDQvtC00Lgg
+    0LLQviDQs9GA0LDQtNC40L3QutCwPyDQktC1INC80L7Qu9C40LzQtSDQvdCw
+    0LLQtdC00LXRgtC1INCz0Lgg0YLRgNC40YLQtSDQvdCw0ZjQstCw0LbQvdC4
+    INC/0YDQuNGH0LjQvdC4INC30LAg0YLQvtCwLg==
+
+  Title: !binary |
+    0J3QsNGB0LvQvtCy
+
+  Q118CDFG: !binary |
+    0J/RgNCw0YjQsNGa0LXRgtC+IDExLjgg0L3QtdC1INC/0YDQuNC60LDQttCw
+    0L3QviDQsdC40LTQtdGY0ZzQuCDQvdC10LzQsCDQtNC10YLQtSDQvdCwINCy
+    0L7Qt9GA0LDRgdGCINC/0L7QvNC10ZPRgyAzLTcg0LPQvtC00LjQvdC4LCDQ
+    utC+0LXRiNGC0L4g0L3QtdC1INC30LDQv9C40YjQsNC90L4g0LLQviDQuNC9
+    0YHRgtC40YLRg9GG0LjQuNGC0LUg0L7QtCDRgtC40L/QvtGCIEIs0JMsRSDQ
+    uNC70Lgg0IMu
+
+  Countries: !binary |
+    0JTRgNC20LDQstC4
+
+  of: !binary |
+    0L7QtA==
+
+  Q101a102under3: !binary |
+    0J/RgNCw0YjQsNGa0LDRgtCwIDEwLjEg0LggMTAuMiAg0L3QtSDRgdC1INC/
+    0YDQuNC60LDQttCw0L3QuCwg0LHQuNC00LXRmNGc0Lgg0L3QuNC10LTQvdC+
+    INC00LXRgtC1ICDQvdCwINCy0L7Qt9GA0LDRgdGCINC/0L7QtCAzINCz0L7Q
+    tNC40L3QuCDQvdC10LUg0LfQsNC/0LjRiNCw0L3Qvi4=
+
+  Household Surveys: !binary |
+    0JDQvdC60LXRgtC4INC90LAg0JTQvtC80LDRnNC40L3RgdGC0LLQsA==
+
+  Kindergartens: !binary |
+    0JTQtdGC0YHQutC4INCz0YDQsNC00LjQvdC60Lg=
+
+  Add New Locality: !binary |
+    0JTQvtC00LDRmCDQvdC+0LLQsCDQu9C+0LrQsNGG0LjRmNCw
+
+  Household Surveys - Incomplete: !binary |
+    0J3QtdC00L7QstGA0YjQtdC90Lgg0LDQvdC60LXRgtC4
+
+  Didn't receive unlock instructions?: !binary |
+    0L3QtSDQv9GA0LjQvNC40LLRgtC1INC40L3RgdGC0YDRg9C60YbQuNC4INC3
+    0LAg0L7RgmvQu9GD0YfRg9Cy0LDRmtC1Pw==
+
+  "Yes": !binary |
+    0JTQsA==
+
+  Please select Date: !binary |
+    0JjQt9Cx0LXRgNC4INC00LDRgtGD0Lw=
+
+  Completed Household Surveys: !binary |
+    0JfQsNCy0YDRiNC10L3QuCDQsNC90LrQtdGC0Lg=
+
+  "You are editing child: ": !binary |
+    0KPRgNC10LTRg9Cy0LDRgtC1INC00LXRgtC1Og==
+
+  This will mark this survey for deletion: 
+    " Are you sure?": !binary |
+      0J7QstCwINGc0LUg0ZjQsCDQvtCx0LHQtdC70LXQttC4INC+0LLQsNCwINCw
+      0L3QutC10YLQsCDQt9CwINCx0YDQuNGI0LXRmtC1LiDQlNCw0LvQuCDRgdGC
+      0LUg0YHQuNCz0YPRgNC90Lg/IA==
+
+  "Number of expected surveys:": !binary |
+    0JHRgNC+0Zgg0L3QsCDQvtGH0LXQutGD0LLQsNC90LjRgtC1INCw0L3QutC1
+    0YLQuDo=
+
+  3 Children details: !binary |
+    My4g0JTQtdGC0LDQu9C4INC30LAg0LTQtdGG0LDRgtCw
+
+  Immunization Data: !binary |
+    0J/QvtC00LDRgtC+0YbQuCDQt9CwINCY0LzRg9C90LjQt9Cw0YbQuNGY0LA=
+
+  11 Children 3 to 7 years: !binary |
+    MTEuCdCf0YDQsNGI0LDRmtCwINC30LAg0YDQvtC00LjRgtC10LvQuNGC0LUg
+    0L3QsCDQtNC10YbQsCDQvdCwINCy0L7Qt9GA0LDRgdGCINC+0LQgMyDQtNC+
+    IDcg0LPQvtC00LjQvdC4IA==
+
+  devise: 
+    failure: 
+      unauthenticated: !binary |
+        0KLRgNC10LHQsCDQtNCwINGB0LUg0L3QsNGY0LDQstC40YLQtSDQuNC70Lgg
+        0YDQtdCz0LjRgdGC0YDQuNGA0LDRgtC1INC/0YDQtdC0INC00LAg0L/RgNC+
+        0LTQvtC70LbQuNGC0LUu
+
+      timeout: !binary |
+        0JLQsNGI0LXRgtCwINGB0LXRgdC40ZjQsCDQuNGB0YLQtdGH0LUuINCS0LUg
+        0LzQvtC70LjQvNC1INC90LDRmNCw0LLQtdGC0LUg0YHQtSDQv9C+0LLRgtC+
+        0YDQvdC+INC30LAg0LTQsCDQv9GA0L7QtNC+0LvQttC40YLQtS4=
+
+      invalid: !binary |
+        0J3QtdCy0LDQu9C40LTQvdCwINC10LvQtdC60YLRgNC+0L3RgdC60LAg0L/Q
+        vtGI0YLQsCDQuNC70Lgg0LvQvtC30LjQvdC60LAu
+
+      inactive: !binary |
+        0JLQsNGI0LDRgtCwINGB0LzQtdGC0LrQsCDRgdC10YPRiNGC0LUg0L3QtdC1
+        INCw0LrRgtC40LLQuNGA0LDQvdCwLg==
+
+      unconfirmed: !binary |
+        0JzQvtGA0LAg0LTQsCDRmNCwINC/0L7RgtCy0YDQtNC40YLQtSDQstCw0YjQ
+        sNGC0LAg0YHQvNC10YLQutCwINC/0YDQtdC0INC00LAg0L/RgNC+0LTQvtC7
+        0LbQuNGC0LUu
+
+      locked: !binary |
+        0JLQsNGI0LDRgtCwINGB0LzQtdGC0LrQsCDQtSDQt9Cw0LrQu9GD0YfQtdC9
+        0LAu
+
+      invalid_token: !binary |
+        0J3QtdCy0LDQu9C40LTQtdC9INCw0LLRgtC+0YDQuNC30LDRhtC40YHQutC4
+        INC30L3QsNC6Lg==
+
+    passwords: 
+      send_instructions: !binary |
+        0IzQtSDQtNC+0LHQuNC10YLQtSDQtdC70LXQutGC0YDQvtC90YHQutCwINC/
+        0L7RiNGC0LAg0YHQviDQuNC90YHRgtGA0YPQutGG0LjQuCAg0LrQsNC60L4g
+        0LTQsCDRmNCwINC/0L7RgtCy0YDQtNC40YLQtSDQstCw0YjQsNGC0LAg0LvQ
+        vtC30LjQvdC60LAg0LfQsCDQvdC10LrQvtC70LrRgyDQvNC40L3Rg9GC0Lgu
+        IA==
+
+      updated: !binary |
+        0JLQsNGI0LDRgtCwINC70L7Qt9C40L3QutCwINC1INGD0YHQv9C10YjQvdC+
+        INC/0YDQvtC80LXQvdC10YLQsC7QvdCw0ZjQsNCy0LXQvdC4INGB0YLQtS4=
+
+    unlocks: 
+      unlocked: !binary |
+        0JLQsNGI0LDRgtCwINGB0LzQtdGC0LrQsCDQtSDRg9GB0L/QtdGI0L3QviDQ
+        vtGC0LrQu9GD0YfQtdC90LAuINCd0LDRmNCw0LLQtdC90Lgg0YHRgtC1Lg==
+
+      send_instructions: !binary |
+        0IzQtSDQtNC+0LHQuNC10YLQtSDQtdC70LXQutGC0L7QvdGB0LrQsCDQv9C+
+        0YjRgtCwINGB0L4g0LjQvdGB0YLRgNGD0LrRhtC40Lgg0LrQsNC60L4g0LTQ
+        sCDRmNCwINC+0YLQutC70YPRh9C40YLQtSDQstCw0YjQsNGC0LAg0LvQvtC3
+        0LjQvdC60LAg0LfQsCDQvdC10LrQvtC70LrRgyDQvNC40L3Rg9GC0Lgu
+
+    mailer: 
+      unlock_instructions: 
+        subject: !binary |
+          0J7RgtC60LvRg9GH0Lgg0LPQuCDQuNC90YHRgtGA0YPQutGG0LjQuNGC0LU=
+
+      reset_password_instructions: 
+        subject: !binary |
+          0J/QvtCy0YLQvtGA0L3QviDQstC60LvRg9GH0Lgg0LPQuCDQuNC90YHRgtGA
+          0YPQutGG0LjQuNGC0LUg0LfQsCDQu9C+0LfQuNC90LrQsNGC0LA=
+
+      confirmation_instructions: 
+        subject: !binary |
+          0JjQvdGB0YLRgNGD0LrRhtC40Lgg0LfQsCDQv9C+0YLQstGA0LTQsA==
+
+    omniauth_callbacks: 
+      failure: !binary |
+        0J3QtdC80L7QttC90L7RgdGCINC00LAg0LLQtSDQvtCy0LvQsNGB0YLQuCDQ
+        vtC0ICV7a2luZH0g0LHQuNC00LXRmNGc0LggIiV7cmVhc29ufSIuCg==
+
+      success: !binary |
+        0KPRgdC/0LXRiNC90L4g0L7QstC70LDRgdGC0LXQvSDQvtC0ICV7a2luZH0g
+        0YHQvNC10YLQutCwLg==
+
+    registrations: 
+      inactive_signed_up: !binary |
+        0KHQtSDQt9Cw0L/QuNGI0LDQstGC0LUg0YPRgdC/0LXRiNC90L4uINCh0LXQ
+        v9Cw0LosINC90LXQvNC+0LbQtdCy0LzQtSDQtNCwINCy0LUg0L/RgNC40ZjQ
+        sNCy0LjQvNC1INCx0LjQtNC10ZjRnNC4INCy0LDRiNC40LDRgtCwINGB0LzQ
+        tdGC0LrQsCDQtSAle3JlYXNvbn0u
+
+      destroyed: !binary |
+        0JTQvtCy0LjQtNGD0LLQsNGa0LUhINCS0LDRiNCw0YLQsCDRgdC80LXRgtC6
+        0LAg0YPRgdC/0LXRiNC90L4g0LHQtdGI0LUg0L7RgtC60LDQttCw0L3QsC4g
+        0KHQtSDQvdCw0LTQtdCy0LDQvNC1INC00LAg0LLQtSDQstC40LTQuNC80LUg
+        0L3QsNGB0LrQvtGA0L4u
+
+      updated: !binary |
+        0KPRgdC/0LXRiNC90L4g0ZjQsCDQvtCx0L3QvtCy0LjQstGC0LUg0LLQsNGI
+        0LDRgtCwINGB0LzQtdGC0LrQsC4=
+
+      signed_up: !binary |
+        0JTQvtCx0YDQtdC00L7RmNC00LUg0LrQvtGA0LjRgdC90LjQutGDISDQo9GB
+        0L/QtdGI0L3QviDRgdGC0LUg0YDQtdCz0LjRgdGC0YDQuNGA0LDQvdC4Lg==
+
+    sessions: 
+      signed_out: !binary |
+        0KPRgdC/0LXRiNC90L4g0L7QtNGY0LDQstC10L0u
+
+      admin: 
+        errors: 
+          messages: 
+            not_locked: !binary |
+              0L3QtSDQsdC10YjQtSDQt9Cw0LrQu9GD0YfQtdC90L4=
+
+            not_found: !binary |
+              0L3QtSDQtSDQv9GA0L7QvdCw0ZjQtNC10L0=
+
+            not_saved: 
+              one: !binary |
+                MSDQs9GA0LXRiNC60LAg0LPQviDRgdC/0YDQtdGH0Lgg0L7QstC+0ZggJXty
+                ZXNvdXJjZX0g0LfQsCDQtNCwINCx0LjQtNC1INC30LDRh9GD0LLQsNC9Og==
+
+              other: !binary |
+                JXtjb3VudH0g0LPRgNC10YjQutC4INCz0L4g0YHQv9GA0LXRh9C40ZjQsCDQ
+                vtCy0L7RmCAle3Jlc291cmNlfSDQt9CwINC00LAg0LHQuNC00LUg0LfQsNGH
+                0YPQstCw0L06
+
+            already_confirmed: !binary |
+              0LLQtdGc0LUg0LUg0L/QvtGC0LLRgNC00LXQvdC+LCDQstC1INC80L7Qu9C4
+              0LzQtSDQv9GA0L7QsdCw0ZjRgtC1INC00LAg0YHQtSDQvdCw0ZjQsNCy0LjR
+              gtC1
+
+        signed_in: !binary |
+          0JfQtNGA0LDQstC+INCw0LTQvNC40L3QuNGB0YLRgNCw0YLQvtGA0LUh
+
+      user: 
+        signed_in: !binary |
+          0JTQvtCx0YDQtdC00L7RmNC00LUg0LrQvtGA0LjRgdC90LjQutGDISDQo9GB
+          0L/QtdGI0L3QviDRgdGC0LUg0L3QsNGY0LDQstC10L3QuC4=
+
+      password: !binary |
+        0JvQvtC30LjQvdC60LA=
+
+      signed_in: !binary |
+        0KPRgdC/0LXRiNC90L4g0L3QsNGY0LDQstC10L0u
+
+      email: !binary |
+        0JXQu9C10LrRgtGA0L7QvdGB0LrQsCDQv9C+0YjRgtCw
+
+    confirmations: 
+      confirmed: !binary |
+        0JLQsNGI0LDRgtCwINGB0LzQtdGC0LrQsCDQtSDRg9GB0L/QtdGI0L3QviDQ
+        v9C+0YLQstGA0LTQtdC90LAuINCd0LDRmNCw0LLQtdC90Lgg0YHRgtC1Lg==
+
+      send_instructions: !binary |
+        0IzQtSDQtNC+0LHQuNC10YLQtSDQtdC70LXQutGC0YDQvtC90YHQutCwINC/
+        0L7RiNGC0LAg0YHQviDQuNC90YHRgtGA0YPQutGG0LjQuCDQutCw0LrQviDQ
+        tNCwINGY0LAg0L/QvtGC0LLRgNC00LjRgtC1INCy0LDRiNCw0YLQsCDRgdC8
+        0LXRgtC60LAg0LfQsCDQvdC10LrQvtC70LrRgyDQvNC40L3Rg9GC0LguIA==
+
+  This month is already entered: !binary |
+    0J/QvtC00LDRgtC+0YbQuCDQt9CwINC+0LLQvtGYINC80LXRgdC10YYg0LUg
+    0LLQtdGc0LUg0L/QvtGB0YLQsNCy0LXQvS4=
+
+  There was a problem to save data: !binary |
+    0JjQvNCw0YjQtSDQv9GA0L7QsdC70LXQvCDQtNCwINGY0LAg0LfQsNGH0YPQ
+    stCw0YLQtSDQv9C+0LTQsNGC0L7RhtC4Lg==
+
+  Parental Involvement in Preschool: !binary |
+    0KDQvtC00LjRgtC10LvRgdC60LAg0YPRh9C10YHRgtCy0L4g0LLQviDQs9GA
+    0LDQtNC40L3QutCw
+
+  Overview: !binary |
+    0J/RgNC10LPQu9C10LQ=
+
+  23 Mothers age: !binary |
+    Mi4zINCh0YLQsNGA0L7RgdGCINC90LAg0LzQsNGY0LrQsNGC0LA6
+
+  My profile: !binary |
+    0JzQvtGY0L7RgiDQv9GA0L7RhNC40Ls=
+
+  A - at home and not enrolled: !binary |
+    QSDigJMg0LTQvtC80LAsINC90LUg0LUg0LfQsNC/0LjRiNCw0L3Qvg==
+
+  Extracurricular activities: !binary |
+    0JLQvtC90L3QsNGB0YLQsNCy0L3QuCDQsNC60YLQuNCy0L3QvtGB0YLQuA==
+
+  Hotline: !binary |
+    0KXQvtGC0LvQsNGY0L0=
+
+  Add new: !binary |
+    0JTQvtC00LDRmCDQvdC+0LIg0L/QvtC00LDRgtC+0YbQuA==
+
+  In the locality of: !binary |
+    0JLQviDRgdC70LXQtNC90LjRgtC1INC70L7QutCw0YbQuNGY0LA=
+
+  Are you sure?: !binary |
+    0JTQsNC70Lgg0YHRgtC1INGB0LjQs9GD0YDQvdC4Pw==
+
+  number: 
+    format: 
+      separator: ","
+      precision: 3
+      delimiter: .
+      strip_insignificant_zeros: 0
+      significant: 0
+    human: 
+      format: 
+        precision: 3
+        strip_insignificant_zeros: 1
+        significant: 1
+      storage_units: 
+        format: "%n %u"
+        units: 
+          kb: KB
+          tb: TB
+          gb: GB
+          mb: MB
+      decimal_units: 
+        format: "%n %u"
+        units: 
+          trillion: Trillion
+          quadrillion: Quadrillion
+          billion: Billion
+          million: Million
+          thousand: Thousand
+    currency: 
+      format: 
+        format: "%n %u"
+        unit: MKD
+        separator: .
+        precision: 2
+        delimiter: ","
+        strip_insignificant_zeros: 0
+        significant: 0
+  children_below_seven: !binary |
+    MTEuCdCf0YDQsNGI0LDRmtCwINC30LAg0YDQvtC00LjRgtC10LvQuNGC0LUg
+    0L3QsCDQtNC10YbQsCDQvdCwINCy0L7Qt9GA0LDRgdGCINC+0LQgMyDQtNC+
+    IDcg0LPQvtC00LjQvdC4IA==
+
+  "You are editing survey no: ": !binary |
+    0KPRgNC10LTRg9Cy0LDRgtC1INCQ0L3QutC10YLQsCDQsdGALiAg
+
+  Number of Children: !binary |
+    0JHRgNC+0Zgg0L3QsCDQtNC10YbQsA==
+
+  Edit: !binary |
+    0J7QsdGY0LDQstC4
+
+  Gender: !binary |
+    0J/QvtC7
+
+  Forgot your password?: !binary |
+    0IjQsCDQt9Cw0LHQvtGA0LDQstC40LLRgtC1INCy0LDRiNCw0YLQsCDQu9C+
+    0LfQuNC90LrQsD8=
+
+  the total expected number of surveys has been verified by the local partner team leader: !binary |
+    0LLQutGD0L/QvdC40L7RgiDQvtGH0LXQutGD0LLQsNC90LjQvtGCINCx0YDQ
+    vtGYINC90LAg0LjRgdGC0YDQsNC20YPQstCw0ZrQsCDQtSDQv9C+0YLQstGA
+    0LTQtdC9INC+0LQg0YHRgtGA0LDQvdCwINC90LAg0LvQvtC60LDQu9C10L0g
+    0L/QsNGA0YLQvdC10YAg0LvQuNC00LXRgNC+0YI=
+
+  reason_not_attend: !binary |
+    MTAuMyDQmtC+0Lgg0YHQtSDQs9C70LDQstC90LjRgtC1INC/0YDQuNGH0LjQ
+    vdC4INC30L7RiNGC0L4g0LLQsNGI0LXRgtC+INC00LXRgtC1INCd0JUg0L7Q
+    tNC4INCy0L4g0ZjQsNGB0LvQuC8g0LPRgNCw0LTQuNC90LrQsC8g0L7Qv9GI
+    0YLQuNC90YHQutC40L7RgiDRhtC10L3RgtCw0YA/
+
+  childs_development_information_source: !binary |
+    OS4xINCa0L7Qs9CwINC40LzQsNGC0LUg0L7QtNGA0LXQtNC10L3QuCDQv9GA
+    0LDRiNCw0ZrQsCDQt9CwINGA0LDQt9Cy0L7RmNC+0YIg0L3QsCDQstCw0YjQ
+    tdGC0L4g0LTQtdGC0LUsINC+0LQg0LrQsNC00LUg0LzQvtC20LXRgtC1INC0
+    0LAg0LTQvtCx0LjQtdGC0LUg0LjQvdGE0L7RgNC80LDRhtC40Lg/
+
+  Schools: !binary |
+    0KPRh9C40LvQuNGI0YLQsA==
+
+  Number of days absent in month: !binary |
+    0JHRgNC+0Zgg0L3QsCDQtNC10L3QvtCy0Lgg0LTQtdGC0LXRgtC+INCx0LXR
+    iNC1INC+0YLRgdGD0YLQtdC9INCy0L4g0LzQtdGB0LXRhg==
+
+  Campaign on Reading Out Loud: !binary |
+    0JrQsNC80L/QsNGa0LDRgtCwINC30LAg0YfQuNGC0LDRmtC1INC90LAg0LPQ
+    u9Cw0YE=
+
+  formtastic: 
+    required: !binary |
+      0J/QvtGC0YDQtdCx0L3Qvg==
+
+    "no": !binary |
+      0J3QtQ==
+
+    submit: !binary |
+      0J/QvtC00L3QtdGB0Lg=
+
+    "yes": !binary |
+      0JTQsA==
+
+    save: !binary |
+      0JfQsNGH0YPQstCw0Zg=
+
+    create: !binary |
+      0JrRgNC10LDQuNGA0LDRmA==
+
+    update: !binary |
+      0JfQsNGH0YPQstCw0Zg=
+
+  Sign in: !binary |
+    0J3QsNGY0LDQstC4INGB0LU=
+
+  School Results: !binary |
+    0KDQtdC30YPQu9GC0LDRgtC4INC90LAg0YPRh9C40LvQuNGI0YLQtdGC0L4=
+
+  Add New Family: !binary |
+    0JTQvtC00LDRmCDQvdC+0LLQsCDRhNCw0LzQuNC70LjRmNCw
+
+  5 Household details: !binary |
+    NS4J0J/QvtC00LDRgtC+0YbQuCDQt9CwINC00L7QvNCw0ZzQuNC90YHRgtCy
+    0L7RgtC+
+
+  Household Survey: !binary |
+    0JDQvdC60LXRgtCwINC90LAg0JTQvtC80LDRnNC40L3RgdGC0LLQvg==
+
+  Kindergardens: !binary |
+    0JTQtdGC0YHQutC4INCz0YDQsNC00LjQvdC60Lg=
+
+  Mothers age: !binary |
+    0KHRgtCw0YDQvtGB0YIg0L3QsCDQvNCw0ZjQutCw0YLQsA==
+
+  talked_about_pregnancy: !binary |
+    OC41INCU0LDQu9C4ICDQt9Cx0L7RgNGD0LLQsNCy0YLQtSDRgdC+INC90LXQ
+    utC+0LPQviDQt9CwINCx0YDQtdC80LXQvdC+0YHRgtCwINC00L7QtNC10LrQ
+    sCDQsdC10LLRgtC1INCx0YDQtdC80LXQvdCwINC/0YDQtdC0INC00LAg0LLQ
+    uCDRgdC1INGA0L7QtNC4INC90LDRmNC80LDQu9C+0YLQviDQtNC10YLQtT8=
+
+  4 Children assesment: !binary |
+    NC4J0J/RgNC+0YbQtdC90LrQsCDQvdCwINC00LXRhtCwINC90LAg0LLQvtC3
+    0YDQsNGB0YIg
+
+  Home: !binary |
+    0JTQvtC80LA=
+
+  Survey was successfully updated: !binary |
+    0JDQvdC60LXRgtCw0YLQsCDQtSDRg9GB0L/QtdGI0L3QviDQsNC20YPRgNC4
+    0YDQsNC90LAu
+
+  Back to list of institutions: !binary |
+    0J3QsNC30LDQtCDQvdCwINC70LjRgdGC0LDRgtCwINC90LAg0LjQvdGB0YLQ
+    uNGC0YPRhtC40Lg=
+

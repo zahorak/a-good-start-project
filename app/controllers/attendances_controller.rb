@@ -36,11 +36,12 @@ class AttendancesController < ApplicationController
   def edit
     @attendance = Attendance.find(params[:id])
   end
-
+  
   # POST /attendances
   # POST /attendances.xml
   def create
     @attendance = Attendance.new(params[:attendance])
+    @attendance.created_by =  current_user.id
 
     respond_to do |format|
       if @attendance.save

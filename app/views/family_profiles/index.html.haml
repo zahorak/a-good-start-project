@@ -2,30 +2,39 @@
 
 %table
   %tr
-    %th= t('Survey No')
-    %th= t('Family name')
+    %th{:width=>80}= t('Survey No')
+    %th{:width=>120}= t('Family name')
     %th= t('Fathers age')
     %th= t('Mothers age')
     %th= t('Number of children')
     %th= t('Number of children below seven')
-    %th= t('Household in settlement')
-    %th
-    %th
+    %th= t('Non Formal Education')
+    - unless (current_user.locality_ids & [8]).empty?
+      %th= t('Workshops on education/health')
+    - unless (current_user.locality_ids & [1,15,16,17,18,19]).empty?
+      %th= t('Parental Involvement in Preschool')
 
   - for family_profile in @family_profiles
-    %tr
-      %td= family_profile.survey_id
-      / %td= family_profile.created_by
-      %td= family_profile.family_name
-      %td= family_profile.fathers_age
-      %td= family_profile.mothers_age
-      %td= family_profile.number_of_children
-      %td= family_profile.number_of_children_below_seven
-      %td= family_profile.full_household_in_settlement
+    %tr.row
+      %td= family_profile.survey.number unless family_profile.survey.blank?
+      %td= link_to family_profile.family_name, edit_family_profile_path(family_profile)
+      %td= family_profile.survey.fathers_age
+      %td= family_profile.survey.mothers_age
+      %td= family_profile.survey.number_of_all_children
+      %td= family_profile.survey.number_of_children_below_seven
+      %td= link_to(status_non_formal_education(family_profile.non_formal_education), '/family_profiles/update_mini/' + family_profile.id.to_s + '?non_formal_education=1')
+      - unless (current_user.locality_ids & [8]).empty?
+        %td= link_to(status_workshops_on_education(family_profile.workshops_on_education), '/family_profiles/update_mini/' + family_profile.id.to_s + '?workshops_on_education=1')
+      - unless (current_user.locality_ids & [1,15,16,17,18,19]).empty?
+        %td= link_to(status_parental_involment_in_preschool(family_profile.parental_involment_in_preschool), '/family_profiles/update_mini/' + family_profile.id.to_s + '?parental_involment_in_preschool=1')
+
+      / workshops_on_education
+      / parental_involment_in_preschool
+      / %td= family_profile.full_household_in_settlement
       / %td= family_profile.comment
       / %td= link_to 'Show', family_profile
-      %td= link_to t('Edit'), edit_family_profile_path(family_profile)
-      %td= link_to t('Destroy'), family_profile, :confirm => t('Are you sure?'), :method => :delete
+      / %td= link_to t('Edit'), edit_family_profile_path(family_profile)
+      / %td= link_to t('Destroy'), family_profile, :confirm => t('Are you sure?'), :method => :delete
 
-.commit
-  %p= link_to t("Add Family"), new_family_profile_path
+/ .commit
+/   %p= link_to t("Add Family"), new_family_profile_path

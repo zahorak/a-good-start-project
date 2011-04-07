@@ -1,0 +1,55 @@
+#steps
+  - semantic_form_for @survey, :html => {:name => 'survey',:class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("12 Other socio-economic data"), :id => "other_data", :class => 'step' do
+      - f.inputs t("schools"), :id => "schools" do
+        = f.input :school_mother, :as => :radio, :collection => MenuItem.school_type.order(:position), 
+          :input_html => { :onclick => 'display_switch(this,"124","survey_school_mother_other_input");'}
+        = f.input :school_mother_other, :as => :string, :input_html => {:size => 30}, :wrapper_html => {:style => @survey.school_mother==123 ? "display:;" : "display:none;"} 
+        
+        = f.input :school_father, :as => :radio, :collection => MenuItem.school_type.order(:position), 
+          :input_html => { :onclick => 'display_switch(this,"124","survey_school_father_other_input");'}
+        = f.input :school_father_other, :as => :string, :input_html => {:size => 30 }, :wrapper_html => {:style => @survey.school_father==123 ? "display:;" : "display:none;"} 
+        
+        - if @survey.relation_to_children != 1 and @survey.relation_to_children != 2 and @survey.primary_caregiver == 45
+          = f.input :school_caregiver, :as => :radio, :collection => MenuItem.school_type.order(:position), 
+            :input_html => { :onclick => 'display_switch(this,"123","survey_school_caregiver_other_input");'}
+          = f.input :school_caregiver_other, :as => :string, :input_html => {:size => 30 }, :wrapper_html => {:style => @survey.school_caregiver==123 ? "display:;" : "display:none;"} 
+
+      = f.input :mother_has_id, :as => :radio, :collection => MenuItem.classic
+      = f.input :birth_certificate, :as => :radio, :collection => MenuItem.birth_certificate
+      - f.inputs t("home_equipment"), :id => "home_equipment" do
+        = f.input :home_kitchen, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_toilet, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_latrine, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_sewerage, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_shower, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_water, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_electricity, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_tv, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_phone, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_radio, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_computer, :as => :radio, :collection => MenuItem.classic
+        = f.input :home_internet, :as => :radio, :collection => MenuItem.classic
+      = f.input :number_of_people_under_18, :input_html => { :size => 2, :class => "required number" }
+      = f.input :number_of_people_over_18, :input_html => { :size => 2, :class => "required number" }
+      
+      - f.inputs t("activities"), :id => "activities" do
+        = f.input :mother_activity, :as => :radio, :collection => MenuItem.activities,
+        :input_html => { :onclick => 'display_switch(this,"99","survey_mother_activity_other_input");'}
+        = f.input :mother_activity_other, :as => :string, :input_html => {:size => 30 }, :wrapper_html => {:style => @survey.mother_activity==99 ? "display:;" : "display:none;"} 
+        
+        = f.input :father_activity, :as => :radio, :collection => MenuItem.activities,
+        :input_html => { :onclick => 'display_switch(this,"99","survey_father_activity_other_input");'}
+        = f.input :father_activity_other, :as => :string, :input_html => {:size => 30 }, :wrapper_html => {:style => @survey.father_activity==99 ? "display:;" : "display:none;"} 
+        
+        - if @survey.relation_to_children != 1 and @survey.relation_to_children != 2 and @survey.primary_caregiver == 45
+          = f.input :caregiver_activity, :as => :radio, :collection => MenuItem.activities,
+          :input_html => { :onclick => 'display_switch(this,"99","survey_caregiver_activity_other_input");'}
+          = f.input :caregiver_activity_other, :as => :string, :input_html => {:size => 30 }, :wrapper_html => {:style => @survey.caregiver_activity==99 ? "display:;" : "display:none;"} 
+        
+      = f.input :separated_settlement, :as => :radio, :collection => MenuItem.classic_reduced
+      = f.input :roma_village, :as => :radio, :collection => MenuItem.classic_reduced
+      = hidden_field_tag "step", "12"
+
+      = render :partial => 'buttons'
+

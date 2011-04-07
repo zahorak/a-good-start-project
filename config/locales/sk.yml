@@ -1,654 +1,894 @@
 --- 
 sk: 
-  ? "1 Interview details"
-  : "1. Detaily rozhovoru"
-  ? "10 Children younger than 3 years"
-  : "10. Otázky pre rodičov detí mladších ako 3-ročných"
-  ? "11 Children 3 to 7 years"
-  : "11. Otázky pre rodičov detí vo veku 3-7 rokov"
-  ? "12 Other socio-economic data"
-  : "12. Ostatné sociálno-ekonomické údaje"
-  ? "2 Family details"
-  : "2. Detaily o rodine"
-  ? "3 Children details"
-  : "3. Detaily o deťoch"
-  ? "4 Child assessment for children aged 3-7 years"
-  : "4.  Hodnotenie detí vo veku 3-7 rokov"
-  ? "4 Children assesment"
-  : "4.  Hodnotenie detí"
-  ? "5 Household details"
-  : "5.  Detaily o domácnosti"
-  ? "55 What language is spoken in your household?"
-  : "5.5 Akým jazykom sa vo Vašej domácnosti hovorí?"
-  ? "56 What is the mother tongue of your children?"
-  : "5.6 Aký je rodný jazyk Vašich detí?"
-  ? "6 Parent's attitude"
-  : "6.  Prístup rodičov k poskytovaniu starostlivosti a vzdelania v ranom detstve"
-  ? "7 Parent's expectations"
-  : "7.  Očakávania rodičov v rámci budúceho dosiahnutého vzdelania ich detí"
-  ? "8 Immunization and health care"
-  : "8.  Očkovanie a zdravotná starostlivosť"
-  ? "9 Parent's attitude towards learning at home"
-  : "9.  Postoj rodičov k učeniu a rozvoju detí v rámci domova"
-  ? "A - at home and not enrolled"
-  : "A – doma, nie je zapísané"
-  ? "A Good Start"
-  : "PROJEKT DOBRÝ ŠTART"
-  ? "Add Child"
-  : "Pridať nové dieťa"
-  ? "Add Family"
-  : "Pridať rodinu"
-  ? "Add New Child"
-  : "Pridať nové dieťa"
-  ? "Add New Country"
-  : "Pridať novú krajinu"
-  ? "Add New Family"
-  : "Pridať novú rodinu"
-  ? "Add New Household Survey"
-  : "Pridať nový dotazník pre domácnosti"
-  ? "Add New Institution"
-  : "Pridať novú inštitúciu"
-  ? "Add New Locality"
-  : "Pridať novú lokalitu"
-  ? "Adding Family"
-  : "Pridanie rodiny"
-  All: Všetko
-  ? "Are you sure?"
-  : "Naozaj chcete vykonať túto akciu?"
-  ? "Attendance in after School Activities"
-  : "Dochádzka na aktivitách po vyučovaní"
-  Back: "Naspäť na zoznam"
-  ? "Back to List"
-  : "Naspäť na zoznam"
-  Birthdate: "Dátum narodenia"
-  ? "Change Enrollment of Child"
-  : "Zmeniť zaradenie dieťaťa"
-  Child: Dieťa
-  Children: Deti
-  ? "Children below seven"
-  : "Deti mladšie ako sedem rokov"
-  Countries: Krajiny
-  Country: Krajina
-  Date: Dátum
-  Delete: Vymazať
-  Destroy: Vymazať
-  Edit: Upraviť
-  ? "Editing institution"
-  : "Editujete inštitúciu"
-  Families: Rodiny
-  Family: Rodina
-  ? "Family Profile"
-  : "Profil rodiny"
-  ? "Family name"
-  : "Meno rodiny"
-  ? "Fathers age"
-  : "Vek otca"
-  ? "Forgot your password?"
-  : "Zabudli ste svoje heslo?"
-  Gender: Pohlavie
-  Home: Domov
-  ? "Household Survey"
-  : "Prieskum domácností"
-  ? "Household Surveys"
-  : "Prieskumy domácností"
-  ? "Household in settlement"
-  : "Domácnosť v osade"
-  ? "Immunization Data"
-  : "Údaje o očkovaní"
-  ? "Immunization Information Source"
-  : "Zdroj údajov o očkovaní"
-  Institution: Inštitúcia
-  Institutions: Inštitúcie
-  Kindergardens: "Materské školy"
-  Kindergarten: "Materská škola"
-  Kindergartens: "Materské školy"
-  List: Zoznam
-  Localities: Lokality
+  play: "9.4 Za posledn\xC3\xA9 3 dni, hral sa  s de\xC5\xA5mi niektor\xC3\xBD z \xC4\x8Dlenov dom\xC3\xA1cnosti nad 15 rokov?"
+  Number of Schooldays in month: "Po\xC4\x8Det vyu\xC4\x8Dovac\xC3\xADch dn\xC3\xAD v mesiaci"
+  reason_for_creche: "10.1 Pros\xC3\xADm uve\xC4\x8Fte 3 najpodstatnej\xC5\xA1ie d\xC3\xB4vody pre\xC4\x8Do Va\xC5\xA1e die\xC5\xA5a nav\xC5\xA1tevuje detsk\xC3\xA9 jasle/matersk\xC3\xBA \xC5\xA1kolu, alebo in\xC3\xBD komunitn\xC3\xBD program."
+  Voluntary: !binary |
+    RG9icm92b8S+bsOp
+
+  Other Translations: "In\xC3\xA9 preklady"
+  Add New Child: "Prida\xC5\xA5 nov\xC3\xA9 die\xC5\xA5a"
+  8 Immunization and health care: "8.  O\xC4\x8Dkovanie a zdravotn\xC3\xA1 starostlivos\xC5\xA5"
+  55 What language is spoken in your household?: "5.5 Ak\xC3\xBDm jazykom sa vo Va\xC5\xA1ej dom\xC3\xA1cnosti hovor\xC3\xAD?"
+  book_reading: "9.2 Za posledn\xC3\xA9 3 dni, \xC4\x8D\xC3\xADtal knihy, alebo pozeral sa na obr\xC3\xA1zkov\xC3\xA9 knihy s die\xC5\xA5a\xC5\xA5om/de\xC5\xA5mi niektor\xC3\xBD z \xC4\x8Dlenov dom\xC3\xA1cnosti nad 15 rokov?"
+  Family name: Meno rodiny
   Locality: Lokalita
-  Login: Prihlásenie
-  Logout: Odhlásiť
-  ? "Menu Items"
-  : Preklady
-  ? "Monthly Attendance in Kindergarten"
-  : "Mesačná dochádzka v škôlke"
-  ? "Mothers age"
-  : "Vek matky"
-  ? "My profile"
-  : "Môj profil"
-  Name: Meno
-  ? "New Institution"
-  : "Nová inštitúcia"
-  ? "New Survey"
-  : "Nový dotazník pre domácnosti"
-  ? "Number of children"
-  : "2.4 Počet detí"
-  ? "Number of children below seven"
-  : "2.5 Počet detí do 7 rokov"
-  ? "Other Translations"
-  : "Iné preklady"
-  School: Škola
-  ? "School Results - Children Tutored at School"
-  : "Známky v škole - deti doučované na škole"
-  ? "School Results - Children from Preschool Programs"
-  : "Známky v škole - deti z predškolských programov "
-  Schools: Školy
-  ? "Set language"
-  : "Nastaviť jazyk"
-  ? "Sign in"
-  : Prihlásiť
-  ? "Sign out"
-  : Odhlásiť
-  ? "Sign up"
-  : Zaregistrovať
-  Statistics: Štatistiky
-  ? "Survey No"
-  : "Číslo dotazníka:"
-  ? "There is no child aged 3-7 years"
-  : "Nie je zadané žiadne dieťa vo veku 3-7 rokov"
-  ? "There is no child aged below 7 years"
-  : "Žiadne deti nie sú mladšie ako 7 rokov"
-  ? "Translations of form fields"
-  : "Preklad "
-  ? "You are editing survey no: "
-  : "Upravujete dotazník s číslom: "
+  All: "V\xC5\xA1etko"
+  tell_stories: "9.3 Za posledn\xC3\xA9 3 dni, rozpr\xC3\xA1val rozpr\xC3\xA1vky de\xC5\xA5om niektor\xC3\xBD z \xC4\x8Dlenov dom\xC3\xA1cnosti nad 15 rokov?"
+  female: !binary |
+    xb5lbmE=
+
+  Vaccinations: "O\xC4\x8Dkovania"
+  Save and Add New Survey: "Ulo\xC5\xBEi\xC5\xA5 a Prida\xC5\xA5 nov\xC3\xBD dotazn\xC3\xADk"
+  Roma: !binary |
+    UsOzbQ==
+
+  Number of children below seven: "Po\xC4\x8Det det\xC3\xAD do 7 rokov"
+  A new survey has been completed in your locality: "\xC4\x8Eal\xC5\xA1\xC3\xAD dotazn\xC3\xADk bol dokon\xC4\x8Den\xC3\xBD vo va\xC5\xA1ej lokalite"
+  "User name:": !binary |
+    TWVubyB1xb7DrXZhdGXEvmE6
+
+  Survey was saved and marked as completed: "Dotazn\xC3\xADk bol ulo\xC5\xBEen\xC3\xBD a ozna\xC4\x8Den\xC3\xBD ako dokon\xC4\x8Den\xC3\xBD."
+  New Survey: "Nov\xC3\xBD dotazn\xC3\xADk pre dom\xC3\xA1cnosti"
+  Add Child: "Prida\xC5\xA5 nov\xC3\xA9 die\xC5\xA5a"
+  Families: Rodiny
+  "My Locality:": "Moja lokalita:"
+  support: 
+    array: 
+      words_connector: ", "
+      last_word_connector: " a "
+      two_words_connector: " a "
+  male: !binary |
+    bXXFvg==
+
+  This survey is Marked as Complete: "Tento dotazn\xC3\xADk je ozna\xC4\x8Den\xC3\xBD ako dokon\xC4\x8Den\xC3\xBD"
+  Statistics: "\xC5\xA0tatistiky"
+  Add New Institution: !binary |
+    UHJpZGHFpSBub3bDuiBpbsWhdGl0w7pjaXU=
+
+  Change Enrollment of Child: "Zmeni\xC5\xA5 zaradenie die\xC5\xA5a\xC5\xA5a"
+  2 Family details: 2. Detaily o rodine
+  Login: "Prihl\xC3\xA1senie"
+  Birthdate: "D\xC3\xA1tum narodenia"
+  Localities: Lokality
+  Sign up: "Zaregistrova\xC5\xA5"
+  "Number of completed surveys:": "Po\xC4\x8Det dokon\xC4\x8Den\xC3\xBDch prieskumov:"
+  Country: Krajina
+  25 Number of children below seven: "2.5 Po\xC4\x8Det det\xC3\xAD mlad\xC5\xA1\xC3\xADch ako 7 rokov"
+  A Good Start: "PROJEKT DOBR\xC3\x9D \xC5\xA0TART"
+  the total expected number of surveys has been completed: "celkov\xC3\xBD o\xC4\x8Dak\xC3\xA1van\xC3\xBD po\xC4\x8Det dotazn\xC3\xADkov bol dokon\xC4\x8Den\xC3\xBD"
+  School Results - Children Tutored at School: "Zn\xC3\xA1mky v \xC5\xA1kole - deti dou\xC4\x8Dovan\xC3\xA9 na \xC5\xA1kole"
+  PCV: PCV
+  "Other data for parents/children?:": "\xC4\x8Eal\xC5\xA1ie \xC3\xBAdaje o rodi\xC4\x8Doch/de\xC5\xA5och?:"
+  A Good Start - all expected surveys verified: "Projekt Dobr\xC3\xBD \xC5\xA1tart - v\xC5\xA1etky o\xC4\x8Dak\xC3\xA1van\xC3\xA9 dotazn\xC3\xADky boli overen\xC3\xA9"
+  12 Other socio-economic data: "12. Ostatn\xC3\xA9 soci\xC3\xA1lno-ekonomick\xC3\xA9 \xC3\xBAdaje"
+  BCG: "BCG "
+  Previous month was not yet entered: "Predo\xC5\xA1l\xC3\xBD mesiac e\xC5\xA1te nebol zadan\xC3\xBD"
+  Family: Rodina
+  Add New Country: "Prida\xC5\xA5 nov\xC3\xBA krajinu"
+  IPV/PVi: "IPV/PVi "
+  Back to List: "Nasp\xC3\xA4\xC5\xA5 na zoznam"
+  Editing children attendances: "Editovanie doch\xC3\xA1dzky det\xC3\xAD"
+  time: 
+    am: dopoludnia
+    formats: 
+      default: "%a %d. %B %Y %H:%M %z"
+      short: "%d.%m. %H:%M"
+      long: "%A %d. %B %Y %H:%M"
+    pm: "popoludn\xC3\xAD"
+  home_equipment: "12.4 Je V\xC3\xA1\xC5\xA1 domov, alebo pr\xC3\xADbytok vybaven\xC3\xBD nasledovn\xC3\xBDm?"
+  Translations of form fields: "Preklad "
+  Obligatory: "Povinn\xC3\xA9"
+  "All children aged 0-7:": "V\xC5\xA1etky deti od 0 do 7 rokov:"
+  Institution: !binary |
+    SW7FoXRpdMO6Y2lh
+
+  helpers: 
+    submit: 
+      submit: "Ulo\xC5\xBEi\xC5\xA5 %{model}"
+      create: "Vytvori\xC5\xA5 %{model}"
+      update: "Aktualizova\xC5\xA5 %{model}"
+    select: 
+      prompt: "Pros\xC3\xADm vyberte si"
   activerecord: 
+    models: 
+      Survey: "Prieskum dom\xC3\xA1cnost\xC3\xAD"
+      Family Profile: Rodina
+      Child Profile: !binary |
+        RGllxaVh
+
     attributes: 
-      child_profile: 
-        alphabet: "4.1 Vie on/ona označiť/vymenovať aspoň desať písmeniek abecedy?"
-        buttons: "4.6 Je si on/ona  schopný/á  zapnúť si gombíky na košeli, alebo svetri?"
-        childs_first_name: "Krstné meno dieťaťa"
-        childs_last_name: "Priezvisko dieťaťa"
-        childs_surname: "Priezvisko dieťaťa"
-        date_of_birth: "Dátum narodenia"
-        enrolled_to: "Kde je Vaše dieťa zapísané? Prosím, uveďte názov školy/inštitúcie."
-        family: "Meno rodiny"
-        family_name: "Meno rodiny"
-        gender: Pohlavie
-        numbers: "4.5 Vie on/ona  rozpoznať číselné symboly  od 1 do 10?"
-        other_children: "4.9 Vie on/ona dobre vychádzať s inými deťmi?"
-        reading_words: "4.2 Vie on/ona  prečítať najmenej štyri jednoduché známe slová?"
-        routine_activities: "4.7 Vie on/ona vykonávať bežné každodenné aktivity bez pripomenutia?"
-        selfconfidence: "4.8 Prejavuje  on/ona sebaistotu?"
-        sentences: "4.4 Vie on/ona  porozumieť jednoduchým vetám v štátnom/regionálnom jazyku?"
-        writing: "4.3 Vie on/ona  napísať svoje vlastné meno?"
-      family_profile: 
-        family_name: "2.1 Meno rodiny"
-        fathers_age: "2.2 Vek otca"
-        mothers_age: "2.3 Vek matky"
-        number_of_children: "2.4 Počet detí"
-        number_of_children_below_seven: "2.5 Počet detí vo veku 0-7 rokov"
-      institution: 
-        category: Kategória
-        code: Kód
-        locality: Lokalita
-        name: Názov
       menu_items: 
-        code: Kód
-      survey: 
-        are_teachers_helpfull: "11.13 Pomáhajú učitelia Vášmu dieťaťu učiť sa vyučovací jazyk?"
-        better_in_school: "6.1 Čo myslíte, kedy sa deťom na základnej škole viac darí?"
-        birth_certificate: "12.3 Majú všetky deti rodný list?"
-        book_count: "9.8 Koľko detských kníh, alebo rozprávkových kníh máte pre svoje malé deti?"
-        book_reading_father: otec
-        book_reading_mother: matka
-        book_reading_no_answer: Neviem/Neodpoviem
-        book_reading_noone: nikto
-        book_reading_other: "iný: "
-        boys_girls_success_importance: "7.3 Aké dôležité je pre chlapcov a dievčatá uspieť v škole?"
-        breastfeeding_importance: "8.7 Čo myslíte, aké dôležité je dojčiť deti?"
-        caregiver_activity: "Osoba starajúca sa o deti"
-        caregiver_activity_other: "Iné: (prosím uveďte)"
-        children_language_albanian: Albánsky
-        children_language_hungarian: Maďarský
-        children_language_macedonian: Macedónsky
-        children_language_other: "Iný jazyk: (prosím uveďte)"
-        children_language_romani: Rómsky
-        children_language_romanian: Rumunský
-        children_language_slovak: Slovenský
-        childs_development_information_source_books: "Prečítam si knihu"
-        childs_development_information_source_newspapers: "Prečítam si súvisiace články v novinách"
-        childs_development_information_source_no_idea: "Neviem, odkiaľ získať informácie"
-        childs_development_information_source_no_need: "Nepotrebujem žiadne dodatočné informácie"
-        childs_development_information_source_other_persons: "Opýtam sa iných ľudí"
-        childs_development_information_source_others: Iné
-        childs_development_information_source_tv: "Pozerám súvisiace televízne programy"
-        class_roma: "11.4 V skupine, do ktorej Vaše dieťa v materskej škole patrí, sú ostatné deti ….?"
-        comment: Poznámky
-        created_by: "Údaje zadal"
-        date_of_the_interview: "1.1 Dátum rozhovoru"
-        doctor_visit_after_birth: "8.6 Po pôrode Vášho najmladšieho dieťaťa, prišiel Vás navštíviť lekár (detský alebo iný), alebo zdravotná sestra, alebo ste navštívili nemocnicu?"
-        draw_father: otec
-        draw_mother: matka
-        draw_no_answer: Neviem/Neodpoviem
-        draw_noone: nikto
-        draw_other: iný
-        duration_of_interview: "1.2 Trvanie rozhovoru"
-        father_activity: Otec
-        father_activity_other: "Iné: (prosím uveďte)"
-        fathers_age: "2.2 Vek otca"
-        home_computer: "Osobným počítačom?"
-        home_electricity: Elektrinou?
-        home_internet: "Pripojením na Internet?  "
-        home_kitchen: "Kuchyňou vo vnútri?"
-        home_latrine: Latrínou?
-        home_phone: "Mobilom/ pevnou linkou?"
-        home_radio: Rádiom?
-        home_sewerage: "Odpadovou kanalizáciou?"
-        home_shower: "Sprchou/kúpeľňou vo vnútri?"
-        home_toilet: "Toaletou vo vnútri?"
-        home_tv: Televíziou?
-        home_water: "Tečúcou vodou vo vnútri?"
-        homework_father: otec
-        homework_mother: matka
-        homework_no_answer: Neviem/Neodpoviem
-        homework_no_child_in_school_yet: "žiadne dieťa zatiaľ nie je zapísané do školy"
-        homework_noone: nikto
-        homework_other: iný
-        immunization_importance: "8.1 Čo si myslíte, aké dôležité je vo všeobecnosti pre deti očkovanie?"
-        immunization_in_household: "8.2 Viete, či všetky deti vo vašej domácnosti sú zaočkované?"
-        immunization_information_source_do_not_know: Neviem/Neodpoviem
-        immunization_information_source_doctor: Doktor
-        immunization_information_source_mediator: "Komunitný mediátor"
-        immunization_information_source_no_info: "NezískaI/a som takéto informácie/vysvetlenia"
-        immunization_information_source_nurse: "Zdravotná sestra alebo iný zdravotný pracovník"
-        immunization_information_source_nurse_other: "Iná osoba (prosím uveďte)"
-        interviewer_id: Anketár
-        kindergarten_days: "11.2 Za posledný týždeň (posledných 5 pracovných dní), koľko dní Vaše dieťa navštevovalo materskú školu?"
-        kindergarten_importance: "6.2 Vo všeobecnosti, aké dôležité je pre deti vo veku 0-6 rokov navštevovať materskú školu, detské jasle, alebo iný raný učebný program pre ich lepšiu budúcnosť?"
-        kindergarten_roma: "11.3 V materskej škole, ktorú Vaše dieťa navštevuje, sú ostatné deti ….?"
-        language_albanian: Albánsky
-        language_hungarian: Maďarský
-        language_macedonian: Macedónsky
-        language_other: "Iný jazyk: (prosím uveďte)"
-        language_romani: Rómsky
-        language_romanian: Rumunský
-        language_slovak: Slovenský
-        lesson_difficulty: "11.12 Je pre Vaše dieťa ťažké porozumieť vyučovaciemu jazyku?"
-        lesson_language_understanding: "11.6  Ak je vyučovací jazyk odlišný od materinského jazyka dieťaťa, opýtajte sa toho, kto odpovedá na otázky: Je pre Vaše dieťa ťažké porozumieť vyučovaciemu jazyku?"
+        code: !binary |
+          S8OzZA==
+
+      institution: 
+        name: !binary |
+          TsOhem92
+
+        category: "Kateg\xC3\xB3ria"
+        code: !binary |
+          S8OzZA==
+
         locality: Lokalita
-        mediator: Mediátor
-        mediator_id: Mediátor
-        mediator_survey_counter: "Číslo dotazníka"
-        mother_activity: Matka
-        mother_activity_other: "iné:"
-        mother_has_id: "12.2 Má matka detí identifikačný doklad?"
-        mothers_age: "2.3 Vek matky"
-        number_of_all_children: "2.4 Počet detí"
-        number_of_children_below_seven: "2.5 Počet detí vo veku 0-7 rokov"
-        number_of_people_over_18: "12.6 Počet osôb v domácnosti starších ako 18 rokov"
-        number_of_people_under_18: "12.5 Počet osôb v domácnosti mladších ako 18 rokov"
-        play_father: otec
-        play_mother: matka
-        play_no_answer: Neviem/Neodpoviem
-        play_noone: nikto
-        play_other: iný
-        primary_caregiver: "5.2 Ste hlavnou osobou starajúcou sa o deti?"
-        primary_caregiver_age: "5.4 Koľko rokov má hlavná osoba starajúca sa o deti?"
-        reason_for_creche_free_meal: "Program poskytuje bezplatnú stravu, alebo inú materiálnu podporu. "
-        reason_for_creche_friendships: "Moje dieťa získa v škôlke nových kamarátov/kamarátky."
-        reason_for_creche_language: "Moje dieťa sa tam môže učiť oficiálny štátny jazyk/regionálne prevažujúci jazyk."
-        reason_for_creche_learning: "Moje dieťa sa tam môže učiť."
-        reason_for_creche_likes: "Moje dieťa rado chodí do programu/jasieľ."
-        reason_for_creche_no_answer: "Neviem/ Neodpoviem"
-        reason_for_creche_other: "Iné dôvody:"
-        reason_for_creche_playing: "Moje dieťa sa tam môže hrať."
-        reason_for_creche_time: "Mám čas na prácu/postaranie sa o iné záležitosti."
-        reason_for_creche_trust: "Učitelia sa mi páčia a verím im."
-        reason_for_kindergarten_better_chance: "Moje dieťa bude mať väčšiu šancu uspieť na základnej škole i neskôr."
-        reason_for_kindergarten_compulsory: "Navštevovanie materskej školy je povinné pre moje dieťa."
-        reason_for_kindergarten_free_meal: "Materská škola poskytuje bezplatnú stravu, alebo inú materiálnu podporu."
-        reason_for_kindergarten_friendships: "Moje dieťa získa v škôlke nových kamarátov/kamarátky."
-        reason_for_kindergarten_language: "Moje dieťa sa tam môže učiť oficiálny štátny jazyk/regionálne prevažujúci jazyk."
-        reason_for_kindergarten_learning: "Moje dieťa sa tam môže učiť."
-        reason_for_kindergarten_likes: "Moje dieťa rado chodí do materskej školy."
-        reason_for_kindergarten_no_answer: Neviem/Neodpoviem
-        reason_for_kindergarten_other: "Iné dôvody:"
-        reason_for_kindergarten_playing: "Moje dieťa sa tam môže hrať."
-        reason_for_kindergarten_time: "Mám čas na prácu/postaranie sa o iné záležitosti."
-        reason_for_kindergarten_trust: "Učitelia sa mi páčia a verím im. "
-        reason_not_attend_bad_treating: "Nesprávajú k môjmu dieťaťu pekne. "
-        reason_not_attend_expensive: "Je to príliš drahé."
-        reason_not_attend_family: "Moje dieťa by malo ostať s rodinou."
-        reason_not_attend_language: "Moje dieťa nehovorí daným jazykom."
-        reason_not_attend_no_answer: Neviem/Neodpoviem
-        reason_not_attend_no_creche: "V okolí nie sú žiadne detské jasle/materská škola/komunitné centrum (pre deti mladšie ako 3 roky)"
-        reason_not_attend_no_place: "Nie je dostatok voľných miest. "
-        reason_not_attend_no_trust: "Učitelia sa mi nepáčia a nedôverujem im."
-        reason_not_attend_no_work: "Nepracujem, takže môžem ostať doma s dieťaťom."
-        reason_not_attend_other: "Iné dôvody:"
-        reason_not_enrolled_children_treating: "Ostatné deti sa nesprávajú k môjmu dieťaťu pekne."
-        reason_not_enrolled_expensive: "Je to príliš drahé."
-        reason_not_enrolled_family: "Moje dieťa by malo ostať s rodinou."
-        reason_not_enrolled_language: "Moje dieťa nerozumie vyučovaciemu jazyku."
-        reason_not_enrolled_no_answer: Neviem/Neodpoviem
-        reason_not_enrolled_no_clothes: "Nemám peniaze, aby som do škôlky svojmu dieťaťu kupoval/a oblečenie/obuv"
-        reason_not_enrolled_no_like: "Moje dieťa nerado chodí do škôlky."
-        reason_not_enrolled_no_place: "Nie je dostatok miest v materskej škole."
-        reason_not_enrolled_no_work: "Nepracujem, takže môžem ostať doma s dieťaťom."
-        reason_not_enrolled_not_nearby: "V okolí nie je žiadna materská škola"
-        reason_not_enrolled_other: "Iné dôvody:"
-        reason_not_enrolled_trust: "Učitelia sa mi nepáčia a nedôverujem im."
-        relation_to_children: "5.1 V akom vzťahu ste k deťom v tejto domácnosti (zamerajte sa na deti vo veku 0-7 rokov)"
-        relation_to_children_other: "Iné: (prosím uveďte):"
-        roma_village: "13.2 Nachádza sa domácnosť v časti mesta/dediny, kde všetci/takmer všetci susedia sú Rómovia?"
-        school_caregiver: "Osoba starajúca sa o deti"
-        school_caregiver_other: Iné
-        school_class_roma: "11.10 V triede školy, ktorú Vaše dieťa navštevuje, ostatné deti sú…?"
-        school_father: Otec
-        school_father_other: Iné
-        school_good_bad: "11.14 Aká dobrá alebo zlá je podľa vás základná škola?"
-        school_mother: Matka
-        school_mother_other: Iné
-        school_roma: "11.9 V škole, ktorú Vaše dieťa navštevuje, ostatné deti sú…?"
-        school_teacher_information: "11.11 Hovoria s Vami učitelia a poskytujú Vám potrebné informácie o Vašom dieťati a ako sa Vášmu dieťaťu darí v škole?"
-        separate_place: "9.9 Má Vaše dieťa doma vlastné miesto/stôl/kútik kde sa môže učiť, alebo hrať?"
-        separated_settlement: "13.1 Nachádza sa domácnosť v samostatnej osade mimo mesta/dediny?"
-        talk_with_teacher: "10.2 Hovoria s Vami učitelia a poskytujú Vám potrebné informácie o Vašom dieťati a ako sa Vášmu dieťaťu darí v materskej škole?"
-        talked_about_pregnancy: "8.5 Ak je Vaša odpoveď na otázku č. 8.4 nie, opýtajte sa: Hovoril s Vami niekto o tehotenstve keď ste boli tehotná a pred pôrodom Vášho najmladšieho dieťaťa?"
-        talked_about_pregnancy_community_mediator: "Komunitný mediátor"
-        talked_about_pregnancy_doctor: Lekár
-        talked_about_pregnancy_health_mediator: "Zdravotný mediátor"
-        talked_about_pregnancy_no_answer: Neviem/Nepoviem
-        talked_about_pregnancy_noone: Nikto
-        talked_about_pregnancy_nurse: "Zdravotná sestra"
-        talked_about_pregnancy_other: "Iná osoba (prosím uveďte): "
-        teach_letters_father: otec
-        teach_letters_mother: matka
-        teach_letters_no_answer: Neviem/Neodpoviem
-        teach_letters_noone: nikto
-        teach_letters_other: iný
-        teacher_help: "11.7 Pomáhajú učitelia Vášmu dieťaťu učiť sa vyučovací jazyk?"
-        teacher_informs: "11.5 Hovoria s Vami učitelia a poskytujú Vám potrebné informácie o Vašom dieťati a ako sa Vášmu dieťaťu darí v materskej škole?"
+      immunization: 
+        dtp: "DTP (Difteria, Tetanus, Pertussis) "
+        hib: "DTP (Difteria, Tetanus, Pertussis) "
+        pcv: PCV (Pneumococcus)
+        ipv: "IPV (Polio) "
+        vhb: "VHB (Viral hepatitis BB) "
+        bcg: "BCG (Tuberculosis) "
+        mmr: MMR (Morbilli, Mumps, Rubeola)
+        child_id: !binary |
+          RGllxaVh
+
+      family_profile: 
+        fathers_age: 2.2 Vek otca
+        family_name: 2.1 Meno rodiny
+        number_of_children_below_seven: "2.5 Po\xC4\x8Det det\xC3\xAD vo veku 0-7 rokov"
+        mothers_age: 2.3 Vek matky
+        number_of_children: "2.4 Po\xC4\x8Det det\xC3\xAD"
+      child_profile: 
+        enrolled_to: "Kde je Va\xC5\xA1e die\xC5\xA5a zap\xC3\xADsan\xC3\xA9? Pros\xC3\xADm, uve\xC4\x8Fte n\xC3\xA1zov \xC5\xA1koly/in\xC5\xA1tit\xC3\xBAcie."
+        buttons: "4.6 Je si schopn\xC3\xBD/\xC3\xA1  zapn\xC3\xBA\xC5\xA5 si gomb\xC3\xADky na ko\xC5\xA1eli, alebo svetri?"
+        selfconfidence: "4.8 Je smel\xC3\xBD/\xC3\xA1, vies sa ozva\xC5\xA5?"
+        reading_words: "4.2 Vie pre\xC4\x8D\xC3\xADta\xC5\xA5 najmenej \xC5\xA1tyri jednoduch\xC3\xA9 zn\xC3\xA1me slov\xC3\xA1?"
+        childs_last_name: "Priezvisko die\xC5\xA5a\xC5\xA5a"
+        sentences: "4.4 Vie porozumie\xC5\xA5 jednoduch\xC3\xBDm vet\xC3\xA1m v \xC5\xA1t\xC3\xA1tnom/region\xC3\xA1lnom jazyku?"
+        other_children: "4.9 Vie dobre vych\xC3\xA1dza\xC5\xA5 s in\xC3\xBDmi de\xC5\xA5mi?"
+        gender: Pohlavie
+        family_name: Meno rodiny
+        family: Meno rodiny
+        childs_first_name: "Krstn\xC3\xA9 meno die\xC5\xA5a\xC5\xA5a"
+        writing: "4.3 Vie nap\xC3\xADsa\xC5\xA5 svoje vlastn\xC3\xA9 meno?"
+        date_of_birth: "D\xC3\xA1tum narodenia"
+        routine_activities: "4.7 Vie vykon\xC3\xA1va\xC5\xA5 be\xC5\xBEn\xC3\xA9 ka\xC5\xBEdodenn\xC3\xA9 aktivity bez pripomenutia?"
+        numbers: "4.5 Vie rozpozna\xC5\xA5 \xC4\x8D\xC3\xADseln\xC3\xA9 symboly  od 1 do 10?"
+        childs_surname: "Priezvisko die\xC5\xA5a\xC5\xA5a"
+        alphabet: "4.1 Vie ozna\xC4\x8Di\xC5\xA5/vymenova\xC5\xA5 aspo\xC5\x88 desa\xC5\xA5 p\xC3\xADsmeniek abecedy?"
+      survey: 
         tell_stories_father: otec
+        school_teacher_information: "11.11 Hovoria s Vami u\xC4\x8Ditelia a poskytuj\xC3\xBA V\xC3\xA1m potrebn\xC3\xA9 inform\xC3\xA1cie o Va\xC5\xA1om die\xC5\xA5ati a ako sa V\xC3\xA1\xC5\xA1mu die\xC5\xA5a\xC5\xA5u dar\xC3\xAD v \xC5\xA1kole?"
+        father_activity_other: "In\xC3\xA9: (pros\xC3\xADm uve\xC4\x8Fte)"
+        reason_for_kindergarten_language: "Moje die\xC5\xA5a sa tam m\xC3\xB4\xC5\xBEe u\xC4\x8Di\xC5\xA5 ofici\xC3\xA1lny \xC5\xA1t\xC3\xA1tny jazyk/region\xC3\xA1lne preva\xC5\xBEuj\xC3\xBAci jazyk."
+        homework_no_answer: Neviem/Neodpoviem
+        comment: "Pozn\xC3\xA1mky"
+        separate_place: "9.9 M\xC3\xA1 Va\xC5\xA1e die\xC5\xA5a doma vlastn\xC3\xA9 miesto/st\xC3\xB4l/k\xC3\xBAtik kde sa m\xC3\xB4\xC5\xBEe u\xC4\x8Di\xC5\xA5, alebo hra\xC5\xA5?"
+        reason_not_attend_other: !binary |
+          SW7DqSBkw7R2b2R5Og==
+
+        who_is_primary_caregiver: "5.3 Ak NIE, kto je hlavnou osobou staraj\xC3\xBAcou sa o deti?"
+        talked_about_pregnancy_other: "In\xC3\xA1 osoba (pros\xC3\xADm uve\xC4\x8Fte): "
+        reason_for_kindergarten_no_answer: Neviem/Neodpoviem
+        reason_for_creche_no_answer: Neviem/ Neodpoviem
+        homework_noone: nikto
+        school_father_other: !binary |
+          SW7DqQ==
+
+        reason_for_kindergarten_compulsory: "Nav\xC5\xA1tevovanie materskej \xC5\xA1koly je povinn\xC3\xA9 pre moje die\xC5\xA5a."
+        immunization_information_source_do_not_know: Neviem/Neodpoviem
+        household_in_settlement: "Dom\xC3\xA1cnos\xC5\xA5 v osade"
         tell_stories_mother: matka
-        tell_stories_no_answer: Neviem/Neodpoviem
+        reason_not_enrolled_not_nearby: "V okol\xC3\xAD nie je \xC5\xBEiadna matersk\xC3\xA1 \xC5\xA1kola"
+        reason_not_attend_no_work: "Nepracujem, tak\xC5\xBEe m\xC3\xB4\xC5\xBEem osta\xC5\xA5 doma s die\xC5\xA5a\xC5\xA5om."
+        caregiver_activity: "Osoba staraj\xC3\xBAca sa o deti"
+        home_latrine: "Latr\xC3\xADnou?"
+        childs_development_information_source_other_persons: !binary |
+          T3DDvXRhbSBzYSBpbsO9Y2ggxL51ZMOt
+
+        home_phone: Mobilom/ pevnou linkou?
+        language_romanian: "Rumunsk\xC3\xBD"
+        talked_about_pregnancy_community_mediator: "Komunitn\xC3\xBD medi\xC3\xA1tor"
+        separated_settlement: "13.1 Nach\xC3\xA1dza sa dom\xC3\xA1cnos\xC5\xA5 v samostatnej osade mimo mesta/dediny?"
+        mothers_age_at_first_pregnancy: "2.6 Vek matky v \xC4\x8Dase prv\xC3\xA9ho p\xC3\xB4rodu (najstar\xC5\xA1ieho die\xC5\xA5a\xC5\xA5a)"
+        language_slovak: "Slovensk\xC3\xBD"
+        reason_not_enrolled_no_answer: Neviem/Neodpoviem
+        homework_mother: matka
+        primary_caregiver: "5.2 Ste hlavnou osobou staraj\xC3\xBAcou sa o deti?"
+        home_internet: "Pripojen\xC3\xADm na Internet?  "
+        number_of_children_below_seven: "2.5 Po\xC4\x8Det det\xC3\xAD vo veku 0-7 rokov"
+        birth_certificate: "12.3 Maj\xC3\xBA v\xC5\xA1etky deti rodn\xC3\xBD list?"
+        school_roma: "11.9 V \xC5\xA1kole, ktor\xC3\xBA Va\xC5\xA1e die\xC5\xA5a nav\xC5\xA1tevuje, ostatn\xC3\xA9 deti s\xC3\xBA\xE2\x80\xA6?"
+        relation_to_children_other: "In\xC3\xA9 (pros\xC3\xADm uve\xC4\x8Fte):"
+        home_kitchen: "Kuchy\xC5\x88ou vo vn\xC3\xBAtri?"
+        teach_letters_other: !binary |
+          aW7DvQ==
+
+        talked_about_pregnancy_doctor: !binary |
+          TGVrw6Fy
+
+        roma_village: "13.2 Nach\xC3\xA1dza sa dom\xC3\xA1cnos\xC5\xA5 v \xC4\x8Dasti mesta/dediny, kde v\xC5\xA1etci/takmer v\xC5\xA1etci susedia s\xC3\xBA R\xC3\xB3movia?"
+        breastfeeding_importance: !binary |
+          OC43IMSMbyBteXNsw610ZSwgYWvDqSBkw7RsZcW+aXTDqSBqZSBkb2rEjWnF
+          pSBkZXRpPw==
+
+        childs_development_information_source_books: "Pre\xC4\x8D\xC3\xADtam si knihu"
+        homework_no_child_in_school_yet: "\xC5\xBEiadne die\xC5\xA5a zatia\xC4\xBE nie je zap\xC3\xADsan\xC3\xA9 do \xC5\xA1koly"
+        kindergarten_importance: "6.2 Vo v\xC5\xA1eobecnosti, ak\xC3\xA9 d\xC3\xB4le\xC5\xBEit\xC3\xA9 je pre deti vo veku 0-6 rokov nav\xC5\xA1tevova\xC5\xA5 matersk\xC3\xBA \xC5\xA1kolu, detsk\xC3\xA9 jasle, alebo in\xC3\xBD ran\xC3\xBD u\xC4\x8Debn\xC3\xBD program pre ich lep\xC5\xA1iu bud\xC3\xBAcnos\xC5\xA5?"
+        play_noone: nikto
+        immunization_information_source_doctor: Doktor
+        locality: Lokalita
+        school_caregiver_other: !binary |
+          SW7DqQ==
+
+        reason_not_attend_no_answer: Neviem/Neodpoviem
+        book_count: "9.8 Ko\xC4\xBEko detsk\xC3\xBDch kn\xC3\xADh, alebo rozpr\xC3\xA1vkov\xC3\xBDch kn\xC3\xADh m\xC3\xA1te pre svoje mal\xC3\xA9 deti?"
+        draw_other: !binary |
+          aW7DvQ==
+
+        book_reading_no_answer: Neviem/Neodpoviem
+        book_reading_other: !binary |
+          aW7DvTog
+
+        reason_for_kindergarten_likes: "Moje die\xC5\xA5a rado chod\xC3\xAD do materskej \xC5\xA1koly."
+        tell_stories_other: !binary |
+          aW7DvQ==
+
+        reason_not_attend_bad_treating: "Nespr\xC3\xA1vaj\xC3\xBA k m\xC3\xB4jmu die\xC5\xA5a\xC5\xA5u pekne. "
+        reason_for_kindergarten_learning: !binary |
+          TW9qZSBkaWXFpWEgc2EgdGFtIG3DtMW+ZSB1xI1pxaUu
+
+        reason_for_kindergarten_better_chance: "Moje die\xC5\xA5a bude ma\xC5\xA5 v\xC3\xA4\xC4\x8D\xC5\xA1iu \xC5\xA1ancu uspie\xC5\xA5 na z\xC3\xA1kladnej \xC5\xA1kole i nesk\xC3\xB4r."
+        mother_has_id: "12.2 M\xC3\xA1 matka det\xC3\xAD identifika\xC4\x8Dn\xC3\xBD doklad (rodn\xC3\xBD list, ob\xC4\x8Diansky preukaz alebo pas)?"
+        interviewer_id: "Anket\xC3\xA1r"
+        fathers_age: 2.2 Vek otca
+        reason_not_enrolled_expensive: "Je to pr\xC3\xADli\xC5\xA1 drah\xC3\xA9."
+        language_other: "In\xC3\xBD jazyk: (pros\xC3\xADm uve\xC4\x8Fte)"
+        father_activity: Otec
+        primary_caregiver_age: "5.4 Ko\xC4\xBEko rokov m\xC3\xA1 hlavn\xC3\xA1 osoba staraj\xC3\xBAca sa o deti?"
+        better_in_school: "6.1 \xC4\x8Co mysl\xC3\xADte, kedy sa de\xC5\xA5om na z\xC3\xA1kladnej \xC5\xA1kole viac dar\xC3\xAD?"
+        children_language_hungarian: !binary |
+          TWHEj2Fyc2vDvQ==
+
+        reason_for_creche_playing: "Moje die\xC5\xA5a sa tam m\xC3\xB4\xC5\xBEe hra\xC5\xA5."
+        talked_about_pregnancy_nurse: "Zdravotn\xC3\xA1 sestra"
+        talked_about_pregnancy_noone: Nikto
+        children_language_romanian: "Rumunsk\xC3\xBD"
+        immunization_information_source_no_info: "Nez\xC3\xADskaI/a som tak\xC3\xA9to inform\xC3\xA1cie/vysvetlenia"
+        children_language_other: "In\xC3\xBD jazyk: (pros\xC3\xADm uve\xC4\x8Fte)"
+        test_before_school_other: !binary |
+          SW7DqTo=
+
+        reason_for_creche_free_meal: "Program poskytuje bezplatn\xC3\xBA stravu, alebo in\xC3\xBA materi\xC3\xA1lnu podporu. "
+        book_reading_noone: nikto
+        reason_for_creche_time: "M\xC3\xA1m \xC4\x8Das na pr\xC3\xA1cu/postaranie sa o in\xC3\xA9 z\xC3\xA1le\xC5\xBEitosti."
+        childs_development_information_source_tv: "Pozer\xC3\xA1m s\xC3\xBAvisiace telev\xC3\xADzne programy"
+        language_hungarian: !binary |
+          TWHEj2Fyc2vDvQ==
+
+        reason_for_creche_learning: !binary |
+          TW9qZSBkaWXFpWEgc2EgdGFtIG3DtMW+ZSB1xI1pxaUu
+
+        wished_sons_education_other: "In\xC3\xA9: (pros\xC3\xADm, uve\xC4\x8Fte)"
+        reason_not_enrolled_no_place: "Nie je dostatok miest v materskej \xC5\xA1kole."
+        mediator_id: "Medi\xC3\xA1tor"
+        immunization_information_source_nurse_other: "In\xC3\xA1 osoba (pros\xC3\xADm uve\xC4\x8Fte)"
+        test_before_school_result: "11.16 Ak \xC3\x81NO, ak\xC3\xBD bol v\xC3\xBDsledok?"
+        reason_for_kindergarten_trust: "U\xC4\x8Ditelia sa mi p\xC3\xA1\xC4\x8Dia a ver\xC3\xADm im. "
+        childs_development_information_source_no_need: "Nepotrebujem \xC5\xBEiadne dodato\xC4\x8Dn\xC3\xA9 inform\xC3\xA1cie"
+        doctor_visit_after_birth: "8.6 Vy\xC5\xA1etril Va\xC5\xA1e najmlad\xC5\xA1ie die\xC5\xA5a po\xC4\x8Das prv\xC3\xBDch mesiacov po jeho naroden\xC3\xAD detsk\xC3\xBD alebo in\xC3\xBD lek\xC3\xA1r?"
+        talked_about_pregnancy_no_answer: Neviem/Nepoviem
+        reason_not_enrolled_no_work: "Nepracujem, tak\xC5\xBEe m\xC3\xB4\xC5\xBEem osta\xC5\xA5 doma s die\xC5\xA5a\xC5\xA5om."
+        kindergarten_days: "11.2 Za posledn\xC3\xBD t\xC3\xBD\xC5\xBEde\xC5\x88 (posledn\xC3\xBDch 5 pracovn\xC3\xBDch dn\xC3\xAD), ko\xC4\xBEko dn\xC3\xAD Va\xC5\xA1e die\xC5\xA5a nav\xC5\xA1tevovalo matersk\xC3\xBA \xC5\xA1kolu?"
+        caregiver_activity_other: "In\xC3\xA9: (pros\xC3\xADm uve\xC4\x8Fte)"
+        children_language_romani: "R\xC3\xB3msky"
+        childs_development_information_source_newspapers: "Pre\xC4\x8D\xC3\xADtam si s\xC3\xBAvisiace \xC4\x8Dl\xC3\xA1nky v novin\xC3\xA1ch"
+        number_of_people_over_18: "12.6 Po\xC4\x8Det os\xC3\xB4b v dom\xC3\xA1cnosti star\xC5\xA1\xC3\xADch ako 18 rokov"
+        reason_not_enrolled_children_treating: "Ostatn\xC3\xA9 deti sa nespr\xC3\xA1vaj\xC3\xBA k m\xC3\xB4jmu die\xC5\xA5a\xC5\xA5u pekne."
+        immunization_in_household: "8.2 Viete, \xC4\x8Di v\xC5\xA1etky deti vo va\xC5\xA1ej dom\xC3\xA1cnosti s\xC3\xBA zao\xC4\x8Dkovan\xC3\xA9?"
+        number_of_people_under_18: "12.5 Po\xC4\x8Det os\xC3\xB4b v dom\xC3\xA1cnosti mlad\xC5\xA1\xC3\xADch ako 18 rokov"
+        mediator_survey_counter: !binary |
+          xIzDrXNsbyBkb3Rhem7DrWth
+
+        lesson_language_understanding: "11.6  Ak je vyu\xC4\x8Dovac\xC3\xAD jazyk odli\xC5\xA1n\xC3\xBD od materinsk\xC3\xA9ho jazyka die\xC5\xA5a\xC5\xA5a, op\xC3\xBDtajte sa toho, kto odpoved\xC3\xA1 na ot\xC3\xA1zky: Je pre Va\xC5\xA1e die\xC5\xA5a \xC5\xA5a\xC5\xBEk\xC3\xA9 porozumie\xC5\xA5 vyu\xC4\x8Dovaciemu jazyku?"
+        childs_development_information_source_no_idea: "Neviem, odkia\xC4\xBE z\xC3\xADska\xC5\xA5 inform\xC3\xA1cie"
+        teach_letters_father: otec
+        reason_for_kindergarten_other: !binary |
+          SW7DqSBkw7R2b2R5Og==
+
+        who_is_primary_caregiver_other: "In\xC3\xA9: (pros\xC3\xADm uve\xC4\x8Fte) "
+        school_class_roma: "11.10 V triede \xC5\xA1koly, ktor\xC3\xBA Va\xC5\xA1e die\xC5\xA5a nav\xC5\xA1tevuje, ostatn\xC3\xA9 deti s\xC3\xBA\xE2\x80\xA6?"
+        reason_not_attend_family: "Moje die\xC5\xA5a by malo osta\xC5\xA5 s rodinou."
+        children_language_slovak: "Slovensk\xC3\xBD"
+        immunization_information_source_nurse: "Zdravotn\xC3\xA1 sestra alebo in\xC3\xBD zdravotn\xC3\xBD pracovn\xC3\xADk"
+        home_radio: "R\xC3\xA1diom?"
+        are_teachers_helpfull: !binary |
+          MTEuMTMgUG9tw6FoYWrDuiB1xI1pdGVsaWEgVsOhxaFtdSBkaWXFpWHFpXUg
+          dcSNacWlIHNhIHZ5dcSNb3ZhY8OtIGphenlrPw==
+
+        reason_for_creche_friendships: "Moje die\xC5\xA5a z\xC3\xADska v \xC5\xA1k\xC3\xB4lke nov\xC3\xBDch kamar\xC3\xA1tov/kamar\xC3\xA1tky."
+        wished_sons_education: "7.2 Ak sa zamysl\xC3\xADte nad bud\xC3\xBAcnos\xC5\xA5ou V\xC3\xA1\xC5\xA1ho syna, ak\xC3\xBD druh \xC5\xA1koly by mal V\xC3\xA1\xC5\xA1 syn ukon\xC4\x8Di\xC5\xA5?"
+        wished_daugters_education_other: "In\xC3\xA9: (pros\xC3\xADm, uve\xC4\x8Fte)"
+        teach_letters_noone: nikto
+        school_mother_other: !binary |
+          SW7DqQ==
+
+        date_of_the_interview: "1.1 D\xC3\xA1tum rozhovoru"
+        draw_noone: nikto
+        wished_daugters_education: "7.1 Ak sa zamysl\xC3\xADte nad bud\xC3\xBAcnos\xC5\xA5ou Va\xC5\xA1ej dc\xC3\xA9ry, ak\xC3\xBD druh \xC5\xA1koly by mala Va\xC5\xA1a dc\xC3\xA9ra ukon\xC4\x8Di\xC5\xA5?"
+        visited_hospital_during_pregnancy: "8.4 Ke\xC4\x8F ste boli tehotn\xC3\xA1 s Va\xC5\xA1im posledn\xC3\xBDm die\xC5\xA5a\xC5\xA5om, chodili ste do nemocnice, alebo nav\xC5\xA1t\xC3\xADvi\xC5\xA5 lek\xC3\xA1ra?"
+        school_good_bad: "11.14 Ak\xC3\xA1 dobr\xC3\xA1 alebo zl\xC3\xA1 je pod\xC4\xBEa v\xC3\xA1s z\xC3\xA1kladn\xC3\xA1 \xC5\xA1kola?"
+        reason_not_attend_no_place: "Nie je dostatok vo\xC4\xBEn\xC3\xBDch miest. "
+        language_albanian: "Alb\xC3\xA1nsky"
+        language_romani: "R\xC3\xB3msky"
+        mediator: "Medi\xC3\xA1tor"
+        draw_mother: matka
         tell_stories_noone: nikto
-        tell_stories_other: iný
-        test_before_school: "11.15 Robilo Vaše dieťa test pred zapísaním sa na základnú školu?"
-        test_before_school_other: "Iné:"
-        test_before_school_result: "11.16 Ak ÁNO, aký bol výsledok?"
-        visited_hospital_during_pregnancy: "8.4 Keď ste boli tehotná s Vašim posledným dieťaťom, chodili ste do nemocnice, alebo navštíviť lekára?"
-        who_is_primary_caregiver: "5.3 Ak NIE, kto je hlavnou osobou starajúcou sa o deti?"
-        who_is_primary_caregiver_other: "Iné: (prosím uveďte) "
-        wished_daugters_education: "7.1 Ak sa zamyslíte nad budúcnosťou Vašej dcéry, aký druh školy by mala Vaša dcéra ukončiť?"
-        wished_daugters_education_other: "Iné: (prosím, uveďte)"
-        wished_sons_education: "7.2 Ak sa zamyslíte nad budúcnosťou Vášho syna, aký druh školy by mal Váš syn ukončiť?"
-        wished_sons_education_other: "Iné: (prosím, uveďte)"
+        teacher_help: !binary |
+          MTEuNyBQb23DoWhhasO6IHXEjWl0ZWxpYSBWw6HFoW11IGRpZcWlYcWldSB1
+          xI1pxaUgc2Egdnl1xI1vdmFjw60gamF6eWs/
+
+        talk_with_teacher: "10.2 Hovoria s Vami u\xC4\x8Ditelia a poskytuj\xC3\xBA V\xC3\xA1m potrebn\xC3\xA9 inform\xC3\xA1cie o Va\xC5\xA1om die\xC5\xA5ati a ako sa V\xC3\xA1\xC5\xA1mu die\xC5\xA5a\xC5\xA5u dar\xC3\xAD v materskej \xC5\xA1kole?"
+        school_caregiver: "Osoba staraj\xC3\xBAca sa o deti"
+        kindergarten_roma: "11.3 V materskej \xC5\xA1kole, ktor\xC3\xBA Va\xC5\xA1e die\xC5\xA5a nav\xC5\xA1tevuje, s\xC3\xBA ostatn\xC3\xA9 deti \xE2\x80\xA6.?"
+        lesson_difficulty: "11.12 Je pre Va\xC5\xA1e die\xC5\xA5a \xC5\xA5a\xC5\xBEk\xC3\xA9 porozumie\xC5\xA5 vyu\xC4\x8Dovaciemu jazyku?"
+        homework_other: !binary |
+          aW7DvQ==
+
+        home_sewerage: "Odpadovou kanaliz\xC3\xA1ciou?"
+        reason_for_creche_language: "Moje die\xC5\xA5a sa tam m\xC3\xB4\xC5\xBEe u\xC4\x8Di\xC5\xA5 ofici\xC3\xA1lny \xC5\xA1t\xC3\xA1tny jazyk/region\xC3\xA1lne preva\xC5\xBEuj\xC3\xBAci jazyk."
+        reason_for_creche_likes: "Moje die\xC5\xA5a rado chod\xC3\xAD do programu/jasie\xC4\xBE."
+        immunization_information_source_mediator: "Komunitn\xC3\xBD medi\xC3\xA1tor"
+        immunization_importance: "8.1 \xC4\x8Co si mysl\xC3\xADte, ak\xC3\xA9 d\xC3\xB4le\xC5\xBEit\xC3\xA9 je vo v\xC5\xA1eobecnosti pre deti o\xC4\x8Dkovanie?"
+        teach_letters_mother: matka
+        draw_father: otec
+        home_electricity: Elektrinou?
+        play_father: otec
+        reason_for_creche_trust: "U\xC4\x8Ditelia sa mi p\xC3\xA1\xC4\x8Dia a ver\xC3\xADm im."
+        reason_for_kindergarten_time: "M\xC3\xA1m \xC4\x8Das na pr\xC3\xA1cu/postaranie sa o in\xC3\xA9 z\xC3\xA1le\xC5\xBEitosti."
+        created_by: "\xC3\x9Adaje zadal"
+        play_no_answer: Neviem/Neodpoviem
+        boys_girls_success_importance: "7.3 Ak\xC3\xA9 d\xC3\xB4le\xC5\xBEit\xC3\xA9 je pre chlapcov a diev\xC4\x8Dat\xC3\xA1 uspie\xC5\xA5 v \xC5\xA1kole?"
+        test_before_school: "11.15 Robilo Va\xC5\xA1e die\xC5\xA5a test pred zap\xC3\xADsan\xC3\xADm sa na z\xC3\xA1kladn\xC3\xBA \xC5\xA1kolu?"
+        reason_not_enrolled_family: "Moje die\xC5\xA5a by malo osta\xC5\xA5 s rodinou."
+        book_reading_father: otec
+        duration_of_interview: 1.2 Trvanie rozhovoru
+        tell_stories_no_answer: Neviem/Neodpoviem
+        school_mother: Matka
+        reason_not_enrolled_no_like: "Moje die\xC5\xA5a nerado chod\xC3\xAD do \xC5\xA1k\xC3\xB4lky."
+        reason_not_enrolled_language: "Moje die\xC5\xA5a nerozumie vyu\xC4\x8Dovaciemu jazyku."
+        reason_not_attend_no_creche: "V okol\xC3\xAD nie s\xC3\xBA \xC5\xBEiadne detsk\xC3\xA9 jasle/matersk\xC3\xA1 \xC5\xA1kola/komunitn\xC3\xA9 centrum (pre deti mlad\xC5\xA1ie ako 3 roky)"
+        reason_for_creche_other: !binary |
+          SW7DqSBkw7R2b2R5Og==
+
+        mothers_age: 2.3 Vek matky
+        home_water: "Te\xC4\x8D\xC3\xBAcou vodou vo vn\xC3\xBAtri?"
+        mother_activity: Matka
+        school_father: Otec
+        reason_not_attend_no_trust: "U\xC4\x8Ditelia sa mi nep\xC3\xA1\xC4\x8Dia a ned\xC3\xB4verujem im."
+        childs_development_information_source_others: !binary |
+          SW7DqQ==
+
+        homework_father: otec
+        class_roma: "11.4 V skupine, do ktorej Va\xC5\xA1e die\xC5\xA5a v materskej \xC5\xA1kole patr\xC3\xAD, s\xC3\xBA ostatn\xC3\xA9 deti \xE2\x80\xA6.?"
+        children_language_macedonian: "Maced\xC3\xB3nsky"
+        home_toilet: "Toaletou vo vn\xC3\xBAtri?"
+        language_macedonian: "Maced\xC3\xB3nsky"
+        teach_letters_no_answer: Neviem/Neodpoviem
+        roma: "Je respondent R\xC3\xB3m?"
+        relation_to_children: "5.1 V akom vz\xC5\xA5ahu ste k de\xC5\xA5om v tejto dom\xC3\xA1cnosti (zamerajte sa na deti vo veku 0-7 rokov)"
+        reason_for_kindergarten_free_meal: "Matersk\xC3\xA1 \xC5\xA1kola poskytuje bezplatn\xC3\xBA stravu, alebo in\xC3\xBA materi\xC3\xA1lnu podporu."
+        draw_no_answer: Neviem/Neodpoviem
+        play_mother: matka
+        reason_not_enrolled_trust: "U\xC4\x8Ditelia sa mi nep\xC3\xA1\xC4\x8Dia a ned\xC3\xB4verujem im."
+        reason_not_attend_expensive: "Je to pr\xC3\xADli\xC5\xA1 drah\xC3\xA9."
+        home_shower: "Sprchou/k\xC3\xBApe\xC4\xBE\xC5\x88ou vo vn\xC3\xBAtri?"
+        home_tv: "Telev\xC3\xADziou?"
+        home_computer: !binary |
+          T3NvYm7DvW0gcG/EjcOtdGHEjW9tPw==
+
+        book_reading_mother: matka
+        talked_about_pregnancy_health_mediator: "Zdravotn\xC3\xBD medi\xC3\xA1tor"
+        talked_about_pregnancy: "8.5 Ak je Va\xC5\xA1a odpove\xC4\x8F na ot\xC3\xA1zku \xC4\x8D. 8.4 nie, op\xC3\xBDtajte sa: Hovoril s Vami niekto o tehotenstve ke\xC4\x8F ste boli tehotn\xC3\xA1 a pred p\xC3\xB4rodom V\xC3\xA1\xC5\xA1ho najmlad\xC5\xA1ieho die\xC5\xA5a\xC5\xA5a?"
+        reason_not_enrolled_other: !binary |
+          SW7DqSBkw7R2b2R5Og==
+
+        reason_not_enrolled_no_clothes: "Nem\xC3\xA1m peniaze, aby som do \xC5\xA1k\xC3\xB4lky svojmu die\xC5\xA5a\xC5\xA5u kupoval/a oble\xC4\x8Denie/obuv"
+        play_other: !binary |
+          aW7DvQ==
+
+        mother_activity_other: !binary |
+          aW7DqTo=
+
+        teacher_informs: "11.5 Hovoria s Vami u\xC4\x8Ditelia a poskytuj\xC3\xBA V\xC3\xA1m potrebn\xC3\xA9 inform\xC3\xA1cie o Va\xC5\xA1om die\xC5\xA5ati a ako sa V\xC3\xA1\xC5\xA1mu die\xC5\xA5a\xC5\xA5u dar\xC3\xAD v materskej \xC5\xA1kole?"
+        reason_not_attend_language: "Moje die\xC5\xA5a nehovor\xC3\xAD dan\xC3\xBDm jazykom."
+        reason_for_kindergarten_playing: "Moje die\xC5\xA5a sa tam m\xC3\xB4\xC5\xBEe hra\xC5\xA5."
+        reason_for_kindergarten_friendships: "Moje die\xC5\xA5a z\xC3\xADska v \xC5\xA1k\xC3\xB4lke nov\xC3\xBDch kamar\xC3\xA1tov/kamar\xC3\xA1tky."
+        children_language_albanian: "Alb\xC3\xA1nsky"
+        number_of_all_children: "2.4 Po\xC4\x8Det det\xC3\xAD"
       user: 
-        email: Email
+        remember_me: "Zapam\xC3\xA4ta\xC5\xA5 si ma na tomto PC"
+        localities: Lokality
+        category: "Kateg\xC3\xB3ria"
+        code: !binary |
+          S8OzZA==
+
+        language: Jazyk
+        locality: Lokalita
+        last_name: Priezvisko
         password: Heslo
-        remember_me: "Zapamätať si ma na tomto PC"
+        first_name: Meno
+        email: Email
     errors: 
       messages: 
-        record_invalid: "Validácia neuspešná: %{errors}"
-        taken: "ste už použili"
-    models: 
-      ? "Child Profile"
-      : Dieťa
-      ? "Family Profile"
-      : Rodina
-      Survey: "Prieskum domácností"
-  activities: "12.7 Povedzte mi, prosím, čomu sa venujú členovia domácnosti ?"
-  book_reading: "9.2 Za posledné 3 dni, čítal knihy, alebo pozeral sa na obrázkové knihy s dieťaťom/deťmi niektorý z členov domácnosti nad 15 rokov?"
-  children_below_seven: "11. Otázky pre rodičov detí vo veku 3-7 rokov"
-  children_below_three: "10. Otázky pre rodičov detí mladších ako 3 roky"
-  childs_development_information_source: "9.1 Ak máte otázku ohľadom rozvoja Vášho dieťaťa, kde získavate informácie?"
-  date: 
-    abbr_day_names: 
-      - Ne
-      - Po
-      - Ut
-      - St
-      - Št
-      - Pi
-      - So
-    abbr_month_names: 
-      - ~
-      - Jan
-      - Feb
-      - Mar
-      - Apr
-      - Máj
-      - Jún
-      - Júl
-      - Aug
-      - Sep
-      - Okt
-      - Nov
-      - Dec
-    day_names: 
-      - Nedeľa
-      - Pondelok
-      - Utorok
-      - Streda
-      - Štvrtok
-      - Piatok
-      - Sobota
-    formats: 
-      default: "%d.%m.%Y"
-      long: "%d. %B %Y"
-      short: "%d %b"
-    month_names: 
-      - ~
-      - Január
-      - Február
-      - Marec
-      - Apríl
-      - Máj
-      - Jún
-      - Júl
-      - August
-      - September
-      - Október
-      - November
-      - December
-    order: 
-      - !ruby/symbol day
-      - !ruby/symbol month
-      - !ruby/symbol year
+        record_invalid: "Valid\xC3\xA1cia neuspe\xC5\xA1n\xC3\xA1: %{errors}"
+        taken: "ste u\xC5\xBE pou\xC5\xBEili"
+  View All: "Zobrazi\xC5\xA5 v\xC5\xA1etky"
+  There is no child aged below 7 years: "\xC5\xBDiadne deti nie s\xC3\xBA mlad\xC5\xA1ie ako 7 rokov"
+  There is no child aged 3-7 years: "Nie je zadan\xC3\xA9 \xC5\xBEiadne die\xC5\xA5a vo veku 3-7 rokov"
+  "Children enrollment:": "Zaradenie det\xC3\xAD:"
+  Menu Items: Preklady
+  Logout: !binary |
+    T2RobMOhc2nFpQ==
+
+  Hello!: !binary |
+    RG9icsO9IGRlxYgh
+
+  6 Parent's attitude: "6.  Pr\xC3\xADstup rodi\xC4\x8Dov k poskytovaniu starostlivosti a vzdelania v ranom detstve"
+  Institutions: !binary |
+    SW7FoXRpdMO6Y2ll
+
+  Are you sure? This will disable editing of this survey: "Naozaj vykona\xC5\xA5? Znemo\xC5\xBEn\xC3\xAD sa t\xC3\xBDm editovanie tohto prieskumu."
+  Attendance Data were succesfully updated: "\xC3\x9Adaje o doch\xC3\xA1dzke boli \xC3\xBAspe\xC5\xA1ne ulo\xC5\xBEen\xC3\xA9."
+  7 Parent's expectations: "7.  O\xC4\x8Dak\xC3\xA1vania rodi\xC4\x8Dov v r\xC3\xA1mci bud\xC3\xBAceho dosiahnut\xC3\xA9ho vzdelania ich det\xC3\xAD"
+  Life Skills program: "Program \xC5\xBEivotn\xC3\xBDch zru\xC4\x8Dnost\xC3\xAD"
+  teach_letters: "9.6 Za posledn\xC3\xA9 3 dni, u\xC4\x8Dil p\xC3\xADsmenk\xC3\xA1, alebo u\xC4\x8Dil po\xC4\x8D\xC3\xADta\xC5\xA5  deti niektor\xC3\xBD z \xC4\x8Dlenov dom\xC3\xA1cnosti nad 15 rokov?"
+  surveys in locality: "dotazn\xC3\xADkov v lokalite"
+  children_below_three: "10. Ot\xC3\xA1zky pre rodi\xC4\x8Dov det\xC3\xAD mlad\xC5\xA1\xC3\xADch ako 3 roky"
+  Name: Meno
+  You are editing family: "Upravujete \xC3\xBAdaje o rodine:"
+  New Institution: !binary |
+    Tm92w6EgaW7FoXRpdMO6Y2lh
+
+  Kindergarten: "Matersk\xC3\xA1 \xC5\xA1kola"
+  Monthly Attendance in Kindergarten: !binary |
+    TWVzYcSNbsOhIGRvY2jDoWR6a2EgdiDFoWvDtGxrZQ==
+
+  A Good Start - a new survey completed: "Projekt Dobr\xC3\xBD \xC5\xA1tart - dokon\xC4\x8Den\xC3\xBD \xC4\x8Fal\xC5\xA1\xC3\xAD dotazn\xC3\xADk"
+  School Results - Children from Preschool Programs: "Zn\xC3\xA1mky v \xC5\xA1kole - deti z pred\xC5\xA1kolsk\xC3\xBDch programov "
+  Save: !binary |
+    VWxvxb5pxaU=
+
+  schools: "12.1 Ak\xC3\xBD druh \xC5\xA1koly rodi\xC4\x8Dia/osoba, ktor\xC3\xA1 sa o deti star\xC3\xA1 ukon\xC4\x8Dil/i?"
+  This survey is Marked as Verified: "Tento dotazn\xC3\xADk je ozna\xC4\x8Den\xC3\xBD ako overen\xC3\xBD"
+  Number of children: !binary |
+    UG/EjWV0IGRldMOt
+
+  "No": Nie
+  Family Profile: Profil rodiny
+  Household in settlement: "Dom\xC3\xA1cnos\xC5\xA5 v osade"
+  9 Parent's attitude towards learning at home: "9.  Postoj rodi\xC4\x8Dov k u\xC4\x8Deniu a rozvoju det\xC3\xAD v r\xC3\xA1mci domova"
+  MMR/ROR: "MMR/ROR "
+  Workshops on education/health: "Semin\xC3\xA1re o vzdel\xC3\xA1van\xC3\xAD/zdrav\xC3\xAD"
+  School: !binary |
+    xaBrb2xh
+
+  Q111-117enrolled: "Ot\xC3\xA1zky 11.1-11.7 sa nezobrazuj\xC3\xBA, preto\xC5\xBEe \xC5\xBEiadne die\xC5\xA5a vo veku 3-7 rokov nie je zap\xC3\xADsan\xC3\xA9."
+  Add New Household Survey: "Prida\xC5\xA5 nov\xC3\xBD dotazn\xC3\xADk pre dom\xC3\xA1cnosti"
+  "All children:": "V\xC5\xA1etky deti:"
+  Children: Deti
   datetime: 
+    prompts: 
+      minute: "Min\xC3\xBAta"
+      second: Sekunda
+      month: Mesiac
+      hour: Hodina
+      day: !binary |
+        RGXFiA==
+
+      year: Rok
     distance_in_words: 
-      about_x_hours: 
-        one: "asi hodinou"
-        other: "asi %{count} hodinami"
-      about_x_months: 
-        one: "asi mesiacom"
-        other: "asi %{count} mesiacmi"
-      about_x_years: 
-        one: "asi rokom"
-        other: "asi %{count} rokmi"
-      almost_x_years: 
-        one: "takmer rokom"
-        other: "takmer %{count} rokmi"
-      half_a_minute: "pol minutou"
       less_than_x_minutes: 
-        one: "pred necelou minútou"
-        other: "pred ani nie %{count} minútami"
-      less_than_x_seconds: 
-        one: "asi pred sekundou"
-        other: "asi pred %{count} sekundami"
-      over_x_years: 
-        one: "pred viac ako rokom"
-        other: "viac ako %{count} rokmi"
+        one: "pred necelou min\xC3\xBAtou"
+        other: "pred ani nie %{count} min\xC3\xBAtami"
       x_days: 
-        one: "24 hodinami"
-        other: "%{count} dňami"
-      x_minutes: 
-        one: minútou
-        other: "%{count} minútami"
-      x_months: 
-        one: mesiacom
-        other: "%{count} mesiacmi"
+        one: 24 hodinami
+        other: "%{count} d\xC5\x88ami"
+      almost_x_years: 
+        one: takmer rokom
+        other: takmer %{count} rokmi
       x_seconds: 
         one: sekundou
         other: "%{count} sekundami"
-    prompts: 
-      day: Deň
-      hour: Hodina
-      minute: Minúta
-      month: Mesiac
-      second: Sekunda
-      year: Rok
+      x_months: 
+        one: mesiacom
+        other: "%{count} mesiacmi"
+      x_minutes: 
+        one: "min\xC3\xBAtou"
+        other: "%{count} min\xC3\xBAtami"
+      less_than_x_seconds: 
+        one: asi pred sekundou
+        other: asi pred %{count} sekundami
+      about_x_hours: 
+        one: asi hodinou
+        other: asi %{count} hodinami
+      about_x_years: 
+        one: asi rokom
+        other: asi %{count} rokmi
+      about_x_months: 
+        one: asi mesiacom
+        other: asi %{count} mesiacmi
+      over_x_years: 
+        one: pred viac ako rokom
+        other: viac ako %{count} rokmi
+      half_a_minute: pol minutou
+  Survey No: !binary |
+    xIzDrXNsbyBkb3Rhem7DrWthOg==
+
+  1 Interview details: 1. Detaily rozhovoru
+  DTP: "DTP "
+  List: Zoznam
+  Back: "Nasp\xC3\xA4\xC5\xA5 na zoznam"
+  Fathers age: Vek otca
+  Mark as verified: "Ozna\xC4\x8Di\xC5\xA5 ako overen\xC3\xA9"
+  Saved: !binary |
+    VWxvxb5lbsOp
+
+  Hib: "Hib "
+  Child: !binary |
+    RGllxaVh
+
+  56 What is the mother tongue of your children?: "5.6 Ak\xC3\xBD je rodn\xC3\xBD jazyk Va\xC5\xA1ich det\xC3\xAD?"
+  Immunization Information Source: "Zdroj \xC3\xBAdajov o o\xC4\x8Dkovan\xC3\xAD"
+  "Locality:": "Lokalita:"
+  Close: "Zavrie\xC5\xA5"
+  reason_not_enrolled: "11.8 Pros\xC3\xADm, uve\xC4\x8Fte 3 najpodstatnej\xC5\xA1ie d\xC3\xB4vody, pre\xC4\x8Do Va\xC5\xA1e die\xC5\xA5a nie je zap\xC3\xADsan\xC3\xA9 na z\xC3\xA1kladn\xC3\xBA \xC5\xA1kolu a NENAV\xC5\xA0TEVUJE matersk\xC3\xBA \xC5\xA1kolu."
+  "All survey data verified?:": "S\xC3\xBA v\xC5\xA1etky \xC3\xBAdaje z prieskumov overen\xC3\xA9?:"
+  date: 
+    month_names: 
+    - 
+    - "Janu\xC3\xA1r"
+    - "Febru\xC3\xA1r"
+    - Marec
+    - !binary |
+      QXByw61s
+
+    - !binary |
+      TcOhag==
+
+    - !binary |
+      SsO6bg==
+
+    - !binary |
+      SsO6bA==
+
+    - August
+    - September
+    - "Okt\xC3\xB3ber"
+    - November
+    - December
+    order: 
+    - :day
+    - :month
+    - :year
+    abbr_day_names: 
+    - Ne
+    - Po
+    - Ut
+    - St
+    - !binary |
+      xaB0
+
+    - Pi
+    - So
+    formats: 
+      default: "%d.%m.%Y"
+      short: "%d %b"
+      long: "%d. %B %Y"
+    day_names: 
+    - "Nede\xC4\xBEa"
+    - Pondelok
+    - Utorok
+    - Streda
+    - "\xC5\xA0tvrtok"
+    - Piatok
+    - Sobota
+    abbr_month_names: 
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - !binary |
+      TcOhag==
+
+    - !binary |
+      SsO6bg==
+
+    - !binary |
+      SsO6bA==
+
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Dec
+  View surveys here: "Pozrie\xC5\xA5 dotazn\xC3\xADky tu"
+  Tutoring at School: "Dou\xC4\x8Dovanie v \xC5\xA1kole"
+  Q103under3home: "Ot\xC3\xA1zka 10.3 sa nezobrazuje, preto\xC5\xBEe \xC5\xBEiadne die\xC5\xA5a mlad\xC5\xA1ie ako 3 roky nie je doma."
+  Non Formal Education: "Neform\xC3\xA1lne vzdel\xC3\xA1vanie"
+  Completed: !binary |
+    RG9rb27EjWVuw70=
+
+  Adding Family: Pridanie rodiny
+  Destroy: "Vymaza\xC5\xA5"
+  Add Family: "Prida\xC5\xA5 rodinu"
+  Set date: !binary |
+    VXLEjWl0IGTDoXR1bQ==
+
+  Save and Next: !binary |
+    VWxvxb5pxaUgYSBwb2tyYcSNb3ZhxaU=
+
+  24 Number of children: "2.4 Po\xC4\x8Det det\xC3\xAD:"
+  Attendance in after School Activities: "Doch\xC3\xA1dzka na aktivit\xC3\xA1ch po vyu\xC4\x8Dovan\xC3\xAD"
+  homework: "9.7 Za posledn\xC3\xA9 3 dni, pomohol s dom\xC3\xA1cimi \xC3\xBAlohami de\xC5\xA5om chodiacim do \xC5\xA1koly niektor\xC3\xBD z \xC4\x8Dlenov dom\xC3\xA1cnosti nad 15 rokov?"
+  errors: 
+    messages: 
+      not_locked: "nebol uzamknut\xC3\xBD"
+      not_found: "nebol n\xC3\xA1jden\xC3\xBD"
+      greater_than_or_equal_to: "mus\xC3\xAD by\xC5\xA5 v\xC3\xA4\xC4\x8D\xC5\xA1ie alebo rovnak\xC3\xA9 ako %{count}"
+      less_than_or_equal_to: "mus\xC3\xAD by\xC5\xA5 men\xC5\xA1ie ako %{count}"
+      confirmation: "nebolo potvrden\xC3\xA9"
+      not_an_integer: "nie je cel\xC3\xA9 \xC4\x8D\xC3\xADslo"
+      blank: "je povinn\xC3\xA1 polo\xC5\xBEka"
+      invalid: "nie je platn\xC3\xA1 hodnota"
+      exclusion: "je vyhraden\xC3\xA9 pre in\xC3\xBD \xC3\xBA\xC4\x8Del"
+      odd: !binary |
+        bXVzw60gYnnFpSBuZXDDoXJuZSDEjcOtc2xv
+
+      wrong_length: "nem\xC3\xA1 spr\xC3\xA1vnu d\xC4\xBA\xC5\xBEku (o\xC4\x8Dak\xC3\xA1va sa %{count} znakov)"
+      too_short: "je pr\xC3\xADli\xC5\xA1 kr\xC3\xA1tk\xC3\xBD/\xC3\xA1 (min. %{count} znakov)"
+      even: !binary |
+        bXVzw60gYnnFpSBww6FybmUgxI3DrXNsbw==
+
+      empty: !binary |
+        bmVzbWllIGJ5xaUgcHLDoXpkbsO9L8Op
+
+      already_confirmed: "u\xC5\xBE bol potvrden\xC3\xBD"
+      less_than: "mus\xC3\xAD by\xC5\xA5 men\xC5\xA1ie ako %{count}"
+      greater_than: !binary |
+        bXVzw60gYnnFpSB2w6TEjcWhw61lIGFrbyAle2NvdW50fQ==
+
+      equal_to: "sa mus\xC3\xAD rovna\xC5\xA5 %{count}"
+      too_long: "je pr\xC3\xADli\xC5\xA1 dlh\xC3\xA1/\xC3\xBD (max. %{count} znakov)"
+      accepted: "mus\xC3\xAD by\xC5\xA5 potvrden\xC3\xA9"
+      not_a_number: "nie je \xC4\x8D\xC3\xADslo"
+      inclusion: "nie je v zozname povolen\xC3\xBDch hodn\xC3\xB4t"
+    format: "%{attribute} %{message}"
+  draw: "9.5 Za posledn\xC3\xA9 3 dni, kreslil si  s de\xC5\xA5mi niektor\xC3\xBD z \xC4\x8Dlenov dom\xC3\xA1cnosti nad 15 rokov?"
+  activities: "12.7 Povedzte mi, pros\xC3\xADm, \xC4\x8Domu sa venuj\xC3\xBA \xC4\x8Dlenovia dom\xC3\xA1cnosti ?"
+  VHB: VHB
+  Set language: "Nastavi\xC5\xA5 jazyk"
+  Save and Mark Survey as Completed: !binary |
+    VWxvxb5pxaUgYSBvem5hxI1pxaUgZG90YXpuw61rIGFrbyBkb2tvbsSNZW7D
+    vQ==
+
+  Children below seven: "Deti mlad\xC5\xA1ie ako sedem rokov"
+  Delete: "Vymaza\xC5\xA5"
+  Edit User: !binary |
+    RWRpdMOhY2lhIHXFvsOtdmF0ZcS+YQ==
+
+  Attendance Data were succesfully saved You can add another one: !binary |
+    w5pkYWplIG8gZG9jaMOhZHprZSBib2xpIMO6c3BlxaFuZSB1bG/FvmVuw6ku
+    IE3DtMW+ZXRlIHphZGHFpSDEj2FsxaFpZSDDumRhamUu
+
+  Date: !binary |
+    RMOhdHVt
+
+  (Unmark): "(Zru\xC5\xA1 ozna\xC4\x8Denie)"
+  immunization_information_source: "8.3 Mali ste niekedy mo\xC5\xBEnos\xC5\xA5 z\xC3\xADska\xC5\xA5 inform\xC3\xA1cie/vysvetlenie oh\xC4\xBEadom d\xC3\xB4le\xC5\xBEitosti o\xC4\x8Dkovania? Ak \xC3\x81NO, pros\xC3\xADm uve\xC4\x8Fte, kto V\xC3\xA1s informoval "
+  You do not have right to edit this child!: "Nem\xC3\xA1te pr\xC3\xA1vo editova\xC5\xA5 toto die\xC5\xA5a!"
+  This will delete survey and all of its data: "T\xC3\xBDmto vyma\xC5\xBEete prieskum a v\xC5\xA1etky \xC3\xBAdaje z neho (deti, rodinu). Ste si ist\xC3\xAD?"
+  Sign out: !binary |
+    T2RobMOhc2nFpQ==
+
+  26 Household in settlement: "2.6 Dom\xC3\xA1cnos\xC5\xA5 v osade:"
+  Monthly Attendance in Preschool Program: "Mesa\xC4\x8Dn\xC3\xA1 doch\xC3\xA1dzka v pred\xC5\xA1kolskom programe"
+  Child profile was successfully updated: "\xC3\x9Adaje o die\xC5\xA5ati boli \xC3\xBAspe\xC5\xA1ne ulo\xC5\xBEen\xC3\xA9."
+  Didn't receive confirmation instructions?: "Nedostali ste pokyny pri potvrden\xC3\xAD?"
+  View survey here: "Pozrie\xC5\xA5 dotazn\xC3\xADk tu"
+  "Q119\xE2\x80\x931116notshownFG": "Ot\xC3\xA1zky 11.9-11.16 sa nezobrazuj\xC3\xBA, preto\xC5\xBEe nie je \xC5\xBEiadne die\xC5\xA5a vo veku 5-7 rokov, ktor\xC3\xA9 by bolo zap\xC3\xADsan\xC3\xA9 v in\xC5\xA1tit\xC3\xBAci\xC3\xA1ch typu F alebo G."
+  Editing institution: "Editujete in\xC5\xA1tit\xC3\xBAciu"
+  22 Fathers age: "2.2. Vek otca:"
+  4 Child assessment for children aged 3-7 years: "4.  Hodnotenie det\xC3\xAD vo veku 3-7 rokov"
+  Mark for Delete: "Ozna\xC4\x8Di\xC5\xA5 pre zmazanie"
+  10 Children younger than 3 years: "10. Ot\xC3\xA1zky pre rodi\xC4\x8Dov det\xC3\xAD mlad\xC5\xA1\xC3\xADch ako 3-ro\xC4\x8Dn\xC3\xBDch"
+  reason_for_kindergarten: "11.1 Pre\xC4\x8Do Va\xC5\xA1e die\xC5\xA5a nav\xC5\xA1tevuje matersk\xC3\xBA \xC5\xA1kolu? Uve\xC4\x8Fte, pros\xC3\xADm, 3 najpodstatnej\xC5\xA1ie d\xC3\xB4vody."
+  Title: !binary |
+    TsOhem92
+
+  Q118CDFG: "Ot\xC3\xA1zka 11.8 sa nezobrazuje, preto\xC5\xBEe \xC5\xBEiadne die\xC5\xA5a vo veku 3-7 rokov, ktor\xC3\xA9 by nebolo zap\xC3\xADsan\xC3\xA9 v in\xC5\xA1tit\xC3\xBAci\xC3\xA1ch typu C, D, F alebo G."
+  Countries: Krajiny
+  of: z
+  Q101a102under3: "Ot\xC3\xA1zky 10.1 a 10.2 sa nezobrazuj\xC3\xBA, preto\xC5\xBEe nie je zap\xC3\xADsan\xC3\xA9 \xC5\xBEiadne die\xC5\xA5a mlad\xC5\xA1ie ako 3 roky."
+  Household Surveys: "Prieskumy dom\xC3\xA1cnost\xC3\xAD"
+  Kindergartens: "Matersk\xC3\xA9 \xC5\xA1koly"
+  Add New Locality: "Prida\xC5\xA5 nov\xC3\xBA lokalitu"
+  Household Surveys - Incomplete: "Nedokon\xC4\x8Den\xC3\xA9 dotazn\xC3\xADky dom\xC3\xA1cnost\xC3\xAD"
+  Didn't receive unlock instructions?: Nedostali ste pokyny k odblokovaniu?
+  "Yes": !binary |
+    w4Fubw==
+
+  Please select Date: "Zvo\xC4\xBEte d\xC3\xA1tum"
+  Completed Household Surveys: "Dokon\xC4\x8Den\xC3\xA9 dotazn\xC3\xADky dom\xC3\xA1cnost\xC3\xAD"
+  "You are editing child: ": "Editujete die\xC5\xA5a:"
+  This will mark this survey for deletion: 
+    " Are you sure?": "Prieskum bude ozna\xC4\x8Den\xC3\xBD na vymazanie. Ste si ist\xC3\xAD?"
+  "Number of expected surveys:": "Celkov\xC3\xBD o\xC4\x8Dak\xC3\xA1van\xC3\xBD po\xC4\x8Det prieskumov:"
+  3 Children details: "3. Detaily o de\xC5\xA5och"
+  Immunization Data: !binary |
+    w5pkYWplIG8gb8SNa292YW7DrQ==
+
+  11 Children 3 to 7 years: "11. Ot\xC3\xA1zky pre rodi\xC4\x8Dov det\xC3\xAD vo veku 3-7 rokov"
   devise: 
-    confirmations: 
-      confirmed: "Váš účet bol úspešne potvrdený. Teraz ste prihlásený."
-      send_instructions: "O niekoľko minút dostanete e-mail s pokynmi ako potvrdiť váš účet."
     failure: 
-      inactive: "Váš účet ešte nebol aktivovaný."
-      invalid: "Neplatný email alebo heslo."
-      invalid_token: "Neplatný overovací prvok."
-      locked: "Váš účet je zablokovaný."
-      timeout: "Uplynula doba prihlásenia, prihláste sa znova, aby ste mohli pokračovať."
-      unauthenticated: "Pred pokračovaním sa musíte prihlásiť alebo zaregistrovať."
-      unconfirmed: "Musíte najskôr potvrdiť váš účet."
-    mailer: 
-      confirmation_instructions: 
-        subject: "Pokyny k potvrdeniu"
-      reset_password_instructions: 
-        subject: "Pokyny k vynulovaniu hesla"
-      unlock_instructions: 
-        subject: "Pokyny k odomknutiu"
-    omniauth_callbacks: 
-      failure: "Nebolo možné previesť autorizáciu %{kind} z dôvodu \"%{reason}\"."
-      success: "Autorizácia účtu %{kind} prebehla."
+      unauthenticated: "Pred pokra\xC4\x8Dovan\xC3\xADm sa mus\xC3\xADte prihl\xC3\xA1si\xC5\xA5 alebo zaregistrova\xC5\xA5."
+      timeout: "Uplynula doba prihl\xC3\xA1senia, prihl\xC3\xA1ste sa znova, aby ste mohli pokra\xC4\x8Dova\xC5\xA5."
+      invalid: "Neplatn\xC3\xBD email alebo heslo."
+      inactive: !binary |
+        VsOhxaEgw7rEjWV0IGXFoXRlIG5lYm9sIGFrdGl2b3ZhbsO9Lg==
+
+      unconfirmed: !binary |
+        TXVzw610ZSBuYWpza8O0ciBwb3R2cmRpxaUgdsOhxaEgw7rEjWV0Lg==
+
+      locked: !binary |
+        VsOhxaEgw7rEjWV0IGplIHphYmxva292YW7DvS4=
+
+      invalid_token: "Neplatn\xC3\xBD overovac\xC3\xAD prvok."
     passwords: 
-      send_instructions: "O pár minút obdržíte emailom inštrukcie ako obnoviť vaše heslo."
-      updated: "Vaše heslo bolo úspešne zmenené. Teraz ste prihlásený."
+      send_instructions: "O p\xC3\xA1r min\xC3\xBAt obdr\xC5\xBE\xC3\xADte emailom in\xC5\xA1trukcie ako obnovi\xC5\xA5 va\xC5\xA1e heslo."
+      updated: "Va\xC5\xA1e heslo bolo \xC3\xBAspe\xC5\xA1ne zmenen\xC3\xA9. Teraz ste prihl\xC3\xA1sen\xC3\xBD."
+    unlocks: 
+      unlocked: !binary |
+        VsOhxaEgw7rEjWV0IGJvbCDDunNwZcWhbmUgb2RibG9rb3ZhbsO9LiBTdGUg
+        cHJpaGzDoXNlbsO9Lg==
+
+      send_instructions: "O p\xC3\xA1r min\xC3\xBA\xC5\xA5 obdr\xC5\xBE\xC3\xADte emailom in\xC5\xA1trukcie ako odblokova\xC5\xA5 v\xC3\xA1\xC5\xA1 \xC3\xBA\xC4\x8Det."
+    mailer: 
+      unlock_instructions: 
+        subject: Pokyny k odomknutiu
+      reset_password_instructions: 
+        subject: Pokyny k vynulovaniu hesla
+      confirmation_instructions: 
+        subject: Pokyny k potvrdeniu
+    omniauth_callbacks: 
+      failure: "Nebolo mo\xC5\xBEn\xC3\xA9 previes\xC5\xA5 autoriz\xC3\xA1ciu %{kind} z d\xC3\xB4vodu \"%{reason}\"."
+      success: "Autoriz\xC3\xA1cia \xC3\xBA\xC4\x8Dtu %{kind} prebehla."
     registrations: 
-      destroyed: "Dovidenia! Váš účet bol úspešne zrušený. Dúfame, že Vás znova uvidíme."
-      inactive_signed_up: "Registrácia prebehla úspešne, avšak prihlásenie nebolo možné z dôvodu %{reason}."
-      signed_up: "Registrácia prebehla úspešne. Emailom obdržíte potvrdenie."
-      updated: "Váš účet bol úspešne zmenený."
+      inactive_signed_up: "Registr\xC3\xA1cia prebehla \xC3\xBAspe\xC5\xA1ne, av\xC5\xA1ak prihl\xC3\xA1senie nebolo mo\xC5\xBEn\xC3\xA9 z d\xC3\xB4vodu %{reason}."
+      destroyed: "Dovidenia! V\xC3\xA1\xC5\xA1 \xC3\xBA\xC4\x8Det bol \xC3\xBAspe\xC5\xA1ne zru\xC5\xA1en\xC3\xBD. D\xC3\xBAfame, \xC5\xBEe V\xC3\xA1s znova uvid\xC3\xADme."
+      updated: !binary |
+        VsOhxaEgw7rEjWV0IGJvbCDDunNwZcWhbmUgem1lbmVuw70u
+
+      signed_up: "Vitajte! Registr\xC3\xA1cia prebehla \xC3\xBAspe\xC5\xA1ne. "
     sessions: 
+      signed_out: "Odhl\xC3\xA1senie prebehlo \xC3\xBAspe\xC5\xA1ne."
       admin: 
         errors: 
           messages: 
-            already_confirmed: "bol zž potvrdený, skúste sa prihlásiť"
-            not_found: "sa nenašiel"
-            not_locked: "nebol uzamknutý"
-        signed_in: "Ahoj admin!"
-      email: Email
-      password: Heslo
-      signed_in: "Prihlásenie prebehlo úspešne."
-      signed_out: "Odhlásenie prebehlo úspešne."
+            not_locked: "nebol uzamknut\xC3\xBD"
+            not_found: "sa nena\xC5\xA1iel"
+            not_saved: 
+              one: "1 chyba znemo\xC5\xBEnila ulo\xC5\xBEenie tohto \xC3\xBAdaju %{resource} :"
+              other: "%{count} ch\xC3\xBDb znemo\xC5\xBEnilo ulo\xC5\xBEenie tohto \xC3\xBAdaju %{resource} :"
+            already_confirmed: "bol z\xC5\xBE potvrden\xC3\xBD, sk\xC3\xBAste sa prihl\xC3\xA1si\xC5\xA5"
+        signed_in: Ahoj admin!
       user: 
-        signed_in: "Vitaj užívateľ, ste prihlásený."
-    unlocks: 
-      send_instructions: "O pár minúť obdržíte emailom inštrukcie ako odblokovať váš účet."
-      unlocked: "Váš účet bol úspešne odblokovaný. Ste prihlásený."
-  draw: "9.5 Za posledné 3 dni, kreslil si  s deťmi niektorý z členov domácnosti nad 15 rokov?"
-  errors: 
-    format: "%{attribute} %{message}"
-    messages: 
-      accepted: "musí byť potvrdené"
-      already_confirmed: "už bol potvrdený"
-      blank: "je povinná položka"
-      confirmation: "nebolo potvrdené"
-      empty: "nesmie byť prázdný/é"
-      equal_to: "sa musí rovnať %{count}"
-      even: "musí byť párne číslo"
-      exclusion: "je vyhradené pre iný účel"
-      greater_than: "musí byť väčšíe ako %{count}"
-      greater_than_or_equal_to: "musí byť väčšie alebo rovnaké ako %{count}"
-      inclusion: "nie je v zozname povolených hodnôt"
-      invalid: "nie je platná hodnota"
-      less_than: "musí byť menšie ako %{count}"
-      less_than_or_equal_to: "musí byť menšie ako %{count}"
-      not_a_number: "nie je číslo"
-      not_an_integer: "nie je celé číslo"
-      not_found: "nebol nájdený"
-      not_locked: "nebol uzamknutý"
-      odd: "musí byť nepárne číslo"
-      too_long: "je príliš dlhá/ý (max. %{count} znakov)"
-      too_short: "je príliš krátký/á (min. %{count} znakov)"
-      wrong_length: "nemá správnu dĺžku (očakáva sa %{count} znakov)"
-  female: žena
-  formtastic: 
-    create: Vytvoriť
-    ? "no"
-    : Nie
-    required: Povinné
-    save: Uložiť
-    submit: Odoslať
-    update: Aktualizovať
-    ? "yes"
-    : Áno
-  helpers: 
-    select: 
-      prompt: "Prosím vyberte si"
-    submit: 
-      create: "Vytvoriť %{model}"
-      submit: "Uložiť %{model}"
-      update: "Aktualizovať %{model}"
-  home_equipment: "12.4 Je Váš domov, alebo príbytok vybavený nasledovným?"
-  homework: "9.7 Za posledné 3 dni, pomohol s domácimi úlohami deťom chodiacim do školy niektorý z členov domácnosti nad 15 rokov?"
-  immunization_information_source: "8.3 Mali ste niekedy možnosť získať informácie/vysvetlenie ohľadom dôležitosti očkovania? Ak ÁNO, prosím uveďte, kto Vás informoval "
-  male: muž
+        signed_in: "Vitaj u\xC5\xBE\xC3\xADvate\xC4\xBE, ste prihl\xC3\xA1sen\xC3\xBD."
+      password: Heslo
+      signed_in: "Prihl\xC3\xA1senie prebehlo \xC3\xBAspe\xC5\xA1ne."
+      email: Email
+    confirmations: 
+      confirmed: "V\xC3\xA1\xC5\xA1 \xC3\xBA\xC4\x8Det bol \xC3\xBAspe\xC5\xA1ne potvrden\xC3\xBD. Teraz ste prihl\xC3\xA1sen\xC3\xBD."
+      send_instructions: "O nieko\xC4\xBEko min\xC3\xBAt dostanete e-mail s pokynmi ako potvrdi\xC5\xA5 v\xC3\xA1\xC5\xA1 \xC3\xBA\xC4\x8Det."
+  This month is already entered: "Tento mesiac u\xC5\xBE je zadan\xC3\xBD."
+  There was a problem to save data: "Vyskytol sa probl\xC3\xA9m pri ukladan\xC3\xAD \xC3\xBAdajov."
+  Parental Involvement in Preschool: "Zapojenie rodi\xC4\x8Dov v pred\xC5\xA1kolskom programe"
+  Overview: "Preh\xC4\xBEad"
+  23 Mothers age: "2.3 Vek matky:"
+  My profile: "M\xC3\xB4j profil"
+  A - at home and not enrolled: "A \xE2\x80\x93 doma, nie je zap\xC3\xADsan\xC3\xA9"
+  Extracurricular activities: "Mimo\xC5\xA1kolsk\xC3\xA9 aktivity"
+  Hotline: Hotline
+  Add new: !binary |
+    UHJpZGHFpSBub3bDqQ==
+
+  In the locality of: "V lokalite "
+  Are you sure?: "Naozaj chcete vykona\xC5\xA5 t\xC3\xBAto akciu?"
   number: 
-    currency: 
-      format: 
-        delimiter: " "
-        format: "%n %u"
-        precision: 2
-        separator: ","
-        significant: 0
-        strip_insignificant_zeros: 0
-        unit: €
     format: 
-      delimiter: ","
+      separator: .
       precision: 3
-      separator: "."
-      significant: 0
+      delimiter: ","
       strip_insignificant_zeros: 0
+      significant: 0
     human: 
-      decimal_units: 
-        format: "%n %u"
-        units: 
-          billion: Miliarda
-          million: Milión
-          quadrillion: Quadrilión
-          thousand: Tisíc
-          trillion: Trilión
-          unit: ""
       format: 
-        delimiter: ""
         precision: 1
-        significant: 1
+        delimiter: ""
         strip_insignificant_zeros: 1
+        significant: 1
       storage_units: 
         format: "%n %u"
         units: 
+          kb: KB
+          tb: TB
+          gb: GB
           byte: 
             one: B
             other: B
-          gb: GB
-          kb: KB
           mb: MB
-          tb: TB
+      decimal_units: 
+        format: "%n %u"
+        units: 
+          trillion: "Trili\xC3\xB3n"
+          quadrillion: "Quadrili\xC3\xB3n"
+          billion: Miliarda
+          million: "Mili\xC3\xB3n"
+          unit: ""
+          thousand: !binary |
+            VGlzw61j
+
     percentage: 
       format: 
         delimiter: ""
     precision: 
       format: 
         delimiter: ""
-  play: "9.4 Za posledné 3 dni, hral sa  s deťmi niektorý z členov domácnosti nad 15 rokov?"
-  reason_for_creche: "10.1 Prosím uveďte 3 najpodstatnejšie dôvody prečo Vaše dieťa navštevuje detské jasle/materskú školu, alebo iný komunitný program."
-  reason_for_kindergarten: "11.1 Prečo Vaše dieťa navštevuje materskú školu? Uveďte, prosím, 3 najpodstatnejšie dôvody."
-  reason_not_attend: "10.3 Aké sú hlavné dôvody, že Vaše dieťa nenavštevuje detské jasle/materskú školu/komunitné centrum?"
-  reason_not_enrolled: "11.8 Prosím, uveďte 3 najpodstatnejšie dôvody, prečo Vaše dieťa nie je zapísané na základnú školu a NENAVŠTEVUJE materskú školu."
-  schools: "12.1 Aký druh školy rodičia/osoba, ktorá sa o deti stará ukončil/i?"
-  support: 
-    array: 
-      last_word_connector: " a "
-      two_words_connector: " a "
-      words_connector: ", "
-  talked_about_pregnancy: "8.5 Hovoril s Vami niekto o tehotenstve, keď ste boli tehotná, a pred pôrodom Vášho najmladšieho dieťaťa?"
-  teach_letters: "9.6 Za posledné 3 dni, učil písmenká, alebo učil počítať  deti niektorý z členov domácnosti nad 15 rokov?"
-  tell_stories: "9.3 Za posledné 3 dni, rozprával rozprávky deťom niektorý z členov domácnosti nad 15 rokov?"
-  time: 
-    am: dopoludnia
-    formats: 
-      default: "%a %d. %B %Y %H:%M %z"
-      long: "%A %d. %B %Y %H:%M"
-      short: "%d.%m. %H:%M"
-    pm: popoludní
+    currency: 
+      format: 
+        format: "%n %u"
+        unit: !binary |
+          4oKs
+
+        separator: ","
+        precision: 2
+        delimiter: " "
+        strip_insignificant_zeros: 0
+        significant: 0
+  children_below_seven: "11. Ot\xC3\xA1zky pre rodi\xC4\x8Dov det\xC3\xAD vo veku 3-7 rokov"
+  "You are editing survey no: ": "Upravujete dotazn\xC3\xADk s \xC4\x8D\xC3\xADslom: "
+  Number of Children: !binary |
+    UG/EjWV0IGRldMOt
+
+  Edit: "Upravi\xC5\xA5"
+  Gender: Pohlavie
+  Forgot your password?: Zabudli ste svoje heslo?
+  the total expected number of surveys has been verified by the local partner team leader: "celkov\xC3\xBD o\xC4\x8Dak\xC3\xA1van\xC3\xBD po\xC4\x8Det dotazn\xC3\xADkov bol overen\xC3\xBD ved\xC3\xBAcim lok\xC3\xA1lnym partnerom"
+  reason_not_attend: "10.3 Ak\xC3\xA9 s\xC3\xBA hlavn\xC3\xA9 d\xC3\xB4vody, \xC5\xBEe Va\xC5\xA1e die\xC5\xA5a nenav\xC5\xA1tevuje detsk\xC3\xA9 jasle/matersk\xC3\xBA \xC5\xA1kolu/komunitn\xC3\xA9 centrum?"
+  childs_development_information_source: "9.1 Ak m\xC3\xA1te ot\xC3\xA1zku oh\xC4\xBEadom rozvoja V\xC3\xA1\xC5\xA1ho die\xC5\xA5a\xC5\xA5a, kde z\xC3\xADskavate inform\xC3\xA1cie?"
+  Schools: !binary |
+    xaBrb2x5
+
+  Number of days absent in month: "Po\xC4\x8Det vyme\xC5\xA1kan\xC3\xBDch dn\xC3\xAD v mesiaci"
+  Campaign on Reading Out Loud: "Kampa\xC5\x88 pre hlasn\xC3\xA9 \xC4\x8D\xC3\xADtanie"
+  formtastic: 
+    required: "Povinn\xC3\xA9"
+    "no": Nie
+    submit: "Odosla\xC5\xA5"
+    "yes": !binary |
+      w4Fubw==
+
+    save: !binary |
+      VWxvxb5pxaU=
+
+    create: "Vytvori\xC5\xA5"
+    update: !binary |
+      VWxvxb5pxaU=
+
+  Sign in: !binary |
+    UHJpaGzDoXNpxaU=
+
+  School Results: "V\xC3\xBDsledky v \xC5\xA1kole"
+  Add New Family: "Prida\xC5\xA5 nov\xC3\xBA rodinu"
+  5 Household details: "5.  Detaily o dom\xC3\xA1cnosti"
+  Household Survey: "Prieskum dom\xC3\xA1cnost\xC3\xAD"
+  Kindergardens: "Matersk\xC3\xA9 \xC5\xA1koly"
+  Mothers age: Vek matky
+  talked_about_pregnancy: "8.5 Hovoril s Vami niekto o tehotenstve, ke\xC4\x8F ste boli tehotn\xC3\xA1, a pred p\xC3\xB4rodom V\xC3\xA1\xC5\xA1ho najmlad\xC5\xA1ieho die\xC5\xA5a\xC5\xA5a?"
+  4 Children assesment: "4.  Hodnotenie det\xC3\xAD"
+  Home: Domov
+  Survey was successfully updated: "Dotazn\xC3\xADk bol \xC3\xBAspe\xC5\xA1ne aktualizovan\xC3\xBD."
+  Back to list of institutions: !binary |
+    TmFzcMOkxaUgbmEgem96bmFtIGluxaF0aXTDumNpw60=
+

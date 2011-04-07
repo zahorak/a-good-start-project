@@ -1,0 +1,53 @@
+#steps
+  - semantic_form_for @survey, :html => {:name => 'survey',:class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("9 Parent's attitude towards learning at home"), :id => "parents_attitude_learning", :class => 'step' do
+      - f.inputs t("childs_development_information_source"), :id => "childs_development_information_source" do
+        = f.input :childs_development_information_source_no_need, :as => :boolean, :input_html => { :onclick => "disable_all_other('childs_development_information_source',this);"}
+        = f.input :childs_development_information_source_books, :as => :boolean
+        = f.input :childs_development_information_source_newspapers, :as => :boolean
+        = f.input :childs_development_information_source_tv, :as => :boolean
+        / = f.input :childs_development_information_source_other_persons, :input_html => { :rows => 2 }
+        = f.input :childs_development_information_source_others, :input_html => {:size => 30 }
+        = f.input :childs_development_information_source_no_idea, :as => :boolean, :input_html => { :onclick => "disable_all_other('childs_development_information_source',this);"}
+      - f.inputs t("book_reading"), :id => "book_reading", :class => 'together' do
+        = f.input :book_reading_mother, :as => :boolean
+        = f.input :book_reading_father, :as => :boolean
+        = f.input :book_reading_other, :input_html => {:size => 30 }
+        = f.input :book_reading_noone, :as => :boolean, :input_html => { :onclick => "disable_all_other('book_reading',this);"}
+        = f.input :book_reading_no_answer, :as => :boolean, :input_html => { :onclick => "disable_all_other('book_reading',this);"}
+      - f.inputs t("tell_stories"), :id => "tell_stories" do
+        = f.input :tell_stories_mother, :as => :boolean
+        = f.input :tell_stories_father, :as => :boolean
+        = f.input :tell_stories_other, :input_html => {:size => 30 }
+        = f.input :tell_stories_noone, :as => :boolean, :as => :boolean, :input_html => { :onclick => "disable_all_other('tell_stories',this);"}
+        = f.input :tell_stories_no_answer, :as => :boolean, :input_html => { :onclick => "disable_all_other('tell_stories',this);"}
+      - f.inputs t("play"), :id => "play" do
+        = f.input :play_mother, :as => :boolean
+        = f.input :play_father, :as => :boolean
+        = f.input :play_other, :input_html => {:size => 30 }
+        = f.input :play_noone, :as => :boolean, :input_html => { :onclick => "disable_all_other('play',this);"}
+        = f.input :play_no_answer, :as => :boolean, :input_html => { :onclick => "disable_all_other('play',this);"}
+      - f.inputs t("draw"), :id => "draw" do
+        = f.input :draw_mother, :as => :boolean
+        = f.input :draw_father, :as => :boolean
+        = f.input :draw_other, :input_html => {:size => 30 }
+        = f.input :draw_noone, :as => :boolean, :input_html => { :onclick => "disable_all_other('draw',this);"}
+        = f.input :draw_no_answer, :as => :boolean, :input_html => { :onclick => "disable_all_other('draw',this);"}
+      - f.inputs t("teach_letters"), :id => "teach_letters" do
+        = f.input :teach_letters_mother, :as => :boolean
+        = f.input :teach_letters_father, :as => :boolean
+        = f.input :teach_letters_other, :input_html => {:size => 30 }
+        = f.input :teach_letters_noone, :as => :boolean, :input_html => { :onclick => "disable_all_other('teach_letters',this);"}
+        = f.input :teach_letters_no_answer, :as => :boolean, :input_html => { :onclick => "disable_all_other('teach_letters',this);"}
+      - f.inputs t("homework"), :id => "homework" do
+        = f.input :homework_mother, :as => :boolean
+        = f.input :homework_father, :as => :boolean
+        = f.input :homework_other, :input_html => {:size => 30 }
+        = f.input :homework_noone, :as => :boolean, :input_html => { :onclick => "disable_all_other('homework',this);"}
+        = f.input :homework_no_child_in_school_yet, :as => :boolean, :input_html => { :onclick => "disable_all_other('homework',this);"}
+        = f.input :homework_no_answer, :as => :boolean, :input_html => { :onclick => "disable_all_other('homework',this);"}
+      = f.input :book_count, :input_html => { :size => 2, :class => 'number', :min => '0' }
+      = f.input :separate_place, :as => :radio, :collection => MenuItem.classic
+    = hidden_field_tag "step", "9"
+
+    = render :partial => 'buttons'

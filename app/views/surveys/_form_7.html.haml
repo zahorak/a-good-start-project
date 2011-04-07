@@ -1,0 +1,17 @@
+#steps
+  - semantic_form_for @survey, :html => {:name => 'survey',:class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("7 Parent's expectations"), :id => "parents_expectations", :class => 'step' do
+      = f.input :wished_daugters_education, :as => :radio, :collection => MenuItem.wished_education.order(:position),
+        :input_html => { :onclick => 'display_switch(this,"20","survey_wished_daugters_education_other_input");'}
+      = f.input :wished_daugters_education_other, :as => :string, :input_html => { :size => 30 },
+        :wrapper_html => { :style => @survey.wished_daugters_education==20 ? "display:;" : "display:none;" }
+      
+      = f.input :wished_sons_education, :as => :radio, :collection => MenuItem.wished_education.order(:position),
+        :input_html => { :onclick => 'display_switch(this,"20","survey_wished_sons_education_other_input");'}
+      = f.input :wished_sons_education_other, :as => :string, :input_html => { :size => 30 },
+        :wrapper_html => { :style => @survey.wished_sons_education==20 ? "display:;" : "display:none;" }
+      
+      = f.input :boys_girls_success_importance, :as => :radio, :collection => MenuItem.success_importance
+      = hidden_field_tag "step", "7"
+
+      = render :partial => 'buttons'

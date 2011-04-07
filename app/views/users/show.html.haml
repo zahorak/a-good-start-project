@@ -1,12 +1,126 @@
-- title "User"
+- title t("Statistics")
+- unless current_user.locality_id.blank?
+  - if current_user.locality.survey_count and current_user.locality.completed_surveys.count >= 0
+    %p
+      &nbsp;&nbsp;
+      = t('Completed')
+      = current_user.locality.completed_surveys.count
+      = t('of')
+      = current_user.locality.survey_count
+      = t('surveys in locality')
+      = current_user.locality.full_name + ' ('
+      = sprintf("%.0f", (current_user.locality.completed_surveys.count.to_f / current_user.locality.survey_count.to_f * 100))
+      \% ).
 
-%p
-  %strong Name:
-  = @user.name
+#steps
+  %form.form
+    / %fieldset.step
+    /   %div
+    /     %span 
+    /       %strong= t('User name:')
+    /       = @user.full_name
+    / 
+    / - if current_user.locality
+    /   %fieldset.step
+    /     %div
+    /       %span 
+    /         %strong= t("My Locality:")
+    /         = current_user.locality.full_name
+    /     %table
+    /       %tr 
+    /         %td
+    /           = t("Number of expected surveys:")
+    /         %td
+    /           = current_user.locality.survey_count
+    /       %tr 
+    /         %td
+    /           = t("Number of completed surveys:")
+    /         %td
+    /           = current_user.locality.completed_surveys.count
+    /       %tr 
+    /         %td
+    /           = t("All survey data verified?:")
+    /         %td
+    /           = t(current_user.locality.verified?)
+    /       / %tr 
+    /       /   %td
+    /       /     = t("Other data for parents/children?:")
+    /       %tr 
+    /         %td
+    /           = t("All children:")
+    /         %td
+    /           = current_user.locality.children.count
+    /       %tr 
+    /         %td
+    /           = t("All children aged 0-7:")
+    /         %td
+    /           = current_user.locality.children_below_seven.count
+    /       / %tr 
+    /       /   %td
+    /       /     = t("Children enrollment:")
+    / 
+    / - unless current_user.localities.blank?
+    /   - current_user.localities_db.each do |l|
+    /     - unless l.id==current_user.locality_id
+    /       %fieldset.step
+    /         %div
+    /           %span 
+    /             %strong= t("Locality:")
+    /             = l.full_name
+    /         %table
+    /           %tr 
+    /             %td
+    /               = t("Number of expected surveys:")
+    /             %td
+    /               = l.survey_count
+    /           %tr 
+    /             %td
+    /               = t("Number of completed surveys:")
+    /             %td
+    /               = l.completed_surveys.count
+    /           %tr 
+    /             %td
+    /               = t("All survey data verified?:")
+    /             %td
+    /               = t(l.verified?) 
+    /           / %tr 
+    /           /   %td
+    /           /     = t("Other data for parents/children?:")
+    /           %tr 
+    /             %td
+    /               = t("All children:")
+    /           %tr 
+    /             %td
+    /               = t("All children aged 0-7:")
+    /           / %tr 
+    /           /   %td
+    /           /     = t("Children enrollment:")
 
-%p
-  = link_to "Edit", edit_user_path(@user)
-  |
-  = link_to "Destroy", @user, :confirm => 'Are you sure?', :method => :delete
-  |
-  = link_to "View All", users_path
+    %fieldset.step
+      %div
+        %span 
+          %strong= t("Overview")
+      %table{:border=>0,:cellpadding=>0,:cellspacing=>0}
+        %tr 
+          %th{:style => 'width:200px;'}= t("Locality:")
+          %th{:style => 'width:110px;'}= t("Number of expected surveys:")
+          %th{:style => 'width:110px;'}= t("Number of completed surveys:")
+          %th{:style => 'width:110px;'}= t("All survey data verified?:")
+          / %th= t("Other data for parents/children?:")
+          %th{:style => 'width:110px;'}= t("All children:")
+          %th{:style => 'width:110px;'}= t("All children aged 0-7:")
+          / %th= t("Children enrollment:")
+
+        - Locality.order(:country_id).each do |l|
+          / - unless l.id==current_user.locality_id
+          %tr.row
+            %td
+              = link_to l.full_name, '/stats_detail?locality_id=' + l.id.to_s
+              - if current_user.category == 'A'
+                = link_to 'Excel', '/surveys.xls?locality_id='+ l.id.to_s
+            %td= l.survey_count
+            %td= l.completed_surveys.count
+            %td= t(l.verified?)
+            %td= l.surveys.sum(:number_of_all_children).to_i
+            %td= l.surveys.sum(:number_of_children_below_seven).to_i
+

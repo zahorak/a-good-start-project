@@ -1,7 +1,100 @@
 # encoding: utf-8
 --- 
 en:
+  "Yes": "Yes"
+  "No": "No"
+  "Save and Next": "Save and Next"
+  "Save": "Save"
   "A - at home and not enrolled": "A - at home and not enrolled"
+  'You do not have right to edit this child!': 'You do not have right to edit this child!'
+  'Child profile was successfully updated.': 'Child profile was successfully updated.'
+  'You are editing child: ': 'You are editing child: '
+  'Survey was successfully updated.': 'Survey was successfully updated.'
+  'Save and Add New Survey': 'Save and Add New Survey'
+  'There was a problem to save data.': 'There was a problem to save data.'
+  'View All': 'View All'
+  "Edit User": "Edit User"
+  'User name:': 'User name:'
+  "My Locality:": "My Locality:"
+  "Number of expected surveys:": "Number of expected surveys:"
+  "Number of completed surveys:": "Number of completed surveys:"
+  "All survey data verified?:": "All survey data verified?:"
+  "Locality:": "Locality:"
+  "Children enrollment:": "Children enrollment:"
+  "All children aged 0-7:": "All children aged 0-7:"
+  "All children:": "All children:"
+  "Other data for parents/children?:": "Other data for parents/children?:"
+  'This will delete survey and all of its data': 'This will delete survey and all of its data (children, family). Are you sure?'
+  'Save and Mark Survey as Completed': 'Save and Mark Survey as Completed'
+  'Survey was successfully updated': 'Survey was successfully updated'
+  'Roma': 'Roma'
+  'Completed Household Surveys': 'Completed Household Surveys'
+  'Are you sure? This will disable editing of this survey.': 'Are you sure? This will disable editing of this survey.'
+  'Household Surveys - Incomplete': 'Household Surveys - Incomplete'
+  'Completed': 'Completed'
+  'of': 'of'
+  'surveys in locality': 'surveys in locality'
+  '(Unmark)': '(Unmark)'
+  'Hotline': 'Hotline'
+  'Set date': 'Set date'
+  'Number of Schooldays in month': 'Number of Schooldays in month'
+  'Number of days absent in month': 'Number of days absent in month'
+  'Please select Date': 'Please select Date'
+  'Editing children attendances': 'Editing children attendances'
+  'Extracurricular activities': 'Extracurricular activities'
+  'Life Skills program': 'Life Skills program'
+  'Campaign on Reading Out Loud': 'Campaign on Reading Out Loud'
+  'Tutoring at School': 'Tutoring at School'
+  'Previous month was not yet entered': 'Previous month was not yet entered'
+  'Saved': 'Saved'
+  'Add new': 'Add new'
+  'Title': 'Title'
+  'Number of Children': 'Number of Children'
+  'Non Formal Education': 'Non Formal Education'
+  'Workshops on education/health': 'Workshops on education/health'
+  'Parental Involvement in Preschool': 'Parental Involvement in Preschool'
+  'Overview': 'Overview'
+  'This month is already entered': 'This month is already entered.'
+  'Attendance Data were succesfully saved You can add another one': 'Attendance Data were succesfully saved. You can add another one.'
+  'Attendance Data were succesfully updated': 'Attendance Data were succesfully updated.'
+  'Back to list of institutions': 'Back to list of institutions'
+  'Close': 'Close'
+  Voluntary: Voluntary
+  Obligatory: Obligatory
+  Vaccinations: Vaccinations
+  BCG: BCG
+  DTP: DTP
+  Hib: Hib
+  VHB: VHB
+  'IPV/PVi': 'IPV/PVi'
+  PCV: PCV
+  'MMR/ROR': 'MMR/ROR'
+  'Survey was saved and marked as completed': 'Survey was saved and marked as completed.'
+  'View survey here': 'View survey here'
+  'A new survey has been completed in your locality': 'A new survey has been completed in your locality'
+  'In the locality of': 'In the locality of'
+  'the total expected number of surveys has been verified by the local partner team leader': 'the total expected number of surveys has been verified by the local partner team leader'
+  'the total expected number of surveys has been completed': 'the total expected number of surveys has been completed'
+  'A Good Start - a new survey completed': 'A Good Start - a new survey completed'
+  'A Good Start - all expected surveys verified': 'A Good Start - all expected surveys verified'
+  'Hello!': 'Hello!'
+  'View surveys here': 'View surveys here'
+  'Mark as verified': 'Mark as verified'
+  'This survey is Marked as Complete': 'This survey is Marked as Complete'
+  'This survey is Marked as Verified': 'This survey is Marked as Verified'
+  'Marked for delete': 'Marked for delete'
+  'Verified': "Verified"
+  'This survey was already saved. Please click Submit Button only once. Select survey from the list below.': 'This survey was already saved. Please click Submit Button only once. Select survey from the list below.'
+  'School results': 'School results'
+  Code: Code
+  'Name': 'Name'
+  'Date': 'Date'
+  'Test before school': 'Test before school'
+  'Test result': 'Test result'
+  'Marks 10/11': 'Marks 10/11'
+  'Marks end 10/11': 'Marks end 10/11'
+  'Marks 11/12': 'Marks 11/12'
+  
   formtastic: 
     :yes: 'Yes'
     :no: 'No'
@@ -9,7 +102,7 @@ en:
     save: 'Save'
     submit: 'Submit'
     required: 'Required'
-    update: 'Update'
+    update: 'Save'
   
   devise:
     sessions:
@@ -87,14 +180,17 @@ en:
   "Add New Family":  "Add New Family"
   "Adding Family":  "Adding Family"
   "Family Profile": "Family profile"
+  'You are editing family': 'You are editing family: '
   
   Child: Child
   Children: Children
   "Add New Child": "Add New Child"
   "Add Child": "Add New Child"
   "Monthly Attendance in Kindergarten":  "Monthly Attendance in Kindergardten"
+  "Monthly Attendance in Preschool Program": "Monthly Attendance in Preschool Program"  
   "Attendance in after School Activities": "Attendance in after School Activities"
   "4 Child assessment for children aged 3-7 years": "4. Child assessment for children aged 3-7 years"
+  "School Results": "School Results"
   "School Results - Children Tutored at School": "School Results - Children Tutored at School"
   "School Results - Children from Preschool Programs": "School Results - Children from Preschool Programs"
   "Change Enrollment of Child": "Change Enrollment of Child"
@@ -124,6 +220,8 @@ en:
   "Household Surveys": "Household Surveys"
   "Add New Household Survey": "Add New Household Survey"
   'You are editing survey no: ': 'You are editing survey no.: '
+  'This will mark this survey for deletion. Are you sure?': 'This will mark this survey for deletion. Are you sure?'
+  'Mark for Delete': 'Mark for Delete'
 
   Institution: Institution
   Institutions: Institutions
@@ -162,6 +260,7 @@ en:
   Birthdate: Birthdate
   Gender: Gender
   
+  'Processing': 'Processing'
   "Survey No": "Survey No."
   "Family name": "Family Name"
   "Fathers age": "Father's Age"
@@ -169,7 +268,12 @@ en:
   "Number of children": "Number of children"
   "Number of children below seven": "Number of children below seven"
   "Household in settlement": "Household in settlement"
-    
+  "22 Fathers age": "2.2 Father's age:"
+  "23 Mothers age": "2.3 Mother's Age:"
+  "24 Number of children": "2.4 Number of children:"
+  "25 Number of children below seven": "2.5 Number of children below seven:"
+  "26 Household in settlement": "2.6 Household in settlement:"
+
   "1 Interview details": "1. Interview details"
   '2 Family details': '2. Family details'
   '3 Children details': '3. Children details'
@@ -185,6 +289,12 @@ en:
   "10 Children younger than 3 years": "10. Children younger than 3 years"
   "11 Children 3 to 7 years": "11. Children 3 to 7 years"
   "12 Other socio-economic data": "12. Other socio-economic data"
+  'Q101a102under3': 'Questions 10.1 and 10.2 are not shown, because no child under age 3 is enrolled.'
+  'Q103under3home': 'Question 10.3 is not shown, because now child under age 3 is at home.'
+  "Q119–1116notshownFG": "Questions 11.9 – 11.16 are not shown, because no child aged 5-7 is enrolled in institutions of type F or G."
+  'Q118CDFG': 'Question 11.8 is not shown, because there is no child aged 3-7, which is not enrolled in institutions of type C, D, F or G.'
+  'Q111-117enrolled': 'Questions 11.1-11.7 are not shown, because no child aged 3-7 is enrolled.'
+  
   
   activerecord:
       models:
@@ -202,6 +312,8 @@ en:
           mothers_age: "2.3 Mother's age"
           number_of_all_children: "2.4 Number of children"
           number_of_children_below_seven: "2.5 No. of children aged 0-7"
+          mothers_age_at_first_pregnancy: "2.6 Mother's age when she first gave birth"
+          roma: "Is the respondent Roma?"
           comment: Comments
 
           relation_to_children: "5.1 What is your relationship to the children in this household (focus on beneficiary children aged 0-7 years)"
@@ -388,6 +500,7 @@ en:
           mediator_id: Mediator
           mediator: Mediator
           mediator_survey_counter: "Questionnaire number"
+          household_in_settlement: 'Household in settlement'
 
         family_profile:
           family_name: "2.1 Family Name"
@@ -422,6 +535,13 @@ en:
           code: Code
           
         user:
+          first_name: 'First name'
+          last_name: 'Last name'
+          category: 'Category'
+          code: Code
+          localities: Localities
+          language: Language
+          locality: Locality
           email: Email
           password: Password
           remember_me: "Remember me"
@@ -429,3 +549,12 @@ en:
         menu_items:  
           code: Code
         
+        immunization:
+          child_id: 'Child'
+          bcg: 'BCG (Tuberculosis)'
+          dtp: 'DTP (Difteria, Tetanus, Pertussis)'
+          hib: 'Hib (Haemophilus influenzae B)'
+          vhb: 'VHB (Viral hepatitis BB)'
+          ipv: 'IPV (Polio)'
+          pcv: 'PCV (Pneumococcus)'
+          mmr: 'MMR (Morbilli, Mumps, Rubeola)'

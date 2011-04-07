@@ -13,11 +13,12 @@
     %tr
       %td= institution.name
       %td= institution.locality.full_name unless institution.locality_id.blank?
-      %td= institution.code.full_name unless institution.code_id.blank?
+      %td= institution.code.full_name unless institution.code.blank?
       / %td= link_to 'Show', institution
       %td= link_to t('Edit'), edit_institution_path(institution)
       / %td= link_to t('Destroy'), institution, :confirm => t('Are you sure?'), :method => :delete
 
-%br
-.commit
-  = link_to t('Add Institution'), new_institution_path
+- unless ['REF','ME'].include? current_user.category
+  %br
+  .commit
+    = link_to t('Add New Institution'), new_institution_path

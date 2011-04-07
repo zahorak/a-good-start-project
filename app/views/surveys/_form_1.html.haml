@@ -1,36 +1,45 @@
-<script>  
-$(document).ready(function() {
-$("#new_survey").validate()
-});
-</script>
-#navigation{ :style => "display:none;"}
-  %ul
-    %li.selected 
-      %a{ :href => "#"} 1
-    %li 
-      %a{ :href => "#"} 2
-    %li 
-      %a{ :href => "#"} 3
-      
 #steps
-  - semantic_form_for @survey do |f|
+  - semantic_form_for @survey, :html => {:name => 'survey', :id => 'edit_survey_1',:class => 'form'} do |f|
 
     - f.inputs t("1 Interview details"), :id => "interview_details", :class => 'step' do
       = f.input :date_of_the_interview, :start_year => 2010, :end_year => 2012
-      = f.input :duration_of_interview, :as => :select, :collection => 10..240
-      = f.input :locality, :input_html => { :class => "required" }
-      = f.input :mediator, :input_html => { :class => "required" }
-      = f.input :mediator_survey_counter, :input_html => { :class => "required number" }
+      = f.input :duration_of_interview, :as => :select, :collection => [10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240]
+      = f.input :locality, :input_html => { :class => "required", :remote => "/save_locality_id_to_session?s=" +  @survey.id.to_s }, :collection => Locality.where(:id => current_user.locality_ids)
+      = f.input :mediator, :label_method => :mediator_name, :input_html => { :class => "required", :remote => "/save_mediator_to_session?s=" +  @survey.id.to_s}, :collection => current_user.mediators
+      / User.where(:category => ['MED','L','LDB'], :locality_id => current_user.localities_db)
+      = f.input :mediator_survey_counter, :input_html => { :class => "required number", :remote => "/check_survey_number?s=" +  @survey.id.to_s}
 
     - f.inputs t("2 Family details"), :id => "family_details", :class => 'step' do
       = f.fields_for :family do |builder|
         = builder.input :family_name, :input_html => { :class => "required" }
+        = builder.input :survey_id, :as => :hidden, :wrapper_html => {:style => 'visibility:hidden;'}
+        = builder.input :locality_id, :as => :hidden, :wrapper_html => {:style => 'visibility:hidden;'}
+        = builder.input :created_by, :as => :hidden, :wrapper_html => {:style => 'visibility:hidden;'}
       = f.input :fathers_age, :input_html => { :size => 2 }
       = f.input :mothers_age, :input_html => { :size => 2 }
-      = f.input :number_of_all_children, :input_html => { :class => "required number" }
-      = f.input :number_of_children_below_seven, :input_html => { :class => "required number" }
-      = f.input :comment, :input_html => { :cols => 50, :rows => 5 }
-      = hidden_field_tag "step", "2"
-    = f.buttons
+      = f.input :number_of_all_children, :input_html => { :size => 2, :class => "required number" }
+      = f.input :number_of_children_below_seven, :input_html => { :size => 2, :class => "required number" }
+      - unless (current_user.locality_ids & [3,4,5,6]).empty?
+        = f.input :mothers_age_at_first_pregnancy, :input_html => { :size => 2, :class => "required number" }
+      = f.input :roma, :as => :radio, :collection => MenuItem.classic_reduced
+      = f.input :comment, :input_html => { :cols => 60, :rows => 5 }
+      = hidden_field_tag "current_step", @survey.current_step > 2 ? @survey.current_step : 2
+      = hidden_field_tag "step", 3
     
-    
+      - if @survey.verified == 1
+        %fieldset.buttons
+          %ol
+            %li
+              %label= t('This survey is Marked as Verified')
+      - elsif  @survey.completed == 1
+        %fieldset.buttons
+          %ol
+            %li
+              %label= t('This survey is Marked as Complete')
+    - if params[:action] == 'new' or current_user.id == @survey.created_by
+      - unless @survey.verified == 1
+        %fieldset.buttons
+          %ol
+            %li
+              %input.update#survey_submit{ :name=>"save", :type=>"submit", :value=>t("formtastic.update")}
+              = submit_tag t('Save and Next'), :name=>"commit"

@@ -1,5 +1,5 @@
 #steps
-  = semantic_form_for @menu_item do |f|
+  = semantic_form_for @menu_item,:html => {:class => 'form'} do |f|
     - f.inputs 'Menu Item', :id => 'menu_item', :class => 'step' do
       = f.input :name_en
       = f.input :name_sk

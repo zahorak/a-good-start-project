@@ -1,10 +1,10 @@
 #steps
-  = semantic_form_for @institution do |f|
+  = semantic_form_for @institution,:html => {:class => 'form', :id => 'edit_survey_1'} do |f|
     - f.inputs t('Institution'), :id => "institutions", :class => 'step' do
-      = f.input :locality
+      = f.input :locality, :input_html => { :class => "required" }
       / = f.input :category
-      = f.input :name
-      = f.input :code, :as => :radio, :collection => MenuItem.institution_codes_limited
+      = f.input :name, :input_html => { :class => "required" }
+      = f.input :code, :as => :radio, :collection => MenuItem.institution_codes_limited, :input_html => { :class => "required" }
       - if params[:origin_id]
         = hidden_field_tag('origin_id', params[:origin_id])
       = f.buttons

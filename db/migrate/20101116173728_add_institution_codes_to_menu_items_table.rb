@@ -1,7 +1,7 @@
 # encoding: utf-8
 class AddInstitutionCodesToMenuItemsTable < ActiveRecord::Migration
   def self.up
-    mi = MenuItem.new(:name => 'A - at home and not enrolled', :position => 1, :category => 'institution_code')
+    mi = MenuItem.new(:name => 'A - at home and not enrolled', :position => 1, :code_id => 999, :category => 'institution_code')
     mi.save
     mi = MenuItem.new(:name => 'B - mother/child programme', :position => 2, :category => 'institution_code')
     mi.save

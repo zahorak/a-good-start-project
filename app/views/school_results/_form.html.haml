@@ -1,10 +1,28 @@
-= form_for @school_result do |f|
-  -if @school_result.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@school_result.errors.count, "error")} prohibited this school_result from being saved:"
-      %ul
-        - @school_result.errors.full_messages.each do |msg|
-          %li= msg
+#steps
+  - semantic_form_for @school_result, :html => {:name => 'school_result', :class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("1 Test before primary school"), :id => "imunization", :class => 'step' do
+      = f.error_messages
+      = f.input :child, :input_html => { :disabled => 'disabled' }
+      = f.input :child_id, :as => :hidden, :wrapper_html => {:style => 'visibility:hidden;'}
+      / = f.input :survey_date, :start_year => 2010, :end_year => 2012
+      = f.input :institution, :input_html => { :disabled => 'disabled' } #, :as => :radio, :collection => MenuItem.immunization
+      = f.input :test_before_school, :as => :radio, :collection => MenuItem.classic
+      = f.input :test_before_school_result, :as => :radio, :collection => MenuItem.school_result_tests,
+        :input_html => { :onclick => 'display_switch(this,"145","school_result_test_before_school_result_other_input");'}
 
-  .actions
-    = f.submit 'Save'
+      / = f.input :school_mother, :as => :radio, :collection => MenuItem.school_type.order(:position), 
+      /   :input_html => { :onclick => 'display_switch(this,"145","survey_school_mother_other_input");'}
+      /   
+      / = f.input :school_mother_other, :as => :string, :input_html => {:size => 30}, :wrapper_html => {:style => @school_result.test_before_school_result==145 ? "display:;" : "display:none;"} 
+
+      = f.input :test_before_school_result_other, :as => :string, :input_html => {:size => 30}, :wrapper_html => {:style => @school_result.test_before_school_result==145 ? "display:;" : "display:none;"} 
+      
+      - if @school_result.child.institution.code_id == 107 or @school_result.child.institution.code_id == 108
+        = f.input :proceeded_to_next_year, :as => :radio, :collection => MenuItem.classic_reduced
+        = #f.input :institution_id, :collection => Institution.find(:all, :order => "name", :conditions => ['id=51 or locality_id=?',@survey.locality_id])
+      
+        = f.input :average_school_marks_midterm_10_11
+        = f.input :average_school_marks_yearend_10_11
+        = f.input :average_school_marks_midterm_11_12
+    = f.buttons
+

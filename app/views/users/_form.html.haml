@@ -1,11 +1,13 @@
 #steps
-  - semantic_form_for @user do |f|
+  - semantic_form_for @user,:html => {:class => 'form'} do |f|
     -f.inputs "User", :id => "users", :class => 'step' do
       = f.input :first_name
       = f.input :last_name
-      = f.input :category
-      = f.input :code
+      - if current_user.category == 'A'
+        = f.input :category, :as => :radio, :collection => User.categories
+        = f.input :code
+        = f.input :localities, :as => :check_boxes
       = f.input :email
       = f.input :language, :as => :radio, :collection => %w{en sk hu ro mk}
-      = f.input :locality
+      / = f.input :locality
       = f.buttons

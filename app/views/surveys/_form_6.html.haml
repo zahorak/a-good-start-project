@@ -1,0 +1,8 @@
+#steps
+  - semantic_form_for @survey, :html => {:name => 'survey',:class => 'form', :id => 'edit_survey_1'} do |f|
+    - f.inputs t("6 Parent's attitude"), :id => "parents_attitude", :class => 'step' do
+      = f.input :better_in_school, :as => :radio, :collection => MenuItem.better_in_school
+      = f.input :kindergarten_importance, :as => :radio, :collection => MenuItem.importance
+      = hidden_field_tag "step", "6"
+
+      = render :partial => 'buttons'

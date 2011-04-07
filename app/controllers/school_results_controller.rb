@@ -1,7 +1,5 @@
 class SchoolResultsController < ApplicationController
   
-  # GET /school_results
-  # GET /school_results.xml
   def index
     @school_results = SchoolResult.all
 
@@ -11,8 +9,6 @@ class SchoolResultsController < ApplicationController
     end
   end
 
-  # GET /school_results/1
-  # GET /school_results/1.xml
   def show
     @school_result = SchoolResult.find(params[:id])
 
@@ -22,10 +18,13 @@ class SchoolResultsController < ApplicationController
     end
   end
 
-  # GET /school_results/new
-  # GET /school_results/new.xml
   def new
-    @school_result = SchoolResult.new
+    unless params[:child_id].blank?
+      child = ChildProfile.find(params[:child_id])
+      @school_result = SchoolResult.new(:child_id => params[:child_id], :institution_id => child.institution_id)
+    else
+      render :text => 'No Child ID provided!'
+    end
 
     respond_to do |format|
       format.html # new.html.erb
@@ -33,15 +32,13 @@ class SchoolResultsController < ApplicationController
     end
   end
 
-  # GET /school_results/1/edit
   def edit
     @school_result = SchoolResult.find(params[:id])
   end
 
-  # POST /school_results
-  # POST /school_results.xml
   def create
     @school_result = SchoolResult.new(params[:school_result])
+    @school_result.created_by =  current_user.id
 
     respond_to do |format|
       if @school_result.save
@@ -54,8 +51,6 @@ class SchoolResultsController < ApplicationController
     end
   end
 
-  # PUT /school_results/1
-  # PUT /school_results/1.xml
   def update
     @school_result = SchoolResult.find(params[:id])
 
@@ -70,8 +65,6 @@ class SchoolResultsController < ApplicationController
     end
   end
 
-  # DELETE /school_results/1
-  # DELETE /school_results/1.xml
   def destroy
     @school_result = SchoolResult.find(params[:id])
     @school_result.destroy
